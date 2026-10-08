@@ -261,7 +261,7 @@ IA_URL = "https://archive.org/download/{id}/{id}_djvu.txt"
 
 _LAST_FETCH = [0.0]
 MIN_INTERVAL = 1.0  # seconds between requests to archive.org (be polite)
-USER_AGENT = "chinuk-pipa-lexicon/1.0 (open-source research; +https://github.com/gradyhnichols/chinuk-pipa)"
+USER_AGENT = "chinuk-pipa-lexicon/1.0 (open-source research; +https://github.com/gradyhnichols/gradyhnichols-chinuk-pipa)"
 
 
 def _fetch(url: str, dest: Path) -> None:

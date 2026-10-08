@@ -4,7 +4,7 @@ Unless a file says otherwise, the data and annotations created by this project (
 the compilation and annotations in `data/lexicon/`) are licensed under the **Creative Commons Attribution 4.0
 International licence (CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/
 
-Attribution: "chinuk-pipa contributors, https://github.com/gradyhnichols/chinuk-pipa".
+Attribution: "chinuk-pipa contributors, https://github.com/gradyhnichols/gradyhnichols-chinuk-pipa".
 
 The historical texts the data is derived from were published between 1863 and 1924 (see
 `data/lexicon/sources.yaml` and `data/gt/README.md`), so they are in the public domain in the United States.

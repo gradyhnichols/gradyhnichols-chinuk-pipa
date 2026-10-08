@@ -614,7 +614,8 @@ signs:
   confidence: high
   labels:
     identity: VERIFIED
-  notes: In the Corbett keyboard this sign is keyed 'c'.
+  notes: In the Corbett keyboard this sign is keyed 'c'. In Chinook words ending in z in the 1892 and 1898
+    vocabularies, the plain S sign appears instead (AI-viewed crops; see docs/rule_notes.md).
   unicode_variants: []
 - id: TH
   category: consonant

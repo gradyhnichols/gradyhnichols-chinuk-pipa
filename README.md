@@ -15,23 +15,23 @@ According to David Robertson's 2011 dissertation (page numbers in brackets):
 
 - He located about 600 texts that Indigenous people wrote in the script between 1891 and 1912 [p. 12].
 - He estimates that 50–75% of all documented Chinuk Wawa is written in it [pp. 11, 25; p. 50 gives "about 75%"].
-- Le Jeune's newspaper, the *Kamloops Wawa*, was written in it for Indigenous readers from 1891 [p. 12].
+- Le Jeune's newspaper, the *Kamloops Wawa*, was written in it for Indigenous readers from 1891 through 1904 [p. 12].
 
-We could not find any published software that reads the script from page images (OCR or handwriting
-recognition), though our search may have missed something. This project builds small, open, checkable pieces
+We have not found published software that reads the script from page images (OCR or handwriting
+recognition). Our search was informal and may have missed something. This project builds small, open, checkable pieces
 toward that, and shares them freely.
 
-## What's here (v0.1, October 2026)
+## What's here (October 2026)
 
 | Piece | What it is | Notes |
 |---|---|---|
-| **Ground truth** [`data/gt/`](data/gt/) | 424 shorthand word images from two word lists printed at Kamloops in 1892 and 1898. Each is paired with the Roman spelling and English gloss printed beside it. | Stored as page coordinates plus readings. Images regenerate from Internet Archive scans. Readings were made by AI and have not yet been reviewed by a human expert. |
+| **Ground truth** [`data/gt/`](data/gt/) | 486 shorthand word images from two word lists made at Kamloops, in 1892 (mimeographed) and 1898. Each is paired with the Roman spelling and English gloss written beside it. Plus 245 images of the same 1892 words in a second copy of that list. | Stored as page coordinates plus readings. Images regenerate from Internet Archive scans. Readings were made by AI and have not yet been reviewed by a human expert. |
 | **Transliterator** [`chinukpipa/translit.py`](chinukpipa/translit.py) | Le Jeune's Roman spelling → shorthand sign tokens → Unicode Duployan text. | The spelling-to-sign rules are hypotheses, to be tested against the ground truth. |
 | **Sign data** [`data/signs/`](data/signs/) | 81 sign entries (70 with a Unicode code point) and 58 abbreviations/logograms, each with its sound value, stroke description, joining notes and sources. | Compiled by AI agents from Robertson (2011), Le Jeune's printed sign tables, the Unicode documents and the Kaltash Wawa guide. Not yet reviewed by a specialist. |
-| **Chinook word list** [`data/lexicon/`](data/lexicon/) | About 2,000 headwords parsed from 10 public-domain dictionaries and word lists (1863–1924). Each row cites its source. | Parsed from OCR text, so expect errors. Each row carries a quality grade. Glosses are quoted as printed in 1863–1924 and include terms now considered offensive. They are kept as historical evidence, not endorsed. |
-| **Page tools** [`chinukpipa/gt/`](chinukpipa/gt/) | Deskewing, column and row segmentation, crop regeneration, review sheets. | |
-
-Planned: a small recognition model trained on these examples, and research notes once they have been checked.
+| **Chinook word list** [`data/lexicon/`](data/lexicon/) | About 2,000 headwords parsed from 10 public-domain dictionaries and word lists (1863–1924). Each row names its source (for the lowest-grade rows, in the `notes` column). | Parsed from OCR text, so expect errors. Each row carries a quality grade. Glosses are quoted as printed in 1863–1924 and include terms now considered offensive. They are kept as historical evidence, not endorsed. |
+| **Page tools** [`chinukpipa/gt/`](chinukpipa/gt/) | Deskewing, column and row segmentation, crop regeneration, review sheets, and matching a second scanned copy of a page to the first. | |
+| **Word recognizer** [`chinukpipa/htr/`](chinukpipa/htr/) | A small experimental model that reads a word image as a sequence of signs, trained on font-drawn words and the ground truth. | Early results and their limits are in [its README](chinukpipa/htr/README.md). Not a working OCR system. |
+| **Rule notes** [`docs/rule_notes.md`](docs/rule_notes.md) | Where the word images have led to a change in the spelling-to-sign rules, and questions still open. | |
 
 ## Quick start
 
@@ -56,7 +56,7 @@ To display Duployan text you need a font that supports it, such as Noto Sans Dup
 - **David Corbett**: the Rawnd Musmus Duployan font and online Duployan keyboard.
 - **Van Anderson** (with later contributions from Michael Everson and others): the proposals that brought
   Duployan, with its Chinook letters, into Unicode 7.0.
-- **Canadiana.org / CRKN** (the CIHM microfilm program), **University of Alberta Libraries**, the **Newberry Library** and the **Internet Archive**, for the digitized books.
+- The **CIHM/ICMH microfiche series** and **Canadiana.org**, **University of Alberta Libraries**, the **Newberry Library** and the **Internet Archive**, for the digitized books.
 
 Any mistakes here are ours, not theirs.
 
@@ -73,7 +73,9 @@ please open an issue.
 - The ground truth comes from *Chinook Vocabulary, Chinook–English* (Kamloops, 1892, "from the original of
   Rt. Rev. Bishop Durieu") and Le Jeune's *Chinook and Shorthand Rudiments* (Kamloops, 1898). We used the
   Internet Archive copies of the CIHM microfilm, items `cihm_15474` and `cihm_15465`. The Internet Archive
-  records list the contributor as Canadiana.org and the sponsor as University of Alberta Libraries.
+  records list the contributor as Canadiana.org and the sponsor as University of Alberta Libraries. A second
+  copy of the 1892 list, the Newberry Library's (Internet Archive item `Ayer_PM848_L4_1892`), supplies the
+  extra images and the Roman words of two pages that are hidden in the binding of the first scan.
 - Page images are **not** stored in this repository. Annotations point into those scans by item, page and
   pixel coordinates, and `python -m chinukpipa.gt.make_crops` regenerates the crops.
 - The word list cites, for each row, the public-domain source it was parsed from. All were published before 1931.

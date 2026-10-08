@@ -1,3 +1,3 @@
 """chinuk-pipa: tools for studying Father Le Jeune's Duployan shorthand for Chinook Jargon."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

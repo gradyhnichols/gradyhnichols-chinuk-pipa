@@ -69,7 +69,7 @@ sources:
     kamloops_variety: true
     kind: "alphabetical Chinook-English list: hand-lettered Roman spelling, the word in phonography (Duployan shorthand), English gloss"
     license: "Published 1892, i.e. before 1931; public domain in the United States by publication date. Author died 1930."
-    status: "NOT PARSED: OCR fails on the lithographed handwriting (232 rows were read by AI from the images instead; see data/gt/)"
+    status: "NOT PARSED: OCR fails on the handwriting (rows were read by AI from the page images instead; see data/gt/)"
     entry_count: 0
     parse_quality: "Not parsed: the OCR holds only English words and shorthand-glyph noise (Chinook given in phonography)."
   - key: "gibbs1863"

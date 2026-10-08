@@ -5,9 +5,9 @@ authors:
   - family-names: Nichols
     given-names: Grady
   - name: "chinuk-pipa contributors"
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-10-08
 license:
   - Apache-2.0
   - CC-BY-4.0
-repository-code: "https://github.com/gradyhnichols/chinuk-pipa"
+repository-code: "https://github.com/gradyhnichols/gradyhnichols-chinuk-pipa"

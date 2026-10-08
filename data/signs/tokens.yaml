@@ -20,10 +20,10 @@ tokens:
   M:  {sign: M_semicircle,  unicode: [U+1BC19], latin: [m]}
   N:  {sign: N_semicircle,  unicode: [U+1BC1A], latin: [n]}
   SH: {sign: SH_semicircle, unicode: [U+1BC1B], latin: [sh]}
-  S:  {sign: S_semicircle,  unicode: [U+1BC1C], latin: [s]}
+  S:  {sign: S_semicircle,  unicode: [U+1BC1C], latin: [s, z]}   # z: revised 2026-10-08, see docs/rule_notes.md
   NG: {sign: NG, unicode: [U+1BC22], latin: [ng]}
   CH: {sign: CH, unicode: [U+1BC23], latin: [ch, j]}
-  TS: {sign: TS, unicode: [U+1BC25], latin: [ts, z]}
+  TS: {sign: TS, unicode: [U+1BC25], latin: [ts]}
   TH: {sign: TH, unicode: [U+1BC11], latin: [th]}
   DH: {sign: DH, unicode: [U+1BC13], latin: []}
   KH: {sign: KH, unicode: [U+1BC14], latin: [kh]}
