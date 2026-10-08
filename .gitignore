@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# large/generated
+/runs/
+/synth/
+*.arrow

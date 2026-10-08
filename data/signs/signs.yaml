@@ -1,0 +1,2490 @@
+# chinuk-pipa sign inventory (machine-readable). One entry per sign.
+# Generated 2026-10-07 by AI research agents for an amateur project; not yet reviewed by a specialist.
+# unicode: list of code points ('U+1BC02') or null when no code point exists. unicode_variants: orientation or
+# allograph code points that stand for the same Le Jeune sign.
+# confidence: high | med | low. labels: per-field evidence status (VERIFIED, COMPUTED, INFERRED, UNVERIFIED).
+# Ids: stable ASCII. Semicircle consonants carry the suffix _semicircle so they are not confused with Latin
+# letters or numerals. Numeral ids (NUM_*) point at the letter they share a shape with (same_shape_as).
+schema_version: 1
+generated: '2026-10-07'
+legend:
+  VERIFIED: The compiling AI agent read or looked at the passage/image in the cited source (not yet confirmed by a person).
+  COMPUTED: Measured or rendered by code (Rawnd Musmus Duployan font via fontTools; Pillow + Raqm).
+  INFERRED: The compiling agent's own reading or hypothesis; the source does not say it.
+  UNVERIFIED: Reported by a secondary source (font docs, keyboard help, proposal caption); the primary page was not seen.
+source_keys:
+  R2011: Robertson, D. D. 2011. Kamloops Chinuk Wawa, Chinuk pipa, and the vitality of pidgins. PhD diss., Univ. of Victoria.
+    Printed page numbers (PDF page = printed + 18). Sec. 2.3 = pp.37-51; Table 2 = p.38.
+  LJ1924: 'Le Jeune, J.-M.-R. 1924. Chinook Rudiments. Kamloops. Printed p.5: ''Phonetic Alphabet'', ''Pronunciation''.
+    Internet Archive Ayer_PM843_L45_1924 (Newberry Library).'
+  LJ1898: Le Jeune, J.-M.-R. 1898. Chinook and Shorthand Rudiments. Kamloops. Internet Archive cihm_15465 (CIHM microfilm).
+    p.2 'Phonetic Alphabet', p.5 'Phonetic Syllables', p.13 'Notes and Explanations'.
+  LJ1896: '[Le Jeune] 1896. The Wawa Shorthand Instructor, or, The Duployan stenography adapted to English. Kamloops.
+    Internet Archive wawashorthandins00leje (also cihm_15507). Lessons XV-XVII.'
+  UNI-NL: Unicode Standard NamesList.txt / chart U1BC00 (Duployan, Unicode 7.0 to 18.0 unchanged). Names and the '* Chinook
+    ...' annotations.
+  L2/09-184: Anderson, V. 2009-05-03. Proposal to include Chinook Pipa in Unicode/ISO-10646. UTC L2/09-184.
+  L2/09-364: Anderson, V. 2009-10-26. Initial proposal to include Duployean Shorthand and Chinook writing. L2/09-364 (numerals
+    paragraph).
+  L2/10-026: Anderson, V. 2010. Proposal to include Duployan script and Shorthand Format Controls (Chinook numbers paragraph).
+  L2/10-159: Anderson, V. 2010-05-03. Complete proposal with documentation, Examples 1-7 (documentation from Chinook Rudiments
+    p.5 and Kamloops Wawa).
+  L2/12-329: Anderson, V. 2012-10-15. Duployan Letter Kk representative glyph change. L2/12-329.
+  UTN37: Unicode Technical Note 37, Duployan rendering model.
+  CORBETT: 'Corbett, D. Rawnd Musmus Duployan font (font files SIL OFL 1.1; build code Apache-2.0): user-documentation.md, variants.md; keyboard index.html
+    and transliterate.js at dscorbett.github.io/duployan-test.'
+  GUIDE2024: Chinuk Pipa Guide (Kaltash Wawa), 2024, p.1 (vowels, consonants, special characters, abbreviations, circle
+    vowels).
+  BLOG: Robertson, D. D., chinookjargon.com posts (dated individually in the entry).
+  RAWND: 'Measured or rendered here: RawndMusmusDuployan-Regular.otf, fontTools bounding boxes and Pillow+Raqm renders.'
+signs:
+- id: P
+  category: consonant
+  unicode:
+  - U+1BC02
+  unicode_name: DUPLOYAN LETTER P
+  chinook_value:
+    robertson: p; numeral 1
+    ipa: p
+  lejeune_latin: p
+  stroke:
+    shape: straight line
+    direction: vertical, drawn top to bottom (S)
+    relative_length: '1.0'
+    rawnd_bbox_units: 70x570 (stroke 70; centreline 500)
+  joining: 'Next letter attaches at the lower end. Never cursively joined to another P: a small circle (the letter a) is
+    inserted instead (pap, and the numeral 11).'
+  confusables:
+  - B
+  - T
+  - L
+  - NUM_1
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC02
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: 'Short (unvoiced) member of the P species. Also numeral 1 (R2011 p.38, p.40; UNI-NL: ''Chinook number 1'').'
+  unicode_variants: []
+- id: B
+  category: consonant
+  unicode:
+  - U+1BC07
+  unicode_name: DUPLOYAN LETTER B
+  chinook_value:
+    robertson: b
+    ipa: b
+  lejeune_latin: b
+  stroke:
+    shape: straight line
+    direction: vertical, drawn top to bottom (S)
+    relative_length: '2.0'
+    rawnd_bbox_units: 70x1070 (stroke 70; centreline 1000)
+  joining: As P. Voiced member of the P species; the same stroke, twice as long.
+  confusables:
+  - P
+  - D
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC07
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: Long (voiced) member of the P species. Le Jeune advised exaggerating the long:short difference to 1:2 or 1:3 (R2011
+    p.41, citing KW 1896a); Rawnd draws exactly 1:2 on stroke centre-lines (COMPUTED). In Chinook the voiced stops and fricatives
+    are mostly in loans and names (Batist, Disimbir, Ogyust), INFERRED from the Latin spellings in the abbreviations chart
+    (BLOG 2016-03-15).
+  unicode_variants: []
+- id: T
+  category: consonant
+  unicode:
+  - U+1BC03
+  unicode_name: DUPLOYAN LETTER T
+  chinook_value:
+    robertson: t; numeral 2
+    ipa: t
+  lejeune_latin: t
+  stroke:
+    shape: straight line
+    direction: horizontal, drawn left to right (E)
+    relative_length: '1.0'
+    rawnd_bbox_units: 570x70 (stroke 70; centreline 500)
+  joining: 'Next letter attaches at the right end. Never joined to another T (use circle a: tat, numeral 22).'
+  confusables:
+  - D
+  - P
+  - TH
+  - PUNCT_EQ_BREAK
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC03
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: 'Short (unvoiced) member of the T species. Also numeral 2 (R2011 p.38, p.40; UNI-NL: ''Chinook number 2'').'
+  unicode_variants: []
+- id: D
+  category: consonant
+  unicode:
+  - U+1BC08
+  unicode_name: DUPLOYAN LETTER D
+  chinook_value:
+    robertson: d
+    ipa: d
+  lejeune_latin: d
+  stroke:
+    shape: straight line
+    direction: horizontal, drawn left to right (E)
+    relative_length: '2.0'
+    rawnd_bbox_units: 1070x70 (stroke 70; centreline 1000)
+  joining: As T. Voiced member of the T species.
+  confusables:
+  - T
+  - B
+  - DH
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC08
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: Long (voiced) member of the T species. Le Jeune advised exaggerating the long:short difference to 1:2 or 1:3 (R2011
+    p.41, citing KW 1896a); Rawnd draws exactly 1:2 on stroke centre-lines (COMPUTED). In Chinook the voiced stops and fricatives
+    are mostly in loans and names (Batist, Disimbir, Ogyust), INFERRED from the Latin spellings in the abbreviations chart
+    (BLOG 2016-03-15).
+  unicode_variants: []
+- id: F
+  category: consonant
+  unicode:
+  - U+1BC04
+  unicode_name: DUPLOYAN LETTER F
+  chinook_value:
+    robertson: f; numeral 3
+    ipa: f
+  lejeune_latin: f
+  stroke:
+    shape: straight line
+    direction: diagonal down-right (SE), steep (about 60 deg below horizontal in Rawnd)
+    relative_length: '1.15'
+    rawnd_bbox_units: 358x569 (stroke 70; centreline 576)
+  joining: 'Next letter attaches at the lower right end. Never joined to another F (circle a: faf, numeral 33).'
+  confusables:
+  - V
+  - K
+  - P
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC04
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: 'Short (unvoiced) member of the F species. Also numeral 3 (R2011 p.38, p.40; UNI-NL: ''Chinook number 3'').'
+  unicode_variants: []
+- id: V
+  category: consonant
+  unicode:
+  - U+1BC09
+  unicode_name: DUPLOYAN LETTER V
+  chinook_value:
+    robertson: v
+    ipa: v
+  lejeune_latin: v
+  stroke:
+    shape: straight line
+    direction: diagonal down-right (SE), steep
+    relative_length: 2.0 x F
+    rawnd_bbox_units: 647x1068 (stroke 70; centreline 1153)
+  joining: As F. Voiced member of the F species.
+  confusables:
+  - F
+  - G
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC09
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: Long (voiced) member of the F species. Le Jeune advised exaggerating the long:short difference to 1:2 or 1:3 (R2011
+    p.41, citing KW 1896a); Rawnd draws exactly 1:2 on stroke centre-lines (COMPUTED). In Chinook the voiced stops and fricatives
+    are mostly in loans and names (Batist, Disimbir, Ogyust), INFERRED from the Latin spellings in the abbreviations chart
+    (BLOG 2016-03-15).
+  unicode_variants: []
+- id: K
+  category: consonant
+  unicode:
+  - U+1BC05
+  unicode_name: DUPLOYAN LETTER K
+  chinook_value:
+    robertson: k; numeral 4
+    ipa: k ~ q
+  lejeune_latin: k
+  stroke:
+    shape: straight line
+    direction: diagonal drawn DOWN and to the LEFT (SW), steep (about 60 deg in Rawnd); the only straight letter written
+      against the rightward flow
+    relative_length: '1.15'
+    rawnd_bbox_units: 358x569 (stroke 70; centreline 576)
+  joining: 'Next letter attaches at the lower-left end. After K, an L must be ''jogged'' rightward (about ENE) to avoid
+    retracing K, which makes kl look like kt (R2011 pp.43-44). Vowels adjoining K must lie rightward (ka: circle at the
+    bottom, right; ak: circle at the top, left; LJ1898 p.5). Never joined to another K (circle a: kak, numeral 44).'
+  confusables:
+  - G
+  - L
+  - KH
+  - Q
+  - F
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC05
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: 'Short (unvoiced) member of the K species. Also numeral 4 (R2011 p.38, p.40; UNI-NL: ''Chinook number 4''). Direction
+    flag: R2011 pp.39, 43 and Table 2 say SW/''down, left''; p.45 says the K species runs ''in a Southeast orientation''.
+    SW is the value that matches Le Jeune''s printed tables (LJ1924 p.5, LJ1898 p.2) and the NamesList (''written down and
+    to the left''), so p.45 appears inconsistent with pp.39 and 43 and is not followed here. Le Jeune''s printed K (1924 p.5 and 1898 p.2 tables) carries a tiny start-tick
+    that L lacks; R2011 and Unicode do not treat it as a distinguishing feature, and it has not been confirmed in running text (low confidence).'
+  unicode_variants: []
+- id: G
+  category: consonant
+  unicode:
+  - U+1BC0A
+  unicode_name: DUPLOYAN LETTER G
+  chinook_value:
+    robertson: g
+    ipa: g
+  lejeune_latin: g
+  stroke:
+    shape: straight line
+    direction: diagonal drawn down and to the left (SW), steep
+    relative_length: 2.0 x K
+    rawnd_bbox_units: 647x1068 (stroke 70; centreline 1153)
+  joining: As K. Voiced member of the K species.
+  confusables:
+  - K
+  - R
+  - V
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC0A
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: Long (voiced) member of the K species. Le Jeune advised exaggerating the long:short difference to 1:2 or 1:3 (R2011
+    p.41, citing KW 1896a); Rawnd draws exactly 1:2 on stroke centre-lines (COMPUTED). In Chinook the voiced stops and fricatives
+    are mostly in loans and names (Batist, Disimbir, Ogyust), INFERRED from the Latin spellings in the abbreviations chart
+    (BLOG 2016-03-15).
+  unicode_variants: []
+- id: L
+  category: consonant
+  unicode:
+  - U+1BC06
+  unicode_name: DUPLOYAN LETTER L
+  chinook_value:
+    robertson: l
+    ipa: l
+  lejeune_latin: l
+  stroke:
+    shape: straight line
+    direction: diagonal drawn UP and to the right (NE), 45 deg
+    relative_length: '1.41'
+    rawnd_bbox_units: 571x570 (stroke 70; centreline 707)
+  joining: 'Next letter attaches at the upper-right end. After R or another NE stroke nothing special; after K it is jogged
+    toward E (kl ~ kt). Vowels adjoining L lie rightward (la: circle at the top; al: circle at the bottom-left; LJ1898 p.5).'
+  confusables:
+  - R
+  - K
+  - T
+  - P
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC06
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: Short (unvoiced) member of the L species.
+  unicode_variants: []
+- id: R
+  category: consonant
+  unicode:
+  - U+1BC0B
+  unicode_name: DUPLOYAN LETTER R
+  chinook_value:
+    robertson: r; numeral 5
+    ipa: r
+  lejeune_latin: r
+  stroke:
+    shape: straight line
+    direction: diagonal drawn up and to the right (NE), 45 deg
+    relative_length: 2.0 x L
+    rawnd_bbox_units: 1071x1070 (stroke 70; centreline 1414)
+  joining: As L. After R, a K is jogged toward S (rk ~ rp). Also the numeral 5.
+  confusables:
+  - L
+  - G
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.2), p.41 (ex.7)
+  - LJ1924 p.5
+  - LJ1898 p.2, p.5
+  - UNI-NL U+1BC0B
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED (Rawnd) / VERIFIED (LJ advice)
+    joining: VERIFIED
+  notes: 'Long (voiced) member of the L species. Le Jeune advised exaggerating the long:short difference to 1:2 or 1:3 (R2011
+    p.41, citing KW 1896a); Rawnd draws exactly 1:2 on stroke centre-lines (COMPUTED). Also numeral 5 (R2011 p.38, p.40;
+    UNI-NL: ''Chinook number 5''). In Chinook the voiced stops and fricatives are mostly in loans and names (Batist, Disimbir,
+    Ogyust), INFERRED from the Latin spellings in the abbreviations chart (BLOG 2016-03-15).'
+  unicode_variants: []
+- id: M_semicircle
+  category: consonant
+  unicode:
+  - U+1BC19
+  unicode_name: DUPLOYAN LETTER M
+  chinook_value:
+    robertson: m; numeral 6
+    ipa: m
+  lejeune_latin: m
+  stroke:
+    shape: semicircle
+    direction: left-bulging semicircle '(', opens right; drawn top to bottom
+    relative_length: diameter about 1.4 x the P stroke (Rawnd 720 vs 500 centre-line)
+    rawnd_bbox_units: 370x790 (w x h)
+  joining: Connects at both ends of the arc. Written as one continuous stroke in the flow of the word (R2011 pp.40, 45).
+    In the numeral series the arc is drawn half size (LJ1896 lesson XVII).
+  confusables:
+  - N_semicircle
+  - NUM_6
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.3)
+  - LJ1924 p.5
+  - LJ1896 lesson XVII
+  - UNI-NL U+1BC19
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED
+  notes: 'Id keeps the _semicircle suffix so it cannot be mistaken for a Latin letter or numeral. R2011 p.45: ''m and n
+    each curve leftward for part of their downward strokes'' (a description of the arc bulge, not a different sign).'
+  unicode_variants: []
+- id: N_semicircle
+  category: consonant
+  unicode:
+  - U+1BC1A
+  unicode_name: DUPLOYAN LETTER N
+  chinook_value:
+    robertson: n; numeral 7
+    ipa: n
+  lejeune_latin: n
+  stroke:
+    shape: semicircle
+    direction: right-bulging semicircle ')', opens left; drawn top to bottom
+    relative_length: diameter about 1.4 x the P stroke (Rawnd 720 vs 500 centre-line)
+    rawnd_bbox_units: 370x790 (w x h)
+  joining: Connects at both ends of the arc. Written as one continuous stroke in the flow of the word (R2011 pp.40, 45).
+    In the numeral series the arc is drawn half size (LJ1896 lesson XVII).
+  confusables:
+  - M_semicircle
+  - NG
+  - NUM_7
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.3)
+  - LJ1924 p.5
+  - LJ1896 lesson XVII
+  - UNI-NL U+1BC1A
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED
+  notes: 'Id keeps the _semicircle suffix so it cannot be mistaken for a Latin letter or numeral. R2011 p.45: ''m and n
+    each curve leftward for part of their downward strokes'' (a description of the arc bulge, not a different sign).'
+  unicode_variants: []
+- id: SH_semicircle
+  category: consonant
+  unicode:
+  - U+1BC1B
+  unicode_name: DUPLOYAN LETTER J
+  chinook_value:
+    robertson: ʃ; numeral 8
+    ipa: ʃ
+  lejeune_latin: sh
+  stroke:
+    shape: semicircle
+    direction: upward-bulging semicircle (arch), drawn left to right
+    relative_length: diameter about 1.4 x the P stroke (Rawnd 720 vs 500 centre-line)
+    rawnd_bbox_units: 790x370 (w x h)
+  joining: Connects at both ends of the arc. Written as one continuous stroke in the flow of the word (R2011 pp.40, 45).
+    In the numeral series the arc is drawn half size (LJ1896 lesson XVII).
+  confusables:
+  - S_semicircle
+  - CH
+  - NUM_8
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.3)
+  - LJ1924 p.5
+  - LJ1896 lesson XVII
+  - UNI-NL U+1BC1B
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED
+  notes: 'Unicode names this letter J (Chinook value sh; the same code point serves Pernin sh). Id keeps the _semicircle
+    suffix so it cannot be mistaken for a Latin letter or numeral. R2011 p.45: ''m and n each curve leftward for part of
+    their downward strokes'' (a description of the arc bulge, not a different sign).'
+  unicode_variants: []
+- id: S_semicircle
+  category: consonant
+  unicode:
+  - U+1BC1C
+  unicode_name: DUPLOYAN LETTER S
+  chinook_value:
+    robertson: s; numeral 9
+    ipa: s
+  lejeune_latin: s
+  stroke:
+    shape: semicircle
+    direction: downward-bulging semicircle (cup), drawn left to right
+    relative_length: diameter about 1.4 x the P stroke (Rawnd 720 vs 500 centre-line)
+    rawnd_bbox_units: 790x370 (w x h)
+  joining: Connects at both ends of the arc. Written as one continuous stroke in the flow of the word (R2011 pp.40, 45).
+    In the numeral series the arc is drawn half size (LJ1896 lesson XVII).
+  confusables:
+  - SH_semicircle
+  - TS
+  - NUM_9
+  sources:
+  - R2011 p.38 (Table 2), p.40 (ex.3)
+  - LJ1924 p.5
+  - LJ1896 lesson XVII
+  - UNI-NL U+1BC1C
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    stroke_direction: VERIFIED
+    relative_length: COMPUTED
+  notes: 'Id keeps the _semicircle suffix so it cannot be mistaken for a Latin letter or numeral. R2011 p.45: ''m and n
+    each curve leftward for part of their downward strokes'' (a description of the arc bulge, not a different sign).'
+  unicode_variants: []
+- id: NG
+  category: consonant
+  unicode:
+  - U+1BC22
+  unicode_name: DUPLOYAN LETTER N WITH DOT
+  chinook_value:
+    robertson: ŋ (n + tick)
+    ipa: ŋ
+  lejeune_latin: ng
+  stroke:
+    shape: 'N semicircle plus a dot inside the curve (Le Jeune: dot in the concavity)'
+    direction: as N
+    relative_length: as N
+  joining: 'Dotted: the pen must be lifted for the dot, so the sign cannot be completed in one stroke with its right neighbour
+    (R2011 p.44). It still joins at the arc ends.'
+  confusables:
+  - N_semicircle
+  - H
+  sources:
+  - R2011 p.38, p.44 (ex.16f)
+  - 'LJ1924 p.5 (row 3: ''ng'')'
+  - LJ1898 p.2 ('ng')
+  - 'UNI-NL: ''Chinook ng'''
+  confidence: high
+  labels:
+    identity: VERIFIED
+    dot_position: VERIFIED (LJ1924) vs 'tick to the side' (R2011)
+  notes: 'Dot placement: Le Jeune''s table draws it inside the curve; Robertson calls it ''a tick to the side''. The Unicode
+    chart and Rawnd also put it inside. A dot beside the arc would be confusable with a following H.'
+  unicode_variants: []
+- id: CH
+  category: consonant
+  unicode:
+  - U+1BC23
+  unicode_name: DUPLOYAN LETTER J WITH DOT
+  chinook_value:
+    robertson: t͡ʃ (sh + tick)
+    ipa: t͡ʃ
+  lejeune_latin: ch (also written j = ch in the English alphabet row, LJ1898 p.2)
+  stroke:
+    shape: SH arch plus a dot beneath it (inside the curve)
+    direction: as SH
+    relative_length: as SH
+  joining: Dotted; forces a pen lift (R2011 p.44).
+  confusables:
+  - SH_semicircle
+  - TS
+  sources:
+  - R2011 p.38, p.44 (ex.16d)
+  - LJ1924 p.5
+  - LJ1898 p.2
+  - 'UNI-NL: ''Chinook ch'', ''Chinook, Perrault j'''
+  - 'L2/09-184 (KMW59 p.1: ''Ch character, Sh+CCMM'')'
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: Unicode also lists Sloan zh for the same code point.
+  unicode_variants: []
+- id: TS
+  category: consonant
+  unicode:
+  - U+1BC25
+  unicode_name: DUPLOYAN LETTER S WITH DOT
+  chinook_value:
+    robertson: t͡s (s + tick)
+    ipa: t͡s
+  lejeune_latin: ts (written c in modern Corbett keyboard; z = ts in the English row, LJ1898 p.2)
+  stroke:
+    shape: S cup plus a dot above the bottom of the curve (inside)
+    direction: as S
+    relative_length: as S
+  joining: Dotted; forces a pen lift.
+  confusables:
+  - S_semicircle
+  - CH
+  sources:
+  - R2011 p.38, p.44 (ex.16e)
+  - LJ1924 p.5
+  - LJ1898 p.2
+  - 'UNI-NL: ''Chinook ts'', ''Chinook, Romanian, Sloan z'''
+  - BLOG 2019-04-02 (C in 'Howse' stands for a z sound)
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: In the Corbett keyboard this sign is keyed 'c'.
+  unicode_variants: []
+- id: TH
+  category: consonant
+  unicode:
+  - U+1BC11
+  unicode_name: DUPLOYAN LETTER TH
+  chinook_value:
+    robertson: θ (t + tick); also given as ð in ex.16b
+    ipa: θ
+  lejeune_latin: th ('th, in English th'; also 'tlya, tha, thye', LJ1924 p.5)
+  stroke:
+    shape: 'short T with a tick (Le Jeune: dash or tick on the T) ; Unicode chart: tick ; Rawnd: dot above the T'
+    direction: as T
+    relative_length: as T
+  joining: 'Tick or dash forces a pen lift (R2011 p.44). LJ1896 lesson XVI: ''Th is represented by a t or d marked on one
+    side or crossed by a dash'' (English).'
+  confusables:
+  - T
+  - DH
+  - D
+  sources:
+  - R2011 p.38, p.44 (ex.16b)
+  - LJ1924 p.5
+  - LJ1896 lesson XVI
+  - UNI-NL 'Chinook'
+  - GUIDE2024 p.1 ('th = θ, ð = English th')
+  confidence: high
+  labels:
+    identity: VERIFIED
+    glyph_shape: VERIFIED (shapes differ by source)
+  notes: 'Three sources, three tick/dash/dot treatments: a glyph-level divergence, not a different sign. The voiceless/voiced
+    split (TH vs DH) is a Duployan feature; Robertson''s Table 2 lists only one sign with the value θ.'
+  unicode_variants: []
+- id: DH
+  category: consonant
+  unicode:
+  - U+1BC13
+  unicode_name: DUPLOYAN LETTER DH
+  chinook_value:
+    robertson: ð (d + tick) in ex.16b; not in Table 2
+    ipa: ð
+  lejeune_latin: th (soft) ; LJ1896 'th soft'
+  stroke:
+    shape: 'long D with a tick/dash (Rawnd: thin long dash with a small dot above)'
+    direction: as D
+    relative_length: as D
+  joining: Forces a pen lift.
+  confusables:
+  - D
+  - TH
+  sources:
+  - UNI-NL 'Chinook'
+  - L2/10-159 Example 6 ('DH digraph' from Kamloops Wawa, with Latin transliteration)
+  - 'L2/09-184 (KMW51 p.3 line 7: h-digraph ''Dh'')'
+  - LJ1896 lesson XVI ('th soft')
+  confidence: med
+  labels:
+    identity: VERIFIED (in Unicode proposal)
+    attestation_in_chinook_text: UNVERIFIED (proposal figures not re-read as images)
+  notes: Not in the 1924 table or in Robertson's Table 2, which show one th. Attested in a Kamloops Wawa sample reproduced
+    in the proposals. Not offered on Corbett's keyboard.
+  unicode_variants: []
+- id: KH
+  category: consonant
+  unicode:
+  - U+1BC14
+  unicode_name: DUPLOYAN LETTER KK
+  chinook_value:
+    robertson: k’ (k + tick)
+    ipa: kʼ ~ qʼ (R2011 p.44 fn.47)
+  lejeune_latin: kh ('gutteral, explosive', LJ1924 p.5)
+  stroke:
+    shape: K stroke with a tick/dot near its upper (start) end; Unicode glyph changed to the dotted form after L2/12-329
+    direction: as K (down-left)
+    relative_length: as K
+  joining: Forces a pen lift (R2011 p.44).
+  confusables:
+  - K
+  - Q
+  - HL
+  - LH
+  sources:
+  - R2011 p.38, p.44 (ex.16c), p.44 fn.47
+  - LJ1924 p.5
+  - L2/12-329
+  - 'UNI-NL: ''written down and to the left'', ''Chinook'''
+  - GUIDE2024 p.1 (k' = k', q')
+  - RAWND render
+  confidence: high
+  labels:
+    identity: VERIFIED
+    q_overlap: VERIFIED (L2/12-329)
+  notes: L2/12-329 (Anderson 2012-10-15) says the dotted K was used for glottalised velar stops by native and European writers
+    alike, while the slashed K (Q here) is used by Le Jeune in free variation and by native writers for uvular stops. At
+    scan resolution kh, hl and lh differ only by the position of a small tick (LJ1924 p.5), and the UTC noted that HL is
+    nearly indistinguishable from Kk in isolation.
+  unicode_variants: []
+- id: Q
+  category: consonant
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: q (k + slash through the stroke); 'rare'
+    ipa: q
+  lejeune_latin: not given in the 1924 table (free variation with kh per L2/12-329)
+  stroke:
+    shape: K stroke crossed by a short slash
+    direction: as K
+    relative_length: as K
+  joining: Slash forces a pen lift.
+  confusables:
+  - KH
+  - K
+  sources:
+  - R2011 p.45 (ex.17)
+  - L2/12-329
+  - GUIDE2024 p.1 (k' and kr both glossed q')
+  confidence: med
+  labels:
+    identity: VERIFIED
+    separate_code_point: VERIFIED (none; unified with 1BC14 pending evidence)
+  notes: UNICODE GAP CANDIDATE. L2/12-329 expects a future disunified 'Duployan Letter Q' once Robertson's corpus evidence
+    is formalised. Until then, Q must be typed as KK and the slash is lost.
+  unicode_variants: []
+- id: KR
+  category: consonant
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: not in Table 2
+    ipa: qʼ (GUIDE2024 gloss)
+  lejeune_latin: kr ('an explosive articulation', LJ1924 p.5)
+  stroke:
+    shape: 'check-mark: a short stroke followed by a long upward stroke'
+    direction: down-left then up-right (INFERRED from the printed glyph)
+    relative_length: short:long about 1:2 (INFERRED)
+  joining: Not known. Appears in the vocabulary lists as an initial sound.
+  confusables:
+  - KH
+  - K
+  - L
+  sources:
+  - LJ1924 p.5 (Pronunciation list)
+  - GUIDE2024 p.1
+  - L2/10-159 Example 1 circles the p.5 inventory but lists no KR
+  confidence: med
+  labels:
+    identity: VERIFIED
+    stroke: INFERRED
+  notes: UNICODE GAP CANDIDATE. Shown in Le Jeune's own table and in the 2024 guide, not in Unicode. U+1BC3D (K R S) is
+    a different, quarter-arc consonant and should not be used.
+  unicode_variants: []
+- id: HL
+  category: consonant
+  unicode:
+  - U+1BC16
+  unicode_name: DUPLOYAN LETTER HL
+  chinook_value:
+    robertson: (not separate in Table 2)
+    ipa: ɬ ~ tɬ (INFERRED)
+  lejeune_latin: hl ('combined', LJ1924 p.5); contrast h-l 'separate'
+  stroke:
+    shape: L stroke with a tick/dot attached at its upper-left start (a Y-like branch in the printed table)
+    direction: as L (up-right)
+    relative_length: as L
+  joining: Combined = one pen-lift sign; separate h-l is an H dot followed by an L (written H + ZWNJ + L in Unicode, L2/09-184
+    KMW59 line 2).
+  confusables:
+  - L
+  - LH
+  - KH
+  - H
+  sources:
+  - LJ1924 p.5
+  - UNI-NL 'written up and to the right', 'Chinook'
+  - L2/09-184
+  - L2/12-329 (hL nearly indistinguishable from Kk)
+  confidence: high
+  labels:
+    identity: VERIFIED
+    ipa: INFERRED
+  notes: Le Jeune separates hl (combined) from lh (wet l) and from the two 'separate' sequences h-l, l-h. Robertson's Table
+    2 has a single L+tick = ɬ, so his sign collapses HL and LH. The Guide 2024 glosses only lh (= ɬ).
+  unicode_variants: []
+- id: LH
+  category: consonant
+  unicode:
+  - U+1BC17
+  unicode_name: DUPLOYAN LETTER LH
+  chinook_value:
+    robertson: ɬ (l + tick)
+    ipa: ɬ (R2011, GUIDE2024); Le Jeune's 'wet l' suggests a palatalised l (INFERRED)
+  lejeune_latin: lh ('wet l, lla, lya', LJ1924 p.5)
+  stroke:
+    shape: L stroke with a tick/dot near its lower (start) end
+    direction: as L
+    relative_length: as L
+  joining: Forces a pen lift.
+  confusables:
+  - HL
+  - L
+  - KH
+  sources:
+  - R2011 p.38, p.44 (ex.16a)
+  - LJ1924 p.5
+  - GUIDE2024 p.1 ('lh (=ɬ)', drawn up)
+  - UNI-NL
+  confidence: high
+  labels:
+    identity: VERIFIED
+    phonetic_value: VERIFIED (R2011) / INFERRED (palatal reading)
+  notes: Le Jeune's gloss 'wet l, lla, lya' points to a palatalised or lateral sound; Robertson and the guide give ɬ. Recorded
+    as an open phonetic question, not a graphic one.
+  unicode_variants: []
+- id: RH
+  category: consonant
+  unicode:
+  - U+1BC18
+  unicode_name: DUPLOYAN LETTER RH
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: unknown ('a very soft r, or an imitation')
+  lejeune_latin: 'not named (LJ1924: ''a very soft r, or an imitation, heard in some native languages'')'
+  stroke:
+    shape: 'R stroke with two ticks/dots (Rawnd: two small dots)'
+    direction: as R
+    relative_length: as R
+  joining: Forces a pen lift.
+  confusables:
+  - R
+  - LH
+  sources:
+  - LJ1924 p.5
+  - UNI-NL 'written up and to the right', 'Chinook'
+  - L2/10-159 Example 1 (RH circled)
+  confidence: med
+  labels:
+    identity: VERIFIED
+    value: VERIFIED (descriptive gloss only)
+  notes: Rare; Le Jeune glosses it only as a very soft r. No Robertson value.
+  unicode_variants: []
+- id: H
+  category: consonant
+  unicode:
+  - U+1BC00
+  unicode_name: DUPLOYAN LETTER H
+  chinook_value:
+    robertson: h
+    ipa: h
+  lejeune_latin: h ('always aspirate, never silent', LJ1924 p.5)
+  stroke:
+    shape: dot (point)
+    direction: none
+    relative_length: dot, Rawnd 99 x 99 units
+  joining: 'Non-connecting: forces a pen lift on both sides (R2011 p.44). Syllable-splitting ''fore and aft'' (L2/09-184).'
+  confusables:
+  - X
+  - NG
+  - CH
+  - TS
+  - TH
+  sources:
+  - R2011 p.38, p.44 (ex.5a)
+  - LJ1924 p.5
+  - 'UNI-NL: ''Chinook, Pernin, Sloan, Perrault'''
+  - L2/09-184
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: '''h-h'' (a lighter duplicated aspirate) is written as two dots (LJ1924 p.5): a sequence, not a new sign. Sequences
+    h-l, l-h, h-k are written as separate signs with a visible gap (LJ1924 p.5).'
+  unicode_variants: []
+- id: X
+  category: consonant
+  unicode:
+  - U+1BC01
+  unicode_name: DUPLOYAN LETTER X
+  chinook_value:
+    robertson: x (a tilde-like or lightning-bolt shape)
+    ipa: 'x ~ χ (GUIDE2024: x, x̣)'
+  lejeune_latin: not in the Chinook Rudiments table (Salishan letter; L2/09-184)
+  stroke:
+    shape: small S-like hook / lightning bolt
+    direction: none
+    relative_length: Rawnd 109 x 297 units
+  joining: Non-connecting like H (R2011 pp.40, 44).
+  confusables:
+  - H
+  - PUNCT_X_BOUNDARY
+  sources:
+  - R2011 p.38, p.40 (ex.5b), p.44
+  - UNI-NL 'Salishan'
+  - GUIDE2024 p.1
+  - L2/09-184
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: Letter x (Salish velar/uvular fricative) is a different sign from the cross-shaped boundary mark <x> or <+> used
+    as punctuation by Indigenous writers (see PUNCT_X_BOUNDARY); R2011 p.48 itself spells both 'x'.
+  unicode_variants: []
+- id: A
+  category: vowel
+  unicode:
+  - U+1BC41
+  unicode_name: DUPLOYAN LETTER A
+  chinook_value:
+    robertson: a
+    ipa: a ~ ə
+  lejeune_latin: a ('a as in arm, are')
+  stroke:
+    shape: small circle (Rawnd outer diameter 270; centreline 200)
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - O
+  - NUM_LINK_A
+  unicode_variants:
+  - U+1BC42
+  sources:
+  - R2011 p.38, p.40 (ex.4a)
+  - LJ1924 p.5
+  - LJ1898 p.2
+  - UNI-NL 1BC41
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: Also the numeral connector. The community text decoded from Robertson's blog uses U+1BC42 (SLOAN OW, 'reverse circle')
+    for the mirrored a, e.g. in ta (decoded from the Unicode text of the post, COMPUTED); Corbett's keyboard keys it 'a\2'.
+- id: O
+  category: vowel
+  unicode:
+  - U+1BC44
+  unicode_name: DUPLOYAN LETTER O
+  chinook_value:
+    robertson: o
+    ipa: o ~ ɔ
+  lejeune_latin: o ('o as in note')
+  stroke:
+    shape: large circle (Rawnd diameter 370; centreline 300)
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - A
+  - OO
+  - OW
+  - NUM_0
+  unicode_variants:
+  - U+1BC44 U+034F U+034F U+034F
+  sources:
+  - R2011 p.38, p.40 (ex.4b), p.44 fn.45
+  - LJ1924 p.5
+  - UNI-NL 1BC44 'Chinook number 0'
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: Also the numeral 0. A large circle between two numerals is read as zero, so 'pap' (small circle) and '101' (large
+    circle) differ only by circle size (R2011 p.44 fn.45).
+- id: OO
+  category: vowel
+  unicode:
+  - U+1BC5B
+  unicode_name: DUPLOYAN LETTER OU
+  chinook_value:
+    robertson: u (R2011); Unicode proposal calls it 'Oo'
+    ipa: u ~ ʊ
+  lejeune_latin: oo ('oo as in food')
+  stroke:
+    shape: 'circle with an interior curved tick (Rawnd: circle with an inner hook)'
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - O
+  - OW
+  - WOO
+  unicode_variants:
+  - U+1BC5B U+034F U+034F U+034F
+  sources:
+  - R2011 p.38, p.40 (ex.6)
+  - LJ1924 p.5
+  - UNI-NL 1BC5B 'Chinook letter oo'
+  - L2/09-184 (naming discussion)
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: 'Name clash across sources: Le Jeune oo = Robertson u = Unicode OU = Corbett keyboard ''u''. Robertson''s Table
+    2 gives two shapes, a connecting form and a form ''used in isolation only'' (ex.6).'
+- id: OW
+  category: vowel
+  unicode:
+  - U+1BC5A
+  unicode_name: DUPLOYAN LETTER OW
+  chinook_value:
+    robertson: a͡w (R2011)
+    ipa: aw
+  lejeune_latin: ow ('ow as in owl')
+  stroke:
+    shape: circle with an interior dot
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - O
+  - OO
+  - WOW
+  unicode_variants:
+  - U+1BC5A U+034F U+034F U+034F
+  sources:
+  - R2011 p.38, p.44 (ex.15a)
+  - LJ1924 p.5
+  - UNI-NL 1BC5A
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: The dot forces a pen lift to the right but the sign can join a preceding letter (R2011 p.44, ex.15). Le Jeune's
+    ow = Robertson aw = Unicode OW.
+- id: E
+  category: vowel
+  unicode:
+  - U+1BC46
+  unicode_name: DUPLOYAN LETTER I
+  chinook_value:
+    robertson: i
+    ipa: i ~ e ~ ɪ
+  lejeune_latin: e ('e as in obey')
+  stroke:
+    shape: small quarter-arc, open to the right (Rawnd 170 x 270)
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: 'Arc vowel: curves with the flow; its opening flips with the entry angle of the preceding consonant (''primary''
+    vs ''secondary'' orientation in Unicode terms).'
+  confusables:
+  - U
+  - AN
+  - IN
+  - 'ON'
+  - UN
+  unicode_variants:
+  - U+1BC47
+  - U+1BC48
+  - U+1BC49
+  - U+1BC4A
+  - U+1BC4B
+  sources:
+  - R2011 p.38, p.40 (ex.3e)
+  - LJ1924 p.5
+  - UNI-NL 1BC46/1BC47
+  - CORBETT keyboard
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: 'Name clash: Le Jeune e = Robertson i = Unicode I (primary orientation). U+1BC47 (E) is the secondary orientation;
+    Corbett''s keyboard also exposes U+1BC48-4B as invariant ''i\6-9''. Orientation rotates with the preceding stroke (UNI-NL;
+    LJ1898 p.5).'
+- id: U
+  category: vowel
+  unicode:
+  - U+1BC51
+  unicode_name: DUPLOYAN LETTER U
+  chinook_value:
+    robertson: j͡u
+    ipa: ju
+  lejeune_latin: u ('u as in use')
+  stroke:
+    shape: quarter-circle (Rawnd bbox 370 x 370), concave up-right
+    direction: no inherent direction (R2011 p.45)
+    relative_length: n/a (size class)
+  joining: 'Arc vowel: curves with the flow; its opening flips with the entry angle of the preceding consonant (''primary''
+    vs ''secondary'' orientation in Unicode terms).'
+  confusables:
+  - E
+  unicode_variants:
+  - U+1BC52
+  - U+1BC53
+  sources:
+  - R2011 p.38, p.40 (ex.3f)
+  - LJ1924 p.5
+  - UNI-NL 1BC51
+  - CORBETT keyboard
+  - RAWND
+  confidence: high
+  labels:
+    identity: VERIFIED
+    orientation: VERIFIED (LJ1898 p.5) / INFERRED (rules)
+  notes: 'Name clash: Le Jeune u = Robertson j͡u = Unicode U = Corbett ''yu''. U+1BC52 (EU) is the secondary orientation
+    (''yu\2''); U+1BC53 (XW) is keyed ''eu'' on Corbett''s keyboard.'
+- id: AN
+  category: vowel
+  unicode:
+  - U+1BC64
+  unicode_name: DUPLOYAN LETTER NASAL A
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: nasalised vowel (INFERRED)
+  lejeune_latin: an
+  stroke:
+    shape: short quarter-arc mark above or below the consonant line (Rawnd 230 x 230)
+    direction: primary/secondary orientating; invariant direction up or down (UNI-NL)
+    relative_length: about one third of the P stroke (Rawnd bbox 230 x 230, stroke 70)
+  joining: Positions as a diacritic, an orientating vowel or an invariant vowel (UNI-NL header note).
+  confusables:
+  - IN
+  - 'ON'
+  - UN
+  sources:
+  - LJ1924 p.5 (four marks labelled an, in, on, un)
+  - UNI-NL 1BC61-1BC64
+  - L2/09-184 ('only intermittently appear in the Wawa texts')
+  - RAWND
+  confidence: med
+  labels:
+    identity: VERIFIED
+    orientation_of_each: INFERRED
+  notes: Listed in Le Jeune's inventory but, per the proposal, rare in running Chinook text. Robertson's Table 2 omits them.
+    The four marks differ by direction and side only, so they are mutually confusable at low resolution. In the 1924 table
+    they are drawn as short tilted ticks under the vowel row.
+  unicode_variants: []
+- id: IN
+  category: vowel
+  unicode:
+  - U+1BC63
+  unicode_name: DUPLOYAN LETTER NASAL I
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: nasalised vowel (INFERRED)
+  lejeune_latin: in
+  stroke:
+    shape: short quarter-arc mark above or below the consonant line (Rawnd 230 x 230)
+    direction: primary/secondary orientating; invariant direction up or down (UNI-NL)
+    relative_length: about one third of the P stroke (Rawnd bbox 230 x 230, stroke 70)
+  joining: Positions as a diacritic, an orientating vowel or an invariant vowel (UNI-NL header note).
+  confusables:
+  - AN
+  - 'ON'
+  - UN
+  sources:
+  - LJ1924 p.5 (four marks labelled an, in, on, un)
+  - UNI-NL 1BC61-1BC64
+  - L2/09-184 ('only intermittently appear in the Wawa texts')
+  - RAWND
+  confidence: med
+  labels:
+    identity: VERIFIED
+    orientation_of_each: INFERRED
+  notes: Listed in Le Jeune's inventory but, per the proposal, rare in running Chinook text. Robertson's Table 2 omits them.
+    The four marks differ by direction and side only, so they are mutually confusable at low resolution. In the 1924 table
+    they are drawn as short tilted ticks under the vowel row.
+  unicode_variants: []
+- id: 'ON'
+  category: vowel
+  unicode:
+  - U+1BC62
+  unicode_name: DUPLOYAN LETTER NASAL O
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: nasalised vowel (INFERRED)
+  lejeune_latin: 'on'
+  stroke:
+    shape: short quarter-arc mark above or below the consonant line (Rawnd 230 x 230)
+    direction: primary/secondary orientating; invariant direction up or down (UNI-NL)
+    relative_length: about one third of the P stroke (Rawnd bbox 230 x 230, stroke 70)
+  joining: Positions as a diacritic, an orientating vowel or an invariant vowel (UNI-NL header note).
+  confusables:
+  - AN
+  - IN
+  - UN
+  sources:
+  - LJ1924 p.5 (four marks labelled an, in, on, un)
+  - UNI-NL 1BC61-1BC64
+  - L2/09-184 ('only intermittently appear in the Wawa texts')
+  - RAWND
+  confidence: med
+  labels:
+    identity: VERIFIED
+    orientation_of_each: INFERRED
+  notes: Listed in Le Jeune's inventory but, per the proposal, rare in running Chinook text. Robertson's Table 2 omits them.
+    The four marks differ by direction and side only, so they are mutually confusable at low resolution. In the 1924 table
+    they are drawn as short tilted ticks under the vowel row.
+  unicode_variants: []
+- id: UN
+  category: vowel
+  unicode:
+  - U+1BC61
+  unicode_name: DUPLOYAN LETTER NASAL U
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: nasalised vowel (INFERRED)
+  lejeune_latin: un
+  stroke:
+    shape: short quarter-arc mark above or below the consonant line (Rawnd 230 x 230)
+    direction: primary/secondary orientating; invariant direction up or down (UNI-NL)
+    relative_length: about one third of the P stroke (Rawnd bbox 230 x 230, stroke 70)
+  joining: Positions as a diacritic, an orientating vowel or an invariant vowel (UNI-NL header note).
+  confusables:
+  - AN
+  - IN
+  - 'ON'
+  sources:
+  - LJ1924 p.5 (four marks labelled an, in, on, un)
+  - UNI-NL 1BC61-1BC64
+  - L2/09-184 ('only intermittently appear in the Wawa texts')
+  - RAWND
+  confidence: med
+  labels:
+    identity: VERIFIED
+    orientation_of_each: INFERRED
+  notes: Listed in Le Jeune's inventory but, per the proposal, rare in running Chinook text. Robertson's Table 2 omits them.
+    The four marks differ by direction and side only, so they are mutually confusable at low resolution. In the 1924 table
+    they are drawn as short tilted ticks under the vowel row.
+  unicode_variants: []
+- id: WA
+  category: diphthong
+  unicode:
+  - U+1BC5C
+  unicode_name: DUPLOYAN LETTER WA
+  chinook_value:
+    robertson: w͡a
+    ipa: w + inner vowel (INFERRED from the sign construction)
+  lejeune_latin: wa ('wa as in wax')
+  stroke:
+    shape: 'outer circle enclosing the second vowel sign (Rawnd: 470 diameter outer circle)'
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18). Corbett's U+034F x3 switches
+    primary to secondary orientation for this letter.
+  confusables:
+  - WO
+  - WOW
+  - A
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - R2011 p.38, p.42 (ex.10), p.44
+  - L2/10-159 Example 1 and 4
+  - UNI-NL
+  - CORBETT user-documentation.md
+  - GUIDE2024 p.1
+  confidence: high
+  labels:
+    identity: VERIFIED
+    construction_rule: INFERRED
+  notes: Unicode also tags this code point 'Chinook number hundreds' (UNI-NL).
+  unicode_variants: []
+- id: WO
+  category: diphthong
+  unicode:
+  - U+1BC5D
+  unicode_name: DUPLOYAN LETTER WO
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED from the sign construction)
+  lejeune_latin: woe
+  stroke:
+    shape: 'outer circle enclosing the second vowel sign (Rawnd: 470 diameter outer circle)'
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18). Corbett's U+034F x3 switches
+    primary to secondary orientation for this letter.
+  confusables:
+  - WA
+  - WOO
+  - O
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - R2011 p.38, p.42 (ex.10), p.44
+  - L2/10-159 Example 1 and 4
+  - UNI-NL
+  - CORBETT user-documentation.md
+  - GUIDE2024 p.1
+  confidence: high
+  labels:
+    identity: VERIFIED
+    construction_rule: INFERRED
+  notes: Corbett keyboard 'wo'; GUIDE2024 'wo'. L2/10-159 Example 1 circles 'Wo'.
+  unicode_variants: []
+- id: WE
+  category: diphthong
+  unicode:
+  - U+1BC5E
+  unicode_name: DUPLOYAN LETTER WI
+  chinook_value:
+    robertson: w͡i
+    ipa: w + inner vowel (INFERRED from the sign construction)
+  lejeune_latin: we
+  stroke:
+    shape: 'outer circle enclosing the second vowel sign (Rawnd: 470 diameter outer circle)'
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18). Corbett's U+034F x3 switches
+    primary to secondary orientation for this letter.
+  confusables:
+  - WEYIE
+  - WAY
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - R2011 p.38, p.42 (ex.10), p.44
+  - L2/10-159 Example 1 and 4
+  - UNI-NL
+  - CORBETT user-documentation.md
+  - GUIDE2024 p.1
+  confidence: high
+  labels:
+    identity: VERIFIED
+    construction_rule: INFERRED
+  notes: Le Jeune we = Robertson w͡i = Unicode WI = Corbett 'wi'. L2/10-159 Example 4 contrasts 'We' and 'Weyi' in a Kamloops
+    Wawa sample.
+  unicode_variants: []
+- id: WEYIE
+  category: diphthong
+  unicode:
+  - U+1BC5F
+  unicode_name: DUPLOYAN LETTER WEI
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED from the sign construction)
+  lejeune_latin: weyie
+  stroke:
+    shape: 'outer circle enclosing the second vowel sign (Rawnd: 470 diameter outer circle)'
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18). Corbett's U+034F x3 switches
+    primary to secondary orientation for this letter.
+  confusables:
+  - WE
+  - WAY
+  - WEEYA
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - R2011 p.38, p.42 (ex.10), p.44
+  - L2/10-159 Example 1 and 4
+  - UNI-NL
+  - CORBETT user-documentation.md
+  - GUIDE2024 p.1
+  confidence: med
+  labels:
+    identity: VERIFIED
+    construction_rule: INFERRED
+  notes: Match of WEI to Le Jeune's weyie rests on L2/10-159 (Example 1 lists 'Wo, Wow, We, Weyi' as the encoded compounds)
+    and on the mirror-hook glyph in Rawnd (COMPUTED). UNI-NL tags it 'Salishan'. Possibly = GUIDE2024 'wii' (INFERRED).
+  unicode_variants: []
+- id: WOW
+  category: diphthong
+  unicode:
+  - U+1BC60
+  unicode_name: DUPLOYAN LETTER WOW
+  chinook_value:
+    robertson: w͠aw (triphthong)
+    ipa: w + inner vowel (INFERRED from the sign construction)
+  lejeune_latin: wow
+  stroke:
+    shape: 'outer circle enclosing the second vowel sign (Rawnd: 470 diameter outer circle)'
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18). Corbett's U+034F x3 switches
+    primary to secondary orientation for this letter.
+  confusables:
+  - OW
+  - WA
+  - OWA_2
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - R2011 p.38, p.42 (ex.10), p.44
+  - L2/10-159 Example 1 and 4
+  - UNI-NL
+  - CORBETT user-documentation.md
+  - GUIDE2024 p.1
+  confidence: med
+  labels:
+    identity: VERIFIED
+    construction_rule: INFERRED
+  notes: 'Le Jeune wow = Robertson w͠aw = Unicode WOW = Corbett ''waw''. Rawnd glyph: dotted inner circle inside the outer
+    circle, matching LJ1924 p.5. The dot forces a pen lift (R2011 p.44 ex.15b). UNI-NL tags it ''Salishan'' although Le
+    Jeune''s table and Kwawt (Quaaout, R2011 ex.15b) use it.'
+  unicode_variants: []
+- id: WOO
+  category: diphthong
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED)
+  lejeune_latin: woo
+  stroke:
+    shape: outer circle enclosing the second vowel sign
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - WO
+  - OO
+  - OWA_1
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - GUIDE2024 p.1 (circle vowels)
+  - L2/10-159 Example 1 (circles only Wo, Wow, We, Weyi)
+  confidence: med
+  labels:
+    identity: VERIFIED (listed by Le Jeune)
+    code_point: VERIFIED (absent from UNI-NL)
+    matching_to_guide_labels: INFERRED
+  notes: UNICODE GAP CANDIDATE. No Unicode code point. GUIDE2024 'wu'. Probably a circle enclosing the oo hook (INFERRED
+    from the 1924 glyph).
+  unicode_variants: []
+- id: OWA_1
+  category: diphthong
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED)
+  lejeune_latin: owa
+  stroke:
+    shape: outer circle enclosing the second vowel sign
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - OWA_2
+  - WA
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - GUIDE2024 p.1 (circle vowels)
+  - L2/10-159 Example 1 (circles only Wo, Wow, We, Weyi)
+  confidence: med
+  labels:
+    identity: VERIFIED (listed by Le Jeune)
+    code_point: VERIFIED (absent from UNI-NL)
+    matching_to_guide_labels: INFERRED
+  notes: UNICODE GAP CANDIDATE. No code point. Le Jeune lists two forms of owa; this is the first (circle containing an
+    extra inner loop). GUIDE2024 'owa'.
+  unicode_variants: []
+- id: OWA_2
+  category: diphthong
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED)
+  lejeune_latin: owa (second form, 'also')
+  stroke:
+    shape: outer circle enclosing the second vowel sign
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - OWA_1
+  - WOW
+  - OW
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - GUIDE2024 p.1 (circle vowels)
+  - L2/10-159 Example 1 (circles only Wo, Wow, We, Weyi)
+  confidence: med
+  labels:
+    identity: VERIFIED (listed by Le Jeune)
+    code_point: VERIFIED (absent from UNI-NL)
+    matching_to_guide_labels: INFERRED
+  notes: UNICODE GAP CANDIDATE. No code point. The second form of owa has an interior dot (LJ1924 p.5); GUIDE2024 'awa'
+    may be this sign (INFERRED).
+  unicode_variants: []
+- id: WAY
+  category: diphthong
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED)
+  lejeune_latin: way
+  stroke:
+    shape: outer circle enclosing the second vowel sign
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - WE
+  - WEYIE
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - GUIDE2024 p.1 (circle vowels)
+  - L2/10-159 Example 1 (circles only Wo, Wow, We, Weyi)
+  confidence: med
+  labels:
+    identity: VERIFIED (listed by Le Jeune)
+    code_point: VERIFIED (absent from UNI-NL)
+    matching_to_guide_labels: INFERRED
+  notes: 'UNICODE GAP CANDIDATE. No code point. L2/09-184 describes the proposal''s earlier compounding mechanism but the
+    final encoding has no way. Not matched to a GUIDE2024 label (INFERRED: possibly ''wi''/''wii'').'
+  unicode_variants: []
+- id: WEEYA
+  category: diphthong
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: (not in Table 2)
+    ipa: w + inner vowel (INFERRED)
+  lejeune_latin: weeya
+  stroke:
+    shape: outer circle enclosing the second vowel sign
+    direction: no inherent direction
+    relative_length: outer circle about 1.25 x O
+  joining: Circle vowels attach tangentially. Placement is fixed by the neighbouring strokes (orientation rules in R2011 p.45). After K or L the circle must lie to the right of the stroke (R2011 p.45, ex.18).
+  confusables:
+  - WEYIE
+  - WE
+  sources:
+  - LJ1924 p.5 (compound vowels list)
+  - GUIDE2024 p.1 (circle vowels)
+  - L2/10-159 Example 1 (circles only Wo, Wow, We, Weyi)
+  confidence: med
+  labels:
+    identity: VERIFIED (listed by Le Jeune)
+    code_point: VERIFIED (absent from UNI-NL)
+    matching_to_guide_labels: INFERRED
+  notes: UNICODE GAP CANDIDATE. No code point. The 1924 glyph is a flattened outer circle enclosing a small 'o'-like curl.
+    GUIDE2024 'wii' may be this sign (INFERRED).
+  unicode_variants: []
+- id: OO_ISOLATED
+  category: vowel
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: u (second form, used in isolation only)
+    ipa: u
+  lejeune_latin: oo
+  stroke:
+    shape: circle with a short interior vertical tick (R2011 ex.6b)
+    direction: none
+    relative_length: as OO
+  joining: Used only when the sign stands alone (R2011 p.40).
+  confusables:
+  - OO
+  - O
+  sources:
+  - R2011 p.38, p.40 (ex.6b)
+  confidence: low
+  labels:
+    identity: VERIFIED (R2011 only)
+    attestation_in_texts: UNVERIFIED
+  notes: UNICODE GAP CANDIDATE (allograph). Robertson says the vowel 'u' (Le Jeune oo) has two shapes; Unicode has one.
+    No second source for the isolated shape was found.
+  unicode_variants: []
+- id: NUM_1
+  category: numeral
+  unicode:
+  - U+1BC02
+  unicode_name: (shared with letter P; UNI-NL annotation 'Chinook number 1')
+  chinook_value:
+    robertson: '#1'
+    ipa: null
+  lejeune_latin: '1'
+  stroke:
+    shape: same as letter P
+    direction: as P
+    relative_length: as letter
+  joining: 'Identical adjacent straight numerals (1-5) are not joined; a small circle (the letter a) is inserted: 11 = P-a-P,
+    22 = T-a-T, 33, 44 (LJ1896 lesson XVII; R2011 p.44, ex.14).'
+  confusables:
+  - P
+  same_shape_as: P
+  numeral_value: 1
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_2
+  category: numeral
+  unicode:
+  - U+1BC03
+  unicode_name: (shared with letter T; UNI-NL annotation 'Chinook number 2')
+  chinook_value:
+    robertson: '#2'
+    ipa: null
+  lejeune_latin: '2'
+  stroke:
+    shape: same as letter T
+    direction: as T
+    relative_length: as letter
+  joining: 'Identical adjacent straight numerals (1-5) are not joined; a small circle (the letter a) is inserted: 11 = P-a-P,
+    22 = T-a-T, 33, 44 (LJ1896 lesson XVII; R2011 p.44, ex.14).'
+  confusables:
+  - T
+  same_shape_as: T
+  numeral_value: 2
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_3
+  category: numeral
+  unicode:
+  - U+1BC04
+  unicode_name: (shared with letter F; UNI-NL annotation 'Chinook number 3')
+  chinook_value:
+    robertson: '#3'
+    ipa: null
+  lejeune_latin: '3'
+  stroke:
+    shape: same as letter F
+    direction: as F
+    relative_length: as letter
+  joining: 'Identical adjacent straight numerals (1-5) are not joined; a small circle (the letter a) is inserted: 11 = P-a-P,
+    22 = T-a-T, 33, 44 (LJ1896 lesson XVII; R2011 p.44, ex.14).'
+  confusables:
+  - F
+  same_shape_as: F
+  numeral_value: 3
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_4
+  category: numeral
+  unicode:
+  - U+1BC05
+  unicode_name: (shared with letter K; UNI-NL annotation 'Chinook number 4')
+  chinook_value:
+    robertson: '#4'
+    ipa: null
+  lejeune_latin: '4'
+  stroke:
+    shape: same as letter K
+    direction: as K
+    relative_length: as letter
+  joining: 'Identical adjacent straight numerals (1-5) are not joined; a small circle (the letter a) is inserted: 11 = P-a-P,
+    22 = T-a-T, 33, 44 (LJ1896 lesson XVII; R2011 p.44, ex.14).'
+  confusables:
+  - K
+  same_shape_as: K
+  numeral_value: 4
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_5
+  category: numeral
+  unicode:
+  - U+1BC0B
+  unicode_name: (shared with letter R; UNI-NL annotation 'Chinook number 5')
+  chinook_value:
+    robertson: '#5'
+    ipa: null
+  lejeune_latin: '5'
+  stroke:
+    shape: same as letter R
+    direction: as R
+    relative_length: as letter
+  joining: 'Identical adjacent straight numerals (1-5) are not joined; a small circle (the letter a) is inserted: 11 = P-a-P,
+    22 = T-a-T, 33, 44 (LJ1896 lesson XVII; R2011 p.44, ex.14).'
+  confusables:
+  - R
+  same_shape_as: R
+  numeral_value: 5
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_6
+  category: numeral
+  unicode:
+  - U+1BC19
+  unicode_name: (shared with letter M_semicircle; UNI-NL annotation 'Chinook number 6')
+  chinook_value:
+    robertson: '#6'
+    ipa: null
+  lejeune_latin: '6'
+  stroke:
+    shape: same as letter M_semicircle, reduced to about half size
+    direction: as M_semicircle
+    relative_length: 0.5 x letter size
+  joining: Joins cursively like the letter.
+  confusables:
+  - M_semicircle
+  same_shape_as: M_semicircle
+  numeral_value: 6
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: The numerals are letters. Half-size forms for 6-9 are a stylistic alternate only; Unicode has no variation sequence
+    (L2/09-364 asks the UTC) and Rawnd renders them as full letters (COMPUTED).
+  unicode_variants: []
+- id: NUM_7
+  category: numeral
+  unicode:
+  - U+1BC1A
+  unicode_name: (shared with letter N_semicircle; UNI-NL annotation 'Chinook number 7')
+  chinook_value:
+    robertson: '#7'
+    ipa: null
+  lejeune_latin: '7'
+  stroke:
+    shape: same as letter N_semicircle, reduced to about half size
+    direction: as N_semicircle
+    relative_length: 0.5 x letter size
+  joining: Joins cursively like the letter.
+  confusables:
+  - N_semicircle
+  same_shape_as: N_semicircle
+  numeral_value: 7
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: The numerals are letters. Half-size forms for 6-9 are a stylistic alternate only; Unicode has no variation sequence
+    (L2/09-364 asks the UTC) and Rawnd renders them as full letters (COMPUTED).
+  unicode_variants: []
+- id: NUM_8
+  category: numeral
+  unicode:
+  - U+1BC1B
+  unicode_name: (shared with letter SH_semicircle; UNI-NL annotation 'Chinook number 8')
+  chinook_value:
+    robertson: '#8'
+    ipa: null
+  lejeune_latin: '8'
+  stroke:
+    shape: same as letter SH_semicircle, reduced to about half size
+    direction: as SH_semicircle
+    relative_length: 0.5 x letter size
+  joining: Joins cursively like the letter.
+  confusables:
+  - SH_semicircle
+  same_shape_as: SH_semicircle
+  numeral_value: 8
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: The numerals are letters. Half-size forms for 6-9 are a stylistic alternate only; Unicode has no variation sequence
+    (L2/09-364 asks the UTC) and Rawnd renders them as full letters (COMPUTED).
+  unicode_variants: []
+- id: NUM_9
+  category: numeral
+  unicode:
+  - U+1BC1C
+  unicode_name: (shared with letter S_semicircle; UNI-NL annotation 'Chinook number 9')
+  chinook_value:
+    robertson: '#9'
+    ipa: null
+  lejeune_latin: '9'
+  stroke:
+    shape: same as letter S_semicircle, reduced to about half size
+    direction: as S_semicircle
+    relative_length: 0.5 x letter size
+  joining: Joins cursively like the letter.
+  confusables:
+  - S_semicircle
+  same_shape_as: S_semicircle
+  numeral_value: 9
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: The numerals are letters. Half-size forms for 6-9 are a stylistic alternate only; Unicode has no variation sequence
+    (L2/09-364 asks the UTC) and Rawnd renders them as full letters (COMPUTED).
+  unicode_variants: []
+- id: NUM_0
+  category: numeral
+  unicode:
+  - U+1BC44
+  unicode_name: (shared with letter O; UNI-NL annotation 'Chinook number 0')
+  chinook_value:
+    robertson: '#0'
+    ipa: null
+  lejeune_latin: '0'
+  stroke:
+    shape: same as letter O
+    direction: as O
+    relative_length: as letter
+  joining: Joins cursively like the letter.
+  confusables:
+  - O
+  same_shape_as: O
+  numeral_value: 0
+  sources:
+  - R2011 p.38, p.40, p.44 (ex.14), p.49-50
+  - LJ1896 lesson XVII
+  - LJ1898 p.2 ('3 Numerals')
+  - LJ1924 p.5 (digits row)
+  - UNI-NL
+  - L2/09-364 / L2/10-026 numerals paragraph
+  confidence: high
+  labels:
+    identity: VERIFIED
+    half_size: VERIFIED (LJ1896; L2/09-364)
+  notes: 'The numerals are letters. '
+  unicode_variants: []
+- id: NUM_LINK_A
+  category: numeral
+  unicode:
+  - U+1BC41
+  unicode_name: 'DUPLOYAN LETTER A (UNI-NL: ''Chinook number tens'')'
+  chinook_value:
+    robertson: a; connector of identical straight numerals
+    ipa: null
+  lejeune_latin: a
+  stroke:
+    shape: small circle
+    direction: none
+    relative_length: smaller than the O/zero circle
+  joining: Inserted between identical straight numerals; in the Hanzi-style system also stands for ten when a ones digit
+    follows (L2/10-026).
+  confusables:
+  - A
+  - O
+  - NUM_0
+  same_shape_as: A
+  sources:
+  - R2011 p.44 (ex.14, fn.45), p.50
+  - LJ1896 lesson XVII
+  - L2/10-026 numerals paragraph
+  - UNI-NL 1BC41
+  confidence: high
+  labels:
+    identity: VERIFIED
+    hanzi_style_reading: VERIFIED (proposal) / INFERRED (whether Le Jeune used it)
+  notes: 'Ambiguity: ''tap'' can be the syllable or 21; ''pap'' can be the syllable or 11 (R2011 p.50: ''it could be difficult
+    to tell a word from a number''). The NamesList label ''tens'' for A is the proposal''s Hanzi-style model, not an attested
+    Le Jeune usage that could be verified.'
+  unicode_variants: []
+- id: NUM_HUNDRED
+  category: numeral
+  unicode:
+  - U+1BC5C
+  unicode_name: 'DUPLOYAN LETTER WA (UNI-NL: ''Chinook number hundreds'')'
+  chinook_value:
+    robertson: (not mentioned)
+    ipa: null
+  lejeune_latin: 100 = '1' + wa-like circle (LJ1896 'b' with an interior mark)
+  stroke:
+    shape: P stroke followed by the WA circle (circle with an interior mark); 100 in LJ1896 is drawn as 'b' with an internal
+      tick
+    direction: as P
+    relative_length: as P + WA
+  joining: 'Hanzi-style reading: P (one) + WA (hundred) etc. Rawnd renders P+WA as a ''b'' with a circle-in-circle bowl
+    (COMPUTED).'
+  confusables:
+  - WA
+  - NUM_0
+  same_shape_as: WA
+  sources:
+  - LJ1896 lesson XVII
+  - L2/10-026 numerals paragraph
+  - UNI-NL 1BC5C
+  - RAWND render
+  confidence: med
+  labels:
+    identity: VERIFIED (LJ1896 image) / INFERRED (reading as P+WA)
+  notes: In the 1896 table 10 is P + O (large circle) and 100 is 'b' with a mark inside the bowl, which fits the proposal's
+    P + WA, but this is not proven.
+  unicode_variants: []
+- id: NUM_ENCLOSE_1000
+  category: numeral
+  unicode:
+  - U+20DD
+  unicode_name: COMBINING ENCLOSING CIRCLE (Rawnd renders it around a preceding numeral)
+  chinook_value:
+    robertson: (not mentioned)
+    ipa: null
+  lejeune_latin: 1000 = '1' in a circle
+  stroke:
+    shape: circle enclosing the whole numeral group
+    direction: none
+    relative_length: about 1070 units in Rawnd
+  joining: 'Encloses the preceding group of up to five characters; nests for millions (L2/10-026). LJ1896: 1000 = 1 in a
+    circle; 10000 = 10 in a circle; 100000 = 100 in a thick circle.'
+  confusables:
+  - O
+  - LIKALISTI
+  sources:
+  - LJ1896 lesson XVII
+  - L2/10-026
+  - L2/09-364
+  - RAWND render (P + U+20DD gives 1 in a circle)
+  confidence: high
+  labels:
+    identity: VERIFIED
+    rawnd_support: COMPUTED
+  notes: Representable with U+20DD; the nesting behaviour for millions (double circle in LJ1896) is not tested.
+  unicode_variants: []
+- id: NUM_ENCLOSE_1000000
+  category: numeral
+  unicode:
+  - U+20DD U+20DD
+  unicode_name: two nested COMBINING ENCLOSING CIRCLE (INFERRED encoding)
+  chinook_value:
+    robertson: (not mentioned)
+    ipa: null
+  lejeune_latin: 1,000,000 = '1' in a double circle
+  stroke:
+    shape: double concentric circle around the numeral
+    direction: none
+    relative_length: n/a
+  joining: Nesting per L2/10-026; unverified in Rawnd.
+  confusables:
+  - NUM_ENCLOSE_1000
+  sources:
+  - LJ1896 lesson XVII
+  - L2/10-026
+  confidence: low
+  labels:
+    identity: VERIFIED (image)
+    encoding: INFERRED
+  notes: UNICODE GAP CANDIDATE (nesting).
+  unicode_variants: []
+- id: LIKALISTI
+  category: logogram
+  unicode:
+  - U+1BC9C
+  unicode_name: DUPLOYAN SIGN O WITH CROSS
+  chinook_value:
+    robertson: likalisti 'eucharist'
+    ipa: null
+  lejeune_latin: likalisti (and likalisti sign)
+  stroke:
+    shape: circle (O) containing a plus-shaped cross
+    direction: none
+    relative_length: about the size of O (Rawnd 570 x 570 with the cross)
+  joining: Non-joining; spaced as a word, not a syllable (L2/09-184).
+  confusables:
+  - NUM_ENCLOSE_1000
+  - O
+  sources:
+  - R2011 p.49 (ex.27, fn.53)
+  - L2/09-184 (KMW101 p.1 line 28)
+  - 'UNI-NL: ''Chinook Likalisti'''
+  - BLOG 2019-05-15
+  - CORBETT keyboard (<0+>)
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: One of only two logographs in the proposal's reserved range (x24-x2F reserved for others).
+  unicode_variants: []
+- id: CAL_EMBER
+  category: logogram
+  unicode:
+  - U+2463
+  unicode_name: CIRCLED DIGIT FOUR
+  chinook_value:
+    robertson: Ember days (likatita)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''Ember days (likatita)''
+    is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_SACRED_HEART
+  category: logogram
+  unicode:
+  - U+E003
+  unicode_name: 'PUA: HEART WITH CROSS (Rawnd private use)'
+  chinook_value:
+    robertson: Feast of the Sacred Heart
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT user-documentation.md (U+E003 list); keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''Feast of the Sacred
+    Heart'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_ALL_SOULS
+  category: logogram
+  unicode:
+  - U+2620
+  unicode_name: SKULL AND CROSSBONES
+  chinook_value:
+    robertson: All Souls' Day (pirgatori tilikom klaska son)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''All Souls'' Day
+    (pirgatori tilikom klaska son)'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_MOON_NEW
+  category: logogram
+  unicode:
+  - U+1F31A
+  - U+FE0E
+  unicode_name: NEW MOON WITH FACE + VS15
+  chinook_value:
+    robertson: new moon (pus shako chi mun)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''new moon (pus shako
+    chi mun)'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_MOON_FIRST_Q
+  category: logogram
+  unicode:
+  - U+1F31B
+  - U+FE0E
+  unicode_name: FIRST QUARTER MOON WITH FACE + VS15
+  chinook_value:
+    robertson: first quarter (pus mun sitkom aias)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''first quarter (pus
+    mun sitkom aias)'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_MOON_FULL
+  category: logogram
+  unicode:
+  - U+1F31D
+  - U+FE0E
+  unicode_name: FULL MOON WITH FACE + VS15
+  chinook_value:
+    robertson: full moon (pus mun drit rawnd)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''full moon (pus mun
+    drit rawnd)'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CAL_MOON_LAST_Q
+  category: logogram
+  unicode:
+  - U+1F31C
+  - U+FE0E
+  unicode_name: LAST QUARTER MOON WITH FACE + VS15
+  chinook_value:
+    robertson: last quarter (pus mun sitkom kopit)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''last quarter (pus
+    mun sitkom kopit)'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: CROSS_POMMY
+  category: logogram
+  unicode:
+  - U+E001
+  unicode_name: 'PUA: LATIN CROSS POMMEE (Rawnd private use)'
+  chinook_value:
+    robertson: Latin cross (pommy); also U+271D LATIN CROSS
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: borrowed pictorial symbol
+    direction: none
+    relative_length: n/a
+  joining: Non-joining symbol.
+  confusables: []
+  sources:
+  - CORBETT keyboard
+  - (primary Kamloops Wawa calendar page not located)
+  confidence: low
+  labels:
+    identity: UNVERIFIED primary
+    unicode_mapping: VERIFIED (font/keyboard docs)
+  notes: 'UNICODE GAP CANDIDATE (borrowed or private-use code point; no Duployan code point). Meaning ''Latin cross (pommy);
+    also U+271D LATIN CROSS'' is reported by Corbett''s keyboard help, which cites the Kamloops Wawa calendar; the calendar layout is described in BLOG 2014-06-24; these symbols have not been checked on a scanned page.'
+  unicode_variants: []
+- id: PUNCT_EQ_BREAK
+  category: punctuation
+  unicode:
+  - U+1BC9F
+  unicode_name: DUPLOYAN PUNCTUATION CHINOOK FULL STOP
+  chinook_value:
+    robertson: <=> (line-final break in mid-word, Le Jeune; phrase/sentence boundary, Indigenous writers)
+    ipa: null
+  lejeune_latin: '='
+  stroke:
+    shape: double short horizontal dash (equals sign)
+    direction: horizontal
+    relative_length: about one P stroke wide (Rawnd 570 x 249)
+  joining: Non-joining.
+  confusables:
+  - T
+  - D
+  - PUNCT_X_BOUNDARY
+  sources:
+  - R2011 p.48 (ex.23)
+  - L2/09-184 ('used fairly frequently like a period or colon')
+  - UNI-NL 1BC9F
+  - CORBETT keyboard ('introduces a new line of dialogue')
+  confidence: high
+  labels:
+    identity: VERIFIED
+    function: VERIFIED (conflicting descriptions)
+  notes: 'Name vs use: the Unicode name says ''full stop''; Robertson (Le Jeune) says a mid-word line-break hyphen; Corbett''s
+    keyboard says a dialogue introducer. Three descriptions, one glyph.'
+  unicode_variants: []
+- id: PUNCT_X_BOUNDARY
+  category: punctuation
+  unicode:
+  - U+2E3C
+  unicode_name: STENOGRAPHIC FULL STOP (borrowed; Corbett keyboard key '<x>')
+  chinook_value:
+    robertson: '<x> or <+>: phrase/sentence boundary'
+    ipa: null
+  lejeune_latin: <X> in Le Jeune-edited text (BLOG 2019-05-15 sample)
+  stroke:
+    shape: cross (x or +)
+    direction: none
+    relative_length: small, Rawnd 246 x 246
+  joining: Non-joining; separates syllables and words (L2/09-184 for x letter; for the mark, INFERRED).
+  confusables:
+  - X
+  - PUNCT_EQ_BREAK
+  sources:
+  - R2011 p.48 (ex.22)
+  - BLOG 2019-05-15
+  - CORBETT keyboard
+  - RAWND render
+  confidence: med
+  labels:
+    identity: VERIFIED
+    borrowed_code_point: VERIFIED (Corbett)
+  notes: UNICODE GAP CANDIDATE. No Duployan code point; the borrowed U+2E3C is intended for Pitman-type full stops. Not
+    the same sign as letter X.
+  unicode_variants: []
+- id: PUNCT_BAR_EMPHASIS
+  category: punctuation
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: 'one or a few stacked horizontal bars topped by dots, above a word: emphasis'
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: horizontal bars (1-3) with one or more dots above
+    direction: horizontal
+    relative_length: as long as the word
+  joining: Placed above the word.
+  confusables: []
+  sources:
+  - R2011 p.49 (ex.25, fn.49)
+  confidence: low
+  labels:
+    identity: VERIFIED (R2011 only)
+    attribution: UNVERIFIED (Indigenous writers; Le Jeune use not shown)
+  notes: UNICODE GAP CANDIDATE. Robertson could not represent it in his word processor.
+  unicode_variants: []
+- id: PUNCT_DOT_UNDERLINE
+  category: punctuation
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: dotted underline marking proper names (rare)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: dotted line under a name
+    direction: horizontal
+    relative_length: as long as the name
+  joining: Placed under the word.
+  confusables: []
+  sources:
+  - R2011 p.48-49 (ex.24)
+  confidence: low
+  labels:
+    identity: VERIFIED (R2011 only)
+  notes: UNICODE GAP CANDIDATE. Rare; names are mostly left unsyllabified (R2011 p.47).
+  unicode_variants: []
+- id: PUNCT_SYLLABLE_BREAK
+  category: punctuation
+  unicode:
+  - U+200C
+  unicode_name: ZERO WIDTH NON-JOINER
+  chinook_value:
+    robertson: small space between syllables
+    ipa: null
+  lejeune_latin: .
+  stroke:
+    shape: small gap, no mark
+    direction: none
+    relative_length: about one stroke width
+  joining: Breaks the cursive connection and resets the baseline (CORBETT keyboard). Seen in the Unicode text of Robertson's own blog posts (COMPUTED).
+  confusables:
+  - PUNCT_WORD_SPACE
+  sources:
+  - R2011 p.47 (ex.20)
+  - CORBETT keyboard 'syll. break'
+  - L2/09-184 (ZWNJ/ZWJ model)
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: Word space is a larger gap, U+0020.
+  unicode_variants: []
+- id: PUNCT_WORD_SPACE
+  category: punctuation
+  unicode:
+  - U+0020
+  unicode_name: SPACE
+  chinook_value:
+    robertson: large space between words
+    ipa: null
+  lejeune_latin: ' '
+  stroke:
+    shape: gap
+    direction: none
+    relative_length: wider than a syllable gap
+  joining: Non-joining.
+  confusables:
+  - PUNCT_SYLLABLE_BREAK
+  sources:
+  - R2011 p.47-48
+  confidence: high
+  labels:
+    identity: VERIFIED
+  notes: Proper names and month names are often left unsyllabified (R2011 p.47, ex.21), so a word gap does not guarantee
+    syllable gaps inside it.
+  unicode_variants: []
+- id: PUNCT_SPORADIC
+  category: punctuation
+  unicode: null
+  unicode_name: null
+  chinook_value:
+    robertson: '<:> (colon), < . >, <≡>, <|> and others: used sporadically, mostly by individual writers'
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: various dots, colons, bars
+    direction: none
+    relative_length: n/a
+  joining: Non-joining.
+  confusables:
+  - H
+  - PUNCT_EQ_BREAK
+  sources:
+  - R2011 p.48
+  confidence: low
+  labels:
+    identity: VERIFIED (existence)
+    functions: INFERRED
+  notes: Not a single sign. Robertson (2011, p.48) describes sporadic punctuation; whether each mark has a Chinook-specific code point is not yet checked against scans.
+  unicode_variants: []
+- id: ABBR_OVERLAP
+  category: abbreviation
+  unicode:
+  - U+1BCA1
+  unicode_name: SHORTHAND FORMAT CONTINUING OVERLAP
+  chinook_value:
+    robertson: convention of crossing letters over one another (R2011 p.49)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: 'formatting character: the next letter is drawn crossing the previous one'
+    direction: n/a
+    relative_length: n/a
+  joining: Overlap trees up to width 2, depth 2, breadth 2 in Rawnd (CORBETT user-documentation.md). See brief_forms.yaml.
+  confusables: []
+  sources:
+  - R2011 p.49 (ex.26)
+  - UTN37
+  - CORBETT user-documentation.md
+  - RAWND render (ST, ShK, SShB, ItS)
+  confidence: high
+  labels:
+    identity: VERIFIED
+    rendering: COMPUTED
+  notes: This is the encoding device behind ST, ShK, ShB, SShB and ItS. Unicode name differs from the proposal's 'Chinook
+    Pipa Concatenator' (CPC).
+  unicode_variants: []
+- id: DIAC_ORIENT_CGJ3
+  category: diacritic
+  unicode:
+  - U+034F
+  - U+034F
+  - U+034F
+  unicode_name: COMBINING GRAPHEME JOINER x3 (Rawnd-specific convention)
+  chinook_value:
+    robertson: (none)
+    ipa: null
+  lejeune_latin: null
+  stroke:
+    shape: invisible selector
+    direction: n/a
+    relative_length: n/a
+  joining: Placed after U+1BC44, 1BC53, 1BC5A-1BC60 to switch from primary to secondary orientation (CORBETT user-documentation.md).
+  confusables: []
+  sources:
+  - CORBETT user-documentation.md 'Custom extensions'
+  - RAWND render (T+O vs T+O+CGJx3 flips the circle)
+  confidence: high
+  labels:
+    identity: VERIFIED
+    behaviour: COMPUTED
+  notes: UNICODE GAP CANDIDATE. Chinook needs a per-vowel orientation choice; Unicode offers only the pair 1BC41/1BC42-style
+    code point splits (and then only for some vowels).
+  unicode_variants: []
+- id: DIAC_YEE_DIAERESIS
+  category: diacritic
+  unicode:
+  - U+0308
+  unicode_name: COMBINING DIAERESIS (on I)
+  chinook_value:
+    robertson: (none)
+    ipa: null
+  lejeune_latin: yee (INFERRED)
+  stroke:
+    shape: two dots over a doubled i
+    direction: n/a
+    relative_length: n/a
+  joining: Combining mark on a vowel.
+  confusables: []
+  sources:
+  - 'L2/09-184 (KMW68 p.2 line 2: ''I+I+Diaeresis Yee'')'
+  confidence: low
+  labels:
+    identity: UNVERIFIED (proposal caption only)
+  notes: UNICODE GAP CANDIDATE (borrowed diacritic). Also see the macron, breve, acute and under-macron marks used in Salishan
+    texts (L2/09-184).
+  unicode_variants: []

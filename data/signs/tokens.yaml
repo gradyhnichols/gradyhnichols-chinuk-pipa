@@ -1,0 +1,65 @@
+# Recognition / transliteration token scheme (v0.1, 2026-10-07).
+# A token is one Chinuk Pipa sign as Le Jeune wrote it. Model outputs and ground-truth labels are
+# space-separated token strings, e.g. "K A M OO K S" (kamooks, dog).
+# `sign` = id in signs.yaml. `unicode` = default code point(s) used when exporting to Unicode Duployan.
+# Latin rules (le_jeune_latin) are HYPOTHESES to be tested against Le Jeune's bilingual vocabularies
+# (word image + Latin spelling side by side); results will be reported once measured.
+schema_version: 0.1
+tokens:
+  # consonants
+  P:  {sign: P,  unicode: [U+1BC02], latin: [p]}
+  B:  {sign: B,  unicode: [U+1BC07], latin: [b]}
+  T:  {sign: T,  unicode: [U+1BC03], latin: [t]}
+  D:  {sign: D,  unicode: [U+1BC08], latin: [d]}
+  F:  {sign: F,  unicode: [U+1BC04], latin: [f]}
+  V:  {sign: V,  unicode: [U+1BC09], latin: [v]}
+  K:  {sign: K,  unicode: [U+1BC05], latin: [k, c]}
+  G:  {sign: G,  unicode: [U+1BC0A], latin: [g]}
+  L:  {sign: L,  unicode: [U+1BC06], latin: [l]}
+  R:  {sign: R,  unicode: [U+1BC0B], latin: [r]}
+  M:  {sign: M_semicircle,  unicode: [U+1BC19], latin: [m]}
+  N:  {sign: N_semicircle,  unicode: [U+1BC1A], latin: [n]}
+  SH: {sign: SH_semicircle, unicode: [U+1BC1B], latin: [sh]}
+  S:  {sign: S_semicircle,  unicode: [U+1BC1C], latin: [s]}
+  NG: {sign: NG, unicode: [U+1BC22], latin: [ng]}
+  CH: {sign: CH, unicode: [U+1BC23], latin: [ch, j]}
+  TS: {sign: TS, unicode: [U+1BC25], latin: [ts, z]}
+  TH: {sign: TH, unicode: [U+1BC11], latin: [th]}
+  DH: {sign: DH, unicode: [U+1BC13], latin: []}
+  KH: {sign: KH, unicode: [U+1BC14], latin: [kh]}
+  Q:  {sign: Q,  unicode: null, latin: [q]}
+  KR: {sign: KR, unicode: null, latin: [kr]}
+  HL: {sign: HL, unicode: [U+1BC16], latin: [hl]}
+  LH: {sign: LH, unicode: [U+1BC17], latin: [lh]}
+  RH: {sign: RH, unicode: [U+1BC18], latin: []}
+  H:  {sign: H,  unicode: [U+1BC00], latin: [h]}
+  X:  {sign: X,  unicode: [U+1BC01], latin: []}
+  # vowels
+  A:  {sign: A,  unicode: [U+1BC41], latin: [a, á, à]}
+  O:  {sign: O,  unicode: [U+1BC44], latin: [o, ó]}
+  OO: {sign: OO, unicode: [U+1BC5B], latin: [oo]}
+  OW: {sign: OW, unicode: [U+1BC5A], latin: [ow]}
+  E:  {sign: E,  unicode: [U+1BC46], latin: [e, é, è, i, ï, í, y]}
+  U:  {sign: U,  unicode: [U+1BC51], latin: [u]}
+  # w-diphthongs (Le Jeune's single signs)
+  WA:    {sign: WA,    unicode: [U+1BC5C], latin: [wa]}
+  WO:    {sign: WO,    unicode: [U+1BC5D], latin: [wo, woe]}
+  WE:    {sign: WE,    unicode: [U+1BC5E], latin: [we, wi]}
+  WEYIE: {sign: WEYIE, unicode: [U+1BC5F], latin: [weyie]}
+  WOW:   {sign: WOW,   unicode: [U+1BC60], latin: [wow]}
+  WOO:   {sign: WOO,   unicode: null, latin: [woo]}
+  OWA:   {sign: OWA_1, unicode: null, latin: [owa]}
+  WAY:   {sign: WAY,   unicode: null, latin: [way]}
+  WEEYA: {sign: WEEYA, unicode: null, latin: [weeya]}
+  # structure
+  "|": {sign: PUNCT_SYLLABLE_BREAK, unicode: [U+200C], latin: []}
+  "_": {sign: PUNCT_WORD_SPACE, unicode: [U+0020], latin: [" "]}
+  "=": {sign: PUNCT_EQ_BREAK, unicode: [U+1BC9F], latin: []}
+latin_rules:
+  # Applied in order to a lower-cased Le Jeune spelling after stripping stress marks (' ’ ` ´ on consonants).
+  - strip: ["'", "’", "‘", "`", ","]
+  - x_to_ks: true          # moxt -> m o k s t (HYPOTHESIS)
+  - collapse_double_consonants: true   # khell -> kh e l (HYPOTHESIS)
+  - longest_match_first: true
+  - w_alone: "OO"          # w not followed by a listed diphthong -> OO (HYPOTHESIS)
+  - y_alone: "E"           # Robertson: no /i j/ distinction in pipa

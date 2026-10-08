@@ -1,0 +1,891 @@
+# chinuk-pipa brief forms, abbreviations and logograms used by Le Jeune (and, where marked, by other writers).
+# Generated 2026-10-07. attested_by_le_jeune: yes | unknown. label = evidence status (see legend in signs.yaml).
+# Overlap abbreviations are encoded with U+1BCA1 SHORTHAND FORMAT CONTINUING OVERLAP between the letters.
+# unicode: null where the letters were not seen or the form is not representable; nested lists mean several sequences.
+schema_version: 1
+generated: '2026-10-07'
+legend:
+  VERIFIED: The compiling AI agent read or looked at the passage/image in the cited source (not yet confirmed by a person).
+  COMPUTED: Measured or rendered by code (Rawnd Musmus Duployan font via fontTools; Pillow + Raqm).
+  INFERRED: The compiling agent's own reading or hypothesis; the source does not say it.
+  UNVERIFIED: Reported by a secondary source (font docs, keyboard help, proposal caption); the primary page was not seen.
+source_keys:
+  R2011: Robertson, D. D. 2011. Kamloops Chinuk Wawa, Chinuk pipa, and the vitality of pidgins. PhD diss., Univ. of Victoria.
+    Printed page numbers (PDF page = printed + 18). Sec. 2.3 = pp.37-51; Table 2 = p.38.
+  LJ1924: 'Le Jeune, J.-M.-R. 1924. Chinook Rudiments. Kamloops. Printed p.5: ''Phonetic Alphabet'', ''Pronunciation''.
+    Internet Archive Ayer_PM843_L45_1924 (Newberry Library).'
+  LJ1898: Le Jeune, J.-M.-R. 1898. Chinook and Shorthand Rudiments. Kamloops. Internet Archive cihm_15465 (CIHM microfilm).
+    p.2 'Phonetic Alphabet', p.5 'Phonetic Syllables', p.13 'Notes and Explanations'.
+  LJ1896: '[Le Jeune] 1896. The Wawa Shorthand Instructor, or, The Duployan stenography adapted to English. Kamloops.
+    Internet Archive wawashorthandins00leje (also cihm_15507). Lessons XV-XVII.'
+  UNI-NL: Unicode Standard NamesList.txt / chart U1BC00 (Duployan, Unicode 7.0 to 18.0 unchanged). Names and the '* Chinook
+    ...' annotations.
+  L2/09-184: Anderson, V. 2009-05-03. Proposal to include Chinook Pipa in Unicode/ISO-10646. UTC L2/09-184.
+  L2/09-364: Anderson, V. 2009-10-26. Initial proposal to include Duployean Shorthand and Chinook writing. L2/09-364 (numerals
+    paragraph).
+  L2/10-026: Anderson, V. 2010. Proposal to include Duployan script and Shorthand Format Controls (Chinook numbers paragraph).
+  L2/10-159: Anderson, V. 2010-05-03. Complete proposal with documentation, Examples 1-7 (documentation from Chinook Rudiments
+    p.5 and Kamloops Wawa).
+  L2/12-329: Anderson, V. 2012-10-15. Duployan Letter Kk representative glyph change. L2/12-329.
+  UTN37: Unicode Technical Note 37, Duployan rendering model.
+  CORBETT: 'Corbett, D. Rawnd Musmus Duployan font (font files SIL OFL 1.1; build code Apache-2.0): user-documentation.md, variants.md; keyboard index.html
+    and transliterate.js at dscorbett.github.io/duployan-test.'
+  GUIDE2024: Chinuk Pipa Guide (Kaltash Wawa), 2024, p.1 (vowels, consonants, special characters, abbreviations, circle
+    vowels).
+  BLOG: Robertson, D. D., chinookjargon.com posts (dated individually in the entry).
+  RAWND: 'Measured or rendered here: RawndMusmusDuployan-Regular.otf, fontTools bounding boxes and Pillow+Raqm renders.'
+items:
+- id: ST
+  kind: overlap_initialism
+  chinook: 'sahali taii (LJ spelling: Sahale Taye)'
+  expansion: God ('the above chief')
+  construction: S_semicircle + overlap + T
+  unicode:
+  - U+1BC1C
+  - U+1BCA1
+  - U+1BC03
+  label: VERIFIED
+  sources:
+  - 'LJ1898 p.13 (Notes: ''S. T., abbreviation for Sahale Taye - the above chief, God'', Latin type)'
+  - R2011 p.49 (ex.26b)
+  - 'BLOG 2020-08-18 (KW #121, Oct 1894, p.170, Le Jeune''s own note ''ST abbreviated from sahali taii'')'
+  - GUIDE2024 p.1
+  - CORBETT keyboard
+  - L2/09-184 (KMW51 p.3, KMW45 p.4)
+  confidence: high
+  notes: The most frequent brief form; Robertson's own examples spell it ST. In the Rawnd render the S cup is crossed by
+    the T dash (COMPUTED). Blog 2017-12-17 records an anonymous manuscript that writes bare S for sahali, an extension not
+    found in Le Jeune.
+  attested_by_le_jeune: 'yes'
+- id: ShK
+  kind: overlap_initialism
+  chinook: shisyu kri
+  expansion: Jesus Christ
+  construction: SH_semicircle + overlap + K
+  unicode:
+  - U+1BC1B
+  - U+1BCA1
+  - U+1BC05
+  label: VERIFIED
+  sources:
+  - R2011 p.49 (ex.26c)
+  - BLOG 2014-06-24; 2015-12-04 ('almost always abbreviated')
+  - GUIDE2024 p.1
+  - CORBETT keyboard
+  - L2/09-184 (KMW51 p.3, KMW59 p.1, lines 1, 5, 10, 11, 17)
+  confidence: high
+  notes: Arch crossed by the K stroke (COMPUTED render).
+  attested_by_le_jeune: 'yes'
+- id: ShB
+  kind: overlap_initialism
+  chinook: shon batist
+  expansion: Jean-Baptiste (a local personal name)
+  construction: SH_semicircle + overlap + B
+  unicode:
+  - U+1BC1B
+  - U+1BCA1
+  - U+1BC07
+  label: VERIFIED
+  sources:
+  - R2011 p.49 (ex.26d, text 21)
+  confidence: med
+  attested_by_le_jeune: unknown
+  notes: Robertson's example is from an Indigenous-written text, so Le Jeune's own use is not shown.
+- id: SShB
+  kind: overlap_initialism
+  chinook: sin shon batist
+  expansion: 'St John the Baptist: the Chu Chua (North Thompson) mission'
+  construction: S_semicircle + overlap + SH_semicircle + overlap + B
+  unicode:
+  - U+1BC1C
+  - U+1BCA1
+  - U+1BC1B
+  - U+1BCA1
+  - U+1BC07
+  label: VERIFIED
+  sources:
+  - R2011 p.49 (ex.26a, fn.50, text 79)
+  - 'BLOG 2016-03-15 (Le Jeune''s village chart: Chokchokwah / Chu Chua = SShB)'
+  - CORBETT keyboard
+  - L2/09-184 (KMW59 p.1 line 25 caption lists the letters in the order S, B, Sh)
+  confidence: high
+  notes: Order of letters in the proposal caption (S B Sh) differs from Corbett's key (S Sh B); unresolved without the page
+    image. Three-letter overlap tree.
+  attested_by_le_jeune: 'yes'
+- id: ItS
+  kind: overlap_initialism
+  chinook: (Latin 'et cetera')
+  expansion: etc.
+  construction: E + overlap + T + overlap + S_semicircle
+  unicode:
+  - U+1BC46
+  - U+1BCA1
+  - U+1BC03
+  - U+1BCA1
+  - U+1BC1C
+  label: UNVERIFIED
+  sources:
+  - GUIDE2024 p.1
+  - CORBETT keyboard
+  confidence: low
+  attested_by_le_jeune: unknown
+  notes: Listed by the 2024 guide and Corbett's keyboard; no printed Kamloops Wawa page showing it was found.
+- id: LiksK
+  kind: overlap_initialism
+  chinook: likstlim oksio
+  expansion: extreme unction
+  construction: 'L + I + K + S + K family: initials ''Liks'' + ''K'' of the two words (INFERRED)'
+  unicode: null
+  label: INFERRED
+  sources:
+  - BLOG 2019-05-15 ('LiksK as an abbreviation for extreme unction'; 'words that began in vowels, like oksio, were abbreviated
+    by using their first consonant')
+  confidence: low
+  attested_by_le_jeune: unknown
+  notes: Described by Robertson from a Kamloops Wawa-era text; the exact letters and the overlap structure were not seen.
+    Encodability depends on how oksio's K is realised.
+- id: L_ShK_it_MI
+  kind: overlap_initialism
+  chinook: (Latin) Laudetur Jesus Christus et Maria Immaculata
+  expansion: 'Oblate greeting: Praised be Jesus Christ and Mary Immaculate'
+  construction: L + ShK + it + MI (words spaced, with ShK as an overlap)
+  unicode: null
+  label: UNVERIFIED
+  sources:
+  - 'BLOG 2023-06-25 (KW #121, Oct 1894, p.167)'
+  confidence: low
+  notes: Shows that Latin liturgical initials are mixed with Chinook-based overlaps.
+  attested_by_le_jeune: unknown
+- id: TK_SS
+  kind: overlap_initialism
+  chinook: (not expanded in the source)
+  expansion: '''T + K (God)'' and ''S + S (Holy Spirit)'' per the proposal caption'
+  construction: T + overlap + K ; S_semicircle + overlap + S_semicircle
+  unicode:
+  - - U+1BC03
+    - U+1BCA1
+    - U+1BC05
+  - - U+1BC1C
+    - U+1BCA1
+    - U+1BC1C
+  label: UNVERIFIED
+  sources:
+  - L2/10-159 Example 5 caption
+  - L2/09-184 KMW45 p.4 caption ('T+CPC+K' and 'S+CPC+S')
+  confidence: low
+  notes: Expansions are not given. Treat as candidate brief forms until the printed page is read.
+  attested_by_le_jeune: unknown
+- id: LIKALISTI_SIGN
+  kind: logogram
+  chinook: likalisti
+  expansion: the eucharist; the communion wafer; communion
+  construction: LIKALISTI
+  unicode:
+  - U+1BC9C
+  label: VERIFIED
+  sources:
+  - 'R2011 p.49 (ex.27; fn.53: ''known from its use and definition in Kamloops Wawa'')'
+  - L2/09-184 (KMW101 p.1 line 28)
+  - UNI-NL 1BC9C
+  - BLOG 2019-05-15
+  confidence: high
+  notes: A circled cross. Spaced as a word, not a syllable (L2/09-184).
+  attested_by_le_jeune: 'yes'
+- id: CAL_EMBER
+  kind: calendar_symbol
+  chinook: likatita
+  expansion: Ember days
+  construction: CAL_EMBER
+  unicode:
+  - U+2463
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: circled digit 4. The calendar symbols are borrowed code points; the printed originals
+    were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_SACRED_HEART
+  kind: calendar_symbol
+  chinook: sikrid hart
+  expansion: Feast of the Sacred Heart
+  construction: CAL_SACRED_HEART
+  unicode:
+  - U+E003
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: heart with cross (Rawnd private use). The calendar symbols are borrowed code points;
+    the printed originals were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_ALL_SOULS
+  kind: calendar_symbol
+  chinook: pirgatori tilikom klaska son
+  expansion: All Souls' Day
+  construction: CAL_ALL_SOULS
+  unicode:
+  - U+2620
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: skull and crossbones. The calendar symbols are borrowed code points; the printed originals
+    were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_MOON_NEW
+  kind: calendar_symbol
+  chinook: pus shako chi mun
+  expansion: new moon
+  construction: CAL_MOON_NEW
+  unicode:
+  - U+1F31A
+  - U+FE0E
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: new moon face, text presentation. The calendar symbols are borrowed code points; the
+    printed originals were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_MOON_FIRST_Q
+  kind: calendar_symbol
+  chinook: pus mun sitkom aias
+  expansion: first quarter moon
+  construction: CAL_MOON_FIRST_Q
+  unicode:
+  - U+1F31B
+  - U+FE0E
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: first quarter moon face. The calendar symbols are borrowed code points; the printed
+    originals were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_MOON_FULL
+  kind: calendar_symbol
+  chinook: pus mun drit rawnd
+  expansion: full moon
+  construction: CAL_MOON_FULL
+  unicode:
+  - U+1F31D
+  - U+FE0E
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: full moon face. The calendar symbols are borrowed code points; the printed originals
+    were not located.'
+  attested_by_le_jeune: unknown
+- id: CAL_MOON_LAST_Q
+  kind: calendar_symbol
+  chinook: pus mun sitkom kopit
+  expansion: last quarter moon
+  construction: CAL_MOON_LAST_Q
+  unicode:
+  - U+1F31C
+  - U+FE0E
+  label: UNVERIFIED
+  sources:
+  - CORBETT keyboard help text (names the symbol, its meaning and a Chinook phrase)
+  - BLOG 2014-06-24 shows the calendar block layout only
+  confidence: low
+  notes: 'Glyph as rendered by Rawnd: last quarter moon face. The calendar symbols are borrowed code points; the printed
+    originals were not located.'
+  attested_by_le_jeune: unknown
+- id: CROSS_POMMY
+  kind: symbol
+  chinook: (cross)
+  expansion: Latin cross, pommy form
+  construction: CROSS_POMMY
+  unicode:
+  - U+E001
+  label: UNVERIFIED
+  sources:
+  - 'CORBETT keyboard (keys: Latin cross pommy, Latin cross U+271D)'
+  confidence: low
+  notes: Function in Le Jeune's pages not established; probably a feast or death marker (INFERRED).
+  attested_by_le_jeune: unknown
+- id: MONTH_JAN
+  kind: month_abbreviation
+  chinook: Shanwari
+  expansion: January
+  construction: 'initial letters of the Chinook spelling: Sha.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893: ''Sha.'' in the calendar)'
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_FEB
+  kind: month_abbreviation
+  chinook: Fibrwari
+  expansion: February
+  construction: 'initial letters of the Chinook spelling: Fi.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_MAR
+  kind: month_abbreviation
+  chinook: Marsh
+  expansion: March
+  construction: 'initial letters of the Chinook spelling: Ma.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_APR
+  kind: month_abbreviation
+  chinook: Ipril
+  expansion: April
+  construction: 'initial letters of the Chinook spelling: Ip.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_MAY
+  kind: month_abbreviation
+  chinook: Mi
+  expansion: May
+  construction: 'initial letters of the Chinook spelling: Mi'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_JUN
+  kind: month_abbreviation
+  chinook: Shun
+  expansion: June
+  construction: 'initial letters of the Chinook spelling: Shun'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_JUL
+  kind: month_abbreviation
+  chinook: Shulai
+  expansion: July
+  construction: 'initial letters of the Chinook spelling: Shi. (Robertson marks the reading uncertain)'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_AUG
+  kind: month_abbreviation
+  chinook: Ogyust
+  expansion: August
+  construction: 'initial letters of the Chinook spelling: Og.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_SEP
+  kind: month_abbreviation
+  chinook: Siptimbir
+  expansion: September
+  construction: 'initial letters of the Chinook spelling: Sip.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_OCT
+  kind: month_abbreviation
+  chinook: Oktobir
+  expansion: October
+  construction: 'initial letters of the Chinook spelling: Okt.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_NOV
+  kind: month_abbreviation
+  chinook: Novimbir
+  expansion: November
+  construction: 'initial letters of the Chinook spelling: No.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: MONTH_DEC
+  kind: month_abbreviation
+  chinook: Disimbir
+  expansion: December
+  construction: 'initial letters of the Chinook spelling: Di.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'ABBREVIATIONS' chart, names of months; issue number not stated in the post)
+  confidence: med
+  notes: Letters are ordinary Chinuk pipa letters (no special sign); the page shows them with a final dot. Robertson transcribes
+    them in the Roman alphabet, so the exact letter shapes and any overlap were not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_SUN
+  kind: weekday_abbreviation
+  chinook: Sondi
+  expansion: Sunday
+  construction: 'initial letters: S.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_MON
+  kind: weekday_abbreviation
+  chinook: Mondi
+  expansion: Monday
+  construction: 'initial letters: M.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_TUE
+  kind: weekday_abbreviation
+  chinook: Tyusdi
+  expansion: Tuesday
+  construction: 'initial letters: T.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_WED
+  kind: weekday_abbreviation
+  chinook: Winisdi
+  expansion: Wednesday
+  construction: 'initial letters: Wi.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_THU
+  kind: weekday_abbreviation
+  chinook: (Chinook form not seen)
+  expansion: Thursday
+  construction: 'initial letters: Tr.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_FRI
+  kind: weekday_abbreviation
+  chinook: Fraidi
+  expansion: Friday
+  construction: 'initial letters: Fr.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: DAY_SAT
+  kind: weekday_abbreviation
+  chinook: Satirdi
+  expansion: Saturday
+  construction: 'initial letters: Sat.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - 'BLOG 2014-06-24 (KW #60, 8 Jan 1893 front page: <8> S. <9> M. <10> T. <11> Wi. <12> Tr. <13> Fr. <14> Sat.)'
+  confidence: med
+  notes: Day numbers beside them are in Latin-type Arabic numerals; the S/I column marks Sundays and weekdays in Latin type.
+    The Chinook day names (Mondi, Tyusdi, Winisdi; Fraidi, Satirdi, Sondi) are English-derived (BLOG 2019-06-27, 2017-02-27);
+    Thursday's form was not seen.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_MK
+  kind: place_abbreviation
+  chinook: Kamlups
+  expansion: Kamloops
+  construction: 'abbreviation: Mk.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SHK
+  kind: place_abbreviation
+  chinook: Shugir Kin
+  expansion: Sugarcane
+  construction: 'abbreviation: Sh.K.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SSHB
+  kind: place_abbreviation
+  chinook: Chokchokwah
+  expansion: Chu Chua (Chokchokwah)
+  construction: 'abbreviation: SShB'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_ALK
+  kind: place_abbreviation
+  chinook: Alkalai Lik
+  expansion: Alkali Lake
+  construction: 'abbreviation: Alk. (uncertain)'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SK
+  kind: place_abbreviation
+  chinook: Skishistin
+  expansion: Skeetchestn
+  construction: 'abbreviation: Sk.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_KL
+  kind: place_abbreviation
+  chinook: Knim Lik
+  expansion: Canim Lake
+  construction: 'abbreviation: Kl.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_KK
+  kind: place_abbreviation
+  chinook: Kanu Krik
+  expansion: Canoe Creek
+  construction: 'abbreviation: KK (uncertain)'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SOK
+  kind: place_abbreviation
+  chinook: Soda Krik
+  expansion: Soda Creek
+  construction: 'abbreviation: Sok. (uncertain)'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SHKH
+  kind: place_abbreviation
+  chinook: Shhkaltkmah
+  expansion: Shuswap (Sahhaltkum)
+  construction: 'abbreviation: Shkh.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_DL
+  kind: place_abbreviation
+  chinook: Duglas Lik
+  expansion: Douglas Lake
+  construction: 'abbreviation: Dl.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_Q
+  kind: place_abbreviation
+  chinook: Kwilshana
+  expansion: Quilchena
+  construction: 'abbreviation: Q'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_HB
+  kind: place_abbreviation
+  chinook: Hai Bar
+  expansion: High Bar
+  construction: 'abbreviation: Hb.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_KLWA
+  kind: place_abbreviation
+  chinook: Kol Watir
+  expansion: Coldwater
+  construction: 'abbreviation: Klwa.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_TL
+  kind: place_abbreviation
+  chinook: Bonapart (Tlohtaws)
+  expansion: Bonaparte
+  construction: 'abbreviation: Tl.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_NB
+  kind: place_abbreviation
+  chinook: Nort Bind
+  expansion: North Bend
+  construction: 'abbreviation: NB'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: PLACE_SP
+  kind: place_abbreviation
+  chinook: Spisom
+  expansion: Spuzzum
+  construction: 'abbreviation: Sp.'
+  unicode: null
+  label: VERIFIED
+  sources:
+  - BLOG 2016-03-15 (Le Jeune's 'Ilihi nim' / village names chart)
+  confidence: med
+  notes: Formed in 'two or three different ways' (Robertson); some stand for the Chinook name and others for the Indigenous
+    name (Tl. for 'Tlohtaws' = Bonaparte). Le Jeune advises 'Don't write Bisi; write B.C.' in English letters on envelopes.
+  attested_by_le_jeune: 'yes'
+- id: NUMERALS_1_9_0
+  kind: numeral_series
+  chinook: shorthand numerals
+  expansion: 1 2 3 4 5 6 7 8 9 0 = P T F K R M N Sh S O (M N Sh S half size)
+  construction: NUM_1 ... NUM_0
+  unicode:
+  - U+1BC02
+  - U+1BC03
+  - U+1BC04
+  - U+1BC05
+  - U+1BC0B
+  - U+1BC19
+  - U+1BC1A
+  - U+1BC1B
+  - U+1BC1C
+  - U+1BC44
+  label: VERIFIED
+  sources:
+  - LJ1896 lesson XVII
+  - LJ1898 p.2
+  - LJ1924 p.5
+  - R2011 pp.40, 44, 49-50
+  - L2/09-364
+  confidence: high
+  notes: Used by Le Jeune for dates, page numbers and issue numbers (BLOG 2013-04-30, 2021-07-22) but almost never by Indigenous
+    writers, who used Arabic numerals (R2011 pp.49-50; one exception, text 61 'May 4, 1892').
+  attested_by_le_jeune: 'yes'
+- id: NUMERAL_ROUND
+  kind: numeral_abbreviation
+  chinook: round numbers
+  expansion: 10 = P+O; 11 = P a P; 100 = P + WA-like circle; 1000 = 1 in a circle; 10000 = 10 in a circle; 100000 = 100
+    in a thick circle; 1000000 = 1 in a double circle
+  construction: NUM_1 + NUM_0 ; NUM_1 + NUM_LINK_A + NUM_1 ; NUM_1 + NUM_HUNDRED ; NUM_ENCLOSE_1000 ...
+  unicode:
+  - - U+1BC02
+    - U+1BC44
+  - - U+1BC02
+    - U+1BC41
+    - U+1BC02
+  - - U+1BC02
+    - U+20DD
+  label: VERIFIED (shapes) / INFERRED (decomposition)
+  sources:
+  - LJ1896 lesson XVII ('Round numbers may be abbreviated as in the accompanying example')
+  - L2/10-026 numerals paragraph
+  confidence: med
+  notes: Rawnd renders P + U+20DD as a 1 in a circle (COMPUTED), matching the 1000 sign. Whether Le Jeune's 100 is P + WA
+    is INFERRED.
+  attested_by_le_jeune: 'yes'
+- id: EQ_LINE_BREAK
+  kind: punctuation_convention
+  chinook: '='
+  expansion: line-final break in the middle of a word (Le Jeune); phrase or sentence boundary (Indigenous writers)
+  construction: PUNCT_EQ_BREAK
+  unicode:
+  - U+1BC9F
+  label: VERIFIED
+  sources:
+  - R2011 p.48 (ex.23)
+  - UNI-NL 1BC9F
+  confidence: high
+  notes: Name in Unicode ('full stop') does not describe the attested use.
+  attested_by_le_jeune: 'yes'
+- id: X_BOUNDARY
+  kind: punctuation_convention
+  chinook: <x> or <+>
+  expansion: phrase or sentence boundary, used by Indigenous writers and also in Le Jeune-edited text
+  construction: PUNCT_X_BOUNDARY
+  unicode:
+  - U+2E3C
+  label: VERIFIED
+  sources:
+  - R2011 p.48 (ex.22)
+  - BLOG 2019-05-15 (a Kamloops Wawa extract with '<X>' between sentences)
+  confidence: med
+  notes: Not the letter x.
+  attested_by_le_jeune: 'yes'
+- id: OVERLINE_EMPHASIS
+  kind: punctuation_convention
+  chinook: bars + dots above a word
+  expansion: emphasis
+  construction: PUNCT_BAR_EMPHASIS
+  unicode: null
+  label: VERIFIED (R2011 only)
+  sources:
+  - R2011 p.49 (ex.25)
+  confidence: low
+  attested_by_le_jeune: unknown
+  notes: Sporadic; attribution to Le Jeune not shown.
+- id: NAME_UNDERLINE
+  kind: punctuation_convention
+  chinook: dotted underline
+  expansion: marks a proper name
+  construction: PUNCT_DOT_UNDERLINE
+  unicode: null
+  label: VERIFIED (R2011 only)
+  sources:
+  - R2011 p.48-49 (ex.24)
+  confidence: low
+  attested_by_le_jeune: unknown
+  notes: Rare; examples from texts 72.
+negative_findings:
+- claim: No Le Jeune list of brief forms for ordinary Chinook words (kopa, pi, naika, nsaika ...) was found.
+  label: VERIFIED (negative result over the sources read)
+  evidence: 'LJ1924 contents list cites ''About abbreviations, page 196, Sept. 1896'' (that issue has not been checked here); R2011 p.49 lists only the five
+    initialisms in ex.26 plus the likalisti sign; a text search of the Robertson blog posts read for this project (COMPUTED)
+    finds only the month/place chart (2016-03-15), the likalisti sign, LiksK, ''L ShK it MI'' and the ST/ShK/ShB/SShB examples,
+    plus two manuscript abbreviations by other writers (SI for sahali ilihi, T-S in a Stolo hymn book) that are not Le Jeune''s.'
+  residual_risk: A systematic brief-form lesson may exist in an uncatalogued issue; the Rudiments 1898 vocabulary pages were read for data/gt, and no brief forms were noticed there.
+- claim: Whole-word learned shapes (ti.li.kom, buk written 'vuki') are a learner phenomenon, not brief forms.
+  label: VERIFIED
+  evidence: R2011 p.46 (ex.19).
+  residual_risk: None for this claim.

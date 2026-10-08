@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinukpipa"
+version = "0.1.0"
+description = "Open tools toward reading Chinuk Pipa, the Duployan shorthand of Chinuk Wawa (Chinook Jargon)"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = ["pyyaml", "pillow", "numpy", "scipy", "scikit-image"]
+
+[project.optional-dependencies]
+ocr = ["pytesseract"]
+net = ["requests"]
+
+[tool.setuptools.packages.find]
+include = ["chinukpipa*"]
