@@ -1,0 +1,3970 @@
+[
+{
+"rid": 1,
+"section": "11L",
+"printed": "An'kate",
+"spelling": "ankate",
+"flag": "",
+"tokens": "A N K A T E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"ankate"
+],
+"lex_any": [
+[
+"ankate",
+"A"
+]
+]
+},
+{
+"rid": 2,
+"section": "11L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 3,
+"section": "11L",
+"printed": "ma'mook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 4,
+"section": "11L",
+"printed": "sa'hale",
+"spelling": "sahale",
+"flag": "",
+"tokens": "S A H A L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"sahhale"
+],
+"lex_any": [
+[
+"sahale",
+"C"
+],
+[
+"sahhale",
+"A"
+]
+]
+},
+{
+"rid": 5,
+"section": "11L",
+"printed": "e'lehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 6,
+"section": "11L",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 7,
+"section": "11L",
+"printed": "ook'ook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 8,
+"section": "11L",
+"printed": "elehe.",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 9,
+"section": "11L",
+"printed": "Kopet'",
+"spelling": "kopet",
+"flag": "",
+"tokens": "K O P E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopet"
+],
+"lex_any": [
+[
+"kopet",
+"A"
+]
+]
+},
+{
+"rid": 10,
+"section": "11L",
+"printed": "chok",
+"spelling": "chok",
+"flag": "",
+"tokens": "CH O K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chock"
+],
+"lex_any": [
+[
+"chock",
+"A"
+]
+]
+},
+{
+"rid": 11,
+"section": "11L",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 12,
+"section": "11L",
+"printed": "poola'kle",
+"spelling": "poolakle",
+"flag": "",
+"tokens": "P OO L A K L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"poolakle"
+],
+"lex_any": [
+[
+"poolakle",
+"A"
+]
+]
+},
+{
+"rid": 13,
+"section": "11L",
+"printed": "mitla'it",
+"spelling": "mitlait",
+"flag": "",
+"tokens": "M E T L A E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mitlait"
+],
+"lex_any": [
+[
+"mitlait",
+"A"
+]
+]
+},
+{
+"rid": 14,
+"section": "11L",
+"printed": "ko'pa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 15,
+"section": "11L",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 16,
+"section": "11L",
+"printed": "elehe.",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 17,
+"section": "11L",
+"printed": "Pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 18,
+"section": "11L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 19,
+"section": "11L",
+"printed": "wa'wa:",
+"spelling": "wawa",
+"flag": "",
+"tokens": "WA WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wawa"
+],
+"lex_any": [
+[
+"wawa",
+"A"
+]
+]
+},
+{
+"rid": 20,
+"section": "11L",
+"printed": "Tloos",
+"spelling": "tloos",
+"flag": "",
+"tokens": "T L OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tloos"
+],
+"lex_any": [
+[
+"tloos",
+"A"
+]
+]
+},
+{
+"rid": 21,
+"section": "11L",
+"printed": "cha'ko",
+"spelling": "chako",
+"flag": "",
+"tokens": "CH A K O",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chako"
+],
+"lex_any": [
+[
+"chako",
+"A"
+]
+]
+},
+{
+"rid": 22,
+"section": "11L",
+"printed": "light (lait)",
+"spelling": "lait",
+"flag": "resp",
+"tokens": "L A E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 23,
+"section": "11L",
+"printed": "A'yak",
+"spelling": "ayak",
+"flag": "",
+"tokens": "A E A K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"aiak",
+"C"
+]
+]
+},
+{
+"rid": 24,
+"section": "11L",
+"printed": "chako",
+"spelling": "chako",
+"flag": "",
+"tokens": "CH A K O",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chako"
+],
+"lex_any": [
+[
+"chako",
+"A"
+]
+]
+},
+{
+"rid": 25,
+"section": "11L",
+"printed": "light",
+"spelling": "lait",
+"flag": "resp",
+"tokens": "L A E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 26,
+"section": "11L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 27,
+"section": "11L",
+"printed": "elehe.",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 28,
+"section": "11L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 29,
+"section": "11L",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 30,
+"section": "11L",
+"printed": "ka'kwa",
+"spelling": "kakwa",
+"flag": "",
+"tokens": "K A K WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kakwa"
+],
+"lex_any": [
+[
+"kakwa",
+"A"
+]
+]
+},
+{
+"rid": 31,
+"section": "11L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 32,
+"section": "11L",
+"printed": "iht",
+"spelling": "iht",
+"flag": "",
+"tokens": "E H T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"iht",
+"C"
+]
+]
+},
+{
+"rid": 33,
+"section": "11L",
+"printed": "son.",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 34,
+"section": "11L",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 35,
+"section": "11L",
+"printed": "moxt",
+"spelling": "moxt",
+"flag": "",
+"tokens": "M O K S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mokst",
+"moxt"
+],
+"lex_any": [
+[
+"mokst",
+"A"
+],
+[
+"moxt",
+"A"
+]
+]
+},
+{
+"rid": 36,
+"section": "11L",
+"printed": "son",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 37,
+"section": "11L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 38,
+"section": "11L",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 39,
+"section": "11L",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 40,
+"section": "11L",
+"printed": "sky (skai)",
+"spelling": "skai",
+"flag": "resp",
+"tokens": "S K A E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 41,
+"section": "11L",
+"printed": "nsai'ka",
+"spelling": "nsaika",
+"flag": "",
+"tokens": "N S A E K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nsaika"
+],
+"lex_any": [
+[
+"nsaika",
+"A"
+]
+]
+},
+{
+"rid": 42,
+"section": "11L",
+"printed": "na'nich",
+"spelling": "nanich",
+"flag": "",
+"tokens": "N A N E CH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nanich",
+"nanitsh"
+],
+"lex_any": [
+[
+"nanich",
+"A"
+],
+[
+"nanitsh",
+"A"
+]
+]
+},
+{
+"rid": 43,
+"section": "11L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 44,
+"section": "11L",
+"printed": "sahale.",
+"spelling": "sahale",
+"flag": "",
+"tokens": "S A H A L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"sahhale"
+],
+"lex_any": [
+[
+"sahale",
+"C"
+],
+[
+"sahhale",
+"A"
+]
+]
+},
+{
+"rid": 45,
+"section": "11L",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 46,
+"section": "11L",
+"printed": "tloon",
+"spelling": "tloon",
+"flag": "",
+"tokens": "T L OO N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tloon"
+],
+"lex_any": [
+[
+"tloon",
+"A"
+]
+]
+},
+{
+"rid": 47,
+"section": "11L",
+"printed": "son",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 48,
+"section": "11R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 49,
+"section": "11R",
+"printed": "mash",
+"spelling": "mash",
+"flag": "",
+"tokens": "M A SH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mash"
+],
+"lex_any": [
+[
+"mash",
+"A"
+]
+]
+},
+{
+"rid": 50,
+"section": "11R",
+"printed": "chok",
+"spelling": "chok",
+"flag": "",
+"tokens": "CH O K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chock"
+],
+"lex_any": [
+[
+"chock",
+"A"
+]
+]
+},
+{
+"rid": 51,
+"section": "11R",
+"printed": "kan'awe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 52,
+"section": "11R",
+"printed": "kan'amoxt",
+"spelling": "kanamoxt",
+"flag": "",
+"tokens": "K A N A M O K S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanamokst",
+"kanamoxt"
+],
+"lex_any": [
+[
+"kanamokst",
+"A"
+],
+[
+"kanamoxt",
+"B"
+]
+]
+},
+{
+"rid": 53,
+"section": "11R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 54,
+"section": "11R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 55,
+"section": "11R",
+"printed": "wawa",
+"spelling": "wawa",
+"flag": "",
+"tokens": "WA WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wawa"
+],
+"lex_any": [
+[
+"wawa",
+"A"
+]
+]
+},
+{
+"rid": 56,
+"section": "11R",
+"printed": "poos",
+"spelling": "poos",
+"flag": "",
+"tokens": "P OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"poos",
+"C"
+]
+]
+},
+{
+"rid": 57,
+"section": "11R",
+"printed": "salt",
+"spelling": "salt",
+"flag": "loan",
+"tokens": "S A L T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"salt"
+],
+"lex_any": [
+[
+"salt",
+"A"
+]
+]
+},
+{
+"rid": 58,
+"section": "11R",
+"printed": "chok",
+"spelling": "chok",
+"flag": "",
+"tokens": "CH O K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chock"
+],
+"lex_any": [
+[
+"chock",
+"A"
+]
+]
+},
+{
+"rid": 59,
+"section": "11R",
+"printed": "iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 60,
+"section": "11R",
+"printed": "name (nem)",
+"spelling": "nem",
+"flag": "resp",
+"tokens": "N E M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nem"
+],
+"lex_any": [
+[
+"nem",
+"A"
+]
+]
+},
+{
+"rid": 61,
+"section": "11R",
+"printed": "Ktm'ta [=Kim'ta]",
+"spelling": "kimta",
+"flag": "",
+"tokens": "K E M T A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kimta"
+],
+"lex_any": [
+[
+"kimta",
+"A"
+]
+]
+},
+{
+"rid": 62,
+"section": "11R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 63,
+"section": "11R",
+"printed": "wawa",
+"spelling": "wawa",
+"flag": "",
+"tokens": "WA WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wawa"
+],
+"lex_any": [
+[
+"wawa",
+"A"
+]
+]
+},
+{
+"rid": 64,
+"section": "11R",
+"printed": "poos",
+"spelling": "poos",
+"flag": "",
+"tokens": "P OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"poos",
+"C"
+]
+]
+},
+{
+"rid": 65,
+"section": "11R",
+"printed": "chako",
+"spelling": "chako",
+"flag": "",
+"tokens": "CH A K O",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chako"
+],
+"lex_any": [
+[
+"chako",
+"A"
+]
+]
+},
+{
+"rid": 66,
+"section": "11R",
+"printed": "dry (drai)",
+"spelling": "drai",
+"flag": "resp",
+"tokens": "D R A E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 67,
+"section": "11R",
+"printed": "elehe.",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 68,
+"section": "11R",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 69,
+"section": "11R",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 70,
+"section": "11R",
+"printed": "dry",
+"spelling": "drai",
+"flag": "resp",
+"tokens": "D R A E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 71,
+"section": "11R",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 72,
+"section": "11R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 73,
+"section": "11R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 74,
+"section": "11R",
+"printed": "chako",
+"spelling": "chako",
+"flag": "",
+"tokens": "CH A K O",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chako"
+],
+"lex_any": [
+[
+"chako",
+"A"
+]
+]
+},
+{
+"rid": 75,
+"section": "11R",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 76,
+"section": "11R",
+"printed": "ikta",
+"spelling": "ikta",
+"flag": "",
+"tokens": "E K T A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"ikta"
+],
+"lex_any": [
+[
+"ikta",
+"A"
+]
+]
+},
+{
+"rid": 77,
+"section": "11R",
+"printed": "tep'so",
+"spelling": "tepso",
+"flag": "",
+"tokens": "T E P S O",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tipso"
+],
+"lex_any": [
+[
+"tipso",
+"A"
+]
+]
+},
+{
+"rid": 78,
+"section": "11R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 79,
+"section": "11R",
+"printed": "a you (a-u)",
+"spelling": "ayou",
+"flag": "",
+"tokens": "A E O U",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 80,
+"section": "11R",
+"printed": "heloi-ma",
+"spelling": "heloima",
+"flag": "",
+"tokens": "H E L O E M A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 81,
+"section": "11R",
+"printed": "stick",
+"spelling": "stick",
+"flag": "loan",
+"tokens": "S T E K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"steck",
+"stick"
+],
+"lex_any": [
+[
+"steck",
+"B"
+],
+[
+"stick",
+"A"
+]
+]
+},
+{
+"rid": 82,
+"section": "11R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 83,
+"section": "11R",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 84,
+"section": "11R",
+"printed": "tloos",
+"spelling": "tloos",
+"flag": "",
+"tokens": "T L OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tloos"
+],
+"lex_any": [
+[
+"tloos",
+"A"
+]
+]
+},
+{
+"rid": 85,
+"section": "11R",
+"printed": "flowers.",
+"spelling": "flowers",
+"flag": "loan",
+"tokens": "F L OW E R S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 86,
+"section": "11R",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 87,
+"section": "11R",
+"printed": "laket",
+"spelling": "laket",
+"flag": "",
+"tokens": "L A K E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"laket",
+"lakit"
+],
+"lex_any": [
+[
+"laket",
+"A"
+],
+[
+"lakit",
+"A"
+]
+]
+},
+{
+"rid": 88,
+"section": "11R",
+"printed": "son,",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 89,
+"section": "11R",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 90,
+"section": "11R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 91,
+"section": "11R",
+"printed": "son",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 92,
+"section": "11R",
+"printed": "moon",
+"spelling": "moon",
+"flag": "loan",
+"tokens": "M OO N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"moon"
+],
+"lex_any": [
+[
+"moon",
+"A"
+]
+]
+},
+{
+"rid": 93,
+"section": "11R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 94,
+"section": "11R",
+"printed": "tsil'tsil",
+"spelling": "tsiltsil",
+"flag": "",
+"tokens": "TS E L TS E L",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tsiltsil"
+],
+"lex_any": [
+[
+"tsiltsil",
+"A"
+]
+]
+},
+{
+"rid": 95,
+"section": "12L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 96,
+"section": "12L",
+"printed": "sahale.",
+"spelling": "sahale",
+"flag": "",
+"tokens": "S A H A L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"sahhale"
+],
+"lex_any": [
+[
+"sahale",
+"C"
+],
+[
+"sahhale",
+"A"
+]
+]
+},
+{
+"rid": 97,
+"section": "12L",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 98,
+"section": "12L",
+"printed": "kwe-nam",
+"spelling": "kwenam",
+"flag": "",
+"tokens": "K WE N A M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kwenam"
+],
+"lex_any": [
+[
+"kwenam",
+"A"
+]
+]
+},
+{
+"rid": 99,
+"section": "12L",
+"printed": "son,",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 100,
+"section": "12L",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 101,
+"section": "12L",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 102,
+"section": "12L",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 103,
+"section": "12L",
+"printed": "heloima",
+"spelling": "heloima",
+"flag": "",
+"tokens": "H E L O E M A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 104,
+"section": "12L",
+"printed": "fish",
+"spelling": "fish",
+"flag": "loan",
+"tokens": "F E SH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"fish"
+],
+"lex_any": [
+[
+"fish",
+"A"
+]
+]
+},
+{
+"rid": 105,
+"section": "12L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 106,
+"section": "12L",
+"printed": "chok",
+"spelling": "chok",
+"flag": "",
+"tokens": "CH O K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chock"
+],
+"lex_any": [
+[
+"chock",
+"A"
+]
+]
+},
+{
+"rid": 107,
+"section": "12L",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 108,
+"section": "12L",
+"printed": "ka'nawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 109,
+"section": "12L",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 110,
+"section": "12L",
+"printed": "kal'akala",
+"spelling": "kalakala",
+"flag": "",
+"tokens": "K A L A K A L A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kalakala",
+"kallakala"
+],
+"lex_any": [
+[
+"kalakala",
+"A"
+],
+[
+"kallakala",
+"A"
+]
+]
+},
+{
+"rid": 111,
+"section": "12L",
+"printed": "klas'ka",
+"spelling": "klaska",
+"flag": "",
+"tokens": "K L A S K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"klaska"
+],
+"lex_any": [
+[
+"klaska",
+"A"
+]
+]
+},
+{
+"rid": 112,
+"section": "12L",
+"printed": "fly",
+"spelling": "fly",
+"flag": "loan",
+"tokens": "F L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 113,
+"section": "12L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 114,
+"section": "12L",
+"printed": "wind.",
+"spelling": "wind",
+"flag": "loan",
+"tokens": "WE N D",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wind"
+],
+"lex_any": [
+[
+"wind",
+"A"
+]
+]
+},
+{
+"rid": 115,
+"section": "12L",
+"printed": "Kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 116,
+"section": "12L",
+"printed": "ta'ham",
+"spelling": "taham",
+"flag": "",
+"tokens": "T A H A M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"taham"
+],
+"lex_any": [
+[
+"taham",
+"A"
+]
+]
+},
+{
+"rid": 117,
+"section": "12L",
+"printed": "son",
+"spelling": "son",
+"flag": "",
+"tokens": "S O N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"son"
+],
+"lex_any": [
+[
+"son",
+"A"
+]
+]
+},
+{
+"rid": 118,
+"section": "12L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 119,
+"section": "12L",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 120,
+"section": "12L",
+"printed": "mow'ich",
+"spelling": "mowich",
+"flag": "",
+"tokens": "M OW E CH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mowich",
+"mowitsh"
+],
+"lex_any": [
+[
+"mowich",
+"A"
+],
+[
+"mowitsh",
+"B"
+]
+]
+},
+{
+"rid": 121,
+"section": "12L",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 122,
+"section": "12L",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 123,
+"section": "12L",
+"printed": "ikta",
+"spelling": "ikta",
+"flag": "",
+"tokens": "E K T A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"ikta"
+],
+"lex_any": [
+[
+"ikta",
+"A"
+]
+]
+},
+{
+"rid": 124,
+"section": "12L",
+"printed": "koo'li",
+"spelling": "kooli",
+"flag": "",
+"tokens": "K OO L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 125,
+"section": "12L",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 126,
+"section": "12L",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 127,
+"section": "12L",
+"printed": "kakwa",
+"spelling": "kakwa",
+"flag": "",
+"tokens": "K A K WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kakwa"
+],
+"lex_any": [
+[
+"kakwa",
+"A"
+]
+]
+},
+{
+"rid": 128,
+"section": "12L",
+"printed": "mowich",
+"spelling": "mowich",
+"flag": "",
+"tokens": "M OW E CH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mowich",
+"mowitsh"
+],
+"lex_any": [
+[
+"mowich",
+"A"
+],
+[
+"mowitsh",
+"B"
+]
+]
+},
+{
+"rid": 129,
+"section": "12L",
+"printed": "kim ta",
+"spelling": "kimta",
+"flag": "",
+"tokens": "K E M T A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kimta"
+],
+"lex_any": [
+[
+"kimta",
+"A"
+]
+]
+},
+{
+"rid": 130,
+"section": "12L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 131,
+"section": "12L",
+"printed": "wawa",
+"spelling": "wawa",
+"flag": "",
+"tokens": "WA WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wawa"
+],
+"lex_any": [
+[
+"wawa",
+"A"
+]
+]
+},
+{
+"rid": 132,
+"section": "12L",
+"printed": "tloos",
+"spelling": "tloos",
+"flag": "",
+"tokens": "T L OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tloos"
+],
+"lex_any": [
+[
+"tloos",
+"A"
+]
+]
+},
+{
+"rid": 133,
+"section": "12L",
+"printed": "nsa'ika",
+"spelling": "nsaika",
+"flag": "",
+"tokens": "N S A E K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nsaika"
+],
+"lex_any": [
+[
+"nsaika",
+"A"
+]
+]
+},
+{
+"rid": 134,
+"section": "12L",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 135,
+"section": "12L",
+"printed": "man",
+"spelling": "man",
+"flag": "",
+"tokens": "M A N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"man"
+],
+"lex_any": [
+[
+"man",
+"A"
+]
+]
+},
+{
+"rid": 136,
+"section": "12L",
+"printed": "poos",
+"spelling": "poos",
+"flag": "",
+"tokens": "P OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"poos",
+"C"
+]
+]
+},
+{
+"rid": 137,
+"section": "12L",
+"printed": "ka'kwa",
+"spelling": "kakwa",
+"flag": "",
+"tokens": "K A K WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kakwa"
+],
+"lex_any": [
+[
+"kakwa",
+"A"
+]
+]
+},
+{
+"rid": 138,
+"section": "12L",
+"printed": "nsa'ika",
+"spelling": "nsaika",
+"flag": "",
+"tokens": "N S A E K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nsaika"
+],
+"lex_any": [
+[
+"nsaika",
+"A"
+]
+]
+},
+{
+"rid": 139,
+"section": "12L",
+"printed": "tsem",
+"spelling": "tsem",
+"flag": "",
+"tokens": "TS E M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tsem"
+],
+"lex_any": [
+[
+"tsem",
+"B"
+]
+]
+},
+{
+"rid": 140,
+"section": "12L",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 141,
+"section": "12R",
+"printed": "iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 142,
+"section": "12R",
+"printed": "ta'ye",
+"spelling": "taye",
+"flag": "",
+"tokens": "T A E E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"taye",
+"C"
+]
+]
+},
+{
+"rid": 143,
+"section": "12R",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 144,
+"section": "12R",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 145,
+"section": "12R",
+"printed": "ikta",
+"spelling": "ikta",
+"flag": "",
+"tokens": "E K T A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"ikta"
+],
+"lex_any": [
+[
+"ikta",
+"A"
+]
+]
+},
+{
+"rid": 146,
+"section": "12R",
+"printed": "mitlait",
+"spelling": "mitlait",
+"flag": "",
+"tokens": "M E T L A E T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mitlait"
+],
+"lex_any": [
+[
+"mitlait",
+"A"
+]
+]
+},
+{
+"rid": 147,
+"section": "12R",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 148,
+"section": "12R",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 149,
+"section": "12R",
+"printed": "Ia'wa",
+"spelling": "iawa",
+"flag": "",
+"tokens": "E A WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 150,
+"section": "12R",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 151,
+"section": "12R",
+"printed": "es'kom",
+"spelling": "eskom",
+"flag": "",
+"tokens": "E S K O M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"eskkom",
+"eskom"
+],
+"lex_any": [
+[
+"eskkom",
+"A"
+],
+[
+"eskom",
+"A"
+]
+]
+},
+{
+"rid": 152,
+"section": "12R",
+"printed": "tanas'",
+"spelling": "tanas",
+"flag": "",
+"tokens": "T A N A S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tanas",
+"tanaz"
+],
+"lex_any": [
+[
+"tanas",
+"A"
+],
+[
+"tanaz",
+"B"
+]
+]
+},
+{
+"rid": 153,
+"section": "12R",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 154,
+"section": "12R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 155,
+"section": "12R",
+"printed": "tanas",
+"spelling": "tanas",
+"flag": "",
+"tokens": "T A N A S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tanas",
+"tanaz"
+],
+"lex_any": [
+[
+"tanas",
+"A"
+],
+[
+"tanaz",
+"B"
+]
+]
+},
+{
+"rid": 156,
+"section": "12R",
+"printed": "chok",
+"spelling": "chok",
+"flag": "",
+"tokens": "CH O K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"chock"
+],
+"lex_any": [
+[
+"chock",
+"A"
+]
+]
+},
+{
+"rid": 157,
+"section": "12R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 158,
+"section": "12R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 159,
+"section": "12R",
+"printed": "klas'ka",
+"spelling": "klaska",
+"flag": "",
+"tokens": "K L A S K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"klaska"
+],
+"lex_any": [
+[
+"klaska",
+"A"
+]
+]
+},
+{
+"rid": 160,
+"section": "12R",
+"printed": "kanamokst",
+"spelling": "kanamokst",
+"flag": "",
+"tokens": "K A N A M O K S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanamokst",
+"kanamoxt"
+],
+"lex_any": [
+[
+"kanamokst",
+"A"
+],
+[
+"kanamoxt",
+"B"
+]
+]
+},
+{
+"rid": 161,
+"section": "12R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 162,
+"section": "12R",
+"printed": "iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 163,
+"section": "12R",
+"printed": "eskom",
+"spelling": "eskom",
+"flag": "",
+"tokens": "E S K O M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"eskkom",
+"eskom"
+],
+"lex_any": [
+[
+"eskkom",
+"A"
+],
+[
+"eskom",
+"A"
+]
+]
+},
+{
+"rid": 164,
+"section": "12R",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 165,
+"section": "12R",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 166,
+"section": "12R",
+"printed": "poos",
+"spelling": "poos",
+"flag": "",
+"tokens": "P OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"poos",
+"C"
+]
+]
+},
+{
+"rid": 167,
+"section": "12R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 168,
+"section": "12R",
+"printed": "iht",
+"spelling": "iht",
+"flag": "",
+"tokens": "E H T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"iht",
+"C"
+]
+]
+},
+{
+"rid": 169,
+"section": "12R",
+"printed": "man",
+"spelling": "man",
+"flag": "",
+"tokens": "M A N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"man"
+],
+"lex_any": [
+[
+"man",
+"A"
+]
+]
+},
+{
+"rid": 170,
+"section": "12R",
+"printed": "iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 171,
+"section": "12R",
+"printed": "i'tlooilh",
+"spelling": "itlooilh",
+"flag": "",
+"tokens": "E T L OO E LH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"itlooilh"
+],
+"lex_any": [
+[
+"itlooilh",
+"B"
+]
+]
+},
+{
+"rid": 172,
+"section": "12R",
+"printed": "kopa",
+"spelling": "kopa",
+"flag": "",
+"tokens": "K O P A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kopa"
+],
+"lex_any": [
+[
+"kopa",
+"A"
+]
+]
+},
+{
+"rid": 173,
+"section": "12R",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 174,
+"section": "12R",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 175,
+"section": "12R",
+"printed": "man",
+"spelling": "man",
+"flag": "",
+"tokens": "M A N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"man"
+],
+"lex_any": [
+[
+"man",
+"A"
+]
+]
+},
+{
+"rid": 176,
+"section": "12R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 177,
+"section": "12R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 178,
+"section": "12R",
+"printed": "klatwa",
+"spelling": "klatwa",
+"flag": "",
+"tokens": "K L A T WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"klatwa"
+],
+"lex_any": [
+[
+"klatwa",
+"B"
+]
+]
+},
+{
+"rid": 179,
+"section": "12R",
+"printed": "iht",
+"spelling": "iht",
+"flag": "",
+"tokens": "E H T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"iht",
+"C"
+]
+]
+},
+{
+"rid": 180,
+"section": "12R",
+"printed": "se'le",
+"spelling": "sele",
+"flag": "",
+"tokens": "S E L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"sele",
+"C"
+]
+]
+},
+{
+"rid": 181,
+"section": "12R",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 182,
+"section": "12R",
+"printed": "sele",
+"spelling": "sele",
+"flag": "",
+"tokens": "S E L E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"sele",
+"C"
+]
+]
+},
+{
+"rid": 183,
+"section": "12R",
+"printed": "wek",
+"spelling": "wek",
+"flag": "",
+"tokens": "WE K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"wek",
+"C"
+]
+]
+},
+{
+"rid": 184,
+"section": "12R",
+"printed": "kan'sih",
+"spelling": "kansih",
+"flag": "",
+"tokens": "K A N S E H",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 185,
+"section": "12R",
+"printed": "alke",
+"spelling": "alke",
+"flag": "",
+"tokens": "A L K E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"alke",
+"alki"
+],
+"lex_any": [
+[
+"alke",
+"A"
+],
+[
+"alki",
+"A"
+]
+]
+},
+{
+"rid": 186,
+"section": "12R",
+"printed": "memloos",
+"spelling": "memloos",
+"flag": "",
+"tokens": "M E M L OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"memloos"
+],
+"lex_any": [
+[
+"memloos",
+"A"
+]
+]
+},
+{
+"rid": 187,
+"section": "12R",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 188,
+"section": "12R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 189,
+"section": "13L",
+"printed": "name",
+"spelling": "nem",
+"flag": "resp",
+"tokens": "N E M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nem"
+],
+"lex_any": [
+[
+"nem",
+"A"
+]
+]
+},
+{
+"rid": 190,
+"section": "13L",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 191,
+"section": "13L",
+"printed": "chi",
+"spelling": "chi",
+"flag": "",
+"tokens": "CH E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"chi",
+"C"
+]
+]
+},
+{
+"rid": 192,
+"section": "13L",
+"printed": "man",
+"spelling": "man",
+"flag": "",
+"tokens": "M A N",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"man"
+],
+"lex_any": [
+[
+"man",
+"A"
+]
+]
+},
+{
+"rid": 193,
+"section": "13L",
+"printed": "Adam",
+"spelling": "adam",
+"flag": "",
+"tokens": "A D A M",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 194,
+"section": "13L",
+"printed": "kakwa",
+"spelling": "kakwa",
+"flag": "",
+"tokens": "K A K WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kakwa"
+],
+"lex_any": [
+[
+"kakwa",
+"A"
+]
+]
+},
+{
+"rid": 195,
+"section": "13L",
+"printed": "poos",
+"spelling": "poos",
+"flag": "",
+"tokens": "P OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"poos",
+"C"
+]
+]
+},
+{
+"rid": 196,
+"section": "13L",
+"printed": "wawa",
+"spelling": "wawa",
+"flag": "",
+"tokens": "WA WA",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"wawa"
+],
+"lex_any": [
+[
+"wawa",
+"A"
+]
+]
+},
+{
+"rid": 197,
+"section": "13L",
+"printed": "elehe",
+"spelling": "elehe",
+"flag": "",
+"tokens": "E L E H E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"elehe",
+"C"
+]
+]
+},
+{
+"rid": 198,
+"section": "13L",
+"printed": "iaka.",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 199,
+"section": "13L",
+"printed": "S.T.",
+"spelling": "st",
+"flag": "abbr",
+"tokens": "S T",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 200,
+"section": "13R",
+"printed": "nanich",
+"spelling": "nanich",
+"flag": "",
+"tokens": "N A N E CH",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"nanich",
+"nanitsh"
+],
+"lex_any": [
+[
+"nanich",
+"A"
+],
+[
+"nanitsh",
+"A"
+]
+]
+},
+{
+"rid": 201,
+"section": "13R",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 202,
+"section": "13R",
+"printed": "ookook",
+"spelling": "ookook",
+"flag": "",
+"tokens": "OO K OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": [
+[
+"ookook",
+"C"
+]
+]
+},
+{
+"rid": 203,
+"section": "13R",
+"printed": "Iaka",
+"spelling": "iaka",
+"flag": "",
+"tokens": "E A K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": false,
+"cand_heads": [],
+"lex_any": []
+},
+{
+"rid": 204,
+"section": "13R",
+"printed": "mamook",
+"spelling": "mamook",
+"flag": "",
+"tokens": "M A M OO K",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"mamook"
+],
+"lex_any": [
+[
+"mamook",
+"A"
+]
+]
+},
+{
+"rid": 205,
+"section": "13R",
+"printed": "pi",
+"spelling": "pi",
+"flag": "",
+"tokens": "P E",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"pe"
+],
+"lex_any": [
+[
+"pe",
+"B"
+],
+[
+"pi",
+"C"
+]
+]
+},
+{
+"rid": 206,
+"section": "13R",
+"printed": "kanawe",
+"spelling": "kanawe",
+"flag": "",
+"tokens": "K A N A WE",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"kanawe"
+],
+"lex_any": [
+[
+"kanawe",
+"A"
+]
+]
+},
+{
+"rid": 207,
+"section": "13R",
+"printed": "klaska",
+"spelling": "klaska",
+"flag": "",
+"tokens": "K L A S K A",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"klaska"
+],
+"lex_any": [
+[
+"klaska",
+"A"
+]
+]
+},
+{
+"rid": 208,
+"section": "13R",
+"printed": "tloos",
+"spelling": "tloos",
+"flag": "",
+"tokens": "T L OO S",
+"conv_error": "",
+"in_alphabet": true,
+"candidate": true,
+"cand_heads": [
+"tloos"
+],
+"lex_any": [
+[
+"tloos",
+"A"
+]
+]
+}
+]

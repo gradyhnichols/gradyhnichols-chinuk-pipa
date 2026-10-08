@@ -1,0 +1,1394 @@
+{
+ "summary": {
+  "n": 85,
+  "models": 3,
+  "tta": [
+   0.85,
+   1.0,
+   1.2
+  ],
+  "candidates": 1611,
+  "ter": 0.27184466019417475,
+  "exact": 0.3411764705882353,
+  "lexicon_top1": 0.7411764705882353,
+  "lexicon_top5": 0.8941176470588236,
+  "by_source": {
+   "LJ1892": {
+    "n": 49,
+    "ter": 0.3291139240506329,
+    "exact": 0.32653061224489793,
+    "lexicon_top1": 0.6530612244897959,
+    "lexicon_top5": 0.8367346938775511
+   },
+   "LJ1898": {
+    "n": 36,
+    "ter": 0.19428571428571428,
+    "exact": 0.3611111111111111,
+    "lexicon_top1": 0.8611111111111112,
+    "lexicon_top5": 0.9722222222222222
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "cihm_15465_p011_c0_r02",
+   "source": "LJ1898",
+   "latin": "alta",
+   "ref": "A L T A",
+   "greedy": "O L T A",
+   "top5": [
+    "A L T A",
+    "K A T A",
+    "K A L T A SH",
+    "O L E",
+    "K A L T A S"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p011_c0_r05",
+   "source": "LJ1898",
+   "latin": "a'yas",
+   "ref": "A E A S",
+   "greedy": "A H A S",
+   "top5": [
+    "A E A S",
+    "H E A S",
+    "A H A",
+    "K A E S",
+    "A K T A S"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p011_c0_r07",
+   "source": "LJ1898",
+   "latin": "cha'ko",
+   "ref": "CH A K O",
+   "greedy": "CH A K O",
+   "top5": [
+    "CH A K O",
+    "CH U K O",
+    "K O",
+    "CH A H K O",
+    "CH A T K O"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p011_c0_r09",
+   "source": "LJ1898",
+   "latin": "chik'min",
+   "ref": "CH E K M E N",
+   "greedy": "CH M E N",
+   "top5": [
+    "CH E K M E N",
+    "CH U K E N",
+    "CH E K E N",
+    "CH U K CH E N",
+    "T E M E N"
+   ],
+   "edits": 2,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p011_c0_r10",
+   "source": "LJ1898",
+   "latin": "chok",
+   "ref": "CH O K",
+   "greedy": "CH O K S",
+   "top5": [
+    "CH O K",
+    "CH U K",
+    "CH U K O",
+    "CH E K",
+    "CH A K O"
+   ],
+   "edits": 1,
+   "len": 3
+  },
+  {
+   "id": "cihm_15465_p011_c0_r15",
+   "source": "LJ1898",
+   "latin": "ela\u00eften",
+   "ref": "E L A E T E N",
+   "greedy": "E L A T E N",
+   "top5": [
+    "E L A E T E N",
+    "L A SH E N",
+    "E L A H A N",
+    "A E L A N",
+    "E T L A N"
+   ],
+   "edits": 1,
+   "len": 7
+  },
+  {
+   "id": "cihm_15465_p011_c0_r16",
+   "source": "LJ1898",
+   "latin": "elo",
+   "ref": "E L O",
+   "greedy": "E L O",
+   "top5": [
+    "E L O",
+    "O L O",
+    "H E L O",
+    "O L O K",
+    "H A L O"
+   ],
+   "edits": 0,
+   "len": 3
+  },
+  {
+   "id": "cihm_15465_p011_c0_r22",
+   "source": "LJ1898",
+   "latin": "humm",
+   "ref": "H U M",
+   "greedy": "H A",
+   "top5": [
+    "H OW",
+    "H E U",
+    "H U M",
+    "H E A K",
+    "H OW H"
+   ],
+   "edits": 2,
+   "len": 3
+  },
+  {
+   "id": "cihm_15465_p011_c0_r26",
+   "source": "LJ1898",
+   "latin": "i'lep",
+   "ref": "E L E P",
+   "greedy": "E L E P",
+   "top5": [
+    "E L E P",
+    "H E L P",
+    "T L E P",
+    "E L O",
+    "K L E P"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p011_c1_r01",
+   "source": "LJ1898",
+   "latin": "kal'kala",
+   "ref": "K A L K A L A",
+   "greedy": "K A L K A R H A",
+   "top5": [
+    "K A L K A L A",
+    "K A L K A L",
+    "K A L A K A L A",
+    "K A L A K A",
+    "K A H K A H"
+   ],
+   "edits": 2,
+   "len": 7
+  },
+  {
+   "id": "cihm_15465_p011_c1_r17",
+   "source": "LJ1898",
+   "latin": "kiu'tan",
+   "ref": "K U T A N",
+   "greedy": "K U T A F",
+   "top5": [
+    "K U T A N",
+    "K U A T A N",
+    "U T A H",
+    "K A T A",
+    "K U E T A N"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p011_c1_r27",
+   "source": "LJ1898",
+   "latin": "kolan'",
+   "ref": "K O L A N",
+   "greedy": "M K L A N",
+   "top5": [
+    "K O L A N",
+    "M E K A",
+    "M O L A",
+    "M OO L A",
+    "M U L A"
+   ],
+   "edits": 2,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r07",
+   "source": "LJ1898",
+   "latin": "lep'lep",
+   "ref": "L E P L E P",
+   "greedy": "L E P L E P",
+   "top5": [
+    "L E P L E P",
+    "L E P L E T",
+    "L E P _ L E P",
+    "L E P L A",
+    "L E P E E"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p012_c0_r09",
+   "source": "LJ1898",
+   "latin": "ma'ika",
+   "ref": "M A E K A",
+   "greedy": "M A K A",
+   "top5": [
+    "M A E K A",
+    "M E K A",
+    "M S A E K A",
+    "M A K OO K",
+    "M A K M A K"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r10",
+   "source": "LJ1898",
+   "latin": "ma'kook",
+   "ref": "M A K OO K",
+   "greedy": "H M A K OO K",
+   "top5": [
+    "M A K OO K",
+    "M A M OO K",
+    "M A K M A K",
+    "M A H K OO K",
+    "M A K U K"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r15",
+   "source": "LJ1898",
+   "latin": "mem'loos",
+   "ref": "M E M L OO S",
+   "greedy": "M E L OO S",
+   "top5": [
+    "M E M L OO S",
+    "M E L A S",
+    "M E M E L OO S",
+    "M E T A S",
+    "L E L OO"
+   ],
+   "edits": 1,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p012_c0_r19",
+   "source": "LJ1898",
+   "latin": "mow'ich",
+   "ref": "M OW E CH",
+   "greedy": "M A WA CH",
+   "top5": [
+    "M A WE CH",
+    "M A SH",
+    "M A S A CH",
+    "M A H SH",
+    "M A N"
+   ],
+   "edits": 2,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p012_c0_r20",
+   "source": "LJ1898",
+   "latin": "msa'ika",
+   "ref": "M S A E K A",
+   "greedy": "M S E P A",
+   "top5": [
+    "M S A E K A",
+    "M E S E K A",
+    "M S E K E K A",
+    "M E S E E",
+    "M A E K A"
+   ],
+   "edits": 2,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p012_c0_r21",
+   "source": "LJ1898",
+   "latin": "na'ika",
+   "ref": "N A E K A",
+   "greedy": "N A E K A",
+   "top5": [
+    "N A E K A",
+    "N E K A",
+    "N A H A",
+    "N S A E K A",
+    "N A WE T K A"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r22",
+   "source": "LJ1898",
+   "latin": "na'nich",
+   "ref": "N A N E CH",
+   "greedy": "N A N E CH",
+   "top5": [
+    "N A N E CH",
+    "N OW E CH",
+    "N A U E TS",
+    "K A N E WE",
+    "N A"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r27",
+   "source": "LJ1898",
+   "latin": "o'lali",
+   "ref": "O L A L E",
+   "greedy": "O L A L E",
+   "top5": [
+    "O L A L E",
+    "O L OO L E",
+    "O L E",
+    "O L A L E E",
+    "P O L A L E"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c0_r30",
+   "source": "LJ1898",
+   "latin": "oo'poots",
+   "ref": "OO P OO TS",
+   "greedy": "O P OO TS",
+   "top5": [
+    "OO P OO TS",
+    "O P OO TS",
+    "O P U TS",
+    "Q P OO TS",
+    "P OO"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p012_c0_r33",
+   "source": "LJ1898",
+   "latin": "papoos'",
+   "ref": "P A P OO S",
+   "greedy": "P A P OO S",
+   "top5": [
+    "P A P OO S",
+    "P A P A",
+    "P OO S P OO S",
+    "P A M A S",
+    "K A P O"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c1_r11",
+   "source": "LJ1898",
+   "latin": "poo'lale",
+   "ref": "P OO L A L E",
+   "greedy": "P OO L A L E",
+   "top5": [
+    "P OO L A L E",
+    "P OO L A K L E",
+    "P OO L E",
+    "P O L A L E",
+    "P OO L E E"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p012_c1_r14",
+   "source": "LJ1898",
+   "latin": "saka'looks",
+   "ref": "S A K A L OO K S",
+   "greedy": "S A K A O OO S",
+   "top5": [
+    "S A K A L OO K S",
+    "S A L E K S",
+    "S A K A L U K S",
+    "S A K O L E K S",
+    "S A K O R E K S"
+   ],
+   "edits": 2,
+   "len": 8
+  },
+  {
+   "id": "cihm_15465_p012_c1_r24",
+   "source": "LJ1898",
+   "latin": "sta'lo",
+   "ref": "S T A L O",
+   "greedy": "S T A L O",
+   "top5": [
+    "S T A L O",
+    "S T L OO",
+    "S E A T K O",
+    "S T O N",
+    "T A L A"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p012_c1_r25",
+   "source": "LJ1898",
+   "latin": "stiw'ilh",
+   "ref": "S T E WE LH",
+   "greedy": "S T E WE TH",
+   "top5": [
+    "S T E WE LH",
+    "S E L",
+    "S T E K",
+    "T E L",
+    "S E K"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p014_c0_r09",
+   "source": "LJ1898",
+   "latin": "tla'wa",
+   "ref": "T L A WA",
+   "greedy": "T A L A K WA",
+   "top5": [
+    "T L A WA",
+    "T L A K",
+    "T L A T WA",
+    "T E L E K O M",
+    "T A L A"
+   ],
+   "edits": 2,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p014_c0_r10",
+   "source": "LJ1898",
+   "latin": "tlemen",
+   "ref": "T L E M E N",
+   "greedy": "T L E M E N",
+   "top5": [
+    "T L E M E N",
+    "T E L E M E N",
+    "T E M E N",
+    "K L E M E N",
+    "T L U CH M E N"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p014_c0_r15",
+   "source": "LJ1898",
+   "latin": "tloon",
+   "ref": "T L OO N",
+   "greedy": "T L O N",
+   "top5": [
+    "T L OO N",
+    "T L O SH",
+    "T L OO S",
+    "T L E P",
+    "T L A P"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p014_c0_r17",
+   "source": "LJ1898",
+   "latin": "tsem",
+   "ref": "TS E M",
+   "greedy": "TS E K M",
+   "top5": [
+    "TS E M",
+    "S E K",
+    "TS E SH",
+    "TS E E",
+    "TS E P E"
+   ],
+   "edits": 1,
+   "len": 3
+  },
+  {
+   "id": "cihm_15465_p014_c0_r18",
+   "source": "LJ1898",
+   "latin": "tsepe",
+   "ref": "TS E P E",
+   "greedy": "TS E P E",
+   "top5": [
+    "TS E P E",
+    "TS E E",
+    "TS E E P E",
+    "P E",
+    "TS E M"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p014_c0_r21",
+   "source": "LJ1898",
+   "latin": "tsiltsil",
+   "ref": "TS E L TS E L",
+   "greedy": "TS H E TS E L",
+   "top5": [
+    "TS E E",
+    "TS E L TS E L",
+    "TS E K TS E K",
+    "U TS",
+    "TS E P E"
+   ],
+   "edits": 2,
+   "len": 6
+  },
+  {
+   "id": "cihm_15465_p014_c0_r28",
+   "source": "LJ1898",
+   "latin": "ya'ka",
+   "ref": "E A K A",
+   "greedy": "E A K A",
+   "top5": [
+    "E A K A",
+    "E A H K A",
+    "E A K WA",
+    "E A H K WA",
+    "E L A K A"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15465_p014_c0_r29",
+   "source": "LJ1898",
+   "latin": "yak'so",
+   "ref": "E A K S O",
+   "greedy": "E A H S OO",
+   "top5": [
+    "E A H S O",
+    "E A K S O",
+    "E A H WA",
+    "E A H K A",
+    "A H A"
+   ],
+   "edits": 2,
+   "len": 5
+  },
+  {
+   "id": "cihm_15465_p014_c0_r30",
+   "source": "LJ1898",
+   "latin": "ya'kwa",
+   "ref": "E A K WA",
+   "greedy": "E A K OO K",
+   "top5": [
+    "E A K A",
+    "E A K WA",
+    "E O K WA",
+    "A K",
+    "CH A K O"
+   ],
+   "edits": 2,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p007_V_r01",
+   "source": "LJ1892",
+   "latin": "A\u00efaz",
+   "ref": "A E A S",
+   "greedy": "A H A S",
+   "top5": [
+    "A H A",
+    "H E A S",
+    "A E A S",
+    "N A H A",
+    "A K T A S"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p007_V_r02",
+   "source": "LJ1892",
+   "latin": "A\u00eflan",
+   "ref": "A E L A N",
+   "greedy": "A E L O N",
+   "top5": [
+    "A E L A N",
+    "E L O",
+    "E T L A N",
+    "H E L O",
+    "E TH L A N"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p007_V_r04",
+   "source": "LJ1892",
+   "latin": "Alta",
+   "ref": "A L T A",
+   "greedy": "A L H T A",
+   "top5": [
+    "A L T A",
+    "A H A",
+    "A L A H",
+    "K A H T A",
+    "O L O"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p007_V_r08",
+   "source": "LJ1892",
+   "latin": "Aou",
+   "ref": "A O U",
+   "greedy": "OW",
+   "top5": [
+    "OW",
+    "H OW",
+    "K OW",
+    "L OW",
+    "H OW H"
+   ],
+   "edits": 3,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p007_V_r14",
+   "source": "LJ1892",
+   "latin": "Elo",
+   "ref": "E L O",
+   "greedy": "K E L OO K S",
+   "top5": [
+    "K E L O K",
+    "K E L U K",
+    "K E S U",
+    "E L O",
+    "KH E L"
+   ],
+   "edits": 4,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p008_V_r15",
+   "source": "LJ1892",
+   "latin": "Ilep",
+   "ref": "E L E P",
+   "greedy": "E L E P",
+   "top5": [
+    "E L E P",
+    "H E L P",
+    "K L E P",
+    "T L E P",
+    "L E K"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p008_V_r22",
+   "source": "LJ1892",
+   "latin": "Kalkala",
+   "ref": "K A L K A L A",
+   "greedy": "K A R G K A L H O",
+   "top5": [
+    "K A L K A L A",
+    "K A L A K A L A",
+    "K A L K A L",
+    "K A P A L A",
+    "K A L A K A"
+   ],
+   "edits": 4,
+   "len": 7
+  },
+  {
+   "id": "cihm_15474_p009_V_r11",
+   "source": "LJ1892",
+   "latin": "Karrots",
+   "ref": "K A R O TS",
+   "greedy": "K A P OO L O TS",
+   "top5": [
+    "K A P A L A",
+    "K A P O",
+    "L A P O L A",
+    "H A L O",
+    "P OO L E"
+   ],
+   "edits": 3,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p010_V_r05",
+   "source": "LJ1892",
+   "latin": "Klis",
+   "ref": "K L E S",
+   "greedy": "K L E S",
+   "top5": [
+    "K L E S",
+    "K L E",
+    "K A E S",
+    "L E S T",
+    "K L O S E"
+   ],
+   "edits": 0,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p010_V_r07",
+   "source": "LJ1892",
+   "latin": "Klismas",
+   "ref": "K L E S M A S",
+   "greedy": "K L E S M A S",
+   "top5": [
+    "K L E S M A S",
+    "K L E S K E S",
+    "L A M E S",
+    "L A M A S",
+    "K L E M E N"
+   ],
+   "edits": 0,
+   "len": 7
+  },
+  {
+   "id": "cihm_15474_p010_V_r17",
+   "source": "LJ1892",
+   "latin": "Kolan",
+   "ref": "K O L A N",
+   "greedy": "K O L A N",
+   "top5": [
+    "K O L A N",
+    "K O L E N",
+    "K WO L A N",
+    "K WO L O N",
+    "K O L E"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p010_V_r20",
+   "source": "LJ1892",
+   "latin": "K\u014fp",
+   "ref": "K O P",
+   "greedy": "E O L",
+   "top5": [
+    "K O P",
+    "K O L",
+    "P O L",
+    "K O",
+    "K O P E"
+   ],
+   "edits": 2,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p010_V_r23",
+   "source": "LJ1892",
+   "latin": "K\u014dt",
+   "ref": "K O T",
+   "greedy": "K O L T",
+   "top5": [
+    "K O L",
+    "K O T",
+    "K O",
+    "K O L E",
+    "K U L"
+   ],
+   "edits": 1,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p011_V_r05",
+   "source": "LJ1892",
+   "latin": "Kiutan",
+   "ref": "K U T A N",
+   "greedy": "M U M T E N",
+   "top5": [
+    "K U T A N",
+    "K U A T A N",
+    "K U E T A N",
+    "M E T E N",
+    "K E OO T A N"
+   ],
+   "edits": 3,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p011_V_r13",
+   "source": "LJ1892",
+   "latin": "Lakle",
+   "ref": "L A K L E",
+   "greedy": "L A K L E",
+   "top5": [
+    "L A K L E",
+    "L A L E",
+    "L A K L E S",
+    "L A P E L E",
+    "L A K E"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p012_V_r15",
+   "source": "LJ1892",
+   "latin": "Legliz Katolik",
+   "ref": "L E G L E S _ K A T O L E K",
+   "greedy": "L E K E S A O L E",
+   "top5": [
+    "L E K A E L E",
+    "L E K A L E M",
+    "L E K E E",
+    "L A K L E",
+    "L E K E"
+   ],
+   "edits": 6,
+   "len": 14
+  },
+  {
+   "id": "cihm_15474_p012_V_r16",
+   "source": "LJ1892",
+   "latin": "Le'kloo",
+   "ref": "L E K L OO",
+   "greedy": "L E K E L A P OO",
+   "top5": [
+    "L E K L O",
+    "L E K L OO",
+    "L E K OO",
+    "L E K E",
+    "L A K L E"
+   ],
+   "edits": 3,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p013_V_r07",
+   "source": "LJ1892",
+   "latin": "Lepot",
+   "ref": "L E P O T",
+   "greedy": "L E P O T",
+   "top5": [
+    "L E P O T",
+    "L E P E T",
+    "L A P O T",
+    "L E P O A",
+    "L E P L E T"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p013_V_r12",
+   "source": "LJ1892",
+   "latin": "Leshal",
+   "ref": "L E SH A L",
+   "greedy": "L E P SH A L",
+   "top5": [
+    "L E SH A L",
+    "L E P L A",
+    "L E B A L",
+    "L E SH A L OO",
+    "L E P O A"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p013_V_r17",
+   "source": "LJ1892",
+   "latin": "Maika",
+   "ref": "M A E K A",
+   "greedy": "M A K A",
+   "top5": [
+    "M A E K A",
+    "M E K A",
+    "E A K A",
+    "M A K OO K",
+    "M A M A"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p013_V_r19",
+   "source": "LJ1892",
+   "latin": "Makook",
+   "ref": "M A K OO K",
+   "greedy": "M A K O",
+   "top5": [
+    "M A K OO K",
+    "M A R K O",
+    "M A K M O K",
+    "M A R K OO K",
+    "M A K U K"
+   ],
+   "edits": 2,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p014_V_r05",
+   "source": "LJ1892",
+   "latin": "Memloos",
+   "ref": "M E M L OO S",
+   "greedy": "T E M OO S",
+   "top5": [
+    "M E M L OO S",
+    "M E M E L OO S",
+    "H A M OO K S",
+    "K A M OO K S",
+    "T E N A S"
+   ],
+   "edits": 2,
+   "len": 6
+  },
+  {
+   "id": "cihm_15474_p014_V_r14",
+   "source": "LJ1892",
+   "latin": "Moosom",
+   "ref": "M OO S O M",
+   "greedy": "M OO S O M",
+   "top5": [
+    "M OO S O M",
+    "M OO S OO M",
+    "M OO S U M",
+    "M U S O M",
+    "M E O S O M"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p014_V_r17",
+   "source": "LJ1892",
+   "latin": "Msaika",
+   "ref": "M S A E K A",
+   "greedy": "M S A E K A",
+   "top5": [
+    "M S A E K A",
+    "M E S E K A",
+    "M S E K E K A",
+    "N S A E K A",
+    "M A E K A"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15474_p015_V_r04",
+   "source": "LJ1892",
+   "latin": "Olali",
+   "ref": "O L A L E",
+   "greedy": "O L A L E",
+   "top5": [
+    "O L A L E",
+    "P O L A L E",
+    "L A L E",
+    "O L A L E E",
+    "O L OO L E"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p015_V_r12",
+   "source": "LJ1892",
+   "latin": "Papoos",
+   "ref": "P A P OO S",
+   "greedy": "P A P OO S",
+   "top5": [
+    "P A P OO S",
+    "P A P A",
+    "P OO S P OO S",
+    "P O S",
+    "P OW S"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p015_V_r16",
+   "source": "LJ1892",
+   "latin": "Patak",
+   "ref": "P A T A K",
+   "greedy": "P A T E A K",
+   "top5": [
+    "P A T A K",
+    "K A T A",
+    "P A T L A CH",
+    "P A T E",
+    "P A T"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p015_V_r19",
+   "source": "LJ1892",
+   "latin": "Pe",
+   "ref": "P E",
+   "greedy": "P E",
+   "top5": [
+    "P E",
+    "P A T",
+    "N A",
+    "P OO",
+    "P E L"
+   ],
+   "edits": 0,
+   "len": 2
+  },
+  {
+   "id": "cihm_15474_p015_V_r20",
+   "source": "LJ1892",
+   "latin": "Peie",
+   "ref": "P E E E",
+   "greedy": "P E H E",
+   "top5": [
+    "P E E",
+    "P E",
+    "P E E E",
+    "P E H E H",
+    "P E L"
+   ],
+   "edits": 1,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p016_V_r11",
+   "source": "LJ1892",
+   "latin": "Poolale",
+   "ref": "P OO L A L E",
+   "greedy": "P OO L A L E",
+   "top5": [
+    "P OO L A L E",
+    "P OO L E",
+    "P OO L A K L E",
+    "P O L A L E",
+    "P OO L E E"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15474_p016_V_r17",
+   "source": "LJ1892",
+   "latin": "Sakalooks",
+   "ref": "S A K A L OO K S",
+   "greedy": "S K A H O M OO K S",
+   "top5": [
+    "S A K A L OO K S",
+    "S A K A L U K S",
+    "S A L E K S",
+    "K A M OO K S",
+    "S A K O L E K S"
+   ],
+   "edits": 4,
+   "len": 8
+  },
+  {
+   "id": "cihm_15474_p017_V_r04",
+   "source": "LJ1892",
+   "latin": "Shem",
+   "ref": "SH E M",
+   "greedy": "SH E K",
+   "top5": [
+    "SH E P",
+    "SH E M",
+    "CH E K",
+    "L E K",
+    "S E K"
+   ],
+   "edits": 1,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p017_V_r13",
+   "source": "LJ1892",
+   "latin": "Sedar",
+   "ref": "S E D A R",
+   "greedy": "S E T A E",
+   "top5": [
+    "S E T L A E",
+    "S E L",
+    "S E D A R",
+    "T E L",
+    "L E T A U"
+   ],
+   "edits": 2,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p017_V_r19",
+   "source": "LJ1892",
+   "latin": "Snek",
+   "ref": "S N E K",
+   "greedy": "S N",
+   "top5": [
+    "S N E K",
+    "S E K",
+    "S N OW",
+    "S U N",
+    "S O N"
+   ],
+   "edits": 2,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p017_V_r22",
+   "source": "LJ1892",
+   "latin": "Sonde",
+   "ref": "S O N D E",
+   "greedy": "S E N D E",
+   "top5": [
+    "S O N D E",
+    "S O N",
+    "S E NG",
+    "S U N",
+    "S E K"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p018_V_r01",
+   "source": "LJ1892",
+   "latin": "Sopna",
+   "ref": "S O P N A",
+   "greedy": "S A P",
+   "top5": [
+    "S O P",
+    "S E K",
+    "S O A P",
+    "S E A H",
+    "S E NG"
+   ],
+   "edits": 3,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p018_V_r14",
+   "source": "LJ1892",
+   "latin": "Takta",
+   "ref": "T A K T A",
+   "greedy": "T E A K T",
+   "top5": [
+    "T L A K",
+    "T A H",
+    "T A K T A",
+    "A K",
+    "L A G H"
+   ],
+   "edits": 2,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p018_R_r06",
+   "source": "LJ1892",
+   "latin": "Stalo",
+   "ref": "S T A L O",
+   "greedy": "S T A L O",
+   "top5": [
+    "S T A L O",
+    "T O L O",
+    "S T L OO",
+    "T A L A",
+    "H A L O"
+   ],
+   "edits": 0,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p018_R_r18",
+   "source": "LJ1892",
+   "latin": "Tala",
+   "ref": "T A L A",
+   "greedy": "H E L A K",
+   "top5": [
+    "T A L A",
+    "T L A K",
+    "M U L A",
+    "E L O",
+    "T L A P"
+   ],
+   "edits": 3,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p020_R_r04",
+   "source": "LJ1892",
+   "latin": "Tsher",
+   "ref": "CH E R",
+   "greedy": "P A P E T R R",
+   "top5": [
+    "P E L",
+    "P E",
+    "P E E",
+    "T E L",
+    "CH E R"
+   ],
+   "edits": 5,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p020_R_r05",
+   "source": "LJ1892",
+   "latin": "Tshok",
+   "ref": "CH O K",
+   "greedy": "CH O N O",
+   "top5": [
+    "S O N",
+    "K O",
+    "TS O M",
+    "O N A",
+    "N A"
+   ],
+   "edits": 2,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p020_R_r07",
+   "source": "LJ1892",
+   "latin": "Tsem",
+   "ref": "TS E M",
+   "greedy": "TS E K M",
+   "top5": [
+    "TS E M",
+    "SH E M",
+    "TS O M",
+    "N E M",
+    "E E E M"
+   ],
+   "edits": 1,
+   "len": 3
+  },
+  {
+   "id": "cihm_15474_p020_R_r09",
+   "source": "LJ1892",
+   "latin": "Tsiltsil",
+   "ref": "TS E L TS E L",
+   "greedy": "H E S L T",
+   "top5": [
+    "S A L T",
+    "E K T",
+    "H U L E T",
+    "P A T",
+    "H A L E T"
+   ],
+   "edits": 5,
+   "len": 6
+  },
+  {
+   "id": "cihm_15474_p022_R_r05",
+   "source": "LJ1892",
+   "latin": "Ielles",
+   "ref": "E E L E S",
+   "greedy": "K E L E S",
+   "top5": [
+    "K L E S",
+    "T A L E S",
+    "L A K L E S",
+    "K A E S",
+    "T E A L E S"
+   ],
+   "edits": 1,
+   "len": 5
+  },
+  {
+   "id": "cihm_15474_p022_R_r06",
+   "source": "LJ1892",
+   "latin": "Ikik",
+   "ref": "E K E K",
+   "greedy": "E K L E",
+   "top5": [
+    "E K E K",
+    "L E K E",
+    "E L E P",
+    "CH E K E",
+    "L E K"
+   ],
+   "edits": 2,
+   "len": 4
+  },
+  {
+   "id": "cihm_15474_p022_R_r09",
+   "source": "LJ1892",
+   "latin": "Lapola",
+   "ref": "L A P O L A",
+   "greedy": "L A P O L A",
+   "top5": [
+    "L A P O L A",
+    "L A P OO L",
+    "L A P L A SH",
+    "L A P E L E",
+    "L A P E L"
+   ],
+   "edits": 0,
+   "len": 6
+  },
+  {
+   "id": "cihm_15474_p022_R_r20",
+   "source": "LJ1892",
+   "latin": "Talapos",
+   "ref": "T A L A P O S",
+   "greedy": "S A L E K S",
+   "top5": [
+    "T A L E S",
+    "S A L E K S",
+    "T E A L E S",
+    "T L E T",
+    "M A L E"
+   ],
+   "edits": 4,
+   "len": 7
+  },
+  {
+   "id": "cihm_15474_p019_N_r09",
+   "source": "LJ1892",
+   "latin": "Ti",
+   "ref": "T E",
+   "greedy": "T E",
+   "top5": [
+    "T E",
+    "T E A",
+    "T E L",
+    "D L E",
+    "T L E T"
+   ],
+   "edits": 0,
+   "len": 2
+  },
+  {
+   "id": "cihm_15474_p019_N_r16",
+   "source": "LJ1892",
+   "latin": "Tlet",
+   "ref": "T L E T",
+   "greedy": "T L E T",
+   "top5": [
+    "T L E T",
+    "D L E T",
+    "L E S T",
+    "D L E",
+    "L E WE T"
+   ],
+   "edits": 0,
+   "len": 4
+  }
+ ]
+}

@@ -1,0 +1,6434 @@
+{
+ "summary": {
+  "control: drop the first A": {
+   "occurrences": 258,
+   "distinct_words": 167,
+   "alt_wins": 22,
+   "median_nll_gain_for_alt": -10.548017978668213
+  },
+  "i_next_to_vowel_not_written": {
+   "occurrences": 81,
+   "distinct_words": 53,
+   "alt_wins": 44,
+   "median_nll_gain_for_alt": 1.0617294311523438
+  },
+  "i_before_vowel_not_written": {
+   "occurrences": 35,
+   "distinct_words": 25,
+   "alt_wins": 19,
+   "median_nll_gain_for_alt": 0.23135662078857422
+  },
+  "control: drop the first O": {
+   "occurrences": 95,
+   "distinct_words": 63,
+   "alt_wins": 16,
+   "median_nll_gain_for_alt": -7.298514366149902
+  },
+  "control: drop an i between consonants": {
+   "occurrences": 79,
+   "distinct_words": 49,
+   "alt_wins": 12,
+   "median_nll_gain_for_alt": -9.194047927856445
+  },
+  "i_after_vowel_not_written": {
+   "occurrences": 46,
+   "distinct_words": 28,
+   "alt_wins": 25,
+   "median_nll_gain_for_alt": 1.6523141860961914
+  },
+  "iu_is_U_alone": {
+   "occurrences": 4,
+   "distinct_words": 2,
+   "alt_wins": 4,
+   "median_nll_gain_for_alt": 7.100256681442261
+  },
+  "z_is_TS (old rule)": {
+   "occurrences": 12,
+   "distinct_words": 7,
+   "alt_wins": 0,
+   "median_nll_gain_for_alt": -10.526107117766514
+  },
+  "tsh_is_CH": {
+   "occurrences": 8,
+   "distinct_words": 4,
+   "alt_wins": 5,
+   "median_nll_gain_for_alt": 8.761476516723633
+  },
+  "tsh_is_TS_without_H": {
+   "occurrences": 8,
+   "distinct_words": 4,
+   "alt_wins": 7,
+   "median_nll_gain_for_alt": 3.5667543411254883
+  },
+  "tsh_is_SH": {
+   "occurrences": 8,
+   "distinct_words": 4,
+   "alt_wins": 5,
+   "median_nll_gain_for_alt": 5.371172904968262
+  }
+ },
+ "rows": {
+  "control: drop the first A": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r02",
+    "latin": "alta",
+    "source": "LJ1898",
+    "rule": "A L T A",
+    "alt": "L T A",
+    "nll_rule": 1.2317917346954346,
+    "nll_alt": 11.562850952148438
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r05",
+    "latin": "a'yas",
+    "source": "LJ1898",
+    "rule": "A E A S",
+    "alt": "E A S",
+    "nll_rule": 3.3154890537261963,
+    "nll_alt": 15.642237663269043
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r07",
+    "latin": "cha'ko",
+    "source": "LJ1898",
+    "rule": "CH A K O",
+    "alt": "CH K O",
+    "nll_rule": 0.9371464252471924,
+    "nll_alt": 7.25129508972168
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L E T E N",
+    "nll_rule": 14.89989185333252,
+    "nll_alt": 11.312335968017578
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r01",
+    "latin": "kal'kala",
+    "source": "LJ1898",
+    "rule": "K A L K A L A",
+    "alt": "K L K A L A",
+    "nll_rule": 3.556565284729004,
+    "nll_alt": 17.604700088500977
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K E U T N",
+    "nll_rule": 12.729198455810547,
+    "nll_alt": 23.74960708618164
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r27",
+    "latin": "kolan'",
+    "source": "LJ1898",
+    "rule": "K O L A N",
+    "alt": "K O L N",
+    "nll_rule": 28.328617095947266,
+    "nll_alt": 39.89168930053711
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M E K A",
+    "nll_rule": 7.091877460479736,
+    "nll_alt": 12.27678394317627
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r10",
+    "latin": "ma'kook",
+    "source": "LJ1898",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 8.040188789367676,
+    "nll_alt": 26.49334716796875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S E K A",
+    "nll_rule": 4.860618591308594,
+    "nll_alt": 9.858957290649414
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r21",
+    "latin": "na'ika",
+    "source": "LJ1898",
+    "rule": "N A E K A",
+    "alt": "N E K A",
+    "nll_rule": 0.2795366048812866,
+    "nll_alt": 8.754779815673828
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r22",
+    "latin": "na'nich",
+    "source": "LJ1898",
+    "rule": "N A N E CH",
+    "alt": "N N E CH",
+    "nll_rule": 3.6370553970336914,
+    "nll_alt": 21.445457458496094
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r27",
+    "latin": "o'lali",
+    "source": "LJ1898",
+    "rule": "O L A L E",
+    "alt": "O L L E",
+    "nll_rule": 0.1812727004289627,
+    "nll_alt": 10.593936920166016
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r33",
+    "latin": "papoos'",
+    "source": "LJ1898",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.09282759577035904,
+    "nll_alt": 17.2088680267334
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c1_r11",
+    "latin": "poo'lale",
+    "source": "LJ1898",
+    "rule": "P OO L A L E",
+    "alt": "P OO L L E",
+    "nll_rule": 0.3459354639053345,
+    "nll_alt": 8.11777114868164
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c1_r14",
+    "latin": "saka'looks",
+    "source": "LJ1898",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 7.020083904266357,
+    "nll_alt": 14.01496696472168
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c1_r24",
+    "latin": "sta'lo",
+    "source": "LJ1898",
+    "rule": "S T A L O",
+    "alt": "S T L O",
+    "nll_rule": 4.994750022888184,
+    "nll_alt": 16.5699520111084
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r09",
+    "latin": "tla'wa",
+    "source": "LJ1898",
+    "rule": "T L A WA",
+    "alt": "T L WA",
+    "nll_rule": 12.103163719177246,
+    "nll_alt": 19.86182975769043
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r28",
+    "latin": "ya'ka",
+    "source": "LJ1898",
+    "rule": "E A K A",
+    "alt": "E K A",
+    "nll_rule": 2.2775747776031494,
+    "nll_alt": 11.433374404907227
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r29",
+    "latin": "yak'so",
+    "source": "LJ1898",
+    "rule": "E A K S O",
+    "alt": "E K S O",
+    "nll_rule": 21.6636905670166,
+    "nll_alt": 30.55429458618164
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r30",
+    "latin": "ya'kwa",
+    "source": "LJ1898",
+    "rule": "E A K WA",
+    "alt": "E K WA",
+    "nll_rule": 6.22390079498291,
+    "nll_alt": 9.813060760498047
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "E A S",
+    "nll_rule": 8.850591659545898,
+    "nll_alt": 18.40528106689453
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "E L A N",
+    "nll_rule": 3.6349215507507324,
+    "nll_alt": 10.485106468200684
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r04",
+    "latin": "Alta",
+    "source": "LJ1892",
+    "rule": "A L T A",
+    "alt": "L T A",
+    "nll_rule": 2.0981476306915283,
+    "nll_alt": 12.997563362121582
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r08",
+    "latin": "Aou",
+    "source": "LJ1892",
+    "rule": "A O U",
+    "alt": "O U",
+    "nll_rule": 32.42851257324219,
+    "nll_alt": 20.453720092773438
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p008_V_r22",
+    "latin": "Kalkala",
+    "source": "LJ1892",
+    "rule": "K A L K A L A",
+    "alt": "K L K A L A",
+    "nll_rule": 3.248361349105835,
+    "nll_alt": 13.451215744018555
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K R O TS",
+    "nll_rule": 41.184425354003906,
+    "nll_alt": 55.67027282714844
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r07",
+    "latin": "Klismas",
+    "source": "LJ1892",
+    "rule": "K L E S M A S",
+    "alt": "K L E S M S",
+    "nll_rule": 9.645309448242188,
+    "nll_alt": 14.494508743286133
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r17",
+    "latin": "Kolan",
+    "source": "LJ1892",
+    "rule": "K O L A N",
+    "alt": "K O L N",
+    "nll_rule": 1.8695011138916016,
+    "nll_alt": 11.521942138671875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K E U T N",
+    "nll_rule": 11.199037551879883,
+    "nll_alt": 20.10161781311035
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p011_V_r13",
+    "latin": "Lakle",
+    "source": "LJ1892",
+    "rule": "L A K L E",
+    "alt": "L K L E",
+    "nll_rule": 2.217759132385254,
+    "nll_alt": 20.242919921875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K T O L E K",
+    "nll_rule": 74.50394439697266,
+    "nll_alt": 67.91191864013672
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r12",
+    "latin": "Leshal",
+    "source": "LJ1892",
+    "rule": "L E SH A L",
+    "alt": "L E SH L",
+    "nll_rule": 9.140252113342285,
+    "nll_alt": 22.94922637939453
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M E K A",
+    "nll_rule": 11.069786071777344,
+    "nll_alt": 15.295035362243652
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r19",
+    "latin": "Makook",
+    "source": "LJ1892",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 11.352042198181152,
+    "nll_alt": 31.655344009399414
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S E K A",
+    "nll_rule": 14.453251838684082,
+    "nll_alt": 16.856781005859375
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r04",
+    "latin": "Olali",
+    "source": "LJ1892",
+    "rule": "O L A L E",
+    "alt": "O L L E",
+    "nll_rule": 0.013084097765386105,
+    "nll_alt": 12.3150634765625
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r12",
+    "latin": "Papoos",
+    "source": "LJ1892",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.04615205153822899,
+    "nll_alt": 16.25450897216797
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r16",
+    "latin": "Patak",
+    "source": "LJ1892",
+    "rule": "P A T A K",
+    "alt": "P T A K",
+    "nll_rule": 0.5146030187606812,
+    "nll_alt": 12.038071632385254
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p016_V_r11",
+    "latin": "Poolale",
+    "source": "LJ1892",
+    "rule": "P OO L A L E",
+    "alt": "P OO L L E",
+    "nll_rule": 3.3733949661254883,
+    "nll_alt": 9.327836990356445
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p016_V_r17",
+    "latin": "Sakalooks",
+    "source": "LJ1892",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 9.853594779968262,
+    "nll_alt": 16.05976104736328
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p017_V_r13",
+    "latin": "Sedar",
+    "source": "LJ1892",
+    "rule": "S E D A R",
+    "alt": "S E D R",
+    "nll_rule": 26.766738891601562,
+    "nll_alt": 39.47785949707031
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_V_r01",
+    "latin": "Sopna",
+    "source": "LJ1892",
+    "rule": "S O P N A",
+    "alt": "S O P N",
+    "nll_rule": 30.87078857421875,
+    "nll_alt": 21.77666473388672
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_V_r14",
+    "latin": "Takta",
+    "source": "LJ1892",
+    "rule": "T A K T A",
+    "alt": "T K T A",
+    "nll_rule": 15.949886322021484,
+    "nll_alt": 26.18577003479004
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_R_r06",
+    "latin": "Stalo",
+    "source": "LJ1892",
+    "rule": "S T A L O",
+    "alt": "S T L O",
+    "nll_rule": 2.309701442718506,
+    "nll_alt": 11.454915046691895
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_R_r18",
+    "latin": "Tala",
+    "source": "LJ1892",
+    "rule": "T A L A",
+    "alt": "T L A",
+    "nll_rule": 11.99106502532959,
+    "nll_alt": 5.247583389282227
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L P O L A",
+    "nll_rule": 3.957642078399658,
+    "nll_alt": 26.225818634033203
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r20",
+    "latin": "Talapos",
+    "source": "LJ1892",
+    "rule": "T A L A P O S",
+    "alt": "T L A P O S",
+    "nll_rule": 42.50480651855469,
+    "nll_alt": 52.33772659301758
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c0_r21",
+    "latin": "helo'ima",
+    "source": "LJ1898",
+    "rule": "H E L O E M A",
+    "alt": "H E L O E M",
+    "nll_rule": 13.216214179992676,
+    "nll_alt": 16.97772979736328
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c0_r30",
+    "latin": "kah",
+    "source": "LJ1898",
+    "rule": "K A H",
+    "alt": "K H",
+    "nll_rule": 2.3753557205200195,
+    "nll_alt": 10.702226638793945
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r02",
+    "latin": "kal'tash",
+    "source": "LJ1898",
+    "rule": "K A L T A SH",
+    "alt": "K L T A SH",
+    "nll_rule": 3.9722163677215576,
+    "nll_alt": 6.370067119598389
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r05",
+    "latin": "ka'namoxt",
+    "source": "LJ1898",
+    "rule": "K A N A M O K S T",
+    "alt": "K N A M O K S T",
+    "nll_rule": 0.7309167385101318,
+    "nll_alt": 17.11339569091797
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r06",
+    "latin": "kan'sih",
+    "source": "LJ1898",
+    "rule": "K A N S E H",
+    "alt": "K N S E H",
+    "nll_rule": 10.585151672363281,
+    "nll_alt": 21.360666275024414
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r14",
+    "latin": "kim'ta",
+    "source": "LJ1898",
+    "rule": "K E M T A",
+    "alt": "K E M T",
+    "nll_rule": 12.795088768005371,
+    "nll_alt": 24.59539031982422
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r21",
+    "latin": "kla'ska",
+    "source": "LJ1898",
+    "rule": "K L A S K A",
+    "alt": "K L S K A",
+    "nll_rule": 6.6061811447143555,
+    "nll_alt": 13.750771522521973
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r25",
+    "latin": "kloonas'",
+    "source": "LJ1898",
+    "rule": "K L OO N A S",
+    "alt": "K L OO N S",
+    "nll_rule": 4.273672103881836,
+    "nll_alt": 7.3419671058654785
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r28",
+    "latin": "komtax'",
+    "source": "LJ1898",
+    "rule": "K O M T A K S",
+    "alt": "K O M T K S",
+    "nll_rule": 13.071099281311035,
+    "nll_alt": 22.357627868652344
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c0_r10",
+    "latin": "ma'kook",
+    "source": "LJ1898",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 6.952918529510498,
+    "nll_alt": 28.519004821777344
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c0_r11",
+    "latin": "mak'mak",
+    "source": "LJ1898",
+    "rule": "M A K M A K",
+    "alt": "M K M A K",
+    "nll_rule": 11.923316955566406,
+    "nll_alt": 28.400691986083984
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S E K A",
+    "nll_rule": 2.963947057723999,
+    "nll_alt": 8.95764446258545
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r03",
+    "latin": "pa'tlach",
+    "source": "LJ1898",
+    "rule": "P A T L A CH",
+    "alt": "P T L A CH",
+    "nll_rule": 6.99029541015625,
+    "nll_alt": 19.77857208251953
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 0.002794576110318303,
+    "nll_alt": 11.923893928527832
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r26",
+    "latin": "ta'ham",
+    "source": "LJ1898",
+    "rule": "T A H A M",
+    "alt": "T H A M",
+    "nll_rule": 0.443271279335022,
+    "nll_alt": 12.08442211151123
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r27",
+    "latin": "takmoonak",
+    "source": "LJ1898",
+    "rule": "T A K M OO N A K",
+    "alt": "T K M OO N A K",
+    "nll_rule": 5.914587497711182,
+    "nll_alt": 15.262003898620605
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "E L A N",
+    "nll_rule": 6.013810157775879,
+    "nll_alt": 10.886964797973633
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r04",
+    "latin": "Heloïma",
+    "source": "LJ1892",
+    "rule": "H E L O E M A",
+    "alt": "H E L O E M",
+    "nll_rule": 31.82222557067871,
+    "nll_alt": 39.06132507324219
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P E",
+    "nll_rule": 7.7082695960998535,
+    "nll_alt": 12.018462181091309
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r19",
+    "latin": "Kah",
+    "source": "LJ1892",
+    "rule": "K A H",
+    "alt": "K H",
+    "nll_rule": 8.818979263305664,
+    "nll_alt": 17.264144897460938
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r00",
+    "latin": "Kaltash",
+    "source": "LJ1892",
+    "rule": "K A L T A SH",
+    "alt": "K L T A SH",
+    "nll_rule": 5.783302307128906,
+    "nll_alt": 19.30512237548828
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r02",
+    "latin": "Kanada",
+    "source": "LJ1892",
+    "rule": "K A N A D A",
+    "alt": "K N A D A",
+    "nll_rule": 21.289012908935547,
+    "nll_alt": 31.747589111328125
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r03",
+    "latin": "Kanaka",
+    "source": "LJ1892",
+    "rule": "K A N A K A",
+    "alt": "K N A K A",
+    "nll_rule": 8.5447359085083,
+    "nll_alt": 28.602928161621094
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r06",
+    "latin": "Kandle",
+    "source": "LJ1892",
+    "rule": "K A N D L E",
+    "alt": "K N D L E",
+    "nll_rule": 40.03240203857422,
+    "nll_alt": 41.51517105102539
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r08",
+    "latin": "Kansih",
+    "source": "LJ1892",
+    "rule": "K A N S E H",
+    "alt": "K N S E H",
+    "nll_rule": 18.156494140625,
+    "nll_alt": 29.446699142456055
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r16",
+    "latin": "Kimta",
+    "source": "LJ1892",
+    "rule": "K E M T A",
+    "alt": "K E M T",
+    "nll_rule": 24.081960678100586,
+    "nll_alt": 27.853681564331055
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p010_V_r03",
+    "latin": "Klaska",
+    "source": "LJ1892",
+    "rule": "K L A S K A",
+    "alt": "K L S K A",
+    "nll_rule": 8.910770416259766,
+    "nll_alt": 12.388265609741211
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p010_V_r09",
+    "latin": "Kloonas",
+    "source": "LJ1892",
+    "rule": "K L OO N A S",
+    "alt": "K L OO N S",
+    "nll_rule": 16.79386329650879,
+    "nll_alt": 29.680259704589844
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p010_V_r19",
+    "latin": "Komtax",
+    "source": "LJ1892",
+    "rule": "K O M T A K S",
+    "alt": "K O M T K S",
+    "nll_rule": 23.627304077148438,
+    "nll_alt": 29.93385887145996
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p011_V_r16",
+    "latin": "Lalang",
+    "source": "LJ1892",
+    "rule": "L A L A NG",
+    "alt": "L L A NG",
+    "nll_rule": 16.971656799316406,
+    "nll_alt": 27.93699836730957
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L P E O SH",
+    "nll_rule": 9.543307304382324,
+    "nll_alt": 21.606542587280273
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L P O T",
+    "nll_rule": 2.6115331649780273,
+    "nll_alt": 18.4760799407959
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r07",
+    "latin": "Latet",
+    "source": "LJ1892",
+    "rule": "L A T E T",
+    "alt": "L T E T",
+    "nll_rule": 7.312776565551758,
+    "nll_alt": 22.016427993774414
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r10",
+    "latin": "Le'da",
+    "source": "LJ1892",
+    "rule": "L E D A",
+    "alt": "L E D",
+    "nll_rule": 29.407352447509766,
+    "nll_alt": 34.11215591430664
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r14",
+    "latin": "Lekatrta",
+    "source": "LJ1892",
+    "rule": "L E K A T R T A",
+    "alt": "L E K T R T A",
+    "nll_rule": 16.09194564819336,
+    "nll_alt": 30.21523666381836
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r20",
+    "latin": "Lemaliash",
+    "source": "LJ1892",
+    "rule": "L E M A L E A SH",
+    "alt": "L E M L E A SH",
+    "nll_rule": 0.6644052863121033,
+    "nll_alt": 17.340476989746094
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p013_V_r13",
+    "latin": "Leshaple",
+    "source": "LJ1892",
+    "rule": "L E SH A P L E",
+    "alt": "L E SH P L E",
+    "nll_rule": 0.5404462218284607,
+    "nll_alt": 7.481407165527344
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p013_V_r18",
+    "latin": "Makmak",
+    "source": "LJ1892",
+    "rule": "M A K M A K",
+    "alt": "M K M A K",
+    "nll_rule": 12.508843421936035,
+    "nll_alt": 21.412208557128906
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p013_V_r19",
+    "latin": "Makook",
+    "source": "LJ1892",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 17.322887420654297,
+    "nll_alt": 38.08893966674805
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p014_V_r04",
+    "latin": "Melasses",
+    "source": "LJ1892",
+    "rule": "M E L A S E S",
+    "alt": "M E L S E S",
+    "nll_rule": 9.188983917236328,
+    "nll_alt": 23.342348098754883
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S E K A",
+    "nll_rule": 7.547695636749268,
+    "nll_alt": 13.257436752319336
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p015_V_r10",
+    "latin": "Pak",
+    "source": "LJ1892",
+    "rule": "P A K",
+    "alt": "P K",
+    "nll_rule": 8.65310287475586,
+    "nll_alt": 13.833141326904297
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p015_V_r14",
+    "latin": "Pasket",
+    "source": "LJ1892",
+    "rule": "P A S K E T",
+    "alt": "P S K E T",
+    "nll_rule": 0.8276587724685669,
+    "nll_alt": 12.527698516845703
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r03",
+    "latin": "Shamte",
+    "source": "LJ1892",
+    "rule": "SH A M T E",
+    "alt": "SH M T E",
+    "nll_rule": 27.35289764404297,
+    "nll_alt": 29.659523010253906
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r09",
+    "latin": "Siapool",
+    "source": "LJ1892",
+    "rule": "S E A P OO L",
+    "alt": "S E P OO L",
+    "nll_rule": 21.453893661499023,
+    "nll_alt": 22.755029678344727
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r13",
+    "latin": "Sedar",
+    "source": "LJ1892",
+    "rule": "S E D A R",
+    "alt": "S E D R",
+    "nll_rule": 33.690162658691406,
+    "nll_alt": 42.8085823059082
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p018_R_r17",
+    "latin": "Takmonak",
+    "source": "LJ1892",
+    "rule": "T A K M O N A K",
+    "alt": "T K M O N A K",
+    "nll_rule": 6.819530010223389,
+    "nll_alt": 20.419700622558594
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L P O L A",
+    "nll_rule": 2.3898284435272217,
+    "nll_alt": 19.19178009033203
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p021_N_r09",
+    "latin": "Ham",
+    "source": "LJ1892",
+    "rule": "H A M",
+    "alt": "H M",
+    "nll_rule": 12.93764591217041,
+    "nll_alt": 7.682411193847656
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r06",
+    "latin": "a'yoo",
+    "source": "LJ1898",
+    "rule": "A E OO",
+    "alt": "E OO",
+    "nll_rule": 16.90076446533203,
+    "nll_alt": 23.30861473083496
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L E T E N",
+    "nll_rule": 12.055201530456543,
+    "nll_alt": 2.3377416133880615
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r19",
+    "latin": "ha'ha",
+    "source": "LJ1898",
+    "rule": "H A H A",
+    "alt": "H H A",
+    "nll_rule": 1.795531153678894,
+    "nll_alt": 13.273407936096191
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 1.007524847984314,
+    "nll_alt": 11.780105590820312
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r32",
+    "latin": "ka'kwa",
+    "source": "LJ1898",
+    "rule": "K A K WA",
+    "alt": "K K WA",
+    "nll_rule": 7.932981491088867,
+    "nll_alt": 27.059783935546875
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c1_r19",
+    "latin": "kla'howyam",
+    "source": "LJ1898",
+    "rule": "K L A H OW E A M",
+    "alt": "K L H OW E A M",
+    "nll_rule": 8.194775581359863,
+    "nll_alt": 23.624711990356445
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c1_r22",
+    "latin": "kla'twa",
+    "source": "LJ1898",
+    "rule": "K L A T WA",
+    "alt": "K L T WA",
+    "nll_rule": 4.595665454864502,
+    "nll_alt": 19.222545623779297
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r10",
+    "latin": "ma'kook",
+    "source": "LJ1898",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 17.767730712890625,
+    "nll_alt": 35.97945785522461
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r23",
+    "latin": "na'witka",
+    "source": "LJ1898",
+    "rule": "N A WE T K A",
+    "alt": "N WE T K A",
+    "nll_rule": 1.5182368755340576,
+    "nll_alt": 15.069769859313965
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r32",
+    "latin": "pa'ia",
+    "source": "LJ1898",
+    "rule": "P A E A",
+    "alt": "P E A",
+    "nll_rule": 5.338371276855469,
+    "nll_alt": 15.611638069152832
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r33",
+    "latin": "papoos'",
+    "source": "LJ1898",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.12410589307546616,
+    "nll_alt": 15.882204055786133
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r02",
+    "latin": "patl",
+    "source": "LJ1898",
+    "rule": "P A T L",
+    "alt": "P T L",
+    "nll_rule": 0.36236247420310974,
+    "nll_alt": 14.01425552368164
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 1.454425573348999,
+    "nll_alt": 13.290637016296387
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r14",
+    "latin": "saka'looks",
+    "source": "LJ1898",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 14.142705917358398,
+    "nll_alt": 18.174423217773438
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r19",
+    "latin": "sia'hoos",
+    "source": "LJ1898",
+    "rule": "S E A H OO S",
+    "alt": "S E H OO S",
+    "nll_rule": 2.552053928375244,
+    "nll_alt": 10.347427368164062
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r28",
+    "latin": "tamano'az",
+    "source": "LJ1898",
+    "rule": "T A M A N O A S",
+    "alt": "T M A N O A S",
+    "nll_rule": 12.889567375183105,
+    "nll_alt": 30.58829689025879
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p014_c0_r08",
+    "latin": "tlap",
+    "source": "LJ1898",
+    "rule": "T L A P",
+    "alt": "T L P",
+    "nll_rule": 5.1034440994262695,
+    "nll_alt": 4.952305316925049
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r09",
+    "latin": "Ayoo",
+    "source": "LJ1892",
+    "rule": "A E OO",
+    "alt": "E OO",
+    "nll_rule": 16.206737518310547,
+    "nll_alt": 19.803810119628906
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P E",
+    "nll_rule": 12.37513256072998,
+    "nll_alt": 16.374454498291016
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 3.417710304260254,
+    "nll_alt": 8.57204818725586
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r20",
+    "latin": "Kakwa",
+    "source": "LJ1892",
+    "rule": "K A K WA",
+    "alt": "K K WA",
+    "nll_rule": 1.414450764656067,
+    "nll_alt": 9.930663108825684
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K R O TS",
+    "nll_rule": 42.24553298950195,
+    "nll_alt": 51.0865478515625
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r01",
+    "latin": "Klahowiam",
+    "source": "LJ1892",
+    "rule": "K L A H OW E A M",
+    "alt": "K L H OW E A M",
+    "nll_rule": 48.90797424316406,
+    "nll_alt": 64.94236755371094
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r04",
+    "latin": "Klatwa",
+    "source": "LJ1892",
+    "rule": "K L A T WA",
+    "alt": "K L T WA",
+    "nll_rule": 3.1236050128936768,
+    "nll_alt": 17.92339324951172
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r12",
+    "latin": "Kwata",
+    "source": "LJ1892",
+    "rule": "K WA T A",
+    "alt": "K WA T",
+    "nll_rule": 0.004045621491968632,
+    "nll_alt": 11.092443466186523
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r03",
+    "latin": "Kaou",
+    "source": "LJ1892",
+    "rule": "K A O U",
+    "alt": "K O U",
+    "nll_rule": 13.625129699707031,
+    "nll_alt": 9.95280933380127
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r07",
+    "latin": "La boosh",
+    "source": "LJ1892",
+    "rule": "L A _ B OO SH",
+    "alt": "L _ B OO SH",
+    "nll_rule": 25.22968292236328,
+    "nll_alt": 36.80556869506836
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r14",
+    "latin": "Lakrwa",
+    "source": "LJ1892",
+    "rule": "L A KR WA",
+    "alt": "L KR WA",
+    "nll_rule": 24.779651641845703,
+    "nll_alt": 39.05755615234375
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r20",
+    "latin": "Lamotaï",
+    "source": "LJ1892",
+    "rule": "L A M O T A E",
+    "alt": "L M O T A E",
+    "nll_rule": 4.105615615844727,
+    "nll_alt": 21.040767669677734
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L P E O SH",
+    "nll_rule": 9.074324607849121,
+    "nll_alt": 20.401079177856445
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L P O T",
+    "nll_rule": 2.682225227355957,
+    "nll_alt": 21.758581161499023
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r09",
+    "latin": "Leyam",
+    "source": "LJ1892",
+    "rule": "L E E A M",
+    "alt": "L E E M",
+    "nll_rule": 12.994565963745117,
+    "nll_alt": 7.629909038543701
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r13",
+    "latin": "Lekalisti",
+    "source": "LJ1892",
+    "rule": "L E K A L E S T E",
+    "alt": "L E K L E S T E",
+    "nll_rule": 3.3338606357574463,
+    "nll_alt": 16.20905303955078
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K T O L E K",
+    "nll_rule": 78.09988403320312,
+    "nll_alt": 73.12020874023438
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r22",
+    "latin": "Le pap",
+    "source": "LJ1892",
+    "rule": "L E _ P A P",
+    "alt": "L E _ P P",
+    "nll_rule": 21.347496032714844,
+    "nll_alt": 32.44563674926758
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p013_V_r09",
+    "latin": "Lesash",
+    "source": "LJ1892",
+    "rule": "L E S A SH",
+    "alt": "L E S SH",
+    "nll_rule": 0.004226428922265768,
+    "nll_alt": 12.417279243469238
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p013_V_r19",
+    "latin": "Makook",
+    "source": "LJ1892",
+    "rule": "M A K OO K",
+    "alt": "M K OO K",
+    "nll_rule": 15.460186004638672,
+    "nll_alt": 34.28004455566406
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r04",
+    "latin": "Melasses",
+    "source": "LJ1892",
+    "rule": "M E L A S E S",
+    "alt": "M E L S E S",
+    "nll_rule": 2.5757627487182617,
+    "nll_alt": 19.852781295776367
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N E N",
+    "nll_rule": 3.0153648853302,
+    "nll_alt": 5.079111099243164
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r21",
+    "latin": "Nawitka",
+    "source": "LJ1892",
+    "rule": "N A WE T K A",
+    "alt": "N WE T K A",
+    "nll_rule": 2.563851833343506,
+    "nll_alt": 11.585649490356445
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p015_V_r12",
+    "latin": "Papoos",
+    "source": "LJ1892",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.20519182085990906,
+    "nll_alt": 13.64504623413086
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p015_V_r16",
+    "latin": "Patak",
+    "source": "LJ1892",
+    "rule": "P A T A K",
+    "alt": "P T A K",
+    "nll_rule": 1.9204167127609253,
+    "nll_alt": 14.891084671020508
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 11.380210876464844,
+    "nll_alt": 23.27239227294922
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p016_V_r17",
+    "latin": "Sakalooks",
+    "source": "LJ1892",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 3.9951400756835938,
+    "nll_alt": 11.520160675048828
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p017_V_r08",
+    "latin": "Siahoos",
+    "source": "LJ1892",
+    "rule": "S E A H OO S",
+    "alt": "S E H OO S",
+    "nll_rule": 16.18395233154297,
+    "nll_alt": 20.6898193359375
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p018_R_r19",
+    "latin": "Tamanoaz",
+    "source": "LJ1892",
+    "rule": "T A M A N O A S",
+    "alt": "T M A N O A S",
+    "nll_rule": 14.410537719726562,
+    "nll_alt": 31.81182098388672
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r02",
+    "latin": "Haha",
+    "source": "LJ1892",
+    "rule": "H A H A",
+    "alt": "H H A",
+    "nll_rule": 2.1221070289611816,
+    "nll_alt": 9.664584159851074
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r10",
+    "latin": "Lemalo",
+    "source": "LJ1892",
+    "rule": "L E M A L O",
+    "alt": "L E M L O",
+    "nll_rule": 31.523895263671875,
+    "nll_alt": 16.23212432861328
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r11",
+    "latin": "Na",
+    "source": "LJ1892",
+    "rule": "N A",
+    "alt": "N",
+    "nll_rule": 0.011645287275314331,
+    "nll_alt": 11.357403755187988
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p021_N_r09",
+    "latin": "Ham",
+    "source": "LJ1892",
+    "rule": "H A M",
+    "alt": "H M",
+    "nll_rule": 11.692030906677246,
+    "nll_alt": 3.4601192474365234
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r07",
+    "latin": "cha'ko",
+    "source": "LJ1898",
+    "rule": "CH A K O",
+    "alt": "CH K O",
+    "nll_rule": 1.639879822731018,
+    "nll_alt": 8.074406623840332
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 1.5738883018493652,
+    "nll_alt": 12.565058708190918
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r31",
+    "latin": "kak'shet",
+    "source": "LJ1898",
+    "rule": "K A K SH E T",
+    "alt": "K K SH E T",
+    "nll_rule": 11.529825210571289,
+    "nll_alt": 19.97161102294922
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r06",
+    "latin": "kan'sih",
+    "source": "LJ1898",
+    "rule": "K A N S E H",
+    "alt": "K N S E H",
+    "nll_rule": 5.900633811950684,
+    "nll_alt": 16.460899353027344
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r09",
+    "latin": "ka'ta",
+    "source": "LJ1898",
+    "rule": "K A T A",
+    "alt": "K T A",
+    "nll_rule": 0.7122180461883545,
+    "nll_alt": 13.791646003723145
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K E U T N",
+    "nll_rule": 9.97011947631836,
+    "nll_alt": 21.54342269897461
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r22",
+    "latin": "kla'twa",
+    "source": "LJ1898",
+    "rule": "K L A T WA",
+    "alt": "K L T WA",
+    "nll_rule": 6.795948505401611,
+    "nll_alt": 19.203433990478516
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r25",
+    "latin": "kloonas'",
+    "source": "LJ1898",
+    "rule": "K L OO N A S",
+    "alt": "K L OO N S",
+    "nll_rule": 6.446596622467041,
+    "nll_alt": 17.044679641723633
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M E K A",
+    "nll_rule": 5.361536502838135,
+    "nll_alt": 10.567870140075684
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r12",
+    "latin": "ma'mook",
+    "source": "LJ1898",
+    "rule": "M A M OO K",
+    "alt": "M M OO K",
+    "nll_rule": 1.7313148975372314,
+    "nll_alt": 16.19654655456543
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S E K A",
+    "nll_rule": 9.43728256225586,
+    "nll_alt": 7.518526077270508
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r33",
+    "latin": "papoos'",
+    "source": "LJ1898",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.9865723848342896,
+    "nll_alt": 15.56721305847168
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r10",
+    "latin": "poola'kle",
+    "source": "LJ1898",
+    "rule": "P OO L A K L E",
+    "alt": "P OO L K L E",
+    "nll_rule": 0.5066304802894592,
+    "nll_alt": 12.236570358276367
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 0.00381931709125638,
+    "nll_alt": 11.960599899291992
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r14",
+    "latin": "saka'looks",
+    "source": "LJ1898",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 16.112220764160156,
+    "nll_alt": 21.599477767944336
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r24",
+    "latin": "sta'lo",
+    "source": "LJ1898",
+    "rule": "S T A L O",
+    "alt": "S T L O",
+    "nll_rule": 0.1732027381658554,
+    "nll_alt": 13.521090507507324
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r29",
+    "latin": "tanaz'",
+    "source": "LJ1898",
+    "rule": "T A N A S",
+    "alt": "T N A S",
+    "nll_rule": 0.00555720878764987,
+    "nll_alt": 13.773813247680664
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r32",
+    "latin": "ta'ye",
+    "source": "LJ1898",
+    "rule": "T A E E",
+    "alt": "T E E",
+    "nll_rule": 11.37275218963623,
+    "nll_alt": 17.961158752441406
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "E A S",
+    "nll_rule": 3.9381659030914307,
+    "nll_alt": 15.089543342590332
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "E L A N",
+    "nll_rule": 4.89020299911499,
+    "nll_alt": 9.516142845153809
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 4.699816703796387,
+    "nll_alt": 6.133676528930664
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p008_V_r21",
+    "latin": "Kakshet",
+    "source": "LJ1892",
+    "rule": "K A K SH E T",
+    "alt": "K K SH E T",
+    "nll_rule": 13.223599433898926,
+    "nll_alt": 22.193971633911133
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r08",
+    "latin": "Kansih",
+    "source": "LJ1892",
+    "rule": "K A N S E H",
+    "alt": "K N S E H",
+    "nll_rule": 15.84898853302002,
+    "nll_alt": 27.336280822753906
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K R O TS",
+    "nll_rule": 46.753173828125,
+    "nll_alt": 53.49583435058594
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r12",
+    "latin": "Kata",
+    "source": "LJ1892",
+    "rule": "K A T A",
+    "alt": "K T A",
+    "nll_rule": 1.0926448106765747,
+    "nll_alt": 10.624476432800293
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r04",
+    "latin": "Klatwa",
+    "source": "LJ1892",
+    "rule": "K L A T WA",
+    "alt": "K L T WA",
+    "nll_rule": 6.15532922744751,
+    "nll_alt": 19.946857452392578
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r09",
+    "latin": "Kloonas",
+    "source": "LJ1892",
+    "rule": "K L OO N A S",
+    "alt": "K L OO N S",
+    "nll_rule": 10.02003002166748,
+    "nll_alt": 28.216270446777344
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r12",
+    "latin": "Kwata",
+    "source": "LJ1892",
+    "rule": "K WA T A",
+    "alt": "K WA T",
+    "nll_rule": 0.03198830410838127,
+    "nll_alt": 13.37398910522461
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r03",
+    "latin": "Kaou",
+    "source": "LJ1892",
+    "rule": "K A O U",
+    "alt": "K O U",
+    "nll_rule": 21.423643112182617,
+    "nll_alt": 21.333627700805664
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r04",
+    "latin": "Khaw",
+    "source": "LJ1892",
+    "rule": "KH A OO",
+    "alt": "KH OO",
+    "nll_rule": 22.765827178955078,
+    "nll_alt": 18.046533584594727
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K E U T N",
+    "nll_rule": 11.82470703125,
+    "nll_alt": 23.192956924438477
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r18",
+    "latin": "Lametsin",
+    "source": "LJ1892",
+    "rule": "L A M E TS E N",
+    "alt": "L M E TS E N",
+    "nll_rule": 16.526844024658203,
+    "nll_alt": 34.88217544555664
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r02",
+    "latin": "Laplitas",
+    "source": "LJ1892",
+    "rule": "L A P L E T A S",
+    "alt": "L P L E T A S",
+    "nll_rule": 0.45075851678848267,
+    "nll_alt": 14.718446731567383
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L P O T",
+    "nll_rule": 3.8849847316741943,
+    "nll_alt": 23.10245704650879
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r05",
+    "latin": "Lashandel",
+    "source": "LJ1892",
+    "rule": "L A SH A N D E L",
+    "alt": "L SH A N D E L",
+    "nll_rule": 28.411846160888672,
+    "nll_alt": 38.117279052734375
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r08",
+    "latin": "Lawagin",
+    "source": "LJ1892",
+    "rule": "L A WA G E N",
+    "alt": "L WA G E N",
+    "nll_rule": 26.217180252075195,
+    "nll_alt": 47.015533447265625
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r14",
+    "latin": "Lekatrta",
+    "source": "LJ1892",
+    "rule": "L E K A T R T A",
+    "alt": "L E K T R T A",
+    "nll_rule": 18.056243896484375,
+    "nll_alt": 25.734495162963867
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r21",
+    "latin": "Lenawo",
+    "source": "LJ1892",
+    "rule": "L E N A WO",
+    "alt": "L E N WO",
+    "nll_rule": 9.835301399230957,
+    "nll_alt": 26.551803588867188
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r22",
+    "latin": "Le pap",
+    "source": "LJ1892",
+    "rule": "L E _ P A P",
+    "alt": "L E _ P P",
+    "nll_rule": 18.87892723083496,
+    "nll_alt": 26.52016830444336
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r12",
+    "latin": "Leshal",
+    "source": "LJ1892",
+    "rule": "L E SH A L",
+    "alt": "L E SH L",
+    "nll_rule": 9.92225456237793,
+    "nll_alt": 22.392364501953125
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M E K A",
+    "nll_rule": 9.289820671081543,
+    "nll_alt": 16.036706924438477
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r22",
+    "latin": "Mamook",
+    "source": "LJ1892",
+    "rule": "M A M OO K",
+    "alt": "M M OO K",
+    "nll_rule": 4.614847183227539,
+    "nll_alt": 19.057361602783203
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p014_V_r04",
+    "latin": "Melasses",
+    "source": "LJ1892",
+    "rule": "M E L A S E S",
+    "alt": "M E L S E S",
+    "nll_rule": 5.653236389160156,
+    "nll_alt": 22.434154510498047
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S E K A",
+    "nll_rule": 12.514691352844238,
+    "nll_alt": 18.492759704589844
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r05",
+    "latin": "Ol man",
+    "source": "LJ1892",
+    "rule": "O L _ M A N",
+    "alt": "O L _ M N",
+    "nll_rule": 12.388415336608887,
+    "nll_alt": 21.477262496948242
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r09",
+    "latin": "Pait",
+    "source": "LJ1892",
+    "rule": "P A E T",
+    "alt": "P E T",
+    "nll_rule": 2.4712045192718506,
+    "nll_alt": 6.003023147583008
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r12",
+    "latin": "Papoos",
+    "source": "LJ1892",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 1.0555484294891357,
+    "nll_alt": 14.571677207946777
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r16",
+    "latin": "Patak",
+    "source": "LJ1892",
+    "rule": "P A T A K",
+    "alt": "P T A K",
+    "nll_rule": 0.2325311005115509,
+    "nll_alt": 11.21181583404541
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P T L A TS H",
+    "nll_rule": 31.32225227355957,
+    "nll_alt": 42.29679870605469
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p016_V_r10",
+    "latin": "Poolakle",
+    "source": "LJ1892",
+    "rule": "P OO L A K L E",
+    "alt": "P OO L K L E",
+    "nll_rule": 8.11132526397705,
+    "nll_alt": 23.731273651123047
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p016_V_r17",
+    "latin": "Sakalooks",
+    "source": "LJ1892",
+    "rule": "S A K A L OO K S",
+    "alt": "S K A L OO K S",
+    "nll_rule": 8.403897285461426,
+    "nll_alt": 13.656325340270996
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p016_V_r19",
+    "latin": "Saliks",
+    "source": "LJ1892",
+    "rule": "S A L E K S",
+    "alt": "S L E K S",
+    "nll_rule": 14.963292121887207,
+    "nll_alt": 34.64143371582031
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p017_V_r03",
+    "latin": "Shamte",
+    "source": "LJ1892",
+    "rule": "SH A M T E",
+    "alt": "SH M T E",
+    "nll_rule": 37.18797302246094,
+    "nll_alt": 34.954776763916016
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p017_V_r13",
+    "latin": "Sedar",
+    "source": "LJ1892",
+    "rule": "S E D A R",
+    "alt": "S E D R",
+    "nll_rule": 25.416240692138672,
+    "nll_alt": 35.95201110839844
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p018_R_r06",
+    "latin": "Stalo",
+    "source": "LJ1892",
+    "rule": "S T A L O",
+    "alt": "S T L O",
+    "nll_rule": 0.9847782850265503,
+    "nll_alt": 11.092564582824707
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p018_R_r18",
+    "latin": "Tala",
+    "source": "LJ1892",
+    "rule": "T A L A",
+    "alt": "T L A",
+    "nll_rule": 10.249305725097656,
+    "nll_alt": 3.6232333183288574
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p018_R_r21",
+    "latin": "Tanaz",
+    "source": "LJ1892",
+    "rule": "T A N A S",
+    "alt": "T N A S",
+    "nll_rule": 1.405734658241272,
+    "nll_alt": 10.78226375579834
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r12",
+    "latin": "Ulhkat",
+    "source": "LJ1892",
+    "rule": "U LH K A T",
+    "alt": "U LH K T",
+    "nll_rule": 34.32501983642578,
+    "nll_alt": 44.69097137451172
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L P O L A",
+    "nll_rule": 2.248119592666626,
+    "nll_alt": 22.601470947265625
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p021_N_r11",
+    "latin": "Lam",
+    "source": "LJ1892",
+    "rule": "L A M",
+    "alt": "L M",
+    "nll_rule": 5.519838809967041,
+    "nll_alt": 13.636062622070312
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r03",
+    "latin": "an'kate",
+    "source": "LJ1898",
+    "rule": "A N K A T E",
+    "alt": "N K A T E",
+    "nll_rule": 14.198970794677734,
+    "nll_alt": 25.423364639282227
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L E T E N",
+    "nll_rule": 13.55594253540039,
+    "nll_alt": 6.172122001647949
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 2.045861005783081,
+    "nll_alt": 13.288823127746582
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r03",
+    "latin": "ka'mooks",
+    "source": "LJ1898",
+    "rule": "K A M OO K S",
+    "alt": "K M OO K S",
+    "nll_rule": 9.468838691711426,
+    "nll_alt": 26.727895736694336
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r07",
+    "latin": "kap'ho",
+    "source": "LJ1898",
+    "rule": "K A P H O",
+    "alt": "K P H O",
+    "nll_rule": 0.6782181859016418,
+    "nll_alt": 10.42764949798584
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r27",
+    "latin": "kolan'",
+    "source": "LJ1898",
+    "rule": "K O L A N",
+    "alt": "K O L N",
+    "nll_rule": 27.617704391479492,
+    "nll_alt": 39.195526123046875
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r12",
+    "latin": "ma'mook",
+    "source": "LJ1898",
+    "rule": "M A M OO K",
+    "alt": "M M OO K",
+    "nll_rule": 0.52716064453125,
+    "nll_alt": 11.190778732299805
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r16",
+    "latin": "mitlait",
+    "source": "LJ1898",
+    "rule": "M E T L A E T",
+    "alt": "M E T L E T",
+    "nll_rule": 12.834745407104492,
+    "nll_alt": 18.9188175201416
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S E K A",
+    "nll_rule": 8.277809143066406,
+    "nll_alt": 7.184116840362549
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r33",
+    "latin": "papoos'",
+    "source": "LJ1898",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 1.02708101272583,
+    "nll_alt": 16.422422409057617
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r11",
+    "latin": "poo'lale",
+    "source": "LJ1898",
+    "rule": "P OO L A L E",
+    "alt": "P OO L L E",
+    "nll_rule": 0.19101078808307648,
+    "nll_alt": 13.464203834533691
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r12",
+    "latin": "sa'hale",
+    "source": "LJ1898",
+    "rule": "S A H A L E",
+    "alt": "S H A L E",
+    "nll_rule": 0.1616833508014679,
+    "nll_alt": 12.48353385925293
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 0.24523329734802246,
+    "nll_alt": 9.941393852233887
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r15",
+    "latin": "sa'lix",
+    "source": "LJ1898",
+    "rule": "S A L E K S",
+    "alt": "S L E K S",
+    "nll_rule": 1.4327343702316284,
+    "nll_alt": 15.958779335021973
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r16",
+    "latin": "saplel",
+    "source": "LJ1898",
+    "rule": "S A P L E L",
+    "alt": "S P L E L",
+    "nll_rule": 5.942875385284424,
+    "nll_alt": 15.48574447631836
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r29",
+    "latin": "tanaz'",
+    "source": "LJ1898",
+    "rule": "T A N A S",
+    "alt": "T N A S",
+    "nll_rule": 0.015184791758656502,
+    "nll_alt": 15.893112182617188
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r30",
+    "latin": "tanke son",
+    "source": "LJ1898",
+    "rule": "T A N K E _ S O N",
+    "alt": "T N K E _ S O N",
+    "nll_rule": 17.68207359313965,
+    "nll_alt": 30.14738655090332
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r23",
+    "latin": "ul'kat",
+    "source": "LJ1898",
+    "rule": "U L K A T",
+    "alt": "U L K T",
+    "nll_rule": 5.771854400634766,
+    "nll_alt": 20.12083625793457
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "E L A N",
+    "nll_rule": 2.251230478286743,
+    "nll_alt": 8.772302627563477
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p007_V_r06",
+    "latin": "Ankate",
+    "source": "LJ1892",
+    "rule": "A N K A T E",
+    "alt": "N K A T E",
+    "nll_rule": 5.60428524017334,
+    "nll_alt": 21.149085998535156
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P E",
+    "nll_rule": 9.294239044189453,
+    "nll_alt": 14.850014686584473
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "E K T",
+    "nll_rule": 2.311800003051758,
+    "nll_alt": 6.23583459854126
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r01",
+    "latin": "Kamooks",
+    "source": "LJ1892",
+    "rule": "K A M OO K S",
+    "alt": "K M OO K S",
+    "nll_rule": 8.157611846923828,
+    "nll_alt": 20.813684463500977
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r05",
+    "latin": "Kanamokst",
+    "source": "LJ1892",
+    "rule": "K A N A M O K S T",
+    "alt": "K N A M O K S T",
+    "nll_rule": 11.718998908996582,
+    "nll_alt": 33.00392150878906
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r06",
+    "latin": "Kandle",
+    "source": "LJ1892",
+    "rule": "K A N D L E",
+    "alt": "K N D L E",
+    "nll_rule": 45.05738067626953,
+    "nll_alt": 51.021385192871094
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r07",
+    "latin": "Klismas",
+    "source": "LJ1892",
+    "rule": "K L E S M A S",
+    "alt": "K L E S M S",
+    "nll_rule": 1.3308963775634766,
+    "nll_alt": 12.147954940795898
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r17",
+    "latin": "Kolan",
+    "source": "LJ1892",
+    "rule": "K O L A N",
+    "alt": "K O L N",
+    "nll_rule": 5.2887396812438965,
+    "nll_alt": 14.423928260803223
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r08",
+    "latin": "Labootey",
+    "source": "LJ1892",
+    "rule": "L A B OO T E E",
+    "alt": "L B OO T E E",
+    "nll_rule": 36.60822677612305,
+    "nll_alt": 57.94213104248047
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r10",
+    "latin": "Lakarot",
+    "source": "LJ1892",
+    "rule": "L A K A R O T",
+    "alt": "L K A R O T",
+    "nll_rule": 3.475447654724121,
+    "nll_alt": 18.51181411743164
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r21",
+    "latin": "Lamooto",
+    "source": "LJ1892",
+    "rule": "L A M OO T O",
+    "alt": "L M OO T O",
+    "nll_rule": 1.0966883897781372,
+    "nll_alt": 20.065256118774414
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p012_V_r05",
+    "latin": "Lashandel",
+    "source": "LJ1892",
+    "rule": "L A SH A N D E L",
+    "alt": "L SH A N D E L",
+    "nll_rule": 29.29958152770996,
+    "nll_alt": 40.56591796875
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K T O L E K",
+    "nll_rule": 89.98171997070312,
+    "nll_alt": 86.65795135498047
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r08",
+    "latin": "Lesapot",
+    "source": "LJ1892",
+    "rule": "L E S A P O T",
+    "alt": "L E S P O T",
+    "nll_rule": 5.25053071975708,
+    "nll_alt": 7.122348308563232
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r12",
+    "latin": "Leshal",
+    "source": "LJ1892",
+    "rule": "L E SH A L",
+    "alt": "L E SH L",
+    "nll_rule": 7.247663497924805,
+    "nll_alt": 21.028894424438477
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r22",
+    "latin": "Mamook",
+    "source": "LJ1892",
+    "rule": "M A M OO K",
+    "alt": "M M OO K",
+    "nll_rule": 5.301368713378906,
+    "nll_alt": 17.824478149414062
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r08",
+    "latin": "Mitlait",
+    "source": "LJ1892",
+    "rule": "M E T L A E T",
+    "alt": "M E T L E T",
+    "nll_rule": 22.254613876342773,
+    "nll_alt": 27.668384552001953
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N E N",
+    "nll_rule": 2.8477399349212646,
+    "nll_alt": 7.238752365112305
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S E K A",
+    "nll_rule": 12.089631080627441,
+    "nll_alt": 20.814661026000977
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r11",
+    "latin": "Papa",
+    "source": "LJ1892",
+    "rule": "P A P A",
+    "alt": "P P A",
+    "nll_rule": 2.090580940246582,
+    "nll_alt": 11.184713363647461
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r12",
+    "latin": "Papoos",
+    "source": "LJ1892",
+    "rule": "P A P OO S",
+    "alt": "P P OO S",
+    "nll_rule": 0.3012472689151764,
+    "nll_alt": 13.40794849395752
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r16",
+    "latin": "Patak",
+    "source": "LJ1892",
+    "rule": "P A T A K",
+    "alt": "P T A K",
+    "nll_rule": 0.6152068376541138,
+    "nll_alt": 10.360705375671387
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P T L A TS H",
+    "nll_rule": 29.62685775756836,
+    "nll_alt": 39.468109130859375
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r11",
+    "latin": "Poolale",
+    "source": "LJ1892",
+    "rule": "P OO L A L E",
+    "alt": "P OO L L E",
+    "nll_rule": 6.9790215492248535,
+    "nll_alt": 16.040334701538086
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r15",
+    "latin": "Sahale",
+    "source": "LJ1892",
+    "rule": "S A H A L E",
+    "alt": "S H A L E",
+    "nll_rule": 1.2402108907699585,
+    "nll_alt": 11.83652114868164
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S E A",
+    "nll_rule": 7.213522911071777,
+    "nll_alt": 17.99529266357422
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r22",
+    "latin": "Saplel",
+    "source": "LJ1892",
+    "rule": "S A P L E L",
+    "alt": "S P L E L",
+    "nll_rule": 17.901329040527344,
+    "nll_alt": 31.62099266052246
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p018_R_r21",
+    "latin": "Tanaz",
+    "source": "LJ1892",
+    "rule": "T A N A S",
+    "alt": "T N A S",
+    "nll_rule": 3.1862192153930664,
+    "nll_alt": 10.438926696777344
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r01",
+    "latin": "Aïs",
+    "source": "LJ1892",
+    "rule": "A E S",
+    "alt": "E S",
+    "nll_rule": 5.384725570678711,
+    "nll_alt": 0.6222146153450012
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L P O L A",
+    "nll_rule": 2.9254636764526367,
+    "nll_alt": 20.77713394165039
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r20",
+    "latin": "Talapos",
+    "source": "LJ1892",
+    "rule": "T A L A P O S",
+    "alt": "T L A P O S",
+    "nll_rule": 50.1053352355957,
+    "nll_alt": 59.68899917602539
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r21",
+    "latin": "Tlepait",
+    "source": "LJ1892",
+    "rule": "T L E P A E T",
+    "alt": "T L E P E T",
+    "nll_rule": 9.568511009216309,
+    "nll_alt": 15.776912689208984
+   }
+  ],
+  "i_next_to_vowel_not_written": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r05",
+    "latin": "a'yas",
+    "source": "LJ1898",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 3.3154890537261963,
+    "nll_alt": 9.694913864135742
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 14.89989185333252,
+    "nll_alt": 4.31625509262085
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 12.729198455810547,
+    "nll_alt": 6.0056023597717285
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 7.091877460479736,
+    "nll_alt": 0.07612543553113937
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 4.860618591308594,
+    "nll_alt": 6.118497848510742
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r21",
+    "latin": "na'ika",
+    "source": "LJ1898",
+    "rule": "N A E K A",
+    "alt": "N A K A",
+    "nll_rule": 0.2795366048812866,
+    "nll_alt": 8.848917007446289
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r28",
+    "latin": "ya'ka",
+    "source": "LJ1898",
+    "rule": "E A K A",
+    "alt": "A K A",
+    "nll_rule": 2.2775747776031494,
+    "nll_alt": 13.921696662902832
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r29",
+    "latin": "yak'so",
+    "source": "LJ1898",
+    "rule": "E A K S O",
+    "alt": "A K S O",
+    "nll_rule": 21.6636905670166,
+    "nll_alt": 33.27926254272461
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r30",
+    "latin": "ya'kwa",
+    "source": "LJ1898",
+    "rule": "E A K WA",
+    "alt": "A K WA",
+    "nll_rule": 6.22390079498291,
+    "nll_alt": 10.579699516296387
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 8.850591659545898,
+    "nll_alt": 11.736053466796875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 3.6349215507507324,
+    "nll_alt": 15.557734489440918
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.199037551879883,
+    "nll_alt": 3.0778279304504395
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 11.069786071777344,
+    "nll_alt": 0.5884023904800415
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 14.453251838684082,
+    "nll_alt": 11.797420501708984
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r20",
+    "latin": "Peie",
+    "source": "LJ1892",
+    "rule": "P E E E",
+    "alt": "P E E",
+    "nll_rule": 17.293418884277344,
+    "nll_alt": 9.678054809570312
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r05",
+    "latin": "Ielles",
+    "source": "LJ1892",
+    "rule": "E E L E S",
+    "alt": "E L E S",
+    "nll_rule": 26.792593002319336,
+    "nll_alt": 12.36789321899414
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c0_r21",
+    "latin": "helo'ima",
+    "source": "LJ1898",
+    "rule": "H E L O E M A",
+    "alt": "H E L O M A",
+    "nll_rule": 13.216214179992676,
+    "nll_alt": 13.525073051452637
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 2.963947057723999,
+    "nll_alt": 4.137534141540527
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.002794576110318303,
+    "nll_alt": 15.47987174987793
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r20",
+    "latin": "sie'sem",
+    "source": "LJ1898",
+    "rule": "S E E S E M",
+    "alt": "S E S E M",
+    "nll_rule": 18.934919357299805,
+    "nll_alt": 10.376882553100586
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 6.013810157775879,
+    "nll_alt": 12.779170989990234
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r04",
+    "latin": "Heloïma",
+    "source": "LJ1892",
+    "rule": "H E L O E M A",
+    "alt": "H E L O M A",
+    "nll_rule": 31.82222557067871,
+    "nll_alt": 25.18221092224121
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 7.7082695960998535,
+    "nll_alt": 1.4497443437576294
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P O SH",
+    "nll_rule": 9.543307304382324,
+    "nll_alt": 9.31195068359375
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r20",
+    "latin": "Lemaliash",
+    "source": "LJ1892",
+    "rule": "L E M A L E A SH",
+    "alt": "L E M A L A SH",
+    "nll_rule": 0.6644052863121033,
+    "nll_alt": 7.2017822265625
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 7.547695636749268,
+    "nll_alt": 10.72154426574707
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p015_V_r20",
+    "latin": "Peie",
+    "source": "LJ1892",
+    "rule": "P E E E",
+    "alt": "P E E",
+    "nll_rule": 11.167753219604492,
+    "nll_alt": 2.571608543395996
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r09",
+    "latin": "Siapool",
+    "source": "LJ1892",
+    "rule": "S E A P OO L",
+    "alt": "S A P OO L",
+    "nll_rule": 21.453893661499023,
+    "nll_alt": 37.265018463134766
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r06",
+    "latin": "a'yoo",
+    "source": "LJ1898",
+    "rule": "A E OO",
+    "alt": "A OO",
+    "nll_rule": 16.90076446533203,
+    "nll_alt": 13.73436164855957
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r13",
+    "latin": "eh'pooï",
+    "source": "LJ1898",
+    "rule": "E H P OO E",
+    "alt": "E H P OO",
+    "nll_rule": 21.68805694580078,
+    "nll_alt": 19.78036880493164
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 12.055201530456543,
+    "nll_alt": 2.3222498893737793
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c1_r19",
+    "latin": "kla'howyam",
+    "source": "LJ1898",
+    "rule": "K L A H OW E A M",
+    "alt": "K L A H OW A M",
+    "nll_rule": 8.194775581359863,
+    "nll_alt": 13.224852561950684
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r26",
+    "latin": "o'ihoi",
+    "source": "LJ1898",
+    "rule": "O E H O E",
+    "alt": "O H O",
+    "nll_rule": 10.4594087600708,
+    "nll_alt": 7.354992389678955
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r32",
+    "latin": "pa'ia",
+    "source": "LJ1898",
+    "rule": "P A E A",
+    "alt": "P A A",
+    "nll_rule": 5.338371276855469,
+    "nll_alt": 6.918377876281738
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 1.454425573348999,
+    "nll_alt": 8.546156883239746
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r19",
+    "latin": "sia'hoos",
+    "source": "LJ1898",
+    "rule": "S E A H OO S",
+    "alt": "S A H OO S",
+    "nll_rule": 2.552053928375244,
+    "nll_alt": 3.542431592941284
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r09",
+    "latin": "Ayoo",
+    "source": "LJ1892",
+    "rule": "A E OO",
+    "alt": "A OO",
+    "nll_rule": 16.206737518310547,
+    "nll_alt": 12.537433624267578
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r12",
+    "latin": "Ehpooï",
+    "source": "LJ1892",
+    "rule": "E H P OO E",
+    "alt": "E H P OO",
+    "nll_rule": 18.56209373474121,
+    "nll_alt": 10.654473304748535
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 12.37513256072998,
+    "nll_alt": 3.1793787479400635
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r01",
+    "latin": "Klahowiam",
+    "source": "LJ1892",
+    "rule": "K L A H OW E A M",
+    "alt": "K L A H OW A M",
+    "nll_rule": 48.90797424316406,
+    "nll_alt": 27.835805892944336
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r20",
+    "latin": "Lamotaï",
+    "source": "LJ1892",
+    "rule": "L A M O T A E",
+    "alt": "L A M O T A",
+    "nll_rule": 4.105615615844727,
+    "nll_alt": 1.8645665645599365
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P O SH",
+    "nll_rule": 9.074324607849121,
+    "nll_alt": 8.404071807861328
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r09",
+    "latin": "Leyam",
+    "source": "LJ1892",
+    "rule": "L E E A M",
+    "alt": "L E A M",
+    "nll_rule": 12.994565963745117,
+    "nll_alt": 7.428689002990723
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p013_V_r03",
+    "latin": "Lepie",
+    "source": "LJ1892",
+    "rule": "L E P E E",
+    "alt": "L E P E",
+    "nll_rule": 27.29667091369629,
+    "nll_alt": 0.5684829950332642
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N A N",
+    "nll_rule": 3.0153648853302,
+    "nll_alt": 4.68306303024292
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p015_V_r03",
+    "latin": "Oihoi",
+    "source": "LJ1892",
+    "rule": "O E H O E",
+    "alt": "O H O",
+    "nll_rule": 8.186758995056152,
+    "nll_alt": 9.578139305114746
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 11.380210876464844,
+    "nll_alt": 10.3184814453125
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p017_V_r08",
+    "latin": "Siahoos",
+    "source": "LJ1892",
+    "rule": "S E A H OO S",
+    "alt": "S A H OO S",
+    "nll_rule": 16.18395233154297,
+    "nll_alt": 18.594581604003906
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 3.4098753929138184,
+    "nll_alt": 4.96217155456543
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 9.97011947631836,
+    "nll_alt": 3.322965383529663
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 5.361536502838135,
+    "nll_alt": 0.948340117931366
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 9.43728256225586,
+    "nll_alt": 5.498736381530762
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.00381931709125638,
+    "nll_alt": 13.486627578735352
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r32",
+    "latin": "ta'ye",
+    "source": "LJ1898",
+    "rule": "T A E E",
+    "alt": "T A E",
+    "nll_rule": 11.37275218963623,
+    "nll_alt": 6.501549243927002
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 3.9381659030914307,
+    "nll_alt": 9.35347843170166
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 4.89020299911499,
+    "nll_alt": 14.950448036193848
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 2.6719465255737305,
+    "nll_alt": 9.775997161865234
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.82470703125,
+    "nll_alt": 4.347789764404297
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 9.289820671081543,
+    "nll_alt": 0.09753862023353577
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 12.514691352844238,
+    "nll_alt": 8.50627326965332
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r09",
+    "latin": "Pait",
+    "source": "LJ1892",
+    "rule": "P A E T",
+    "alt": "P A T",
+    "nll_rule": 2.4712045192718506,
+    "nll_alt": 4.488512992858887
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 13.55594253540039,
+    "nll_alt": 2.236417055130005
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r29",
+    "latin": "i'tlooilh",
+    "source": "LJ1898",
+    "rule": "E T L OO E LH",
+    "alt": "E T L OO LH",
+    "nll_rule": 9.856120109558105,
+    "nll_alt": 17.618467330932617
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 7.309940814971924,
+    "nll_alt": 11.959220886230469
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r16",
+    "latin": "mitlait",
+    "source": "LJ1898",
+    "rule": "M E T L A E T",
+    "alt": "M E T L A T",
+    "nll_rule": 12.834745407104492,
+    "nll_alt": 8.59911060333252
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 8.277809143066406,
+    "nll_alt": 9.855438232421875
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.24523329734802246,
+    "nll_alt": 9.142338752746582
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r12",
+    "latin": "tlemenooit",
+    "source": "LJ1898",
+    "rule": "T L E M E N OO E T",
+    "alt": "T L E M E N OO T",
+    "nll_rule": 16.883594512939453,
+    "nll_alt": 13.478571891784668
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 2.251230478286743,
+    "nll_alt": 16.750551223754883
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 9.294239044189453,
+    "nll_alt": 2.290921688079834
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 4.577456951141357,
+    "nll_alt": 15.238133430480957
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r08",
+    "latin": "Labootey",
+    "source": "LJ1892",
+    "rule": "L A B OO T E E",
+    "alt": "L A B OO T E",
+    "nll_rule": 36.60822677612305,
+    "nll_alt": 25.27484893798828
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r03",
+    "latin": "Lepie",
+    "source": "LJ1892",
+    "rule": "L E P E E",
+    "alt": "L E P E",
+    "nll_rule": 25.515933990478516,
+    "nll_alt": 0.8427233695983887
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r08",
+    "latin": "Mitlait",
+    "source": "LJ1892",
+    "rule": "M E T L A E T",
+    "alt": "M E T L A T",
+    "nll_rule": 22.254613876342773,
+    "nll_alt": 14.322182655334473
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N A N",
+    "nll_rule": 2.8477399349212646,
+    "nll_alt": 4.773987770080566
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 12.089631080627441,
+    "nll_alt": 10.6926908493042
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 7.213522911071777,
+    "nll_alt": 7.099029064178467
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r01",
+    "latin": "Aïs",
+    "source": "LJ1892",
+    "rule": "A E S",
+    "alt": "A S",
+    "nll_rule": 5.384725570678711,
+    "nll_alt": 16.309106826782227
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r21",
+    "latin": "Tlepait",
+    "source": "LJ1892",
+    "rule": "T L E P A E T",
+    "alt": "T L E P A T",
+    "nll_rule": 9.568511009216309,
+    "nll_alt": 8.420406341552734
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p019_N_r17",
+    "latin": "Tlemenooit",
+    "source": "LJ1892",
+    "rule": "T L E M E N OO E T",
+    "alt": "T L E M E N OO T",
+    "nll_rule": 3.726480722427368,
+    "nll_alt": 16.67255401611328
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p021_N_r16",
+    "latin": "Wain",
+    "source": "LJ1892",
+    "rule": "WA E N",
+    "alt": "WA N",
+    "nll_rule": 13.275493621826172,
+    "nll_alt": 10.115228652954102
+   }
+  ],
+  "i_before_vowel_not_written": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r05",
+    "latin": "a'yas",
+    "source": "LJ1898",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 3.3154890537261963,
+    "nll_alt": 9.694913864135742
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 12.729198455810547,
+    "nll_alt": 6.0056023597717285
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r28",
+    "latin": "ya'ka",
+    "source": "LJ1898",
+    "rule": "E A K A",
+    "alt": "A K A",
+    "nll_rule": 2.2775747776031494,
+    "nll_alt": 13.921696662902832
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r29",
+    "latin": "yak'so",
+    "source": "LJ1898",
+    "rule": "E A K S O",
+    "alt": "A K S O",
+    "nll_rule": 21.6636905670166,
+    "nll_alt": 33.27926254272461
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r30",
+    "latin": "ya'kwa",
+    "source": "LJ1898",
+    "rule": "E A K WA",
+    "alt": "A K WA",
+    "nll_rule": 6.22390079498291,
+    "nll_alt": 10.579699516296387
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 8.850591659545898,
+    "nll_alt": 11.736053466796875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.199037551879883,
+    "nll_alt": 3.0778279304504395
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r20",
+    "latin": "Peie",
+    "source": "LJ1892",
+    "rule": "P E E E",
+    "alt": "P E E",
+    "nll_rule": 17.293418884277344,
+    "nll_alt": 9.678054809570312
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r05",
+    "latin": "Ielles",
+    "source": "LJ1892",
+    "rule": "E E L E S",
+    "alt": "E L E S",
+    "nll_rule": 26.792593002319336,
+    "nll_alt": 12.36789321899414
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.002794576110318303,
+    "nll_alt": 15.47987174987793
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c1_r20",
+    "latin": "sie'sem",
+    "source": "LJ1898",
+    "rule": "S E E S E M",
+    "alt": "S E S E M",
+    "nll_rule": 18.934919357299805,
+    "nll_alt": 10.376882553100586
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P O SH",
+    "nll_rule": 9.543307304382324,
+    "nll_alt": 9.31195068359375
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r20",
+    "latin": "Lemaliash",
+    "source": "LJ1892",
+    "rule": "L E M A L E A SH",
+    "alt": "L E M A L A SH",
+    "nll_rule": 0.6644052863121033,
+    "nll_alt": 7.2017822265625
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p015_V_r20",
+    "latin": "Peie",
+    "source": "LJ1892",
+    "rule": "P E E E",
+    "alt": "P E E",
+    "nll_rule": 11.167753219604492,
+    "nll_alt": 2.571608543395996
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r09",
+    "latin": "Siapool",
+    "source": "LJ1892",
+    "rule": "S E A P OO L",
+    "alt": "S A P OO L",
+    "nll_rule": 21.453893661499023,
+    "nll_alt": 37.265018463134766
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r06",
+    "latin": "a'yoo",
+    "source": "LJ1898",
+    "rule": "A E OO",
+    "alt": "A OO",
+    "nll_rule": 16.90076446533203,
+    "nll_alt": 13.73436164855957
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c1_r19",
+    "latin": "kla'howyam",
+    "source": "LJ1898",
+    "rule": "K L A H OW E A M",
+    "alt": "K L A H OW A M",
+    "nll_rule": 8.194775581359863,
+    "nll_alt": 13.224852561950684
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r32",
+    "latin": "pa'ia",
+    "source": "LJ1898",
+    "rule": "P A E A",
+    "alt": "P A A",
+    "nll_rule": 5.338371276855469,
+    "nll_alt": 6.918377876281738
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 1.454425573348999,
+    "nll_alt": 8.546156883239746
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r19",
+    "latin": "sia'hoos",
+    "source": "LJ1898",
+    "rule": "S E A H OO S",
+    "alt": "S A H OO S",
+    "nll_rule": 2.552053928375244,
+    "nll_alt": 3.542431592941284
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r09",
+    "latin": "Ayoo",
+    "source": "LJ1892",
+    "rule": "A E OO",
+    "alt": "A OO",
+    "nll_rule": 16.206737518310547,
+    "nll_alt": 12.537433624267578
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r01",
+    "latin": "Klahowiam",
+    "source": "LJ1892",
+    "rule": "K L A H OW E A M",
+    "alt": "K L A H OW A M",
+    "nll_rule": 48.90797424316406,
+    "nll_alt": 27.835805892944336
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P O SH",
+    "nll_rule": 9.074324607849121,
+    "nll_alt": 8.404071807861328
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r09",
+    "latin": "Leyam",
+    "source": "LJ1892",
+    "rule": "L E E A M",
+    "alt": "L E A M",
+    "nll_rule": 12.994565963745117,
+    "nll_alt": 7.428689002990723
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p013_V_r03",
+    "latin": "Lepie",
+    "source": "LJ1892",
+    "rule": "L E P E E",
+    "alt": "L E P E",
+    "nll_rule": 27.29667091369629,
+    "nll_alt": 0.5684829950332642
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 11.380210876464844,
+    "nll_alt": 10.3184814453125
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p017_V_r08",
+    "latin": "Siahoos",
+    "source": "LJ1892",
+    "rule": "S E A H OO S",
+    "alt": "S A H OO S",
+    "nll_rule": 16.18395233154297,
+    "nll_alt": 18.594581604003906
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 9.97011947631836,
+    "nll_alt": 3.322965383529663
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.00381931709125638,
+    "nll_alt": 13.486627578735352
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r32",
+    "latin": "ta'ye",
+    "source": "LJ1898",
+    "rule": "T A E E",
+    "alt": "T A E",
+    "nll_rule": 11.37275218963623,
+    "nll_alt": 6.501549243927002
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A A S",
+    "nll_rule": 3.9381659030914307,
+    "nll_alt": 9.35347843170166
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.82470703125,
+    "nll_alt": 4.347789764404297
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r13",
+    "latin": "sa'ya",
+    "source": "LJ1898",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 0.24523329734802246,
+    "nll_alt": 9.142338752746582
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r03",
+    "latin": "Lepie",
+    "source": "LJ1892",
+    "rule": "L E P E E",
+    "alt": "L E P E",
+    "nll_rule": 25.515933990478516,
+    "nll_alt": 0.8427233695983887
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p016_V_r16",
+    "latin": "Saia",
+    "source": "LJ1892",
+    "rule": "S A E A",
+    "alt": "S A A",
+    "nll_rule": 7.213522911071777,
+    "nll_alt": 7.099029064178467
+   }
+  ],
+  "control: drop the first O": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r07",
+    "latin": "cha'ko",
+    "source": "LJ1898",
+    "rule": "CH A K O",
+    "alt": "CH A K",
+    "nll_rule": 0.9371464252471924,
+    "nll_alt": 8.747725486755371
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r10",
+    "latin": "chok",
+    "source": "LJ1898",
+    "rule": "CH O K",
+    "alt": "CH K",
+    "nll_rule": 5.024312973022461,
+    "nll_alt": 15.112470626831055
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r16",
+    "latin": "elo",
+    "source": "LJ1898",
+    "rule": "E L O",
+    "alt": "E L",
+    "nll_rule": 2.4810426235198975,
+    "nll_alt": 13.523792266845703
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r27",
+    "latin": "kolan'",
+    "source": "LJ1898",
+    "rule": "K O L A N",
+    "alt": "K L A N",
+    "nll_rule": 28.328617095947266,
+    "nll_alt": 19.35790252685547
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r27",
+    "latin": "o'lali",
+    "source": "LJ1898",
+    "rule": "O L A L E",
+    "alt": "L A L E",
+    "nll_rule": 0.1812727004289627,
+    "nll_alt": 11.648608207702637
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c1_r24",
+    "latin": "sta'lo",
+    "source": "LJ1898",
+    "rule": "S T A L O",
+    "alt": "S T A L",
+    "nll_rule": 4.994750022888184,
+    "nll_alt": 15.730416297912598
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r29",
+    "latin": "yak'so",
+    "source": "LJ1898",
+    "rule": "E A K S O",
+    "alt": "E A K S",
+    "nll_rule": 21.6636905670166,
+    "nll_alt": 29.07817840576172
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r08",
+    "latin": "Aou",
+    "source": "LJ1892",
+    "rule": "A O U",
+    "alt": "A U",
+    "nll_rule": 32.42851257324219,
+    "nll_alt": 19.236892700195312
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r14",
+    "latin": "Elo",
+    "source": "LJ1892",
+    "rule": "E L O",
+    "alt": "E L",
+    "nll_rule": 23.26276397705078,
+    "nll_alt": 26.204816818237305
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K A R TS",
+    "nll_rule": 41.184425354003906,
+    "nll_alt": 48.539405822753906
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r17",
+    "latin": "Kolan",
+    "source": "LJ1892",
+    "rule": "K O L A N",
+    "alt": "K L A N",
+    "nll_rule": 1.8695011138916016,
+    "nll_alt": 10.93008804321289
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r20",
+    "latin": "Kŏp",
+    "source": "LJ1892",
+    "rule": "K O P",
+    "alt": "K P",
+    "nll_rule": 7.901708602905273,
+    "nll_alt": 9.925867080688477
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r23",
+    "latin": "Kōt",
+    "source": "LJ1892",
+    "rule": "K O T",
+    "alt": "K T",
+    "nll_rule": 0.5456657409667969,
+    "nll_alt": 9.484858512878418
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K A T L E K",
+    "nll_rule": 74.50394439697266,
+    "nll_alt": 76.68741607666016
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r07",
+    "latin": "Lepot",
+    "source": "LJ1892",
+    "rule": "L E P O T",
+    "alt": "L E P T",
+    "nll_rule": 1.583517074584961,
+    "nll_alt": 15.594244956970215
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p014_V_r14",
+    "latin": "Moosom",
+    "source": "LJ1892",
+    "rule": "M OO S O M",
+    "alt": "M OO S M",
+    "nll_rule": 6.632306098937988,
+    "nll_alt": 4.628650188446045
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r04",
+    "latin": "Olali",
+    "source": "LJ1892",
+    "rule": "O L A L E",
+    "alt": "L A L E",
+    "nll_rule": 0.013084097765386105,
+    "nll_alt": 10.545026779174805
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p017_V_r22",
+    "latin": "Sonde",
+    "source": "LJ1892",
+    "rule": "S O N D E",
+    "alt": "S N D E",
+    "nll_rule": 15.694375038146973,
+    "nll_alt": 14.948588371276855
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_V_r01",
+    "latin": "Sopna",
+    "source": "LJ1892",
+    "rule": "S O P N A",
+    "alt": "S P N A",
+    "nll_rule": 30.87078857421875,
+    "nll_alt": 26.427473068237305
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p018_R_r06",
+    "latin": "Stalo",
+    "source": "LJ1892",
+    "rule": "S T A L O",
+    "alt": "S T A L",
+    "nll_rule": 2.309701442718506,
+    "nll_alt": 12.97153377532959
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS H K",
+    "nll_rule": 20.19387435913086,
+    "nll_alt": 26.04656982421875
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L A P L A",
+    "nll_rule": 3.957642078399658,
+    "nll_alt": 10.21721076965332
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r20",
+    "latin": "Talapos",
+    "source": "LJ1892",
+    "rule": "T A L A P O S",
+    "alt": "T A L A P S",
+    "nll_rule": 42.50480651855469,
+    "nll_alt": 31.87429428100586
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c0_r21",
+    "latin": "helo'ima",
+    "source": "LJ1898",
+    "rule": "H E L O E M A",
+    "alt": "H E L E M A",
+    "nll_rule": 13.216214179992676,
+    "nll_alt": 15.639911651611328
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r05",
+    "latin": "ka'namoxt",
+    "source": "LJ1898",
+    "rule": "K A N A M O K S T",
+    "alt": "K A N A M K S T",
+    "nll_rule": 0.7309167385101318,
+    "nll_alt": 7.641804218292236
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r28",
+    "latin": "komtax'",
+    "source": "LJ1898",
+    "rule": "K O M T A K S",
+    "alt": "K M T A K S",
+    "nll_rule": 13.071099281311035,
+    "nll_alt": 16.816207885742188
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r30",
+    "latin": "kopet'",
+    "source": "LJ1898",
+    "rule": "K O P E T",
+    "alt": "K P E T",
+    "nll_rule": 2.019157886505127,
+    "nll_alt": 15.026618003845215
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p014_c0_r03",
+    "latin": "te'likom",
+    "source": "LJ1898",
+    "rule": "T E L E K O M",
+    "alt": "T E L E K M",
+    "nll_rule": 7.49775505065918,
+    "nll_alt": 14.992494583129883
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r04",
+    "latin": "Heloïma",
+    "source": "LJ1892",
+    "rule": "H E L O E M A",
+    "alt": "H E L E M A",
+    "nll_rule": 31.82222557067871,
+    "nll_alt": 29.727237701416016
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p010_V_r18",
+    "latin": "Kōm",
+    "source": "LJ1892",
+    "rule": "K O M",
+    "alt": "K M",
+    "nll_rule": 0.12870638072490692,
+    "nll_alt": 13.50937271118164
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p010_V_r19",
+    "latin": "Komtax",
+    "source": "LJ1892",
+    "rule": "K O M T A K S",
+    "alt": "K M T A K S",
+    "nll_rule": 23.627304077148438,
+    "nll_alt": 20.288883209228516
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P E SH",
+    "nll_rule": 9.543307304382324,
+    "nll_alt": 8.919112205505371
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L A P T",
+    "nll_rule": 2.6115331649780273,
+    "nll_alt": 8.69636344909668
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p013_V_r07",
+    "latin": "Lepot",
+    "source": "LJ1892",
+    "rule": "L E P O T",
+    "alt": "L E P T",
+    "nll_rule": 0.875020444393158,
+    "nll_alt": 10.91911792755127
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p017_V_r21",
+    "latin": "Son",
+    "source": "LJ1892",
+    "rule": "S O N",
+    "alt": "S N",
+    "nll_rule": 0.5465636253356934,
+    "nll_alt": 15.745293617248535
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p018_R_r17",
+    "latin": "Takmonak",
+    "source": "LJ1892",
+    "rule": "T A K M O N A K",
+    "alt": "T A K M N A K",
+    "nll_rule": 6.819530010223389,
+    "nll_alt": 14.625208854675293
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L A P L A",
+    "nll_rule": 2.3898284435272217,
+    "nll_alt": 9.151510238647461
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p019_N_r06",
+    "latin": "Telikom",
+    "source": "LJ1892",
+    "rule": "T E L E K O M",
+    "alt": "T E L E K M",
+    "nll_rule": 3.267489433288574,
+    "nll_alt": 9.017395973205566
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p019_N_r20",
+    "latin": "Tomtom",
+    "source": "LJ1892",
+    "rule": "T O M T O M",
+    "alt": "T M T O M",
+    "nll_rule": 13.027009010314941,
+    "nll_alt": 16.00942039489746
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r16",
+    "latin": "elo",
+    "source": "LJ1898",
+    "rule": "E L O",
+    "alt": "E L",
+    "nll_rule": 0.3191732168197632,
+    "nll_alt": 12.859623908996582
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r26",
+    "latin": "o'ihoi",
+    "source": "LJ1898",
+    "rule": "O E H O E",
+    "alt": "E H O E",
+    "nll_rule": 10.4594087600708,
+    "nll_alt": 18.916549682617188
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r18",
+    "latin": "senmoxt",
+    "source": "LJ1898",
+    "rule": "S E N M O K S T",
+    "alt": "S E N M K S T",
+    "nll_rule": 5.243622779846191,
+    "nll_alt": 14.30191421508789
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r28",
+    "latin": "tamano'az",
+    "source": "LJ1898",
+    "rule": "T A M A N O A S",
+    "alt": "T A M A N A S",
+    "nll_rule": 12.889567375183105,
+    "nll_alt": 18.331607818603516
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r34",
+    "latin": "tekop'",
+    "source": "LJ1898",
+    "rule": "T E K O P",
+    "alt": "T E K P",
+    "nll_rule": 1.984742522239685,
+    "nll_alt": 9.6870756149292
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p014_c0_r04",
+    "latin": "tep'so",
+    "source": "LJ1898",
+    "rule": "T E P S O",
+    "alt": "T E P S",
+    "nll_rule": 7.296767234802246,
+    "nll_alt": 19.141820907592773
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r14",
+    "latin": "Elo",
+    "source": "LJ1892",
+    "rule": "E L O",
+    "alt": "E L",
+    "nll_rule": 23.13187026977539,
+    "nll_alt": 30.687578201293945
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K A R TS",
+    "nll_rule": 42.24553298950195,
+    "nll_alt": 49.6019401550293
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p009_V_r17",
+    "latin": "Kinjorj",
+    "source": "LJ1892",
+    "rule": "K E N CH O R CH",
+    "alt": "K E N CH R CH",
+    "nll_rule": 25.59878921508789,
+    "nll_alt": 32.13662338256836
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r15",
+    "latin": "Kofess",
+    "source": "LJ1892",
+    "rule": "K O F E S",
+    "alt": "K F E S",
+    "nll_rule": 23.878013610839844,
+    "nll_alt": 35.30574417114258
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p010_V_r22",
+    "latin": "Kosho",
+    "source": "LJ1892",
+    "rule": "K O SH O",
+    "alt": "K SH O",
+    "nll_rule": 12.713372230529785,
+    "nll_alt": 16.73748207092285
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r03",
+    "latin": "Kaou",
+    "source": "LJ1892",
+    "rule": "K A O U",
+    "alt": "K A U",
+    "nll_rule": 13.625129699707031,
+    "nll_alt": 15.25796890258789
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r20",
+    "latin": "Lamotaï",
+    "source": "LJ1892",
+    "rule": "L A M O T A E",
+    "alt": "L A M T A E",
+    "nll_rule": 4.105615615844727,
+    "nll_alt": 12.489036560058594
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r24",
+    "latin": "Lapiosh",
+    "source": "LJ1892",
+    "rule": "L A P E O SH",
+    "alt": "L A P E SH",
+    "nll_rule": 9.074324607849121,
+    "nll_alt": 6.174638748168945
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L A P T",
+    "nll_rule": 2.682225227355957,
+    "nll_alt": 9.98073959350586
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K A T L E K",
+    "nll_rule": 78.09988403320312,
+    "nll_alt": 73.08207702636719
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p013_V_r15",
+    "latin": "Lon",
+    "source": "LJ1892",
+    "rule": "L O N",
+    "alt": "L N",
+    "nll_rule": 17.13690185546875,
+    "nll_alt": 21.65655517578125
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r10",
+    "latin": "Mokst",
+    "source": "LJ1892",
+    "rule": "M O K S T",
+    "alt": "M K S T",
+    "nll_rule": 4.28076696395874,
+    "nll_alt": 10.65219497680664
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p015_V_r03",
+    "latin": "Oihoi",
+    "source": "LJ1892",
+    "rule": "O E H O E",
+    "alt": "E H O E",
+    "nll_rule": 8.186758995056152,
+    "nll_alt": 17.38837432861328
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p017_V_r21",
+    "latin": "Son",
+    "source": "LJ1892",
+    "rule": "S O N",
+    "alt": "S N",
+    "nll_rule": 0.04643286392092705,
+    "nll_alt": 12.93568229675293
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p018_R_r19",
+    "latin": "Tamanoaz",
+    "source": "LJ1892",
+    "rule": "T A M A N O A S",
+    "alt": "T A M A N A S",
+    "nll_rule": 14.410537719726562,
+    "nll_alt": 3.933119773864746
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r10",
+    "latin": "Lemalo",
+    "source": "LJ1892",
+    "rule": "L E M A L O",
+    "alt": "L E M A L",
+    "nll_rule": 31.523895263671875,
+    "nll_alt": 34.470123291015625
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p019_N_r07",
+    "latin": "Tepso",
+    "source": "LJ1892",
+    "rule": "T E P S O",
+    "alt": "T E P S",
+    "nll_rule": 2.6595382690429688,
+    "nll_alt": 14.460837364196777
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p019_N_r20",
+    "latin": "Tomtom",
+    "source": "LJ1892",
+    "rule": "T O M T O M",
+    "alt": "T M T O M",
+    "nll_rule": 11.896842956542969,
+    "nll_alt": 14.89314079284668
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r07",
+    "latin": "cha'ko",
+    "source": "LJ1898",
+    "rule": "CH A K O",
+    "alt": "CH A K",
+    "nll_rule": 1.639879822731018,
+    "nll_alt": 6.360620498657227
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r18",
+    "latin": "eskom",
+    "source": "LJ1898",
+    "rule": "E S K O M",
+    "alt": "E S K M",
+    "nll_rule": 9.1184663772583,
+    "nll_alt": 15.726810455322266
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r24",
+    "latin": "sta'lo",
+    "source": "LJ1898",
+    "rule": "S T A L O",
+    "alt": "S T A L",
+    "nll_rule": 0.1732027381658554,
+    "nll_alt": 11.970038414001465
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r16",
+    "latin": "Eskom",
+    "source": "LJ1892",
+    "rule": "E S K O M",
+    "alt": "E S K M",
+    "nll_rule": 0.12050451338291168,
+    "nll_alt": 11.583659172058105
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r11",
+    "latin": "Karrots",
+    "source": "LJ1892",
+    "rule": "K A R O TS",
+    "alt": "K A R TS",
+    "nll_rule": 46.753173828125,
+    "nll_alt": 54.88221740722656
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r17",
+    "latin": "Kinjorj",
+    "source": "LJ1892",
+    "rule": "K E N CH O R CH",
+    "alt": "K E N CH R CH",
+    "nll_rule": 33.69955062866211,
+    "nll_alt": 44.20945739746094
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r03",
+    "latin": "Kaou",
+    "source": "LJ1892",
+    "rule": "K A O U",
+    "alt": "K A U",
+    "nll_rule": 21.423643112182617,
+    "nll_alt": 17.732559204101562
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r03",
+    "latin": "Lapōt",
+    "source": "LJ1892",
+    "rule": "L A P O T",
+    "alt": "L A P T",
+    "nll_rule": 3.8849847316741943,
+    "nll_alt": 11.92237663269043
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r07",
+    "latin": "Lepot",
+    "source": "LJ1892",
+    "rule": "L E P O T",
+    "alt": "L E P T",
+    "nll_rule": 0.7842477560043335,
+    "nll_alt": 11.073833465576172
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r05",
+    "latin": "Ol man",
+    "source": "LJ1892",
+    "rule": "O L _ M A N",
+    "alt": "L _ M A N",
+    "nll_rule": 12.388415336608887,
+    "nll_alt": 24.557254791259766
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p017_V_r16",
+    "latin": "Skookom",
+    "source": "LJ1892",
+    "rule": "S K OO K O M",
+    "alt": "S K OO K M",
+    "nll_rule": 5.679683685302734,
+    "nll_alt": 11.419116973876953
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p017_V_r20",
+    "latin": "Sno",
+    "source": "LJ1892",
+    "rule": "S N O",
+    "alt": "S N",
+    "nll_rule": 3.2037353515625,
+    "nll_alt": 8.958768844604492
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p018_R_r06",
+    "latin": "Stalo",
+    "source": "LJ1892",
+    "rule": "S T A L O",
+    "alt": "S T A L",
+    "nll_rule": 0.9847782850265503,
+    "nll_alt": 8.962797164916992
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS H K",
+    "nll_rule": 23.614463806152344,
+    "nll_alt": 23.367225646972656
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L A P L A",
+    "nll_rule": 2.248119592666626,
+    "nll_alt": 13.432669639587402
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r10",
+    "latin": "chok",
+    "source": "LJ1898",
+    "rule": "CH O K",
+    "alt": "CH K",
+    "nll_rule": 5.4704389572143555,
+    "nll_alt": 16.322307586669922
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r07",
+    "latin": "kap'ho",
+    "source": "LJ1898",
+    "rule": "K A P H O",
+    "alt": "K A P H",
+    "nll_rule": 0.6782181859016418,
+    "nll_alt": 11.003705024719238
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r27",
+    "latin": "kolan'",
+    "source": "LJ1898",
+    "rule": "K O L A N",
+    "alt": "K L A N",
+    "nll_rule": 27.617704391479492,
+    "nll_alt": 29.651390075683594
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r30",
+    "latin": "tanke son",
+    "source": "LJ1898",
+    "rule": "T A N K E _ S O N",
+    "alt": "T A N K E _ S N",
+    "nll_rule": 17.68207359313965,
+    "nll_alt": 29.88330841064453
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r05",
+    "latin": "Kanamokst",
+    "source": "LJ1892",
+    "rule": "K A N A M O K S T",
+    "alt": "K A N A M K S T",
+    "nll_rule": 11.718998908996582,
+    "nll_alt": 14.480133056640625
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r17",
+    "latin": "Kolan",
+    "source": "LJ1892",
+    "rule": "K O L A N",
+    "alt": "K L A N",
+    "nll_rule": 5.2887396812438965,
+    "nll_alt": 9.292649269104004
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r10",
+    "latin": "Lakarot",
+    "source": "LJ1892",
+    "rule": "L A K A R O T",
+    "alt": "L A K A R T",
+    "nll_rule": 3.475447654724121,
+    "nll_alt": 10.638072967529297
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r21",
+    "latin": "Lamooto",
+    "source": "LJ1892",
+    "rule": "L A M OO T O",
+    "alt": "L A M OO T",
+    "nll_rule": 1.0966883897781372,
+    "nll_alt": 12.112380981445312
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E S _ K A T L E K",
+    "nll_rule": 89.98171997070312,
+    "nll_alt": 86.36624908447266
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r07",
+    "latin": "Lepot",
+    "source": "LJ1892",
+    "rule": "L E P O T",
+    "alt": "L E P T",
+    "nll_rule": 0.7080021500587463,
+    "nll_alt": 11.308258056640625
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p013_V_r08",
+    "latin": "Lesapot",
+    "source": "LJ1892",
+    "rule": "L E S A P O T",
+    "alt": "L E S A P T",
+    "nll_rule": 5.25053071975708,
+    "nll_alt": 14.000615119934082
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r10",
+    "latin": "Mokst",
+    "source": "LJ1892",
+    "rule": "M O K S T",
+    "alt": "M K S T",
+    "nll_rule": 8.643465042114258,
+    "nll_alt": 13.257079124450684
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p017_V_r20",
+    "latin": "Sno",
+    "source": "LJ1892",
+    "rule": "S N O",
+    "alt": "S N",
+    "nll_rule": 3.2416250705718994,
+    "nll_alt": 13.006382942199707
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS H K",
+    "nll_rule": 18.13343048095703,
+    "nll_alt": 21.793304443359375
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r09",
+    "latin": "Lapola",
+    "source": "LJ1892",
+    "rule": "L A P O L A",
+    "alt": "L A P L A",
+    "nll_rule": 2.9254636764526367,
+    "nll_alt": 12.389379501342773
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r20",
+    "latin": "Talapos",
+    "source": "LJ1892",
+    "rule": "T A L A P O S",
+    "alt": "T A L A P S",
+    "nll_rule": 50.1053352355957,
+    "nll_alt": 37.32464599609375
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p021_N_r15",
+    "latin": "Noz",
+    "source": "LJ1892",
+    "rule": "N O S",
+    "alt": "N S",
+    "nll_rule": 10.589241981506348,
+    "nll_alt": 13.388683319091797
+   }
+  ],
+  "control: drop an i between consonants": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r09",
+    "latin": "chik'min",
+    "source": "LJ1898",
+    "rule": "CH E K M E N",
+    "alt": "CH K M E N",
+    "nll_rule": 15.90196418762207,
+    "nll_alt": 8.537572860717773
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r26",
+    "latin": "i'lep",
+    "source": "LJ1898",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.13354343175888062,
+    "nll_alt": 9.332818031311035
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r19",
+    "latin": "mow'ich",
+    "source": "LJ1898",
+    "rule": "M OW E CH",
+    "alt": "M OW CH",
+    "nll_rule": 28.981231689453125,
+    "nll_alt": 22.44444465637207
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r22",
+    "latin": "na'nich",
+    "source": "LJ1898",
+    "rule": "N A N E CH",
+    "alt": "N A N CH",
+    "nll_rule": 3.6370553970336914,
+    "nll_alt": 17.826074600219727
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r27",
+    "latin": "o'lali",
+    "source": "LJ1898",
+    "rule": "O L A L E",
+    "alt": "O L A L",
+    "nll_rule": 0.1812727004289627,
+    "nll_alt": 13.434748649597168
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c1_r25",
+    "latin": "stiw'ilh",
+    "source": "LJ1898",
+    "rule": "S T E WE LH",
+    "alt": "S T WE LH",
+    "nll_rule": 8.03348159790039,
+    "nll_alt": 14.622007369995117
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p014_c0_r21",
+    "latin": "tsiltsil",
+    "source": "LJ1898",
+    "rule": "TS E L TS E L",
+    "alt": "TS L TS E L",
+    "nll_rule": 32.08948516845703,
+    "nll_alt": 34.3318977355957
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p008_V_r15",
+    "latin": "Ilep",
+    "source": "LJ1892",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.8248857259750366,
+    "nll_alt": 7.436787128448486
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r05",
+    "latin": "Klis",
+    "source": "LJ1892",
+    "rule": "K L E S",
+    "alt": "K L S",
+    "nll_rule": 0.0009856093674898148,
+    "nll_alt": 13.752354621887207
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p010_V_r07",
+    "latin": "Klismas",
+    "source": "LJ1892",
+    "rule": "K L E S M A S",
+    "alt": "K L S M A S",
+    "nll_rule": 9.645309448242188,
+    "nll_alt": 18.103919982910156
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L S _ K A T O L E K",
+    "nll_rule": 74.50394439697266,
+    "nll_alt": 73.56781005859375
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p015_V_r04",
+    "latin": "Olali",
+    "source": "LJ1892",
+    "rule": "O L A L E",
+    "alt": "O L A L",
+    "nll_rule": 0.013084097765386105,
+    "nll_alt": 14.067588806152344
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r09",
+    "latin": "Tsiltsil",
+    "source": "LJ1892",
+    "rule": "TS E L TS E L",
+    "alt": "TS L TS E L",
+    "nll_rule": 50.19926452636719,
+    "nll_alt": 47.22570037841797
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p022_R_r06",
+    "latin": "Ikik",
+    "source": "LJ1892",
+    "rule": "E K E K",
+    "alt": "K E K",
+    "nll_rule": 15.57918930053711,
+    "nll_alt": 25.95633316040039
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p019_N_r09",
+    "latin": "Ti",
+    "source": "LJ1892",
+    "rule": "T E",
+    "alt": "T",
+    "nll_rule": 0.9114566445350647,
+    "nll_alt": 9.461738586425781
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r06",
+    "latin": "kan'sih",
+    "source": "LJ1898",
+    "rule": "K A N S E H",
+    "alt": "K A N S H",
+    "nll_rule": 10.585151672363281,
+    "nll_alt": 19.779199600219727
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r14",
+    "latin": "kim'ta",
+    "source": "LJ1898",
+    "rule": "K E M T A",
+    "alt": "K M T A",
+    "nll_rule": 12.795088768005371,
+    "nll_alt": 17.11661720275879
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c1_r16",
+    "latin": "kis'kis",
+    "source": "LJ1898",
+    "rule": "K E S K E S",
+    "alt": "K S K E S",
+    "nll_rule": 3.8330492973327637,
+    "nll_alt": 16.517759323120117
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p014_c0_r03",
+    "latin": "te'likom",
+    "source": "LJ1898",
+    "rule": "T E L E K O M",
+    "alt": "T E L K O M",
+    "nll_rule": 7.49775505065918,
+    "nll_alt": 12.559012413024902
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p014_c0_r05",
+    "latin": "tik",
+    "source": "LJ1898",
+    "rule": "T E K",
+    "alt": "T K",
+    "nll_rule": 2.815214157104492,
+    "nll_alt": 10.6801118850708
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p014_c0_r06",
+    "latin": "tik'tik",
+    "source": "LJ1898",
+    "rule": "T E K T E K",
+    "alt": "T K T E K",
+    "nll_rule": 20.232295989990234,
+    "nll_alt": 31.999271392822266
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r08",
+    "latin": "Kansih",
+    "source": "LJ1892",
+    "rule": "K A N S E H",
+    "alt": "K A N S H",
+    "nll_rule": 18.156494140625,
+    "nll_alt": 19.827102661132812
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r16",
+    "latin": "Kimta",
+    "source": "LJ1892",
+    "rule": "K E M T A",
+    "alt": "K M T A",
+    "nll_rule": 24.081960678100586,
+    "nll_alt": 26.581157684326172
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p009_V_r20",
+    "latin": "Kiskis",
+    "source": "LJ1892",
+    "rule": "K E S K E S",
+    "alt": "K S K E S",
+    "nll_rule": 1.597960352897644,
+    "nll_alt": 8.547725677490234
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p019_N_r06",
+    "latin": "Telikom",
+    "source": "LJ1892",
+    "rule": "T E L E K O M",
+    "alt": "T E L K O M",
+    "nll_rule": 3.267489433288574,
+    "nll_alt": 5.9485955238342285
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p019_N_r10",
+    "latin": "Tiktik",
+    "source": "LJ1892",
+    "rule": "T E K T E K",
+    "alt": "T K T E K",
+    "nll_rule": 7.041852951049805,
+    "nll_alt": 21.97296905517578
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 1.007524847984314,
+    "nll_alt": 17.648780822753906
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r26",
+    "latin": "i'lep",
+    "source": "LJ1898",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.5772054195404053,
+    "nll_alt": 11.069805145263672
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r28",
+    "latin": "is'sik",
+    "source": "LJ1898",
+    "rule": "E S E K",
+    "alt": "S E K",
+    "nll_rule": 0.01959114335477352,
+    "nll_alt": 13.56318187713623
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r19",
+    "latin": "mow'ich",
+    "source": "LJ1898",
+    "rule": "M OW E CH",
+    "alt": "M OW CH",
+    "nll_rule": 26.248502731323242,
+    "nll_alt": 21.491397857666016
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r25",
+    "latin": "stiw'ilh",
+    "source": "LJ1898",
+    "rule": "S T E WE LH",
+    "alt": "S T WE LH",
+    "nll_rule": 9.291258811950684,
+    "nll_alt": 14.497750282287598
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p014_c0_r14",
+    "latin": "tlil",
+    "source": "LJ1898",
+    "rule": "T L E L",
+    "alt": "T L L",
+    "nll_rule": 0.6080816388130188,
+    "nll_alt": 9.325759887695312
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p014_c0_r20",
+    "latin": "tsiktsik",
+    "source": "LJ1898",
+    "rule": "TS E K TS E K",
+    "alt": "TS K TS E K",
+    "nll_rule": 7.738029479980469,
+    "nll_alt": 12.883983612060547
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p014_c0_r21",
+    "latin": "tsiltsil",
+    "source": "LJ1898",
+    "rule": "TS E L TS E L",
+    "alt": "TS L TS E L",
+    "nll_rule": 31.852651596069336,
+    "nll_alt": 28.929155349731445
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 3.417710304260254,
+    "nll_alt": 21.094234466552734
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r15",
+    "latin": "Ilep",
+    "source": "LJ1892",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.3893263041973114,
+    "nll_alt": 8.168493270874023
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r16",
+    "latin": "Issik",
+    "source": "LJ1892",
+    "rule": "E S E K",
+    "alt": "S E K",
+    "nll_rule": 4.258073329925537,
+    "nll_alt": 1.6355204582214355
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p009_V_r17",
+    "latin": "Kinjorj",
+    "source": "LJ1892",
+    "rule": "K E N CH O R CH",
+    "alt": "K N CH O R CH",
+    "nll_rule": 25.59878921508789,
+    "nll_alt": 29.147525787353516
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r02",
+    "latin": "Kooli",
+    "source": "LJ1892",
+    "rule": "K OO L E",
+    "alt": "K OO L",
+    "nll_rule": 6.363688945770264,
+    "nll_alt": 9.60190200805664
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r13",
+    "latin": "Lekalisti",
+    "source": "LJ1892",
+    "rule": "L E K A L E S T E",
+    "alt": "L E K A L S T E",
+    "nll_rule": 3.3338606357574463,
+    "nll_alt": 15.245670318603516
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L S _ K A T O L E K",
+    "nll_rule": 78.09988403320312,
+    "nll_alt": 74.14533996582031
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p020_R_r08",
+    "latin": "Tsiktsik",
+    "source": "LJ1892",
+    "rule": "TS E K TS E K",
+    "alt": "TS K TS E K",
+    "nll_rule": 44.14791488647461,
+    "nll_alt": 51.24551010131836
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p020_R_r09",
+    "latin": "Tsiltsil",
+    "source": "LJ1892",
+    "rule": "TS E L TS E L",
+    "alt": "TS L TS E L",
+    "nll_rule": 51.93308639526367,
+    "nll_alt": 45.11741638183594
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r07",
+    "latin": "Kehtsi",
+    "source": "LJ1892",
+    "rule": "K E H TS E",
+    "alt": "K E H TS",
+    "nll_rule": 28.256256103515625,
+    "nll_alt": 36.39249801635742
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p022_R_r12",
+    "latin": "Niwa",
+    "source": "LJ1892",
+    "rule": "N E WA",
+    "alt": "N WA",
+    "nll_rule": 0.6993788480758667,
+    "nll_alt": 11.848753929138184
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 1.5738883018493652,
+    "nll_alt": 17.95162582397461
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c0_r26",
+    "latin": "i'lep",
+    "source": "LJ1898",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.6344330310821533,
+    "nll_alt": 11.88628101348877
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r06",
+    "latin": "kan'sih",
+    "source": "LJ1898",
+    "rule": "K A N S E H",
+    "alt": "K A N S H",
+    "nll_rule": 5.900633811950684,
+    "nll_alt": 17.942684173583984
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K P OO E T",
+    "nll_rule": 3.4098753929138184,
+    "nll_alt": 23.12461280822754
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p014_c0_r19",
+    "latin": "tsi",
+    "source": "LJ1898",
+    "rule": "TS E",
+    "alt": "TS",
+    "nll_rule": 0.012844455428421497,
+    "nll_alt": 9.85624885559082
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 4.699816703796387,
+    "nll_alt": 23.092018127441406
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p008_V_r15",
+    "latin": "Ilep",
+    "source": "LJ1892",
+    "rule": "E L E P",
+    "alt": "L E P",
+    "nll_rule": 0.8759381175041199,
+    "nll_alt": 11.393750190734863
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r08",
+    "latin": "Kansih",
+    "source": "LJ1892",
+    "rule": "K A N S E H",
+    "alt": "K A N S H",
+    "nll_rule": 15.84898853302002,
+    "nll_alt": 22.719646453857422
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r17",
+    "latin": "Kinjorj",
+    "source": "LJ1892",
+    "rule": "K E N CH O R CH",
+    "alt": "K N CH O R CH",
+    "nll_rule": 33.69955062866211,
+    "nll_alt": 40.20439910888672
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K P OO E T",
+    "nll_rule": 2.6719465255737305,
+    "nll_alt": 11.23232650756836
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r02",
+    "latin": "Kooli",
+    "source": "LJ1892",
+    "rule": "K OO L E",
+    "alt": "K OO L",
+    "nll_rule": 3.4191441535949707,
+    "nll_alt": 8.220312118530273
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r18",
+    "latin": "Lametsin",
+    "source": "LJ1892",
+    "rule": "L A M E TS E N",
+    "alt": "L A M E TS N",
+    "nll_rule": 16.526844024658203,
+    "nll_alt": 26.849058151245117
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r02",
+    "latin": "Laplitas",
+    "source": "LJ1892",
+    "rule": "L A P L E T A S",
+    "alt": "L A P L T A S",
+    "nll_rule": 0.45075851678848267,
+    "nll_alt": 15.69705581665039
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p012_V_r08",
+    "latin": "Lawagin",
+    "source": "LJ1892",
+    "rule": "L A WA G E N",
+    "alt": "L A WA G N",
+    "nll_rule": 26.217180252075195,
+    "nll_alt": 41.019073486328125
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p016_V_r19",
+    "latin": "Saliks",
+    "source": "LJ1892",
+    "rule": "S A L E K S",
+    "alt": "S A L K S",
+    "nll_rule": 14.963292121887207,
+    "nll_alt": 14.352656364440918
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r06",
+    "latin": "Tsi",
+    "source": "LJ1892",
+    "rule": "TS E",
+    "alt": "TS",
+    "nll_rule": 14.794194221496582,
+    "nll_alt": 27.409780502319336
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r08",
+    "latin": "chi",
+    "source": "LJ1898",
+    "rule": "CH E",
+    "alt": "CH",
+    "nll_rule": 0.12941338121891022,
+    "nll_alt": 13.925071716308594
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r24",
+    "latin": "ik'ta",
+    "source": "LJ1898",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 2.045861005783081,
+    "nll_alt": 22.623950958251953
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r29",
+    "latin": "i'tlooilh",
+    "source": "LJ1898",
+    "rule": "E T L OO E LH",
+    "alt": "T L OO E LH",
+    "nll_rule": 9.856120109558105,
+    "nll_alt": 25.98573875427246
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K P OO E T",
+    "nll_rule": 7.309940814971924,
+    "nll_alt": 26.223552703857422
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r26",
+    "latin": "kenim'",
+    "source": "LJ1898",
+    "rule": "K E N E M",
+    "alt": "K E N M",
+    "nll_rule": 12.43698787689209,
+    "nll_alt": 8.892888069152832
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r16",
+    "latin": "mitlait",
+    "source": "LJ1898",
+    "rule": "M E T L A E T",
+    "alt": "M T L A E T",
+    "nll_rule": 12.834745407104492,
+    "nll_alt": 18.18496322631836
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r15",
+    "latin": "sa'lix",
+    "source": "LJ1898",
+    "rule": "S A L E K S",
+    "alt": "S A L K S",
+    "nll_rule": 1.4327343702316284,
+    "nll_alt": 8.819266319274902
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r06",
+    "latin": "tik'tik",
+    "source": "LJ1898",
+    "rule": "T E K T E K",
+    "alt": "T K T E K",
+    "nll_rule": 18.059795379638672,
+    "nll_alt": 30.24979591369629
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r14",
+    "latin": "tlil",
+    "source": "LJ1898",
+    "rule": "T L E L",
+    "alt": "T L L",
+    "nll_rule": 0.05549529939889908,
+    "nll_alt": 11.962091445922852
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r19",
+    "latin": "tsi",
+    "source": "LJ1898",
+    "rule": "TS E",
+    "alt": "TS",
+    "nll_rule": 0.003857838222756982,
+    "nll_alt": 10.895793914794922
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p008_V_r14",
+    "latin": "Ikta",
+    "source": "LJ1892",
+    "rule": "E K T A",
+    "alt": "K T A",
+    "nll_rule": 2.311800003051758,
+    "nll_alt": 24.344526290893555
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K P OO E T",
+    "nll_rule": 4.577456951141357,
+    "nll_alt": 10.643688201904297
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r07",
+    "latin": "Klismas",
+    "source": "LJ1892",
+    "rule": "K L E S M A S",
+    "alt": "K L S M A S",
+    "nll_rule": 1.3308963775634766,
+    "nll_alt": 15.009177207946777
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L S _ K A T O L E K",
+    "nll_rule": 89.98171997070312,
+    "nll_alt": 81.44981384277344
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r08",
+    "latin": "Mitlait",
+    "source": "LJ1892",
+    "rule": "M E T L A E T",
+    "alt": "M T L A E T",
+    "nll_rule": 22.254613876342773,
+    "nll_alt": 33.37062072753906
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p017_V_r11",
+    "latin": "Sik",
+    "source": "LJ1892",
+    "rule": "S E K",
+    "alt": "S K",
+    "nll_rule": 0.37010902166366577,
+    "nll_alt": 21.045814514160156
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p020_R_r06",
+    "latin": "Tsi",
+    "source": "LJ1892",
+    "rule": "TS E",
+    "alt": "TS",
+    "nll_rule": 14.65821647644043,
+    "nll_alt": 29.91926383972168
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p019_N_r10",
+    "latin": "Tiktik",
+    "source": "LJ1892",
+    "rule": "T E K T E K",
+    "alt": "T K T E K",
+    "nll_rule": 7.010379791259766,
+    "nll_alt": 24.08450698852539
+   }
+  ],
+  "i_after_vowel_not_written": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 14.89989185333252,
+    "nll_alt": 4.31625509262085
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 7.091877460479736,
+    "nll_alt": 0.07612543553113937
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 4.860618591308594,
+    "nll_alt": 6.118497848510742
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p012_c0_r21",
+    "latin": "na'ika",
+    "source": "LJ1898",
+    "rule": "N A E K A",
+    "alt": "N A K A",
+    "nll_rule": 0.2795366048812866,
+    "nll_alt": 8.848917007446289
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 3.6349215507507324,
+    "nll_alt": 15.557734489440918
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 11.069786071777344,
+    "nll_alt": 0.5884023904800415
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 14.453251838684082,
+    "nll_alt": 11.797420501708984
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p011_c0_r21",
+    "latin": "helo'ima",
+    "source": "LJ1898",
+    "rule": "H E L O E M A",
+    "alt": "H E L O M A",
+    "nll_rule": 13.216214179992676,
+    "nll_alt": 13.525073051452637
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15465_p012_c0_r20",
+    "latin": "msa'ika",
+    "source": "LJ1898",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 2.963947057723999,
+    "nll_alt": 4.137534141540527
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 6.013810157775879,
+    "nll_alt": 12.779170989990234
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r04",
+    "latin": "Heloïma",
+    "source": "LJ1892",
+    "rule": "H E L O E M A",
+    "alt": "H E L O M A",
+    "nll_rule": 31.82222557067871,
+    "nll_alt": 25.18221092224121
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 7.7082695960998535,
+    "nll_alt": 1.4497443437576294
+   },
+   {
+    "fold": "v1",
+    "id": "cihm_15474_p014_V_r17",
+    "latin": "Msaika",
+    "source": "LJ1892",
+    "rule": "M S A E K A",
+    "alt": "M S A K A",
+    "nll_rule": 7.547695636749268,
+    "nll_alt": 10.72154426574707
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r13",
+    "latin": "eh'pooï",
+    "source": "LJ1898",
+    "rule": "E H P OO E",
+    "alt": "E H P OO",
+    "nll_rule": 21.68805694580078,
+    "nll_alt": 19.78036880493164
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 12.055201530456543,
+    "nll_alt": 2.3222498893737793
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c0_r26",
+    "latin": "o'ihoi",
+    "source": "LJ1898",
+    "rule": "O E H O E",
+    "alt": "O H O",
+    "nll_rule": 10.4594087600708,
+    "nll_alt": 7.354992389678955
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p007_V_r12",
+    "latin": "Ehpooï",
+    "source": "LJ1892",
+    "rule": "E H P OO E",
+    "alt": "E H P OO",
+    "nll_rule": 18.56209373474121,
+    "nll_alt": 10.654473304748535
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 12.37513256072998,
+    "nll_alt": 3.1793787479400635
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p011_V_r20",
+    "latin": "Lamotaï",
+    "source": "LJ1892",
+    "rule": "L A M O T A E",
+    "alt": "L A M O T A",
+    "nll_rule": 4.105615615844727,
+    "nll_alt": 1.8645665645599365
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N A N",
+    "nll_rule": 3.0153648853302,
+    "nll_alt": 4.68306303024292
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p015_V_r03",
+    "latin": "Oihoi",
+    "source": "LJ1892",
+    "rule": "O E H O E",
+    "alt": "O H O",
+    "nll_rule": 8.186758995056152,
+    "nll_alt": 9.578139305114746
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 3.4098753929138184,
+    "nll_alt": 4.96217155456543
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r09",
+    "latin": "ma'ika",
+    "source": "LJ1898",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 5.361536502838135,
+    "nll_alt": 0.948340117931366
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 9.43728256225586,
+    "nll_alt": 5.498736381530762
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 4.89020299911499,
+    "nll_alt": 14.950448036193848
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 2.6719465255737305,
+    "nll_alt": 9.775997161865234
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p013_V_r17",
+    "latin": "Maika",
+    "source": "LJ1892",
+    "rule": "M A E K A",
+    "alt": "M A K A",
+    "nll_rule": 9.289820671081543,
+    "nll_alt": 0.09753862023353577
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 12.514691352844238,
+    "nll_alt": 8.50627326965332
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r09",
+    "latin": "Pait",
+    "source": "LJ1892",
+    "rule": "P A E T",
+    "alt": "P A T",
+    "nll_rule": 2.4712045192718506,
+    "nll_alt": 4.488512992858887
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r15",
+    "latin": "elaïten",
+    "source": "LJ1898",
+    "rule": "E L A E T E N",
+    "alt": "E L A T E N",
+    "nll_rule": 13.55594253540039,
+    "nll_alt": 2.236417055130005
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c0_r29",
+    "latin": "i'tlooilh",
+    "source": "LJ1898",
+    "rule": "E T L OO E LH",
+    "alt": "E T L OO LH",
+    "nll_rule": 9.856120109558105,
+    "nll_alt": 17.618467330932617
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p011_c1_r15",
+    "latin": "ki'pooit",
+    "source": "LJ1898",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 7.309940814971924,
+    "nll_alt": 11.959220886230469
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r16",
+    "latin": "mitlait",
+    "source": "LJ1898",
+    "rule": "M E T L A E T",
+    "alt": "M E T L A T",
+    "nll_rule": 12.834745407104492,
+    "nll_alt": 8.59911060333252
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c0_r24",
+    "latin": "nsa'ika",
+    "source": "LJ1898",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 8.277809143066406,
+    "nll_alt": 9.855438232421875
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p014_c0_r12",
+    "latin": "tlemenooit",
+    "source": "LJ1898",
+    "rule": "T L E M E N OO E T",
+    "alt": "T L E M E N OO T",
+    "nll_rule": 16.883594512939453,
+    "nll_alt": 13.478571891784668
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p007_V_r02",
+    "latin": "Aïlan",
+    "source": "LJ1892",
+    "rule": "A E L A N",
+    "alt": "A L A N",
+    "nll_rule": 2.251230478286743,
+    "nll_alt": 16.750551223754883
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p008_V_r06",
+    "latin": "Hpaï",
+    "source": "LJ1892",
+    "rule": "H P A E",
+    "alt": "H P A",
+    "nll_rule": 9.294239044189453,
+    "nll_alt": 2.290921688079834
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p009_V_r18",
+    "latin": "Kipooit",
+    "source": "LJ1892",
+    "rule": "K E P OO E T",
+    "alt": "K E P OO T",
+    "nll_rule": 4.577456951141357,
+    "nll_alt": 15.238133430480957
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p011_V_r08",
+    "latin": "Labootey",
+    "source": "LJ1892",
+    "rule": "L A B OO T E E",
+    "alt": "L A B OO T E",
+    "nll_rule": 36.60822677612305,
+    "nll_alt": 25.27484893798828
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r08",
+    "latin": "Mitlait",
+    "source": "LJ1892",
+    "rule": "M E T L A E T",
+    "alt": "M E T L A T",
+    "nll_rule": 22.254613876342773,
+    "nll_alt": 14.322182655334473
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r20",
+    "latin": "Nain",
+    "source": "LJ1892",
+    "rule": "N A E N",
+    "alt": "N A N",
+    "nll_rule": 2.8477399349212646,
+    "nll_alt": 4.773987770080566
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p014_V_r25",
+    "latin": "Nsaika",
+    "source": "LJ1892",
+    "rule": "N S A E K A",
+    "alt": "N S A K A",
+    "nll_rule": 12.089631080627441,
+    "nll_alt": 10.6926908493042
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r01",
+    "latin": "Aïs",
+    "source": "LJ1892",
+    "rule": "A E S",
+    "alt": "A S",
+    "nll_rule": 5.384725570678711,
+    "nll_alt": 16.309106826782227
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p022_R_r21",
+    "latin": "Tlepait",
+    "source": "LJ1892",
+    "rule": "T L E P A E T",
+    "alt": "T L E P A T",
+    "nll_rule": 9.568511009216309,
+    "nll_alt": 8.420406341552734
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p019_N_r17",
+    "latin": "Tlemenooit",
+    "source": "LJ1892",
+    "rule": "T L E M E N OO E T",
+    "alt": "T L E M E N OO T",
+    "nll_rule": 3.726480722427368,
+    "nll_alt": 16.67255401611328
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p021_N_r16",
+    "latin": "Wain",
+    "source": "LJ1892",
+    "rule": "WA E N",
+    "alt": "WA N",
+    "nll_rule": 13.275493621826172,
+    "nll_alt": 10.115228652954102
+   }
+  ],
+  "iu_is_U_alone": [
+   {
+    "fold": "v0",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 12.729198455810547,
+    "nll_alt": 6.0056023597717285
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.199037551879883,
+    "nll_alt": 3.0778279304504395
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p011_c1_r17",
+    "latin": "kiu'tan",
+    "source": "LJ1898",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 9.97011947631836,
+    "nll_alt": 3.322965383529663
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p011_V_r05",
+    "latin": "Kiutan",
+    "source": "LJ1892",
+    "rule": "K E U T A N",
+    "alt": "K U T A N",
+    "nll_rule": 11.82470703125,
+    "nll_alt": 4.347789764404297
+   }
+  ],
+  "z_is_TS (old rule)": [
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A E A TS",
+    "nll_rule": 8.850591659545898,
+    "nll_alt": 15.586737632751465
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E TS _ K A T O L E K",
+    "nll_rule": 74.50394439697266,
+    "nll_alt": 86.47994995117188
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15465_p012_c1_r28",
+    "latin": "tamano'az",
+    "source": "LJ1898",
+    "rule": "T A M A N O A S",
+    "alt": "T A M A N O A TS",
+    "nll_rule": 12.889567375183105,
+    "nll_alt": 26.91838836669922
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E TS _ K A T O L E K",
+    "nll_rule": 78.09988403320312,
+    "nll_alt": 93.12032318115234
+   },
+   {
+    "fold": "v2",
+    "id": "cihm_15474_p018_R_r19",
+    "latin": "Tamanoaz",
+    "source": "LJ1892",
+    "rule": "T A M A N O A S",
+    "alt": "T A M A N O A TS",
+    "nll_rule": 14.410537719726562,
+    "nll_alt": 19.703636169433594
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15465_p012_c1_r29",
+    "latin": "tanaz'",
+    "source": "LJ1898",
+    "rule": "T A N A S",
+    "alt": "T A N A TS",
+    "nll_rule": 0.00555720878764987,
+    "nll_alt": 9.78470516204834
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p007_V_r01",
+    "latin": "Aïaz",
+    "source": "LJ1892",
+    "rule": "A E A S",
+    "alt": "A E A TS",
+    "nll_rule": 3.9381659030914307,
+    "nll_alt": 15.21123218536377
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p018_R_r21",
+    "latin": "Tanaz",
+    "source": "LJ1892",
+    "rule": "T A N A S",
+    "alt": "T A N A TS",
+    "nll_rule": 1.405734658241272,
+    "nll_alt": 12.9705171585083
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15465_p012_c1_r29",
+    "latin": "tanaz'",
+    "source": "LJ1898",
+    "rule": "T A N A S",
+    "alt": "T A N A TS",
+    "nll_rule": 0.015184791758656502,
+    "nll_alt": 7.3115973472595215
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p012_V_r15",
+    "latin": "Legliz Katolik",
+    "source": "LJ1892",
+    "rule": "L E G L E S _ K A T O L E K",
+    "alt": "L E G L E TS _ K A T O L E K",
+    "nll_rule": 89.98171997070312,
+    "nll_alt": 102.4542007446289
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p018_R_r21",
+    "latin": "Tanaz",
+    "source": "LJ1892",
+    "rule": "T A N A S",
+    "alt": "T A N A TS",
+    "nll_rule": 3.1862192153930664,
+    "nll_alt": 7.752779483795166
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p021_N_r15",
+    "latin": "Noz",
+    "source": "LJ1892",
+    "rule": "N O S",
+    "alt": "N O TS",
+    "nll_rule": 10.589241981506348,
+    "nll_alt": 13.35684871673584
+   }
+  ],
+  "tsh_is_CH": [
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r04",
+    "latin": "Tsher",
+    "source": "LJ1892",
+    "rule": "TS H E R",
+    "alt": "CH E R",
+    "nll_rule": 33.909122467041016,
+    "nll_alt": 26.77759552001953
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "CH O K",
+    "nll_rule": 20.19387435913086,
+    "nll_alt": 22.700580596923828
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO CH M E N",
+    "nll_rule": 29.62631607055664,
+    "nll_alt": 19.23488998413086
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A CH",
+    "nll_rule": 31.32225227355957,
+    "nll_alt": 7.699714660644531
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "CH O K",
+    "nll_rule": 23.614463806152344,
+    "nll_alt": 28.495262145996094
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO CH M E N",
+    "nll_rule": 33.900726318359375,
+    "nll_alt": 12.10568618774414
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A CH",
+    "nll_rule": 29.62685775756836,
+    "nll_alt": 5.339692115783691
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "CH O K",
+    "nll_rule": 18.13343048095703,
+    "nll_alt": 29.867876052856445
+   }
+  ],
+  "tsh_is_TS_without_H": [
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r04",
+    "latin": "Tsher",
+    "source": "LJ1892",
+    "rule": "TS H E R",
+    "alt": "TS E R",
+    "nll_rule": 33.909122467041016,
+    "nll_alt": 29.538814544677734
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS O K",
+    "nll_rule": 20.19387435913086,
+    "nll_alt": 14.864445686340332
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO TS M E N",
+    "nll_rule": 29.62631607055664,
+    "nll_alt": 30.03214454650879
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A TS",
+    "nll_rule": 31.32225227355957,
+    "nll_alt": 24.6801700592041
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS O K",
+    "nll_rule": 23.614463806152344,
+    "nll_alt": 20.85126304626465
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO TS M E N",
+    "nll_rule": 33.900726318359375,
+    "nll_alt": 32.72172546386719
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A TS",
+    "nll_rule": 29.62685775756836,
+    "nll_alt": 20.539451599121094
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "TS O K",
+    "nll_rule": 18.13343048095703,
+    "nll_alt": 17.78417205810547
+   }
+  ],
+  "tsh_is_SH": [
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r04",
+    "latin": "Tsher",
+    "source": "LJ1892",
+    "rule": "TS H E R",
+    "alt": "SH E R",
+    "nll_rule": 33.909122467041016,
+    "nll_alt": 22.246292114257812
+   },
+   {
+    "fold": "v0",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "SH O K",
+    "nll_rule": 20.19387435913086,
+    "nll_alt": 22.190513610839844
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO SH M E N",
+    "nll_rule": 29.62631607055664,
+    "nll_alt": 26.175634384155273
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A SH",
+    "nll_rule": 31.32225227355957,
+    "nll_alt": 17.06304168701172
+   },
+   {
+    "fold": "v3",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "SH O K",
+    "nll_rule": 23.614463806152344,
+    "nll_alt": 26.617069244384766
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p010_V_r08",
+    "latin": "Klootshmen",
+    "source": "LJ1892",
+    "rule": "K L OO TS H M E N",
+    "alt": "K L OO SH M E N",
+    "nll_rule": 33.900726318359375,
+    "nll_alt": 26.60906219482422
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p015_V_r18",
+    "latin": "Patlatsh",
+    "source": "LJ1892",
+    "rule": "P A T L A TS H",
+    "alt": "P A T L A SH",
+    "nll_rule": 29.62685775756836,
+    "nll_alt": 15.517213821411133
+   },
+   {
+    "fold": "v4",
+    "id": "cihm_15474_p020_R_r05",
+    "latin": "Tshok",
+    "source": "LJ1892",
+    "rule": "TS H O K",
+    "alt": "SH O K",
+    "nll_rule": 18.13343048095703,
+    "nll_alt": 31.69989013671875
+   }
+  ]
+ }
+}

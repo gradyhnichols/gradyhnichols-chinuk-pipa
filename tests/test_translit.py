@@ -11,6 +11,10 @@ from chinukpipa.translit import latin_to_tokens, tokens_to_unicode, unicode_to_t
     ("ka'namoxt", "K A N A M O K S T"),   # default x -> K S (a hypothesis)
     ("tanke son", "T A N K E _ S O N"),
     ("Tanaz", "T A N A S"),        # z -> S (revised rule, docs/rule_notes.md)
+    ("Tshok", "CH O K"),           # tsh -> CH (revised rule)
+    ("kiu'tan", "K U T A N"),      # iu -> U (revised rule)
+    ("Khaw", "KH OW"),             # aw before a consonant or at the end -> OW (revised rule)
+    ("Lawagin", "L A WA G E N"),   # aw before a vowel is unchanged
 ])
 def test_latin_to_tokens(word, tokens):
     assert " ".join(latin_to_tokens(word)) == tokens

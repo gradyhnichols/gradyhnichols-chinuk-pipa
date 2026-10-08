@@ -71,6 +71,19 @@ def _u_for_iu(src):
     return out
 
 
+def _old_rule(new_token, latins, old_tokens):
+    """Undo a revised rule (2026-10-08): a `new_token` written with one of `latins` -> the old token sequence."""
+    def f(src):
+        out = []
+        for s in src:
+            if s[0] == new_token and s[1].lower() in latins:
+                out += [(t, "", "", "") for t in old_tokens]
+            else:
+                out.append(s)
+        return out
+    return f
+
+
 def _drop_first(token, latin=None, consonant_context=False):
     """Control: drop the first `token` (optionally only one written with `latin` with no vowel letter on either
     side, which includes word-initial and word-final positions)."""
@@ -92,6 +105,11 @@ HYPOTHESES = {
     "tsh_is_TS_without_H": _tsh(["TS"]),
     "tsh_is_SH": _tsh(["SH"]),
     "z_is_TS (old rule)": _final_s_as_ts,
+    # under the revised rules (tsh/tch -> CH, iu/yu/yoo -> U) the old readings become the alternatives
+    "tsh_is_TS_H (old rule)": _old_rule("CH", {"tsh"}, ["TS", "H"]),
+    "tch_is_T_CH (old rule)": _old_rule("CH", {"tch"}, ["T", "CH"]),
+    "iu_yu_is_E_U (old rule)": _old_rule("U", {"iu", "yu"}, ["E", "U"]),
+    "yoo_is_E_OO (old rule)": _old_rule("U", {"yoo"}, ["E", "OO"]),
     # controls: deleting a sign that is surely written should rarely win; they measure the bias toward shorter
     # sequences that a deletion hypothesis enjoys
     "control: drop an i with no vowel beside it": _drop_first("E", "i", consonant_context=True),

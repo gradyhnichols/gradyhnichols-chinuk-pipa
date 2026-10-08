@@ -69,6 +69,11 @@ def latin_to_tokens(word: str, *, x_to_ks: bool = True, collapse_doubles: bool =
         i = 0
         table = _latin_table()
         while i < len(w):
+            # "aw" not followed by a vowel is the OW sign (revised 2026-10-08, see docs/rule_notes.md)
+            if w.startswith("aw", i) and (i + 2 == len(w) or w[i + 2] not in "aeiouy"):
+                toks.append("OW")
+                i += 2
+                continue
             for lat, tok in table:
                 if w.startswith(lat, i):
                     toks.append(tok)

@@ -1,0 +1,209 @@
+rid	section	roman_printed	roman_spelling	roman_flag	roman_tokens	seg_line	seg_index	box_ids	unit_id	unit_kind	n_boxes	n_words_in_unit	free_tokens	main_box	top1	top1_tokens	top5	top1_right	top5_right	top1_right_mainbox	top5_right_mainbox	clean_box	in_list	variant_headwords	top1_is_variant	unit_ed	unit_ref_len	box_conf	frames	cause	cause_detail	alignment_check
+1	11L	An'kate	ankate		A N K A T E	5	2	5.2+5.3	1	split	2	1	A N K A | T E	5.2	ankate	A N K A T E	ankate;ack;anah;tance;yahka	0	0	1	1	0	1		0	0	6	0.9508	9	segmentation	split_word (2 boxes)	dpB_agree
+2	11L	S.T.	st	abbr	S T	5	4	5.4	2	match	1	1	S A	5.4	sil	S E L	sil;sop;sick;son;sail	0	0	0	0	1	0		0	1	2	0.9534	9	not_in_list	abbreviation	dpB_agree
+3	11L	ma'mook	mamook		M A M OO K	5	5	5.5	3	match	1	1	M A M OO K	5.5	mamook	M A M OO K	mamook;mamuk;makook;mox;makmok	1	1	1	1	1	1		0	0	5	0.9309	10	none		dpB_agree
+4	11L	sa'hale	sahale		S A H A L E	5	6	5.6	4	match	1	1	S A	5.6	siah	S E A H	siah;na;siam;sil;sick	0	0	0	0	1	1		0	4	6	0.9571	7	recognizer_confusion		dpB_agree
+5	11L	e'lehe	elehe		E L E H E	5	7	5.7+5.8	5	split	2	1	A L E E L E | E	5.7	alkie	A L K E E	alkie;klile;oly;malllie;alke	0	0	0	0	0	0	illahee	0	4	5	0.9283	13	segmentation	split_word (2 boxes)	dpB_agree
+6	11L	pi	pi		P E	5	9	5.9	6	match	1	1	P E	5.9	pe	P E	pe;pel;pee;pish;poo	1	1	1	1	1	1		0	0	2	0.944	4	none		dpB_agree
+7	11L	ook'ook	ookook		OO K OO K	5	10	5.10	7	match	1	1	K OO K OO K	5.10	okook	O K OO K	okook;klook;ack;sook;kow	0	0	0	0	1	0	okook	1	1	4	0.9124	10	spelling_variant	in list only as okook	dpB_agree
+8	11L	elehe.	elehe		E L E H E	5	11	5.11+5.12	8	split	2	1	E L | E	5.11	elip	E L E P	elip;oly;khell;cly;lek	0	0	0	0	0	0	illahee	0	2	5	0.9362	7	segmentation	split_word (2 boxes)	dpB_agree
+9	11L	Kopet'	kopet		K O P E T	6	1	6.1	9	match	1	1	K O P E T	6.1	kopet	K O P E T	kopet;kope;kopel;kopa;kot	1	1	1	1	1	1		0	0	5	0.9662	10	none		dpB_agree
+10	11L	chok	chok		CH O K	6	2	6.2	10	match	1	1	CH O K	6.2	chock	CH O K	chock;chuck;chek;chako;chope	1	1	1	1	1	1		0	0	3	0.9875	11	none		dpB_agree
+11	11L	pi	pi		P E	6	3	6.3	11	match	1	1	P E	6.3	pe	P E	pe;pel;pish;pee;poo	1	1	1	1	1	1		0	0	2	0.9332	4	none		dpB_agree
+12	11L	poola'kle	poolakle		P OO L A K L E	6	4	6.4	12	match	1	1	P OO L A L E	6.4	poolakle	P OO L A K L E	poolakle;poolale;poole;polakle;polally	1	1	1	1	1	1		0	1	7	0.9333	11	none		dpB_agree
+13	11L	mitla'it	mitlait		M E T L A E T	6	5	6.5	13	match	1	1	M E T L A E T	6.5	mitlait	M E T L A E T	mitlait;mitluit;mitlite;mitooit;meten	1	1	1	1	1	1		0	0	7	0.9428	12	none		dpB_agree
+14	11L	ko'pa	kopa		K O P A	6	6	6.6	14	match	1	1	K O P A	6.6	kopa	K O P A	kopa;kope;ko;kom;ona	1	1	1	1	1	1		0	0	4	0.925	8	none		dpB_agree
+15	11L	ookook	ookook		OO K OO K	6	7	6.7+6.8	15	merge+split	2	2	K OO K OO K H L E | E	6.7	cole	K O L E	cole;cly;poole;oke;wake	0	0	0	0	0	0	okook	0	3	9	0.9352	14	segmentation	merged_and_split	eye_corrected
+16	11L	elehe.	elehe		E L E H E	6	7	6.7+6.8	15	merge+split	2	2	K OO K OO K H L E | E	6.7	cole	K O L E	cole;cly;poole;oke;wake	0	0	0	0	0	0	illahee	0			0.9352	14	segmentation	merged_and_split	eye_corrected
+17	11L	Pi	pi		P E	6	10	6.10	16	match	1	1	P E	6.10	pe	P E	pe;pel;pish;pee;poo	1	1	1	1	1	1		0	0	2	0.9321	4	none		eye_corrected
+18	11L	S.T.	st	abbr	S T	6	11	6.11	17	match	1	1	S T	6.11	sil	S E L	sil;sick;sing;stoh;siah	0	0	0	0	1	0		0	0	2	0.9112	8	not_in_list	abbreviation	dpB_agree
+19	11L	wa'wa:	wawa		WA WA	7	1	7.1	18	match	1	1	WA WA	7.1	wawa	WA WA	wawa;wewa;wawii;wam;wash	1	1	1	1	1	1		0	0	2	0.9362	11	none		dpB_agree
+20	11L	Tloos	tloos		T L OO S	7	5	7.5	19	merge	1	2	H E L OO S CH A K O	7.5	lesac	L E S A K	lesac;tloos;lawsuk;lesai;lesap	0	0	0	1	0	1		0	2	8	0.9116	18	segmentation	merged_words (2 words in 1 box)	dpB_agree
+21	11L	cha'ko	chako		CH A K O	7	5	7.5	19	merge	1	2	H E L OO S CH A K O	7.5	lesac	L E S A K	lesac;tloos;lawsuk;lesai;lesap	0	0	0	0	0	1		0			0.9116	18	segmentation	merged_words (2 words in 1 box)	dpB_agree
+22	11L	light (lait)	lait	resp	L A E T	7	6	7.6	20	match	1	1	L A T	7.6	latet	L A T E T	latet;laket;lewet;pat;lest	0	0	0	0	1	0		0	1	4	0.9204	8	not_in_list	english loan	dpB_agree
+23	11L	A'yak	ayak		A E A K	7	8	7.8	21	match	1	1	A E A	7.8	ayas	A E A S	ayas;hyak;ahha;tea;yakwa	0	0	0	0	1	0	hyak	0	1	4	0.9498	9	spelling_variant	in list only as hyak	dpB_agree
+24	11L	chako	chako		CH A K O	7	9	7.9	22	match	1	1	CH E N O	7.9	chako	CH A K O	chako;chee;chau;tshike;chuko	1	1	1	1	1	1		0	2	4	0.8692	9	none		dpB_agree
+25	11L	light	lait	resp	L A E T	7	10	7.10	23	match	1	1	L A E T	7.10	latet	L A T E T	latet;laket;lest;pat;lach	0	0	0	0	1	0		0	0	4	0.9085	8	not_in_list	english loan	dpB_agree
+26	11L	kopa	kopa		K O P A	7	11	7.11	24	match	1	1	K O P A	7.11	kopa	K O P A	kopa;kope;ko;kopet;kom	1	1	1	1	1	1		0	0	4	0.9185	8	none		dpB_agree
+27	11L	elehe.	elehe		E L E H E	7	12	7.12	25	match	1	1	E L E H E	7.12	elite	E L E T E	elite;elip;ekkeh;illahee;oly	0	0	0	0	1	0	illahee	0	0	5	0.8954	9	spelling_variant	in list only as illahee	dpB_agree
+28	11L	S.T.	st	abbr	S T	8	1	8.1	26	match	1	1	S E	8.1	sick	S E K	sick;sil;sing;son;sop	0	0	0	0	1	0		0	1	2	0.9164	8	not_in_list	abbreviation	dpB_agree
+29	11L	mamook	mamook		M A M OO K	8	2	8.2	27	match	1	1	M A M OO K	8.2	mamook	M A M OO K	mamook;mamuk;makook;mox;makmok	1	1	1	1	1	1		0	0	5	0.9395	11	none		dpB_agree
+30	11L	ka'kwa	kakwa		K A K WA	8	3	8.3	28	match	1	1	K A K WA	8.3	kakwa	K A K WA	kakwa;kahkwa;koakwa;yakwa;klawa	1	1	1	1	1	1		0	0	4	0.9371	9	none		dpB_agree
+31	11L	kopa	kopa		K O P A	8	4	8.4	29	match	1	1	K O P A	8.4	kopa	K O P A	kopa;kope;ko;kom;kopet	1	1	1	1	1	1		0	0	4	0.9176	8	none		dpB_agree
+32	11L	iht	iht		E H T	8	5	8.5+8.6	30	split	2	1	E | 	8.6	ow	OW	ow;pe;ko;ack;kow	0	0	0	0	0	0	ikt	0	2	3	0.8602	4	segmentation	split_word (2 boxes)	dpB_agree
+33	11L	son.	son		S O N	8	7	8.7	31	match	1	1	S O N	8.7	son	S O N	son;sun;ston;sop;snow	1	1	1	1	1	1		0	0	3	0.9204	8	none		dpB_agree
+34	11L	Kopa	kopa		K O P A	9	2	9.2	32	match	1	1	K O P A	9.2	kopa	K O P A	kopa;kope;ko;kom;kot	1	1	1	1	1	1		0	0	4	0.8938	8	none		dpB_agree
+35	11L	moxt	moxt		M O K S T	9	3	9.3	33	match	1	1	M O K S T	9.3	mokst	M O K S T	mokst;mox;ext;semmoxt;mosket	1	1	1	1	1	1		0	0	5	0.9282	9	none		dpB_agree
+36	11L	son	son		S O N	9	4	9.4	34	match	1	1	S O N	9.4	son	S O N	son;ston;sun;sop;spoon	1	1	1	1	1	1		0	0	3	0.9957	8	none		dpB_agree
+37	11L	S.T.	st	abbr	S T	9	6	9.6	35	match	1	1	S	9.6	sick	S E K	sick;sil;son;sop;sing	0	0	0	0	1	0		0	1	2	0.962	9	not_in_list	abbreviation	dpB_agree
+38	11L	mamook	mamook		M A M OO K	9	7	9.7	36	match	1	1	M A M OO K	9.7	mamook	M A M OO K	mamook;mamuk;makook;makmok;makmak	1	1	1	1	1	1		0	0	5	0.9659	10	none		dpB_agree
+39	11L	ookook	ookook		OO K OO K	9	8	9.8	37	match	1	1	OO K OO K	9.8	okook	O K OO K	okook;klook;ack;sook;shwakook	0	0	0	0	1	0	okook	1	0	4	0.9493	10	spelling_variant	in list only as okook	dpB_agree
+40	11L	sky (skai)	skai	resp	S K A E	9	9	9.9	38	match	1	1	S K A	9.9	skad	S K A D	skad;spoah;skin;kah;ko	0	0	0	0	1	0		0	1	4	0.8987	9	not_in_list	english loan	dpB_agree
+41	11L	nsai'ka	nsaika		N S A E K A	9	10	9.10	39	match	1	1	N S A E K A	9.10	nsaika	N S A E K A	nsaika;msaika;nika;nesika;na	1	1	1	1	1	1		0	0	6	0.8976	11	none		dpB_agree
+42	11L	na'nich	nanich		N A N E CH	10	1	10.1+10.2	40	split	2	1	N A | N E CH	10.2	nowich	N OW E CH	nowich;chitch;powich;nanich;nem	0	0	0	1	0	1		0	0	5	0.9478	9	segmentation	split_word (2 boxes)	dpB_agree
+43	11L	kopa	kopa		K O P A	10	3	10.3	41	match	1	1	K O P A	10.3	kopa	K O P A	kopa;kope;kopet;kolan;ko	1	1	1	1	1	1		0	0	4	0.9268	8	none		dpB_agree
+44	11L	sahale.	sahale		S A H A L E	10	4	10.4+10.5	42	split	2	1	S A | A L E	10.4	sick	S E K	sick;sil;na;siah;sing	0	0	0	0	0	1		0	1	6	0.959	8	segmentation	split_word (2 boxes)	dpB_agree
+45	11L	Kopa	kopa		K O P A	10	7	10.7	43	match	1	1	K O P A	10.7	kopa	K O P A	kopa;kope;ko;kom;kopet	1	1	1	1	1	1		0	0	4	0.9157	8	none		dpB_agree
+46	11L	tloon	tloon		T L OO N	10	8	10.8	44	match	1	1	T L OO N	10.8	tloon	T L OO N	tloon;win;moon;tloos;son	1	1	1	1	1	1		0	0	4	0.8924	7	none		dpB_agree
+47	11L	son	son		S O N	10	9	10.9	45	match	1	1	S O N	10.9	son	S O N	son;ston;sop;sun;stone	1	1	1	1	1	1		0	0	3	0.9697	8	none		dpB_agree
+48	11R	Iaka	iaka		E A K A	10	10	10.10	46	match	1	1	E A K A	10.10	yakwa	E A K WA	yakwa;elacka;yahka;ack;hyak	0	0	0	0	1	0	yahka	0	0	4	0.9455	8	spelling_variant	in list only as yahka	dpB_agree
+49	11R	mash	mash		M A SH	10	11	10.11	47	match	1	1	M A SH	10.11	mash	M A SH	mash;marsh;mahsh;man;mawich	1	1	1	1	1	1		0	0	3	0.9797	9	none		dpB_agree
+50	11R	chok	chok		CH O K	10	12	10.12	48	match	1	1	CH O K	10.12	chock	CH O K	chock;chek;chuck;chako;chope	1	1	1	1	1	1		0	0	3	0.9592	11	none		dpB_agree
+51	11R	kan'awe	kanawe		K A N A WE	11	2	11.2	49	match	1	1	K A N A WE	11.2	kanawe	K A N A WE	kanawe;kanewe;kahnawee;kawek;anah	1	1	1	1	1	1		0	0	5	0.957	12	none		dpB_agree
+52	11R	kan'amoxt	kanamoxt		K A N A M O K S T	11	3	11.3+11.4+11.5	50	split	3	1	K A | N A | M O K S T	11.5	mokst	M O K S T	mokst;mox;semmoxt;mosket;smok	0	0	0	0	0	1		0	0	9	0.9657	10	segmentation	split_word (3 boxes)	dpB_agree
+53	11R	pi	pi		P E	11	7	11.7	51	match	1	1	P E	11.7	pe	P E	pe;pel;pee;pish;poo	1	1	1	1	1	1		0	0	2	0.9249	4	none		dpB_agree
+54	11R	Iaka	iaka		E A K A	11	8	11.8	52	match	1	1	E A K A	11.8	yakwa	E A K WA	yakwa;yahka;elacka;ack;yahkwa	0	0	0	0	1	0	yahka	0	0	4	0.9539	7	spelling_variant	in list only as yahka	dpB_agree
+55	11R	wawa	wawa		WA WA	11	9	11.9	53	match	1	1	WA WA	11.9	wawa	WA WA	wawa;wewa;wam;wash;wawii	1	1	1	1	1	1		0	0	2	0.9653	14	none		dpB_agree
+56	11R	poos	poos		P OO S	11	10	11.10	54	match	1	1	P OO S	11.10	poo	P OO	poo;pows;pos;pat;pe	0	0	0	0	1	0	pos	0	0	3	0.948	10	spelling_variant	in list only as pos	dpB_agree
+57	11R	salt	salt	loan	S A L T	11	11	11.11	55	match	1	1	S O L T	11.11	salt	S A L T	salt;sail;sil;sop;poll	1	1	1	1	1	1		0	1	4	0.975	12	none		dpB_agree
+58	11R	chok	chok		CH O K	11	12	11.12	56	match	1	1	CH O K	11.12	chock	CH O K	chock;chuck;chek;chope;chako	1	1	1	1	1	1		0	0	3	0.9873	11	none		dpB_agree
+59	11R	iaka	iaka		E A K A	12	1	12.1	57	match	1	1	E A T K A	12.1	yakwa	E A K WA	yakwa;yahka;elacka;yakala;yahkwa	0	0	0	0	1	0	yahka	0	1	4	0.9753	8	spelling_variant	in list only as yahka	dpB_agree
+60	11R	name (nem)	nem	resp	N E M	12	brace532	brace532	58	match	1	1	(no reading)	brace				0	0	0	0	0	1		0	3	3			segmentation	word_boxed_as_nonword (brace/punct box, never read)	dpB_agree
+61	11R	Ktm'ta [=Kim'ta]	kimta		K E M T A	12	3	12.3+12.4	59	split	2	1	K E M | T A	12.4	tah	T A H	tah;tea;toh;tot;tlak	0	0	0	0	0	1		0	0	5	0.9131	6	segmentation	split_word (2 boxes)	dpB_agree
+62	11R	Iaka	iaka		E A K A	12	5	12.5	60	match	1	1	E A S K A	12.5	yakwa	E A K WA	yakwa;yahka;elacka;yahkwa;yokwa	0	0	0	0	1	0	yahka	0	1	4	0.8941	7	spelling_variant	in list only as yahka	dpB_agree
+63	11R	wawa	wawa		WA WA	12	6	12.6	61	match	1	1	WA WA	12.6	wawa	WA WA	wawa;wewa;wash;wam;wawii	1	1	1	1	1	1		0	0	2	0.9663	11	none		dpB_agree
+64	11R	poos	poos		P OO S	12	7	12.7	62	match	1	1	P OO S	12.7	poo	P OO	poo;pos;pows;spos;koosa	0	0	0	0	1	0	pos	0	0	3	0.9903	9	spelling_variant	in list only as pos	dpB_agree
+65	11R	chako	chako		CH A K O	12	8	12.8	63	match	1	1	CH A K O	12.8	chako	CH A K O	chako;chahco;chau;chuko;chatko	1	1	1	1	1	1		0	0	4	0.9373	10	none		dpB_agree
+66	11R	dry (drai)	drai	resp	D R A E	12	9	12.9	64	match	1	1	T L A	12.9	dlat	D L A T	dlat;tlawa;tlap;tlak;dly	0	0	0	0	1	0	dilai/dly	0	3	4	0.9649	11	spelling_variant	in list only as dilai/dly	eye_corrected
+67	11R	elehe.	elehe		E L E H E	12	10	12.10+12.11	65	split	2	1	E L | E	12.10	elip	E L E P	elip;oly;khell;pel;cly	0	0	0	0	0	0	illahee	0	2	5	0.9312	6	segmentation	split_word (2 boxes)	eye_corrected
+68	11R	Kopa	kopa		K O P A	12	12	12.12	66	match	1	1	H K L P A	12.12	kopa	K O P A	kopa;klap;help;kaupa;ecola	1	1	1	1	1	1		0	2	4	0.8666	8	none		dpB_agree
+69	11R	ookook	ookook		OO K OO K	13	2	13.2	67	merge	1	2	OO K OO K T L A	13.2	ikta	E K T A	ikta;kata;aktas;tkta;klah	0	0	0	0	0	0	okook	0	3	8	0.9399	18	segmentation	merged_words (2 words in 1 box)	dpB_agree
+70	11R	dry	drai	resp	D R A E	13	2	13.2	67	merge	1	2	OO K OO K T L A	13.2	ikta	E K T A	ikta;kata;aktas;tkta;klah	0	0	0	0	0	0	dilai/dly	0			0.9399	18	segmentation	merged_words (2 words in 1 box)	dpB_agree
+71	11R	elehe	elehe		E L E H E	13	3	13.3	68	match	1	1	E L E E	13.3	elip	E L E P	elip;oly;elite;cly;lice	0	0	0	0	1	0	illahee	0	1	5	0.8968	9	spelling_variant	in list only as illahee	dpB_agree
+72	11R	Iaka	iaka		E A K A	13	4	13.4	69	match	1	1	E A K A	13.4	yakwa	E A K WA	yakwa;yahka;elacka;yahkwa;hyak	0	0	0	0	1	0	yahka	0	0	4	0.8965	7	spelling_variant	in list only as yahka	dpB_agree
+73	11R	mamook	mamook		M A M OO K	13	5	13.5	70	match	1	1	M A M OO K	13.5	mamook	M A M OO K	mamook;makook;mamuk;moon;makmok	1	1	1	1	1	1		0	0	5	0.9362	10	none		dpB_agree
+74	11R	chako	chako		CH A K O	13	6	13.6	71	match	1	1	CH A K O	13.6	chako	CH A K O	chako;chau;chahco;chuko;chuck	1	1	1	1	1	1		0	0	4	0.8686	10	none		dpB_agree
+75	11R	kanawe	kanawe		K A N A WE	13	7	13.7	72	match	1	1	K A N A WE	13.7	kanawe	K A N A WE	kanawe;kanewe;kahnawee;kocnawe;anah	1	1	1	1	1	1		0	0	5	0.9438	14	none		dpB_agree
+76	11R	ikta	ikta		E K T A	13	8	13.8	73	match	1	1	E K T A	13.8	ikta	E K T A	ikta;iktah;ikt;tkta;takta	1	1	1	1	1	1		0	0	4	0.9376	7	none		dpB_agree
+77	11R	tep'so	tepso		T E P S O	13	9	13.9	74	match	1	1	T E P S O E	13.9	tipso	T E P S O	tipso;tupso;takso;tpsoot;son	1	1	1	1	1	1		0	1	5	0.9393	11	none		dpB_agree
+78	11R	pi	pi		P E	14	1	14.1	75	match	1	1	(no reading)	14.1				0	0	0	0	0	1		0	2	2			segmentation	word_boxed_as_nonword (brace/punct box, never read)	dpB_agree
+79	11R	a you (a-u)	ayou		A E O U	14	2	14.2	76	match	1	1	A E	14.2	ack	A K	ack;ats;ayas;na;ahha	0	0	0	0	1	0	hiyu	0	2	4	0.8446	6	spelling_variant	in list only as hiyu	dpB_agree
+80	11R	heloi-ma	heloima		H E L O E M A	14	3	14.3	77	match	1	1	L OO M A	14.3	lum	L U M	lum;lemah;lamai;lemai;kom	0	0	0	0	1	0	huloima/holoima/heloitma	0	4	7	0.9014	12	spelling_variant	in list only as huloima/holoima/heloitma	dpB_agree
+81	11R	stick	stick	loan	S T E K	14	4	14.4	78	match	1	1	S T E K	14.4	steck	S T E K	steck;sick;siks;sil;sing	1	1	1	1	1	1		0	0	4	0.954	10	none		dpB_agree
+82	11R	pi	pi		P E	14	6	14.6	79	match	1	1	P E	14.6	pe	P E	pe;pel;pish;pee;poo	1	1	1	1	1	1		0	0	2	0.9415	4	none		dpB_agree
+83	11R	kanawe	kanawe		K A N A WE	14	7	14.7	80	match	1	1	K A N A WE	14.7	kanawe	K A N A WE	kanawe;kanewe;kahnawee;kocnawe;anah	1	1	1	1	1	1		0	0	5	0.9581	14	none		dpB_agree
+84	11R	tloos	tloos		T L OO S	14	8	14.8	81	match	1	1	T E A OO WE S	14.8	tloos	T L OO S	tloos;tans;tenas;tunaz;tanas	1	1	1	1	1	1		0	3	4	0.8618	9	none		dpB_agree
+85	11R	flowers.	flowers	loan	F L OW E R S	14	9	14.9	82	match	1	1	E L A P L S	14.9	lakles	L A K L E S	lakles;lames;lamass;laly;lamuss	0	0	0	0	1	0		0	4	6	0.8945	17	not_in_list	english loan	dpB_agree
+86	11R	Kopa	kopa		K O P A	15	6	15.6	83	match	1	1	K O P A	15.6	kopa	K O P A	kopa;kope;kopet;ko;kaupa	1	1	1	1	1	1		0	0	4	0.9354	8	none		dpB_agree
+87	11R	laket	laket		L A K E T	15	7	15.7	84	match	1	1	L A K E T	15.7	laket	L A K E T	laket;lake;laiket;lokit;latet	1	1	1	1	1	1		0	0	5	0.9443	8	none		dpB_agree
+88	11R	son,	son		S O N	15	8	15.8	85	match	1	1	S O N	15.8	son	S O N	son;ston;sun;sop;spoon	1	1	1	1	1	1		0	0	3	0.9785	9	none		dpB_agree
+89	11R	S.T.	st	abbr	S T	15	10	15.10	86	match	1	1	S A	15.10	sil	S E L	sil;son;sop;sick;salt	0	0	0	0	1	0		0	1	2	0.9579	10	not_in_list	abbreviation	dpB_agree
+90	11R	mamook	mamook		M A M OO K	15	11	15.11	87	match	1	1	M A M OO K	15.11	mamook	M A M OO K	mamook;mamuk;makook;makmok;makmak	1	1	1	1	1	1		0	0	5	0.9235	12	none		dpB_agree
+91	11R	son	son		S O N	15	12	15.12	88	match	1	1	S O N	15.12	son	S O N	son;ston;sun;sop;stone	1	1	1	1	1	1		0	0	3	0.9483	7	none		dpB_agree
+92	11R	moon	moon	loan	M OO N	15	14	15.14	89	match	1	1	WA N H A E	15.14	moon	M OO N	moon;win;ona;na;man	1	1	1	1	1	1		0	5	3	0.7966	10	none		dpB_agree
+93	11R	pi	pi		P E	15	17	15.17	90	match	1	1	F E	15.17	pe	P E	pe;pel;pee;pish;poo	1	1	1	1	1	1		0	1	2	0.9197	5	none		eye_corrected
+94	11R	tsil'tsil	tsiltsil		TS E L TS E L	16	2	16.2+16.4	91	split	2	1	TS E L | TS E L	16.2	sil	S E L	sil;khell;tel;pel;sail	0	0	0	0	0	1		0	0	6	0.9574	11	segmentation	split_word (2 boxes)	eye_corrected
+95	12L	kopa	kopa		K O P A	16	5	16.5	92	match	1	1	K O P A	16.5	kopa	K O P A	kopa;kope;ko;kom;kot	1	1	1	1	1	1		0	0	4	0.909	8	none		dpB_agree
+96	12L	sahale.	sahale		S A H A L E	16	6	16.6+16.7	93	split	2	1	S A | A L E	16.7	oly	O L E	oly;alke;laly;male;cly	0	0	0	0	0	1		0	1	6	0.9465	9	segmentation	split_word (2 boxes)	dpB_agree
+97	12L	Kopa	kopa		K O P A	16	10	16.10	94	match	1	1	K O P A	16.10	kopa	K O P A	kopa;kope;kopet;ko;kopel	1	1	1	1	1	1		0	0	4	0.9049	8	none		dpB_agree
+98	12L	kwe-nam	kwenam		K WE N A M	16	11	16.11	95	match	1	1	K WA N E M	16.11	kwenam	K WE N A M	kwenam;kwonam;kwanom;knem;kwinnum	1	1	1	1	1	1		0	2	5	0.9255	11	none		dpB_agree
+99	12L	son,	son		S O N	16	12	16.12	96	match	1	1	S O N	16.12	son	S O N	son;ston;sop;sun;ona	1	1	1	1	1	1		0	0	3	0.9866	8	none		dpB_agree
+100	12L	Iaka	iaka		E A K A	16	15	16.15	97	match	1	1	E A K A	16.15	yakwa	E A K WA	yakwa;yahka;yokwa;elacka;ack	0	0	0	0	1	0	yahka	0	0	4	0.8886	7	spelling_variant	in list only as yahka	dpB_agree
+101	12L	mamook	mamook		M A M OO K	16	16	16.16	98	match	1	1	M A M OO K	16.16	mamook	M A M OO K	mamook;makook;mamuk;makmok;moon	1	1	1	1	1	1		0	0	5	0.9425	10	none		dpB_agree
+102	12L	kanawe	kanawe		K A N A WE	17	1	17.1+17.2	99	split	2	1	K A | N A WE	17.2	na	N A	na;nah;naha;ack;ats	0	0	0	0	0	1		0	0	5	0.9476	10	segmentation	split_word (2 boxes)	dpB_agree
+103	12L	heloima	heloima		H E L O E M A	17	3	17.3	100	match	1	1	L OO M A	17.3	lemah	L E M A H	lemah;lemai;olman;oleman;lamai	0	0	0	0	1	0	huloima/holoima/heloitma	0	4	7	0.9152	12	spelling_variant	in list only as huloima/holoima/heloitma	dpB_agree
+104	12L	fish	fish	loan	F E SH	17	4	17.4	101	match	1	1	SH	17.4	fish	F E SH	fish;pish;tsish;tshish;wash	1	1	1	1	1	1		0	2	3	0.9159	10	none		eye_corrected
+105	12L	kopa	kopa		K O P A	17	5	17.5	102	match	1	1	K O P A	17.5	kopa	K O P A	kopa;kope;ko;koosa;kot	1	1	1	1	1	1		0	0	4	0.9116	9	none		eye_corrected
+106	12L	chok	chok		CH O K	17	6	17.6	103	match	1	1	CH O K	17.6	chock	CH O K	chock;chuck;chek;chope;chako	1	1	1	1	1	1		0	0	3	0.958	11	none		dpB_agree
+107	12L	pi	pi		P E	17	8	17.8	104	match	1	1	P E	17.8	pe	P E	pe;poo;pee;pel;pish	1	1	1	1	1	1		0	0	2	0.8982	4	none		dpB_agree
+108	12L	ka'nawe	kanawe		K A N A WE	17	9	17.9+17.10	105	split	2	1	K A N A | WE	17.9	kanawe	K A N A WE	kanawe;anah;kanewe;canim;tanas	0	0	1	1	0	1		0	0	5	0.9757	8	segmentation	split_word (2 boxes)	dpB_agree
+109	12L	ookook	ookook		OO K OO K	17	11	17.11	106	match	1	1	OO K OO K	17.11	okook	O K OO K	okook;ack;klook;kow;ko	0	0	0	0	1	0	okook	1	0	4	0.9422	10	spelling_variant	in list only as okook	dpB_agree
+110	12L	kal'akala	kalakala		K A L A K A L A	18	1	18.1+18.2	107	split	2	1	K A L A | K A L A	18.2	kata	K A T A	kata;kol;kah;ball;ko	0	0	0	0	0	1		0	0	8	0.9417	13	segmentation	split_word (2 boxes)	dpB_agree
+111	12L	klas'ka	klaska		K L A S K A	18	3	18.3	108	match	1	1	K L A S K A	18.3	klaska	K L A S K A	klaska;klak;kasskas;kalaka;kliskes	1	1	1	1	1	1		0	0	6	0.9391	14	none		dpB_agree
+112	12L	fly	fly	loan	F L E	18	5	18.5	109	match	1	1	F E L A P	18.5	law	L OW	law;mula;plah;puli;olo	0	0	0	0	1	0		0	3	3	0.735	8	not_in_list	english loan	dpB_agree
+113	12L	kopa	kopa		K O P A	18	6	18.6	110	match	1	1	K O P A	18.6	kopa	K O P A	kopa;kom;ko;kope;kot	1	1	1	1	1	1		0	0	4	0.8938	8	none		dpB_agree
+114	12L	wind.	wind	loan	WE N D	18	7	18.7	111	match	1	1	WE N T	18.7	win	WE N	win;wind;weht;pent;kwan	0	1	0	1	1	1		0	1	3	0.9462	9	recognizer_confusion		dpB_agree
+115	12L	Kopa	kopa		K O P A	19	3	19.3	112	match	1	1	K O P A	19.3	kopa	K O P A	kopa;kope;ko;kopet;kolan	1	1	1	1	1	1		0	0	4	0.926	9	none		dpB_agree
+116	12L	ta'ham	taham		T A H A M	19	4	19.4+19.5	113	split	2	1	T A | A M	19.4	tah	T A H	tah;tea;toh;tot;tlak	0	0	0	0	0	1		0	1	5	0.9752	6	segmentation	split_word (2 boxes)	dpB_agree
+117	12L	son	son		S O N	19	6	19.6	114	match	1	1	S O N	19.6	son	S O N	son;sun;ston;sop;sing	1	1	1	1	1	1		0	0	3	0.9484	9	none		dpB_agree
+118	12L	S.T.	st	abbr	S T	19	8	19.8	115	match	1	1	S E	19.8	sil	S E L	sil;sick;sing;siah;sail	0	0	0	0	1	0		0	1	2	0.9372	8	not_in_list	abbreviation	dpB_agree
+119	12L	mamook	mamook		M A M OO K	19	9	19.9	116	match	1	1	M A M OO K	19.9	mamook	M A M OO K	mamook;mamuk;makook;makmok;mox	1	1	1	1	1	1		0	0	5	0.9446	11	none		dpB_agree
+120	12L	mow'ich	mowich		M OW E CH	19	10	19.10+19.11	117	split	2	1	M A WE CH | L E	19.10	mawich	M A WE CH	mawich;mowich;pawitch;massach;mash	0	0	0	1	0	1		0	4	4	0.9097	16	segmentation	split_word (2 boxes)	eye_corrected
+121	12L	pi	pi		P E	19	12	19.12	118	match	1	1	P E	19.12	pe	P E	pe;pee;pel;pish;poo	1	1	1	1	1	1		0	0	2	0.9147	5	none		eye_corrected
+122	12L	kanawe	kanawe		K A N A WE	20	1	20.1+20.2+20.3	119	split	3	1	K A | N A | WA	20.3	wewa	WE WA	wewa;ow;wawa;wam;win	0	0	0	0	0	1		0	1	5	0.9594	9	segmentation	split_word (3 boxes)	dpB_agree
+123	12L	ikta	ikta		E K T A	20	4	20.4+20.5	120	split	2	1	L E K | T A	20.5	tah	T A H	tah;tea;toh;tel;na	0	0	0	0	0	1		0	1	4	0.968	7	segmentation	split_word (2 boxes)	dpB_agree
+124	12L	koo'li	kooli		K OO L E	20	6	20.6+20.7	121	split	2	1	K WA | L E	20.6	ko	K O	ko;kwash;kow;kwan;kiwa	0	0	0	0	0	0		0	1	4	0.924	9	segmentation	split_word (2 boxes)	dpB_agree
+125	12L	kopa	kopa		K O P A	20	8	20.8	122	match	1	1	K O P A	20.8	kopa	K O P A	kopa;kope;ko;kol;kot	1	1	1	1	1	1		0	0	4	0.9016	9	none		dpB_agree
+126	12L	elehe	elehe		E L E H E	20	9	20.9	123	match	1	1	E L E	20.9	elite	E L E T E	elite;elip;ekkeh;oly;illahee	0	0	0	0	1	0	illahee	0	2	5	0.9358	9	spelling_variant	in list only as illahee	dpB_agree
+127	12L	kakwa	kakwa		K A K WA	20	10	20.10	124	match	1	1	K A K WA	20.10	kakwa	K A K WA	kakwa;kahkwa;koakwa;yakwa;kawak	1	1	1	1	1	1		0	0	4	0.9085	11	none		dpB_agree
+128	12L	mowich	mowich		M OW E CH	20	11	20.11+20.12	125	split	2	1	M A WE CH | 	20.11	mawich	M A WE CH	mawich;mowich;mash;massach;masache	0	0	0	1	0	1		0	2	4	0.9715	17	segmentation	split_word (2 boxes)	eye_corrected
+129	12L	kim ta	kimta		K E M T A	20	14	20.14+20.15	126	split	2	1	K L E M | T A	20.15	tah	T A H	tah;tea;tlak;tel;ack	0	0	0	0	0	1		0	1	5	0.9129	6	segmentation	split_word (2 boxes)	eye_corrected
+130	12L	S.T.	st	abbr	S T	21	1	21.1	127	match	1	1	S	21.1	sick	S E K	sick;sil;ow;yoots;sing	0	0	0	0	1	0		0	1	2	0.9665	9	not_in_list	abbreviation	dpB_agree
+131	12L	wawa	wawa		WA WA	21	2	21.2	128	match	1	1	WA WA	21.2	wawa	WA WA	wawa;wewa;wash;wam;wawii	1	1	1	1	1	1		0	0	2	0.9605	14	none		dpB_agree
+132	12L	tloos	tloos		T L OO S	21	5	21.5	129	match	1	1	T L OO S	21.5	tloos	T L OO S	tloos;talis;tloon;klis;lest	1	1	1	1	1	1		0	0	4	0.9531	14	none		eye_corrected
+133	12L	nsa'ika	nsaika		N S A E K A	21	6	21.6	130	match	1	1	N S A E K A	21.6	nsaika	N S A E K A	nsaika;nesika;nose;sick;nika	1	1	1	1	1	1		0	0	6	0.8771	13	none		dpB_agree
+134	12L	mamook	mamook		M A M OO K	21	8	21.8	131	match	1	1	M A M OO K	21.8	mamook	M A M OO K	mamook;makook;mamuk;makmok;makmak	1	1	1	1	1	1		0	0	5	0.965	13	none		dpB_agree
+135	12L	man	man		M A N	21	9	21.9	132	match	1	1	M A N	21.9	man	M A N	man;moon;mash;mama;mox	1	1	1	1	1	1		0	0	3	0.9599	7	none		dpB_agree
+136	12L	poos	poos		P OO S	21	11	21.11	133	match	1	1	P OO S	21.11	poo	P OO	poo;pos;pows;oopoots;opoots	0	0	0	0	1	0	pos	0	0	3	0.9542	12	spelling_variant	in list only as pos	dpB_agree
+137	12L	ka'kwa	kakwa		K A K WA	21	12	21.12	134	match	1	1	K A K WA	21.12	kakwa	K A K WA	kakwa;koakwa;kahkwa;yakwa;kawak	1	1	1	1	1	1		0	0	4	0.9225	10	none		dpB_agree
+138	12L	nsa'ika	nsaika		N S A E K A	21	13	21.13	135	match	1	1	N S A K A	21.13	nsaika	N S A E K A	nsaika;nesika;nika;msaika;naha	1	1	1	1	1	1		0	1	6	0.8952	12	none		dpB_agree
+139	12L	tsem	tsem		TS E M	22	1	22.1	136	match	1	1	TS TS E M	22.1	tsem	TS E M	tsem;yiem;nem;whim;tsom	1	1	1	1	1	1		0	1	3	0.9533	11	none		dpB_agree
+140	12L	pi	pi		P E	22	3	22.3	137	match	1	1	P E	22.3	pe	P E	pe;pee;pel;pish;poo	1	1	1	1	1	1		0	0	2	0.9788	5	none		dpB_agree
+141	12R	iaka	iaka		E A K A	22	4	22.4	138	match	1	1	E A K A	22.4	yakwa	E A K WA	yakwa;yahka;elacka;yakala;hyak	0	0	0	0	1	0	yahka	0	0	4	0.9522	8	spelling_variant	in list only as yahka	dpB_agree
+142	12R	ta'ye	taye		T A E E	22	5	22.5	139	match	1	1	T A E E	22.5	tyee	T E E E	tyee;toh;tah;tahoo;tot	0	0	0	0	1	0	tyee	1	0	4	0.9334	12	spelling_variant	in list only as tyee	dpB_agree
+143	12R	kopa	kopa		K O P A	22	6	22.6	140	match	1	1	K O P A	22.6	kopa	K O P A	kopa;kope;kopet;ko;cosho	1	1	1	1	1	1		0	0	4	0.9238	11	none		dpB_agree
+144	12R	kanawe	kanawe		K A N A WE	22	7	22.7	141	match	1	1	K A N A WE	22.7	kanawe	K A N A WE	kanawe;kanewe;kahnawee;kocnawe;anah	1	1	1	1	1	1		0	0	5	0.9457	16	none		dpB_agree
+145	12R	ikta	ikta		E K T A	22	8	22.8	142	match	1	1	E K T A	22.8	ikta	E K T A	ikta;iktah;ikt;iktas;tkta	1	1	1	1	1	1		0	0	4	0.9311	8	none		dpB_agree
+146	12R	mitlait	mitlait		M E T L A E T	22	9	22.9	143	match	1	1	M E T A L A E T	22.9	mitlait	M E T L A E T	mitlait;mitluit;mitlite;mitooit;misteli	1	1	1	1	1	1		0	1	7	0.9726	17	none		dpB_agree
+147	12R	kopa	kopa		K O P A	22	10	22.10	144	match	1	1	K O P A	22.10	kopa	K O P A	kopa;kope;capo;kaupa;kopet	1	1	1	1	1	1		0	0	4	0.9239	8	none		dpB_agree
+148	12R	elehe	elehe		E L E H E	22	11	22.11+22.13	145	split	2	1	E L E | A	22.11	elite	E L E T E	elite;elip;lice;oly;dely	0	0	0	0	0	0	illahee	0	2	5	0.9175	9	segmentation	split_word (2 boxes)	dpB_agree
+149	12R	Ia'wa	iawa		E A WA	23	1	23.1	146	match	1	1	E A H WA	23.1	yahwa	E A H WA	yahwa;yakwa;yahkwa;ewash;wawa	0	0	0	0	1	0	yahwa	1	1	3	0.928	12	spelling_variant	in list only as yahwa	dpB_agree
+150	12R	S.T.	st	abbr	S T	23	2	23.2	147	match	1	1	S	23.2	sick	S E K	sick;sil;sop;sing;son	0	0	0	0	1	0		0	1	2	0.9302	8	not_in_list	abbreviation	dpB_agree
+151	12R	es'kom	eskom		E S K O M	23	3	23.3	148	match	1	1	E S K O M	23.3	eskkom	E S K O M	eskkom;iskum;sitkkom;teikom;kom	1	1	1	1	1	1		0	0	5	0.9587	17	none		dpB_agree
+152	12R	tanas'	tanas		T A N A S	23	4	23.4+23.5	149	split	2	1	T A | N A S	23.5	snas	S N A S	snas;na;nose;nitz;nah	0	0	0	0	0	1		0	0	5	0.954	12	segmentation	split_word (2 boxes)	dpB_agree
+153	12R	elehe	elehe		E L E H E	23	6	23.6+23.7	150	split	2	1	E L E P | E	23.6	elip	E L E P	elip;lek;oly;dely;tsee	0	0	0	0	0	0	illahee	0	1	5	0.9297	9	segmentation	split_word (2 boxes)	dpB_agree
+154	12R	pi	pi		P E	23	8	23.8	151	match	1	1	P E	23.8	pe	P E	pe;pee;pel;pish;poo	1	1	1	1	1	1		0	0	2	0.9779	5	none		dpB_agree
+155	12R	tanas	tanas		T A N A S	23	9	23.9	152	match	1	1	T A N A S	23.9	tanas	T A N A S	tanas;tans;tenas;tunaz;tanse	1	1	1	1	1	1		0	0	5	0.9885	16	none		dpB_agree
+156	12R	chok	chok		CH O K	23	10	23.10	153	match	1	1	SH O	23.10	chock	CH O K	chock;shot;tot;toh;ko	1	1	1	1	1	1		0	2	3	0.9147	14	none		dpB_agree
+157	12R	Iaka	iaka		E A K A	23	12	23.12	154	match	1	1	E A K A	23.12	yakwa	E A K WA	yakwa;hyak;yahka;elacka;ack	0	0	0	0	1	0	yahka	0	0	4	0.9459	8	spelling_variant	in list only as yahka	dpB_agree
+158	12R	mamook	mamook		M A M OO K	24	1	24.1	155	match	1	1	M A M OO K	24.1	mamook	M A M OO K	mamook;mamuk;moon;makook;mox	1	1	1	1	1	1		0	0	5	0.9368	10	none		dpB_agree
+159	12R	klas'ka	klaska		K L A S K A	24	2	24.2	156	match	1	1	K L A S K A	24.2	klaska	K L A S K A	klaska;klak;kalaka;kasskas;close	1	1	1	1	1	1		0	0	6	0.9588	15	none		dpB_agree
+160	12R	kanamokst	kanamokst		K A N A M O K S T	24	3	24.3+24.4	157	split	2	1	K A | N A M O K S T	24.4	kanamokst	K A N A M O K S T	kanamokst;mokst;sinamokst;kunamokst;konamokst	0	0	1	1	0	1		0	0	9	0.9388	17	segmentation	split_word (2 boxes)	dpB_agree
+161	12R	pi	pi		P E	24	6	24.6	158	match	1	1	P E	24.6	pe	P E	pe;pel;pee;pish;poo	1	1	1	1	1	1		0	0	2	0.9705	6	none		dpB_agree
+162	12R	iaka	iaka		E A K A	24	7	24.7	159	match	1	1	E A K A	24.7	yakwa	E A K WA	yakwa;yahka;yakso;elacka;hyak	0	0	0	0	1	0	yahka	0	0	4	0.9451	8	spelling_variant	in list only as yahka	dpB_agree
+163	12R	eskom	eskom		E S K O M	24	8	24.8+24.9	160	split	2	1	A S | K O M	24.9	kom	K O M	kom;ttkom;comb;ko;shukom	0	0	0	0	0	1		0	1	5	0.8595	9	segmentation	split_word (2 boxes)	dpB_agree
+164	12R	ookook	ookook		OO K OO K	24	10	24.10	161	match	1	1	OO K OO K	24.10	okook	O K OO K	okook;klook;shwakook;sook;book	0	0	0	0	1	0	okook	1	0	4	0.9647	15	spelling_variant	in list only as okook	dpB_agree
+165	12R	elehe	elehe		E L E H E	24	11	24.11+24.12	162	split	2	1	E L E | E	24.11	elip	E L E P	elip;dely;elite;oly;sil	0	0	0	0	0	0	illahee	0	1	5	0.9416	8	segmentation	split_word (2 boxes)	dpB_agree
+166	12R	poos	poos		P OO S	24	13	24.13	163	match	1	1	P OO S	24.13	pows	P OW S	pows;pos;poo;kwas;koosa	0	0	0	0	1	0	pos	0	0	3	0.9338	10	spelling_variant	in list only as pos	dpB_agree
+167	12R	mamook	mamook		M A M OO K	25	1	25.1	164	match	1	1	M A M OO K	25.1	mamook	M A M OO K	mamook;mamuk;makook;makmok;makmak	1	1	1	1	1	1		0	0	5	0.9507	13	none		dpB_agree
+168	12R	iht	iht		E H T	25	3	25.3	165	match	1	1	E	25.3	ow	OW	ow;ack;pe;how;ko	0	0	0	0	1	0	ikt	0	2	3	0.9114	4	spelling_variant	in list only as ikt	dpB_agree
+169	12R	man	man		M A N	25	4	25.4	166	match	1	1	M E N	25.4	man	M A N	man;moon;mash;meten;mama	1	1	1	1	1	1		0	1	3	0.947	9	none		dpB_agree
+170	12R	iaka	iaka		E A K A	25	5	25.5	167	match	1	1	A K A	25.5	yahka	E A H K A	yahka;yakwa;ack;yahkwa;kakwa	0	0	0	0	1	0	yahka	1	1	4	0.9187	8	spelling_variant	in list only as yahka	dpB_agree
+171	12R	i'tlooilh	itlooilh		E T L OO E LH	25	7	25.7	168	match	1	1	T L OO E LH	25.7	tlehl	T L E HL	tlehl;itlooilh;tloon;tlosh;tloos	0	1	0	1	1	1		0	1	6	0.9161	13	recognizer_confusion		dpB_agree
+172	12R	kopa	kopa		K O P A	25	9	25.9	169	match	1	1	K O P A	25.9	kopa	K O P A	kopa;kope;kopet;capo;kaupa	1	1	1	1	1	1		0	0	4	0.9236	11	none		dpB_agree
+173	12R	ookook	ookook		OO K OO K	25	10	25.10	170	match	1	1	OO K OO K	25.10	okook	O K OO K	okook;sook;klook;ack;book	0	0	0	0	1	0	okook	1	0	4	0.9365	12	spelling_variant	in list only as okook	dpB_agree
+174	12R	elehe	elehe		E L E H E	25	11	25.11+25.12	171	split	2	1	E L E | E	25.11	elip	E L E P	elip;dely;khell;sil;tel	0	0	0	0	0	0	illahee	0	1	5	0.9546	8	segmentation	split_word (2 boxes)	dpB_agree
+175	12R	man	man		M A N	25	13	25.13	172	match	1	1	M A N	25.13	man	M A N	man;moon;mash;mama;mahsh	1	1	1	1	1	1		0	0	3	0.9774	7	none		dpB_agree
+176	12R	Iaka	iaka		E A K A	25	14	25.14	173	match	1	1	E A K A	25.14	yakwa	E A K WA	yakwa;yahka;elacka;ack;yahkwa	0	0	0	0	1	0	yahka	0	0	4	0.8875	7	spelling_variant	in list only as yahka	dpB_agree
+177	12R	mamook	mamook		M A M OO K	26	1	26.1	174	match	1	1	M A M OO K	26.1	mamook	M A M OO K	mamook;mamuk;makook;mox;moon	1	1	1	1	1	1		0	0	5	0.9396	10	none		dpB_agree
+178	12R	klatwa	klatwa		K L A T WA	26	2	26.2	175	match	1	1	K L A T WA	26.2	klatwa	K L A T WA	klatwa;klatawa;klawa;klatwe;klahwa	1	1	1	1	1	1		0	0	5	0.9513	16	none		dpB_agree
+179	12R	iht	iht		E H T	26	4	26.4	176	match	1	1	E	26.4	ow	OW	ow;pe;ack;na;how	0	0	0	0	1	0	ikt	0	2	3	0.8737	5	spelling_variant	in list only as ikt	dpB_agree
+180	12R	se'le	sele		S E L E	26	5	26.5	177	match	1	1	S E L E	26.5	sil	S E L	sil;elip;dely;self;seed	0	0	0	0	1	0		0	0	4	0.9594	13	not_in_list	no lexicon entry / conf C only	dpB_agree
+181	12R	ookook	ookook		OO K OO K	26	6	26.6	178	match	1	1	OO K OO K	26.6	okook	O K OO K	okook;klook;ack;sook;book	0	0	0	0	1	0	okook	1	0	4	0.9602	12	spelling_variant	in list only as okook	dpB_agree
+182	12R	sele	sele		S E L E	26	7	26.7	179	match	1	1	S E L E	26.7	sil	S E L	sil;dely;elip;sail;self	0	0	0	0	1	0		0	0	4	0.985	13	not_in_list	no lexicon entry / conf C only	dpB_agree
+183	12R	wek	wek		WE K	26	8	26.8	180	merge	1	2	WE K A N S E	26.8	kansib	K A N S E B	kansib;tanse;ooskan;konsee;canim	0	0	0	0	0	0	wake	0	2	8	0.9278	20	segmentation	merged_words (2 words in 1 box)	dpB_agree
+184	12R	kan'sih	kansih		K A N S E H	26	8	26.8	180	merge	1	2	WE K A N S E	26.8	kansib	K A N S E B	kansib;tanse;ooskan;konsee;canim	0	0	0	0	0	0	kunsih	0			0.9278	20	segmentation	merged_words (2 words in 1 box)	dpB_agree
+185	12R	alke	alke		A L K E	26	9	26.9	181	match	1	1	A L K E	26.9	alke	A L K E	alke;alkie;talke;lake;lice	1	1	1	1	1	1		0	0	4	0.9315	11	none		dpB_agree
+186	12R	memloos	memloos		M E M L OO S	26	10	26.10+26.11	182	split	2	1	M U E M | L E WE S	26.11	lawest	L A WE S T	lawest;tloos;lewet;kwas;law	0	0	0	0	0	1		0	3	6	0.9061	9	segmentation	split_word (2 boxes)	dpB_agree
+187	12R	S.T.	st	abbr	S T	27	1	27.1	183	match	1	1	S	27.1	sil	S E L	sil;sick;sing;siah;sop	0	0	0	0	1	0		0	1	2	0.9572	9	not_in_list	abbreviation	dpB_agree
+188	12R	mamook	mamook		M A M OO K	27	2	27.2	184	match	1	1	M A M OO K	27.2	mamook	M A M OO K	mamook;mamuk;makmok;makook;makmak	1	1	1	1	1	1		0	0	5	0.9391	12	none		dpB_agree
+189	13L	name	nem	resp	N E M	27	brace1278	brace1278	185	match	1	1	(no reading)	brace				0	0	0	0	0	1		0	3	3			segmentation	word_boxed_as_nonword (brace/punct box, never read)	dpB_agree
+190	13L	ookook	ookook		OO K OO K	27	3	27.3	186	match	1	1	OO K OO K	27.3	okook	O K OO K	okook;sook;makook;klook;ack	0	0	0	0	1	0	okook	1	0	4	0.9635	12	spelling_variant	in list only as okook	dpB_agree
+191	13L	chi	chi		CH E	27	4	27.4	187	match	1	1	CH E	27.4	chee	CH E E	chee;chek;tshish;chitch;chis	0	0	0	0	1	0	chee	1	0	2	0.9522	10	spelling_variant	in list only as chee	dpB_agree
+192	13L	man	man		M A N	27	5	27.5	188	match	1	1	M A N	27.5	man	M A N	man;moon;mash;mox;marsh	1	1	1	1	1	1		0	0	3	0.948	6	none		dpB_agree
+193	13L	Adam	adam		A D A M	27	6	27.6	189	match	1	1	A D A M	27.6	itlam	E T L A M	itlam;tatham;taham;lalam;ootlum	0	0	0	0	1	0		0	0	4	0.9466	14	not_in_list	no lexicon entry / conf C only	dpB_agree
+194	13L	kakwa	kakwa		K A K WA	27	8	27.8	190	merge	1	2	K A K WA A S	27.8	kasskas	K A S K A S	kasskas;kakwa;kwas;kamas;kais	0	0	0	1	0	1		0	2	7	0.923	15	segmentation	merged_words (2 words in 1 box)	dpB_agree
+195	13L	poos	poos		P OO S	27	8	27.8	190	merge	1	2	K A K WA A S	27.8	kasskas	K A S K A S	kasskas;kakwa;kwas;kamas;kais	0	0	0	0	0	0	pos	0			0.923	15	segmentation	merged_words (2 words in 1 box)	dpB_agree
+196	13L	wawa	wawa		WA WA	27	9	27.9	191	match	1	1	WA WA	27.9	wawa	WA WA	wawa;wewa;wash;wam;wawii	1	1	1	1	1	1		0	0	2	0.951	14	none		dpB_agree
+197	13L	elehe	elehe		E L E H E	27	12	27.12	192	merge	1	2	E L E A E K A	27.12	elacka	E L A K A	elacka;yahka;eesak;lesac;yakwa	0	0	0	0	0	0	illahee	0	3	9	0.9407	17	segmentation	merged_words (2 words in 1 box)	dpB_agree
+198	13L	iaka.	iaka		E A K A	27	12	27.12	192	merge	1	2	E L E A E K A	27.12	elacka	E L A K A	elacka;yahka;eesak;lesac;yakwa	0	0	0	0	0	0	yahka	0			0.9407	17	segmentation	merged_words (2 words in 1 box)	dpB_agree
+199	13L	S.T.	st	abbr	S T	28	4	28.4	193	match	1	1	S E T	28.4	sick	S E K	sick;sil;sing;steck;siah	0	0	0	0	1	0		0	1	2	0.9426	11	not_in_list	abbreviation	eye_corrected
+200	13R	nanich	nanich		N A N E CH	28	5	28.5	194	match	1	1	N A N E CH	28.5	nanich	N A N E CH	nanich;nowich;na;nauits;nah	1	1	1	1	1	1		0	0	5	0.9768	12	none		dpB_agree
+201	13R	kanawe	kanawe		K A N A WE	28	6	28.6+28.7	195	split	2	1	K A | N A WE	28.7	na	N A	na;nah;naha;ack;ats	0	0	0	0	0	1		0	0	5	0.9577	10	segmentation	split_word (2 boxes)	dpB_agree
+202	13R	ookook	ookook		OO K OO K	28	8	28.8	196	match	1	1	OO K OO K	28.8	okook	O K OO K	okook;sook;klook;book;ack	0	0	0	0	1	0	okook	1	0	4	0.9502	12	spelling_variant	in list only as okook	eye_corrected
+203	13R	Iaka	iaka		E A K A	28	10	28.10	197	match	1	1	E A K A	28.10	yakwa	E A K WA	yakwa;yahka;elacka;yokwa;yahkwa	0	0	0	0	1	0	yahka	0	0	4	0.9571	9	spelling_variant	in list only as yahka	dpB_agree
+204	13R	mamook	mamook		M A M OO K	28	11	28.11	198	match	1	1	M A M OO K	28.11	mamook	M A M OO K	mamook;mamuk;makook;moon;makmok	1	1	1	1	1	1		0	0	5	0.9372	13	none		dpB_agree
+205	13R	pi	pi		P E	28	13	28.13	199	match	1	1	P E	28.13	pe	P E	pe;pel;pish;pee;poo	1	1	1	1	1	1		0	0	2	0.9042	4	none		dpB_agree
+206	13R	kanawe	kanawe		K A N A WE	28	14	28.14	200	match	1	1	K A N A WE	28.14	kanawe	K A N A WE	kanawe;kanewe;kahnawee;anah;kocnawe	1	1	1	1	1	1		0	0	5	0.9474	15	none		dpB_agree
+207	13R	klaska	klaska		K L A S K A	29	1	29.1	201	match	1	1	K OO L A S K A	29.1	klaska	K L A S K A	klaska;kalaka;klak;kliskes;kasskas	1	1	1	1	1	1		0	1	6	0.9305	13	none		dpB_agree
+208	13R	tloos	tloos		T L OO S	29	2	29.2	202	match	1	1	T A OO S	29.2	tloos	T L OO S	tloos;tans;talis;tloon;tanas	1	1	1	1	1	1		0	1	4	0.9252	11	none		dpB_agree

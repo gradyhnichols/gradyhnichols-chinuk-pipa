@@ -1,0 +1,25 @@
+OCR (cihm_15465_djvu.txt, lines 750-1238) vs page images, First Lesson in Chinook pp. 11-13 (leaf indices 15-17).
+All page readings are AI readings of the scans. The OCR gives the Chinook words, then the English words, as separate blocks per
+column (p.13 is interleaved), so the word order was rebuilt from the page images: 208 Chinook words
+(p.11 left 47, p.11 right 47, p.12 left 46, p.12 right 48, p.13 left 11, p.13 right 9).
+
+Systematic OCR slips (counts are occurrences in the OCR):
+  I read as T: Iaka -> "Taka"/"taka" x12, Ia'wa -> "Tawa" x1
+  S.T. (abbreviation of Sahale Taye) read as "S. 7.", "S. 7'.", "Ss. 7.", "8.T.", "Ys a", "PS Aled": 8 of 10 occurrences wrong
+  pi read as "pt" x4, "pr" x1, "pe" x1, "ay)" x1
+  iht read as "tht" x3
+Single corrections (OCR -> page):
+  p.11 left : Awkate -> An'kate; gna' mook -> ma'mook; sohale -> sa'hale; Hopet' -> Kopet'; warwa -> wa'wa; T'loos -> Tloos;
+              gpamook -> mamook; kavkwa -> ka'kwa; Koopa -> Kopa; mort -> moxt; ookovuk -> ookook; sky (skat) -> sky (skai); nsavka -> nsai'ka
+  p.11 right: kantamout -> kan'amoxt; waa -> wawa; dry (drat) -> dry (drai); a you (a-v) -> a you (a-u); Jlowers.' -> flowers.;
+              tsiVtsil -> tsil'tsil; Kti'ta -> Ktm'ta (as printed; probably a damaged Kim'ta, cf. "kim ta" on p.12) -> kimta
+  p.12 left : Sish -> fish; kaVakala -> kal'akala; Sly -> fly; (loos -> tloos; nsvika -> nsa'ika; kwvkwa -> ka'kwa; neaika -> nsa'ika;
+              fsem -> tsem; SON -> son
+  p.12 right: clehe -> elehe; manook -> mamook; Vtlooilh -> i'tlooilh; wek kan'sth -> wek kan'sih
+  p.13      : ookeok -> ookook; kaukwa -> kakwa
+Words taken as printed but not spelled the way the shorthand/word list does:
+  English loans with printed respelling: light (lait), sky (skai), dry (drai), name (nem): the respelling was used for the tokens
+  (p.13 "name" without respelling also read as nem). Printed without respelling (English spelling kept): salt, stick, flowers, moon, fish, fly, wind.
+  Hyphenated "kwe-nam", "heloi-ma" joined as kwenam, heloima. "kim ta" joined as kimta. "a you (a-u)" taken as ayou.
+Words in the English column not in the Chinook column: "(things)" after ookook on p.13 (no Chinook word printed).
+

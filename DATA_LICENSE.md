@@ -1,7 +1,7 @@
 # Data licence
 
-Unless a file says otherwise, the data and annotations created by this project (`data/gt/`, `data/signs/`, and
-the compilation and annotations in `data/lexicon/`) are licensed under the **Creative Commons Attribution 4.0
+Unless a file says otherwise, the data and annotations created by this project (`data/gt/`, `data/signs/`, the
+compilation and annotations in `data/lexicon/`, and the evaluation outputs and alignments in `results/`) are licensed under the **Creative Commons Attribution 4.0
 International licence (CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/
 
 Attribution: "chinuk-pipa contributors, https://github.com/gradyhnichols/gradyhnichols-chinuk-pipa".

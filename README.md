@@ -25,12 +25,13 @@ toward that, and shares them freely.
 
 | Piece | What it is | Notes |
 |---|---|---|
-| **Ground truth** [`data/gt/`](data/gt/) | 486 shorthand word images from two word lists made at Kamloops, in 1892 (mimeographed) and 1898. Each is paired with the Roman spelling and English gloss written beside it. Plus 245 images of the same 1892 words in a second copy of that list. | Stored as page coordinates plus readings. Images regenerate from Internet Archive scans. Readings were made by AI and have not yet been reviewed by a human expert. |
+| **Ground truth** [`data/gt/`](data/gt/) | 961 shorthand word images from the vocabularies of three Kamloops books: word lists of 1892 (mimeographed) and 1898, and the 1924 edition of the *Chinook Rudiments*. Each is paired with the Roman spelling and English gloss written beside it. Plus 245 images of the same 1892 words in a second copy of that list. | Stored as page coordinates plus readings. Images regenerate from Internet Archive scans. Readings were made by AI and have not yet been reviewed by a human expert. |
 | **Transliterator** [`chinukpipa/translit.py`](chinukpipa/translit.py) | Le Jeune's Roman spelling → shorthand sign tokens → Unicode Duployan text. | The spelling-to-sign rules are hypotheses, to be tested against the ground truth. |
 | **Sign data** [`data/signs/`](data/signs/) | 81 sign entries (70 with a Unicode code point) and 58 abbreviations/logograms, each with its sound value, stroke description, joining notes and sources. | Compiled by AI agents from Robertson (2011), Le Jeune's printed sign tables, the Unicode documents and the Kaltash Wawa guide. Not yet reviewed by a specialist. |
 | **Chinook word list** [`data/lexicon/`](data/lexicon/) | About 2,000 headwords parsed from 10 public-domain dictionaries and word lists (1863–1924). Each row names its source (for the lowest-grade rows, in the `notes` column). | Parsed from OCR text, so expect errors. Each row carries a quality grade. Glosses are quoted as printed in 1863–1924 and include terms now considered offensive. They are kept as historical evidence, not endorsed. |
 | **Page tools** [`chinukpipa/gt/`](chinukpipa/gt/) | Deskewing, column and row segmentation, crop regeneration, review sheets, and matching a second scanned copy of a page to the first. | |
 | **Word recognizer** [`chinukpipa/htr/`](chinukpipa/htr/) | A small experimental model that reads a word image as a sequence of signs, trained on font-drawn words and the ground truth. | Early results and their limits are in [its README](chinukpipa/htr/README.md). Not a working OCR system. |
+| **Running text** [`chinukpipa/text/`](chinukpipa/text/) | Cuts scanned pages of running shorthand into word images and reads every word with the recognizer, choosing from the word list. | Tested so far on one page whose wording is also printed in Roman letters: 152 of its 208 words read right after the improvements described there (105 before). One page, aligned by AI; see [its README](chinukpipa/text/README.md). |
 | **Rule notes** [`docs/rule_notes.md`](docs/rule_notes.md) | Where the word images have led to a change in the spelling-to-sign rules, and questions still open. | |
 
 ## Quick start
@@ -76,6 +77,10 @@ please open an issue.
   records list the contributor as Canadiana.org and the sponsor as University of Alberta Libraries. A second
   copy of the 1892 list, the Newberry Library's (Internet Archive item `Ayer_PM848_L4_1892`), supplies the
   extra images and the Roman words of two pages that are hidden in the binding of the first scan.
+- The 1924 rows come from the Newberry Library's copy of Le Jeune's *Chinook Rudiments* (dated 1924), Internet
+  Archive item `Ayer_PM843_L45_1924`. The running-text test page comes from Bishop Paul Durieu's *Chinook Bible
+  History* (Kamloops, 1899; "written in Chinook shorthand by J.M. Le Jeune", says the catalogue), the Smithsonian
+  Libraries' copy on the Internet Archive, item `chinookbiblehist00duri` (marked "not in copyright").
 - Page images are **not** stored in this repository. Annotations point into those scans by item, page and
   pixel coordinates, and `python -m chinukpipa.gt.make_crops` regenerates the crops.
 - The word list cites, for each row, the public-domain source it was parsed from. All were published before 1931.

@@ -22,7 +22,7 @@ tokens:
   SH: {sign: SH_semicircle, unicode: [U+1BC1B], latin: [sh]}
   S:  {sign: S_semicircle,  unicode: [U+1BC1C], latin: [s, z]}   # z: revised 2026-10-08, see docs/rule_notes.md
   NG: {sign: NG, unicode: [U+1BC22], latin: [ng]}
-  CH: {sign: CH, unicode: [U+1BC23], latin: [ch, j]}
+  CH: {sign: CH, unicode: [U+1BC23], latin: [ch, j, tsh, tch]}   # tsh, tch: revised 2026-10-08, see docs/rule_notes.md
   TS: {sign: TS, unicode: [U+1BC25], latin: [ts]}
   TH: {sign: TH, unicode: [U+1BC11], latin: [th]}
   DH: {sign: DH, unicode: [U+1BC13], latin: []}
@@ -40,7 +40,7 @@ tokens:
   OO: {sign: OO, unicode: [U+1BC5B], latin: [oo]}
   OW: {sign: OW, unicode: [U+1BC5A], latin: [ow]}
   E:  {sign: E,  unicode: [U+1BC46], latin: [e, é, è, i, ï, í, y]}
-  U:  {sign: U,  unicode: [U+1BC51], latin: [u]}
+  U:  {sign: U,  unicode: [U+1BC51], latin: [u, iu, yu, yoo]}   # iu, yu, yoo: revised 2026-10-08, see docs/rule_notes.md
   # w-diphthongs (Le Jeune's single signs)
   WA:    {sign: WA,    unicode: [U+1BC5C], latin: [wa]}
   WO:    {sign: WO,    unicode: [U+1BC5D], latin: [wo, woe]}

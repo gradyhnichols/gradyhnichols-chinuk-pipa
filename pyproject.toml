@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chinukpipa"
-version = "0.2.0"
+version = "0.3.0"
 description = "Open tools toward reading Chinuk Pipa, the Duployan shorthand of Chinuk Wawa (Chinook Jargon)"
 readme = "README.md"
 license = {text = "Apache-2.0"}
@@ -16,6 +16,7 @@ ocr = ["pytesseract"]
 net = ["requests"]
 htr = ["torch", "uharfbuzz", "fonttools"]
 copies = ["opencv-python-headless"]
+text = ["opencv-python-headless", "torch"]
 test = ["pytest"]
 
 [tool.setuptools.packages.find]
