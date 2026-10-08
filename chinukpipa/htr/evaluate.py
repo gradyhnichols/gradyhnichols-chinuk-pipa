@@ -22,7 +22,7 @@ import torch
 from PIL import Image
 
 from chinukpipa.htr.data import RealDataset, encode, parse_scales, to_tensor, vocab
-from chinukpipa.htr.model import CRNN, greedy_decode
+from chinukpipa.htr.model import greedy_decode, load_model
 from chinukpipa.htr.normalize import rescale
 from chinukpipa.htr.train import edit_distance
 from chinukpipa.translit import latin_to_tokens
@@ -66,9 +66,7 @@ def main():
     v = vocab()
     models = []
     for path in a.model:
-        m = CRNN(len(v)).to(device)
-        m.load_state_dict(torch.load(path, map_location=device))
-        m.eval()
+        m = load_model(path, len(v), device)
         models.append(m)
     tta = [float(f) for f in a.tta.split(",")]
     ds = RealDataset(a.real, a.crops, v, split=a.split, scales=parse_scales(a.real_scales), split_seed=a.split_seed)

@@ -8,6 +8,8 @@ synthetic validation slice and for the real test words. Test words are held out 
 chinukpipa/split.py): synthetic renderings of a test word (same Latin key or same token sequence) are dropped
 from the training data as well. Real labels are rule-derived from Le Jeune's Roman spellings unless verified,
 so real-word scores measure model and rule errors together.
+With --all-real every real word is used for training (for a final model); the "real_test" numbers it logs are
+then not held out.
 """
 from __future__ import annotations
 
@@ -74,6 +76,9 @@ def main():
     ap.add_argument("--gpu-aug", type=float, default=0.0, help="probability of warping each training sample")
     ap.add_argument("--gpu-aug-strength", type=float, default=1.0)
     ap.add_argument("--split-seed", default="v0", help="train/test split by word (other values give other folds)")
+    ap.add_argument("--hidden", type=int, default=128, help="LSTM width")
+    ap.add_argument("--all-real", action="store_true",
+                    help="train on every real word (for a final model; test metrics are then not held out)")
     a = ap.parse_args()
 
     random.seed(a.seed)
@@ -86,13 +91,16 @@ def main():
 
     scales = parse_scales(a.real_scales)
     ss = a.split_seed
-    real_train = RealDataset(a.real, a.crops, v, split="train", augment_p=0.7, seed=a.seed, scales=scales,
+    tr_split = None if a.all_real else "train"
+    real_train = RealDataset(a.real, a.crops, v, split=tr_split, augment_p=0.7, seed=a.seed, scales=scales,
                              scale_aug=a.scale_aug, split_seed=ss)
     real_train_eval = RealDataset(a.real, a.crops, v, split="train", scales=scales, split_seed=ss)  # for metrics
     real_test = RealDataset(a.real, a.crops, v, split="test", scales=scales, split_seed=ss)
     test_seqs = {" ".join(it[1]) for it in real_test.items}
 
     def is_test_word(toks, latin):
+        if a.all_real:
+            return False
         return " ".join(toks) in test_seqs or (not latin.startswith("~") and split_of(latin, seed=ss) == "test")
     parts, weights = [], []
     synth_val = None
@@ -122,7 +130,7 @@ def main():
     if synth_val is not None:
         loaders["synth_val"] = DataLoader(synth_val, batch_size=64, collate_fn=collate)
 
-    model = CRNN(len(v)).to(device)
+    model = CRNN(len(v), hidden=a.hidden).to(device)
     if a.init:
         model.load_state_dict(torch.load(a.init, map_location=device))
     opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=1e-4)

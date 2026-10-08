@@ -40,6 +40,16 @@ class CRNN(nn.Module):
         return self.out(self.drop(f)).log_softmax(-1)   # T, B, C+1
 
 
+def load_model(path: str, n_classes: int, device="cpu") -> CRNN:
+    """Load saved weights, inferring the LSTM width from them (models may be trained with --hidden)."""
+    state = torch.load(path, map_location=device)
+    hidden = state["rnn.weight_hh_l0"].shape[1]
+    m = CRNN(n_classes, hidden=hidden).to(device)
+    m.load_state_dict(state)
+    m.eval()
+    return m
+
+
 def greedy_decode(logp: torch.Tensor) -> list[list[int]]:
     """Best-path CTC decoding: argmax per column, collapse repeats, drop blanks (0)."""
     best = logp.argmax(-1).transpose(0, 1).tolist()   # B, T

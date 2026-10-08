@@ -16,7 +16,7 @@ import json
 import torch
 
 from chinukpipa.htr.data import RealDataset, to_tensor, vocab
-from chinukpipa.htr.model import CRNN, greedy_decode
+from chinukpipa.htr.model import greedy_decode, load_model
 from chinukpipa.htr.train import edit_distance
 
 GRID = [0.4, 0.5, 0.63, 0.8, 1.0, 1.25, 1.6]
@@ -33,9 +33,7 @@ def main():
     a = ap.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     v = vocab()
-    model = CRNN(len(v)).to(device)
-    model.load_state_dict(torch.load(a.model, map_location=device))
-    model.eval()
+    model = load_model(a.model, len(v), device)
     sources = {json.loads(line)["source"] for path in a.real for line in open(path, encoding="utf-8")}
     table = {}
     for mult in GRID:
