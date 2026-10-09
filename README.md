@@ -13,6 +13,7 @@ in the 1890s.
 
 According to David Robertson's 2011 dissertation (page numbers in brackets):
 
+- The script was written primarily by Salish people; he calls it a "first group literacy", taught informally within communities [abstract].
 - He located about 600 texts that Indigenous people wrote in the script between 1891 and 1912 [p. 12].
 - He estimates that 50–75% of all documented Chinuk Wawa is written in it [pp. 11, 25; p. 50 gives "about 75%"].
 - Le Jeune's newspaper, the *Kamloops Wawa*, was written in it for Indigenous readers from 1891 through 1904 [p. 12].
@@ -27,7 +28,7 @@ toward that, and shares them freely.
 |---|---|---|
 | **Ground truth** [`data/gt/`](data/gt/) | 961 shorthand word images from the vocabularies of three Kamloops books: word lists of 1892 (mimeographed) and 1898, and the 1924 edition of the *Chinook Rudiments*, each paired with the Roman spelling and English gloss written beside it; 880 outlines of narrative text from the 1924 book's exercises, each with the Roman spelling printed beside it. Plus 245 images of the same 1892 words in a second copy of that list. | Stored as page coordinates plus readings. Images regenerate from Internet Archive scans. Readings were made by AI and have not yet been reviewed by a human expert. |
 | **Transliterator** [`chinukpipa/translit.py`](chinukpipa/translit.py) | Le Jeune's Roman spelling → shorthand sign tokens → Unicode Duployan text. | The spelling-to-sign rules are hypotheses, to be tested against the ground truth. |
-| **Sign data** [`data/signs/`](data/signs/) | 81 sign entries (70 with a Unicode code point) and 58 abbreviations/logograms, each with its sound value, stroke description, joining notes and sources. | Compiled by AI agents from Robertson (2011), Le Jeune's printed sign tables, the Unicode documents and the Kaltash Wawa guide. Not yet reviewed by a specialist. |
+| **Sign data** [`data/signs/`](data/signs/) | 81 sign entries (70 with a Unicode code point) and 58 abbreviations/logograms, each with its sound value, stroke description, joining notes and sources. | Compiled by AI agents from Robertson (2011) and his blog posts (most abbreviation entries), Le Jeune's printed sign tables, the Unicode documents and the Kaltash Wawa guide. Not yet reviewed by a specialist. |
 | **Chinook word list** [`data/lexicon/`](data/lexicon/) | About 2,000 headwords parsed from 10 public-domain dictionaries and word lists (1863–1924). Each row names its source (for the lowest-grade rows, in the `notes` column). | Parsed from OCR text, so expect errors. Each row carries a quality grade. Glosses are quoted as printed in 1863–1924 and include terms now considered offensive. They are kept as historical evidence, not endorsed. |
 | **Page tools** [`chinukpipa/gt/`](chinukpipa/gt/) | Deskewing, column and row segmentation, crop regeneration, review sheets, and matching a second scanned copy of a page to the first. | |
 | **Word recognizer** [`chinukpipa/htr/`](chinukpipa/htr/) | A small experimental model that reads a word image as a sequence of signs, trained on font-drawn words and the ground truth. | Early results and their limits are in [its README](chinukpipa/htr/README.md). Not a working OCR system. |
@@ -52,7 +53,9 @@ To display Duployan text you need a font that supports it, such as Noto Sans Dup
 ## Built on the work of others
 
 - **David D. Robertson**: *Kamloops Chinúk Wawa, Chinuk Pipa, and the Vitality of Pidgins* (PhD dissertation,
-  University of Victoria, 2011) and his blog [chinookjargon.com](https://chinookjargon.com).
+  University of Victoria, 2011) and his blog [chinookjargon.com](https://chinookjargon.com). The sign data leans on
+  both: sign entries record his value wherever he gives one (`chinook_value.robertson`), and most abbreviation entries come from his
+  blog posts, cited by date. His analysis remains his work (see [DATA_LICENSE.md](DATA_LICENSE.md)).
 - **Kaltash Wawa**: the *Chinuk Pipa Guide* (2024).
 - **David Corbett**: the Rawnd Musmus Duployan font and online Duployan keyboard.
 - **Van Anderson** (with later contributions from Michael Everson and others): the proposals that brought

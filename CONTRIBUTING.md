@@ -6,7 +6,8 @@ Thank you. Every checked reading moves this forward.
 1. **Check readings.** Open an issue titled `reading: <id>` with the row id from `data/gt/vocab_annotations.jsonl`
    and what you read in the image. Say how sure you are.
 2. **Report an error** in the notes: quote the line, give the source that says otherwise.
-3. **Point us to sources**: digitized Chinuk Pipa texts we have missed, especially Indigenous-written letters.
+3. **Point us to sources**: digitized Chinuk Pipa books and periodicals we have missed. This project does not
+   transcribe or publish letters written by Indigenous people; decisions about those belong to their communities.
 
 ## Code
 - Python ≥ 3.10. Keep functions small and documented; add a usage example in the module docstring.

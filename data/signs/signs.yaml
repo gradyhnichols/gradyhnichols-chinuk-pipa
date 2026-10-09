@@ -285,7 +285,7 @@ signs:
   notes: 'Short (unvoiced) member of the K species. Also numeral 4 (R2011 p.38, p.40; UNI-NL: ''Chinook number 4''). Direction
     flag: R2011 pp.39, 43 and Table 2 say SW/''down, left''; p.45 says the K species runs ''in a Southeast orientation''.
     SW is the value that matches Le Jeune''s printed tables (LJ1924 p.5, LJ1898 p.2) and the NamesList (''written down and
-    to the left''), so p.45 appears inconsistent with pp.39 and 43 and is not followed here. Le Jeune''s printed K (1924 p.5 and 1898 p.2 tables) carries a tiny start-tick
+    to the left''), so this entry follows pp.39 and 43; we may be misreading p.45. Le Jeune''s printed K (1924 p.5 and 1898 p.2 tables) carries a tiny start-tick
     that L lacks; R2011 and Unicode do not treat it as a distinguishing feature, and it has not been confirmed in running text (low confidence).'
   unicode_variants: []
 - id: G

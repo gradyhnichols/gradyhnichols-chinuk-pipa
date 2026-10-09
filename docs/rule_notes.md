@@ -9,7 +9,7 @@ the AI's readings of those scans.
 **Four kinds of evidence are used.**
 1. *Sources:* Le Jeune's own sign tables (1891 *Elements of Shorthand*, `Ayer_PM846_L47_1891`; 1892 list,
    `cihm_15474`; 1896 *Wawa Shorthand Instructor*, `wawashorthandins00leje`; 1898 *Rudiments*, `cihm_15465`)
-   and Robertson (2011), whose normalized spellings show how he reads the signs.
+   and Robertson (2011), whose normalized spellings we use as a guide to how the signs are read.
 2. *Recognizer, free readings:* where readings of held-out words and the rule labels disagree in the same
    spelling context across many words (`chinukpipa/htr/contexts.py` on `results/sweep5/base_v*.json`; each run
    holds out a different random 20% of the words, so a word can be counted more than once). These counts were made
