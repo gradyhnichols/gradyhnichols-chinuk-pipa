@@ -289,3 +289,43 @@ def test_build_lj_wordlist_script(tmp_path):
                      "ta lla\tA\tT A L A\tS1"]                              # tab in the spelling replaced
     bad = subprocess.run(run + ["--sources", "S3"], capture_output=True, text=True)
     assert bad.returncode != 0 and "S3" in bad.stderr
+
+
+def test_gtrows_pack_and_score(tmp_path):
+    """gtrows packs crops in reading order and scores readings keyed by page and position."""
+    import json
+
+    import numpy as np
+    from PIL import Image
+
+    from chinukpipa.text import gtrows
+    from chinukpipa.text.readcrops import load_npz
+
+    crops = tmp_path / "crops"
+    crops.mkdir()
+    rows = [
+        {"id": "b_p3_r2", "page_index": 3, "seq": 2, "language": "chn", "tokens_rule": "K A", "bbox_shorthand": [0, 0, 5, 4]},
+        {"id": "b_p3_r1", "page_index": 3, "seq": 1, "language": "chn", "tokens_rule": "M A", "bbox_shorthand": [0, 0, 6, 4]},
+        {"id": "b_p4_r1", "page_index": 4, "seq": 1, "language": "en", "tokens_rule": None, "bbox_shorthand": [0, 0, 7, 4]},
+    ]
+    for k, r in enumerate(rows):
+        Image.fromarray(np.full((4, 5 + k), 10 * k, np.uint8)).save(crops / f"{r['id']}_shorthand.png")
+    rows_path = tmp_path / "rows.jsonl"
+    rows_path.write_text("\n".join(json.dumps(r) for r in rows), encoding="utf-8")
+    pages = tmp_path / "pages"
+    gtrows.pack(str(rows_path), str(crops), str(pages), "bk")
+    arrs, _, line, _ = load_npz(str(pages / "bk_3_words.npz"))
+    assert [a.shape[1] for a in arrs] == [6, 5] and list(line) == [1, 2]      # seq order, not file order
+    read = tmp_path / "read"
+    read.mkdir()
+    words = [{"line": 1, "index": 1, "free_tokens": "M A", "free_best": {"tokens": "M A", "score": 1.0},
+              "top5": [{"tokens": "M A", "score": 1.0}]},
+             {"line": 2, "index": 1, "free_tokens": "K", "free_best": None,
+              "top5": [{"tokens": "K O", "score": 2.0}, {"tokens": "K A", "score": 3.0}]}]
+    (read / "bk_3_read.json").write_text(json.dumps({"item": "bk", "leaf": 3, "words": words}), encoding="utf-8")
+    lex = tmp_path / "lex.tsv"
+    lex.write_text("headword\tbest_conf\ttokens\nma\tA\tM A\nko\tA\tK O\n", encoding="utf-8")
+    res = gtrows.score(str(rows_path), str(pages), str(read), "bk", str(lex))
+    assert res["words"] == 2 and res["list_first_choice"] == 0.5 and res["list_top5"] == 1.0
+    assert res["in_list"] == 1 and res["in_list_first_choice"] == 1.0
+    assert res["counts"]["edits"] == 1 and res["counts"]["ref_tokens"] == 4

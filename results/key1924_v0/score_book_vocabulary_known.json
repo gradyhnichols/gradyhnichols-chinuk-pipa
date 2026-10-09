@@ -1,0 +1,25 @@
+{
+ "words": 823,
+ "list_first_choice": 0.8323,
+ "list_top5": 0.8578,
+ "free_exact": 0.7752,
+ "free_best_exact": 0.8019,
+ "free_token_error_rate": 0.079,
+ "in_list": 717,
+ "in_list_first_choice": 0.9554,
+ "in_list_top5": 0.9847,
+ "counts": {
+  "words": 823,
+  "top1": 685,
+  "top5": 706,
+  "free": 638,
+  "free_best": 660,
+  "edits": 314,
+  "ref_tokens": 3973,
+  "in_list": 717,
+  "top1_in_list": 685,
+  "top5_in_list": 706,
+  "chn_without_tokens": 37,
+  "no_reading": 0
+ }
+}

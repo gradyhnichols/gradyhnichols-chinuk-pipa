@@ -21,3 +21,5 @@ losses under the model of that split).
 *Rudiments*, which they had not seen (see the recognizer's README).
 
 `creation_v0/`: the first running-text test page and its alignment with a printed Roman text (see its README).
+
+`key1924_v0/`: the second running-text test, 823 words of the 1924 exercises read from correct word boxes (see its README).

@@ -28,6 +28,9 @@ same words, used to score the reading pipeline in [`chinukpipa/text/`](../../chi
   `lexicon_merged.tsv`, stage B only) and the agent's classification of each miss (`cause`, `cause_detail`).
 - `roman_words.json`: the 208 words with their printed form, spelling used, tokens and word-list status.
 - `ocr_corrections.txt`: how the OCR was corrected and which spellings were normalized.
+- `readings_final6_stageC.json`: the stage-C output for this leaf from the five models trained also on the 1924
+  vocabulary rows, with Le Jeune's spellings in the word list (153 of 208 right by the strict rule). The
+  intermediate rows of the table in `chinukpipa/text/README.md` (137 and 152) were not archived.
 - `boxes_leaf15.json`: the segmentation's text lines and word boxes for the leaf (keys, kinds, `bbox` in pixels of the
   deskewed page), so that the box keys can be checked without re-running the segmenter. Two rows refer to ink the
   segmenter set aside as braces (`brace532`, `brace1278`, component numbers of the full segmentation); those have

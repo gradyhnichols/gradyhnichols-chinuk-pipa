@@ -72,7 +72,7 @@ a shorthand word, its Roman spelling and an English gloss, all lettered by hand.
 
 By language: 415 Chinook Jargon rows (`chn`), 54 French loanwords in French spelling (`fr`) and 6 English (`en`);
 `tokens_rule` is `null` for the 60 French and English rows. Not used: indices 12 and 20 (shorthand beside English
-words, with no Roman Chinook spelling), the running exercise text (indices 29–40), entries wrapped over two lines,
+words, with no Roman Chinook spelling), the exercises and their key (indices 25–37; see the running-text section below), entries wrapped over two lines,
 headings, and three entries whose shorthand touches a neighbour or whose reading was too uncertain.
 
 The book was photographed turned on its side, so every row has an `affine` frame that turns its page upright (the
@@ -110,6 +110,47 @@ pixel, the crops the readings were made from.
 or non-commercial, without licensing or permission fees to the library, subject to these terms and conditions".
 The book is dated 1924, so it is in the public domain in the United States. The scans are not
 redistributed here; the annotations are CC BY 4.0.
+
+## rudiments1924_text_annotations.jsonl (running text, v0.4, October 2026)
+
+**What it is.** 880 outlines (words, and 69 two-word phrases written as one outline) of narrative text from the exercises and their key in the same 1924 *Rudiments*
+(`Ayer_PM843_L45_1924`): a Creation narrative, the days and months, the first people, the body, the house, fishing
+and hunting, and religious text. The book prints this text one word per line: the Roman word, its shorthand
+outline and, on indices 25–32, an English gloss. Each row is one outline with the Roman spelling printed beside it,
+in reading order (`seq` within the page; `para` = printed exercise number; `col` = column, 1–2 or 1–3; `line` =
+line within the column; `printed_page` = printed page number).
+
+| indices (printed page = index − 4) | rows |
+|---|---|
+| 25, 26, 27, 28, 29, 30, 31, 32 | 70, 75, 40, 75, 76, 56, 58, 59 |
+| 35, 36, 37 | 129, 164, 78 |
+
+By language: 860 Chinook Jargon rows, 19 English words printed inside the Chinook text and 1 French name.
+`tokens_rule` is set for 823 Chinook rows; it is `null` for 35 rows containing the abbreviation S.T. (its outline is
+a brief form, not spelled sign by sign) and 2 rows with a raised dot. `gloss_en` is filled on 501 of the 509 rows of indices 25–32 (the others: no English printed beside
+the word, a gloss printed for a whole phrase, a compound broken over two lines, and on index 31 two glosses printing
+slurs, which the reader left blank; the Roman words are kept as printed). Left out: lists that are not running text
+(indices 23–24, 33–34, 38–40 and a French list at the top of 35), lines where the Roman words and outlines are not
+paired one to one or are interleaved (parts of 27, 30, 31 and 37), illegible words, headings and exercise numbers.
+
+**How it was made.** Word boxes came from the running-text segmenter (`chinukpipa/text/segment.py`) and were
+checked on contact sheets; 202 rows needed a hand correction (not marked per row). Readings, all by AI models:
+- Claude Sonnet read the Roman word of each row from the crops.
+- Claude Opus read the Roman words again without seeing the first reading (882 rows at that point). The readings
+  were identical for 623 rows and differed only in ways that do not change the sign tokens (capitals, accents,
+  apostrophes) for 245. Of the other 14, four differed only in punctuation; the remaining ten were settled on
+  enlarged crops: the second reading was kept for four, the first for four, and two words were left out as
+  unclear. Second readings that differ (other than in punctuation alone) are recorded in `notes`.
+
+**No human has reviewed these readings yet.**
+
+**Overlap with the other rows.** The 823 Chinook rows with tokens are 261 distinct token strings; 624 of the 823
+(125 of the 261 strings) have a token string found among the 1892 and 1898 rows, 628 among the 1924 vocabulary
+rows. These rows have not
+been used for training; they serve as a test set (`results/key1924_v0/`).
+
+Crops regenerate as above (`python -m chinukpipa.gt.make_crops data/gt/rudiments1924_text_annotations.jsonl
+corpus/lejeune gt_crops/`). Rights as for the 1924 vocabulary rows.
 
 ## copy_annotations.jsonl: the same words in a second copy of the 1892 list
 

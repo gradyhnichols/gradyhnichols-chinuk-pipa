@@ -141,7 +141,7 @@ sheets (crop, free reading, top three candidates) next to the segmentation files
 
 ## Results
 
-**One test page so far.** The Creation chapter of the *Chinook Bible History* (Paul Durieu, 1899; Internet Archive
+**First test: one page with a Roman parallel.** The Creation chapter of the *Chinook Bible History* (Paul Durieu, 1899; Internet Archive
 `chinookbiblehist00duri`, leaf 15, left column, paragraphs 1–5) has the same Chinook wording as the "First Lesson
 in Chinook" printed in Roman letters in the 1898 *Rudiments* (`cihm_15465`, leaves 15–17). An AI agent aligned
 the page's word boxes with the lesson's 208 Roman words (a dynamic-programming alignment on token sequences, checked
@@ -156,6 +156,7 @@ word covers exactly its boxes) and the reading's tokens equal the tokens of its 
 | stage B, three models trained on the 1892 and 1898 words, word list `lexicon_merged.tsv` | 105 (50%) |
 | same, with Le Jeune's own spellings from the ground truth added to the word list (`scripts/build_lj_wordlist.py`, 1892 and 1924 sources) | 137 (66%) |
 | same, plus stage C | 152 (73%) |
+| stage C with five models trained also on the 1924 vocabulary rows (`synth3` configuration) and Le Jeune's spellings from all three sources (readings in `results/creation_v0/`) | 153 (74%) |
 
 Where the first run lost its words (one cause per word): segmentation 45 (30 words cut into two or three boxes,
 12 words sharing a box with a neighbour, 3 words whose ink was classed as a brace or punctuation and not read),
@@ -175,10 +176,22 @@ Limits of this number:
   words, though.
 - Stage C was written after looking at this page's errors. Its gap limit is a statistic of each page and its
   decision rule has no tuned parameter, but it has not yet been tested on another page. No second passage with a
-  Roman parallel was found in the 1898 *Rudiments*; the 1924 edition's exercise pages appear to give several hundred
-  words of running text with the Roman spelling beside the shorthand, the most promising next test.
+  Roman parallel was found in the 1898 *Rudiments*; the 1924 exercises below are the second test.
 - Taking the free reading (`free_best`) instead of the list's choice when its loss is lower by a margin changed at
   most four words, at a margin chosen on this page; it is not used.
+
+**A second test, from correct word boxes.** The exercises of the 1924 *Rudiments* print narrative text one word
+per line, with Le Jeune's Roman spelling beside each outline. Their 823 Chinook outlines with rule tokens
+(`data/gt/rudiments1924_text_annotations.jsonl`) were read with `chinukpipa.text.gtrows` and `readcrops`
+([`results/key1924_v0/`](../../results/key1924_v0/README.md)): the word list's first choice was right for 77% (five
+models never trained on the 1924 book, Le Jeune's 1892 and 1898 spellings in the list) and 83% (models trained also
+on the book's vocabulary pages, its spellings in the list; these models also differ in batch size); for words whose
+spelling was in the list, 92% and 96%. Most of these words also occur in the training books (624 of the 823 share
+a token string with a word of the 1892 and 1898 lists), the 35 outlines containing the abbreviation S.T. are not
+scored here (they count as misses on the Creation page), and "right" means agreeing with the rule tokens of Le
+Jeune's printed spelling.
+Because the boxes are given, this measures reading alone; on the Creation page, word-boundary errors were the
+largest single cause of misses (45 of 103 in the first run). The stage-C rule was not tuned on this set, but stage C was not needed for it either.
 
 The pipeline has also been run over 478 pages of running text in 8 Internet Archive items (about 247,000 word
 boxes). Those readings have no checked sample yet and are not published.
