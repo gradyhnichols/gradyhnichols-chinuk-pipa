@@ -446,14 +446,22 @@ def chain_gaps(cs: list[Comp], pts: dict) -> list[float]:
     return [float(D[j, :j].min()) for j in range(1, len(cs))]
 
 
+MIN_SHARE_ABOVE = 0.25    # a valley with fewer gaps than this above it is not the word-gap valley (see gap_threshold)
+
+
 def gap_threshold(all_gaps: list[float], h_med: float, bandwidth: float = 0.15):
     """Within-word / between-word gap threshold from the page's own gap distribution.
 
     Gaps are nearest-ink distances between neighbouring components of a line. Their log-density (Gaussian KDE,
     `bandwidth` in log units) is usually bimodal: pen lifts and marks inside words, and the spaces between words.
     The threshold is the density minimum between the two strongest modes that lie at least a factor 2 apart. Otsu's
-    threshold on log(gap) is reported for comparison and used when no such pair of modes exists; 0.3 x h_med is
-    the last resort (fewer than 8 gaps). Returns (threshold_px, stats)."""
+    threshold on log(gap) is reported for comparison and used when no such pair of modes exists, and also when fewer
+    than MIN_SHARE_ABOVE (25%) of the gaps lie above the valley: then the larger "mode" is a handful of very wide
+    gaps (between columns, or around a picture), not the spaces between words, and the valley would join whole lines
+    into one word. On the 478 corpus pages that share is 0.45-0.75 for three quarters of them and below 0.25 for 48;
+    the 25% was set by hand from that spread. It assumes at least a quarter of the gaps are spaces between words: on a
+    page whose words have about four pieces or more on average, a true word-gap valley would be rejected too.
+    0.3 x h_med is the last resort (fewer than 8 gaps). Returns (threshold_px, stats)."""
     g = np.array([x for x in all_gaps if x >= 1], float)
     stats = {"n_gaps": int(len(g))}
     if len(g) < 8:
@@ -479,10 +487,16 @@ def gap_threshold(all_gaps: list[float], h_med: float, bandwidth: float = 0.15):
         return otsu, stats
     _, i, j, v = best
     thr = float(np.exp(grid[v]))
-    stats.update({"method": "kde valley", "mode_small_px": round(float(np.exp(grid[i])), 1),
-                  "mode_large_px": round(float(np.exp(grid[j])), 1), "valley_px": round(thr, 1),
-                  "valley_rel_h": round(thr / h_med, 3), "valley_depth_rel": round(best[0] / dens.max(), 3),
-                  "n_below": int((g <= thr).sum()), "n_above": int((g > thr).sum())})
+    valley = {"mode_small_px": round(float(np.exp(grid[i])), 1), "mode_large_px": round(float(np.exp(grid[j])), 1),
+              "valley_px": round(thr, 1), "valley_rel_h": round(thr / h_med, 3),
+              "valley_depth_rel": round(best[0] / dens.max(), 3),
+              "n_below": int((g <= thr).sum()), "n_above": int((g > thr).sum())}
+    if valley["n_above"] < MIN_SHARE_ABOVE * len(g):
+        # kept apart, so that stage C does not take this valley's "large mode" as the page's word-gap size
+        stats.update({"method": f"otsu (kde valley rejected: fewer than {MIN_SHARE_ABOVE:.0%} of the gaps above it)",
+                      "rejected_kde_valley": valley})
+        return otsu, stats
+    stats.update({"method": "kde valley", **valley})
     return thr, stats
 
 

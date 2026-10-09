@@ -17,7 +17,12 @@ page frames, stanza separators and braces are set aside; page numbers and, in th
 labelled and left out. Text lines are found per column, and the dark pieces of each line are chained from left to
 right into words. A gap starts a new word if it is wider than a threshold taken from the valley between the two
 modes of the page's own gap sizes (pen lifts inside words, spaces between words; there are fallbacks for pages
-without two clear modes). Small marks (dots, vowel circles)
+without two clear modes). Since v0.4 a valley with fewer than a quarter of the page's gaps above it is rejected and
+Otsu's threshold on the same gaps is used instead (the quarter was set by hand from the spread of that share over
+the pages). This happened on 48 of the 478 pages read so far; on those looked at, the valley had fallen between the
+pen lifts and a few very wide gaps (between columns, around a picture), and whole lines had become one word box. An
+AI check of 10 of them, blind to which version was new, judged the new boxes better on 9 (one tie); some dense or
+faint pages are still cut badly. Small marks (dots, vowel circles)
 join the nearest word; punctuation and runs of Roman letters get their own labels and are not read. The other
 thresholds are fixed multiples of quantities measured on the page (the stroke width, the line spacing and the
 height of a typical word piece); the multipliers were set by hand while developing on pages of these books. On a
@@ -230,11 +235,45 @@ needs the same `--extra-lexicon` as the reading, and stops if the number of cand
 - More work per image: up to 400 more candidates, each scored with and without the word space.
 - The Roman spellings behind the `--st-labels` labels are AI readings of the printed book, and the token strings come
   from spelling rules that are hypotheses (see `docs/rule_notes.md`).
+- The stage-A rule assumes that at least a quarter of a page's gaps are spaces between words. On a page whose words
+  are drawn in many separate strokes (about four pieces per word or more), a true word-gap valley would be rejected
+  as well.
 - `read_page` has neither option.
 
-TODO (numbers): the counts of first choices right (the exercises' rows without and with `--st-labels`; the Creation
-page with `--merge-rule`) are to be added here once they have been reproduced with this code, together with the
-models, word lists and exact command lines. Until then this section gives no results.
+**Results.** Every number below was reproduced with this code from the stored models (word list built with the
+`build_lj_wordlist.py` command under "Running it": 1,780 candidates, 1,781 with `brief_forms.tsv`). The experiments'
+own scripts had measured all of them except the first two rows of the Creation table, and gave the same counts. The
+models are not published.
+
+The 1924 exercises, read from their correct word boxes (`gtrows`, scale 0.8), by five models trained on the 1892 and
+1898 words and the book's vocabulary rows but not on the exercises (the second row of the table in
+[`results/key1924_v0/`](../../results/key1924_v0/README.md)):
+
+| options | rows with rule tokens (823) | with `--st-labels` (858) |
+|---|---|---|
+| none | 685 | 685 |
+| `--extra-lexicon brief_forms.tsv` | 685 | 705 |
+| both, `--pair-penalty 8` | 717 | 750 |
+
+On the pages kept back when the penalty was chosen (pages 32–37, 424 rows with `--st-labels`), the two-word readings
+took the count from 354 to 383, and no row that was right before became wrong.
+
+The Creation page (stage B + C), read by five models trained like the models above plus 858 rows of the 1924
+exercises (the 823 with rule tokens and the 35 S.T. rows, labelled by the `--st-labels` rule):
+
+| options | strict | `--merge-rule` |
+|---|---|---|
+| none | 156 | 156 |
+| `--extra-lexicon brief_forms.tsv` | 167 | 167 |
+| both, `--pair-penalty 8` | 167 | 173 |
+
+With both options, three of the six two-word units (five boxes, and one pair cut across two) are read as their two
+words, and all 10 S.T. are right. These
+models trained on all of the 1924 exercises, so the exercises are no test for them; and the Creation page has now
+been used to judge about ten changes, so it is no longer an untouched test either. A second scan of the same page
+(Internet Archive `cihm_14939`, leaf 9; its boxes matched to the Roman words by geometry, by an AI agent) was cut
+into whole lines by the old stage-A rule (0 of 208 right); the stage-A rule above was written after that, so the
+134 it then gets with both options (152 with `--merge-rule`) is not a fresh test.
 
 ## Results
 

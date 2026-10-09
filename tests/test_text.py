@@ -617,3 +617,35 @@ def test_score_alignment_without_the_option_is_what_it_was_on_the_archived_creat
     m = sa.score(al, d, merge_rule=True)
     assert m["top1"] == r["top1"] and m["top5"] == r["top5"] and m["free_best"] == r["free_best"]
     assert m["right_by_unit_kind"]["match"] == 136 and m["right_by_unit_kind"]["split"] == 17
+
+
+def _gaps(rng, n_small, small, n_word, word, n_wide=0, wide=300.0):
+    """Synthetic nearest-ink gaps of one page: pen lifts inside words, spaces between words, a few very wide gaps."""
+    g = list(rng.lognormal(np.log(small), 0.35, n_small)) + list(rng.lognormal(np.log(word), 0.25, n_word))
+    return g + list(rng.lognormal(np.log(wide), 0.1, n_wide))
+
+
+def test_gap_threshold_uses_the_valley_between_pen_lifts_and_word_spaces():
+    pytest.importorskip("cv2")
+    from chinukpipa.text.segment import gap_threshold
+    rng = np.random.default_rng(0)
+    thr, st = gap_threshold(_gaps(rng, 600, 5.0, 500, 25.0, n_wide=15), h_med=45.0)
+    assert st["method"] == "kde valley" and 8 < thr < 20
+    assert st["n_above"] >= 0.25 * st["n_gaps"]
+
+
+def test_gap_threshold_rejects_a_valley_with_almost_no_gaps_above_it():
+    """A broad word-space bump that is no peak of its own, and a few very wide gaps (between columns, around a
+    picture): the strongest pair of modes is then pen lifts vs the wide gaps, and its valley would join whole lines.
+    Fewer than 25% of the gaps lie above it, so Otsu's threshold is used instead (cihm_14939 leaf 9: 19 of 1,480)."""
+    pytest.importorskip("cv2")
+    from chinukpipa.text.segment import MIN_SHARE_ABOVE, gap_threshold
+    rng = np.random.default_rng(1)
+    lifts_and_spaces = list(rng.lognormal(np.log(8.0), 0.7, 1300))   # one broad bump: no word-space peak of its own
+    wide = list(rng.lognormal(np.log(320.0), 0.05, 19))
+    thr, st = gap_threshold(lifts_and_spaces + wide, h_med=39.0)
+    rejected = st["rejected_kde_valley"]                          # the valley that was found ...
+    assert rejected["n_above"] < MIN_SHARE_ABOVE * st["n_gaps"] and rejected["valley_px"] > 100
+    assert st["method"].startswith("otsu (kde valley rejected")   # ... is rejected, and Otsu's threshold used
+    assert thr == pytest.approx(st["otsu_px"], abs=0.05) and thr < 39.0
+    assert "mode_large_px" not in st     # stage C falls back to 2.2 x the threshold for its join limit
