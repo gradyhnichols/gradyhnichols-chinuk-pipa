@@ -329,3 +329,291 @@ def test_gtrows_pack_and_score(tmp_path):
     assert res["words"] == 2 and res["list_first_choice"] == 0.5 and res["list_top5"] == 1.0
     assert res["in_list"] == 1 and res["in_list_first_choice"] == 1.0
     assert res["counts"]["edits"] == 1 and res["counts"]["ref_tokens"] == 4
+
+
+# ---------------------------------------------------------------------------------------- scoring with S.T. labels
+
+
+@pytest.mark.parametrize("latin, want", [
+    ("S.T.", "S T"), ("S.T", "S T"), ("s.t.", "S T"), (" S.T. ", "S T"),
+    ("S.T. Papa", "S T _ P A P A"), ("S.T ya'ka", "S T _ E A K A"), ("Ya'ka S.T", "E A K A _ S T"),
+    ("S.T. St Espli", "S T _ S T _ E S P L E"),           # "St" is a word the spelling rules read: S T
+    ("S.T. Tanaz", "S T _ T A N A S"), ("S.T. Man", "S T _ M A N"),
+    ("Papa", "P A P A"), ("kamooks", "K A M OO K S"), ("ka-ta", "K A _ T A"),
+    ("pēl·telikom", None), ("Kin·jorj", None), ("S.T.·Papa", None),     # a raised dot: left unscored
+    ("S.T. 2°", None), ("S.T. #", None),                                  # a word the rules cannot spell
+    ("", None), ("   ", None), (None, None), (".", None),
+])
+def test_st_label_construction(latin, want):
+    from chinukpipa.text.gtrows import st_label
+    assert st_label(latin) == want
+
+
+def test_st_label_agrees_with_the_spelling_rules_for_ordinary_words():
+    from chinukpipa.text.gtrows import st_label
+    from chinukpipa.translit import latin_to_tokens
+    for word in ("kamooks", "alta", "kanawe", "chako", "kanamoxt", "khell", "kilapai", "wawa", "kloshe nanich"):
+        assert st_label(word) == " ".join(latin_to_tokens(word))
+
+
+def test_st_label_makes_a_label_for_the_s_t_rows_of_the_1924_exercises_and_not_for_the_dotted_ones():
+    from chinukpipa.text.gtrows import load_rows, st_label
+    rows = load_rows(os.path.join(REPO, "data", "gt", "rudiments1924_text_annotations.jsonl"))
+    chn = [r for r in rows if r["language"] == "chn"]
+    unlabelled = [r for r in chn if not (r.get("tokens_verified") or r.get("tokens_rule"))]
+    made = {r["id"]: st_label(r["latin"]) for r in unlabelled}
+    assert len(chn) == 860 and len(unlabelled) == 37
+    assert sum(v is not None for v in made.values()) == 35                         # every row with S.T. ...
+    assert sorted(r["latin"] for r in unlabelled if made[r["id"]] is None) == ["Kin·jorj", "pēl·telikom"]
+    assert all("S T" in v for r in unlabelled if (v := made[r["id"]]))
+    assert sum(1 for v in made.values() if v == "S T") == 20                       # 20 outlines of S.T. alone
+    assert sum(1 for v in made.values() if v and " _ " in v) == 15                 # 15 with a second word
+
+
+def _gt_scoring_fixture(tmp_path):
+    rows = [{"id": "r1", "language": "chn", "latin": "ka", "tokens_rule": "K A"},
+            {"id": "r2", "language": "chn", "latin": "ta", "tokens_rule": "T A"},
+            {"id": "r3", "language": "chn", "latin": "S.T.", "tokens_rule": None},
+            {"id": "r4", "language": "chn", "latin": "S.T. Papa", "tokens_rule": None},
+            {"id": "r5", "language": "chn", "latin": "Ya'ka S.T", "tokens_rule": None},
+            {"id": "r6", "language": "chn", "latin": "pēl·telikom", "tokens_rule": None},
+            {"id": "r7", "language": "en", "latin": "fish", "tokens_rule": None},
+            {"id": "r8", "language": "chn", "latin": "S.T. 2°", "tokens_rule": None}]
+    rows_path = tmp_path / "rows.jsonl"
+    rows_path.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows), encoding="utf-8")
+    pages = tmp_path / "pages"
+    pages.mkdir()
+    (pages / "bk_rows.json").write_text(json.dumps({r["id"]: [1, n] for n, r in enumerate(rows, 1)}), encoding="utf-8")
+
+    def w(n, free, top, free_best=None):
+        return {"line": n, "index": 1, "free_tokens": free, "free_best": free_best,
+                "top5": [{"tokens": t, "score": 1.0 + k} for k, t in enumerate(top)]}
+
+    words = [w(1, "K A", ["K A", "T A"]), w(2, "T", ["K A", "T A"]),
+             w(3, "S T", ["S T", "K A"], {"tokens": "S T", "score": 1.0}),
+             w(4, "S T P A P A", ["S T _ P A P A", "S T"]),               # a two-word reading is the first choice
+             w(5, "E A K A S T", ["S T", "K A"]),
+             w(6, "", ["K A"]), w(7, "F", ["K A"]), w(8, "S T", ["S T"])]
+    read = tmp_path / "read"
+    read.mkdir()
+    (read / "bk_1_read.json").write_text(json.dumps({"item": "bk", "leaf": 1, "words": words}), encoding="utf-8")
+    main = tmp_path / "main.tsv"
+    main.write_text("headword\tbest_conf\ttokens\nka\tA\tK A\nta\tA\tT A\npapa\tA\t\n", encoding="utf-8")
+    return str(rows_path), str(pages), str(read), str(main)
+
+
+def test_gtrows_score_with_and_without_st_labels(tmp_path):
+    pytest.importorskip("torch")                         # lexicon_keys uses the recognizer's alphabet
+    from chinukpipa.text import gtrows
+    rows, pages, read, main = _gt_scoring_fixture(tmp_path)
+    brief = os.path.join(REPO, "data", "lexicon", "brief_forms.tsv")
+
+    plain = gtrows.score(rows, pages, read, "bk", main, extra_lexicons=[brief])
+    assert "st_labels" not in plain and list(plain["counts"]) == [
+        "words", "top1", "top5", "free", "free_best", "edits", "ref_tokens", "in_list", "top1_in_list",
+        "top5_in_list", "chn_without_tokens", "no_reading"]
+    assert plain["words"] == 2 and plain["counts"]["top1"] == 1 and plain["counts"]["top5"] == 2
+    assert plain["counts"]["chn_without_tokens"] == 5 and plain["counts"]["ref_tokens"] == 4
+    assert plain["in_list"] == 2
+
+    st = gtrows.score(rows, pages, read, "bk", main, st_labels=True, extra_lexicons=[brief])
+    c = st["counts"]
+    assert (c["words"], c["top1"], c["top5"], c["free"], c["free_best"]) == (5, 3, 4, 2, 1)
+    assert c["chn_without_tokens"] == 2 and c["ref_tokens"] == 4 + 2 + 7 + 7      # K A, T A | S T, S T _ P A P A, E A K A _ S T
+    assert c["in_list"] == 3 and c["top1_in_list"] == 2                     # S T is in the list only with the extra list
+    assert st["list_first_choice"] == 0.6 and st["list_top5"] == 0.8
+    # the counts both ways: the rows that had label tokens, the rows labelled from their spelling, the rest
+    assert st["st_labels"] == {
+        "with_label_tokens": {"words": 2, "top1": 1, "top5": 2, "free": 1, "free_best": 0},
+        "with_st_label": {"words": 3, "top1": 2, "top5": 2, "free": 1, "free_best": 1},
+        "unscored": 2}
+    # the totals are the two ways added up, and the first way is what the run without the option scored
+    ways = st["st_labels"]
+    for key in ("words", "top1", "top5", "free", "free_best"):
+        assert c[key] == ways["with_label_tokens"][key] + ways["with_st_label"][key]
+        assert plain["counts"][key] == ways["with_label_tokens"][key]
+    # without the extra list, "S T" is not a candidate of the list that was read
+    st2 = gtrows.score(rows, pages, read, "bk", main, st_labels=True)
+    assert st2["counts"]["in_list"] == 2 and st2["counts"]["top1"] == 3
+
+
+def test_gtrows_score_refuses_a_lexicon_that_differs_from_the_one_that_was_read(tmp_path):
+    pytest.importorskip("torch")
+    from chinukpipa.text import gtrows
+    rows, pages, read, main = _gt_scoring_fixture(tmp_path)
+    brief = os.path.join(REPO, "data", "lexicon", "brief_forms.tsv")
+    path = os.path.join(read, "bk_1_read.json")
+    d = json.load(open(path, encoding="utf-8"))
+    d["n_candidates"] = 4                                # three from main.tsv and S.T. from the extra list
+    json.dump(d, open(path, "w", encoding="utf-8"))
+    gtrows.score(rows, pages, read, "bk", main, extra_lexicons=[brief])
+    with pytest.raises(SystemExit):
+        gtrows.score(rows, pages, read, "bk", main)       # the extra list is needed to count the candidates
+
+
+def test_gtrows_score_records_the_pair_penalty_of_the_readings_and_refuses_a_mix(tmp_path):
+    pytest.importorskip("torch")
+    from chinukpipa.text import gtrows
+    rows, pages, read, main = _gt_scoring_fixture(tmp_path)
+    brief = os.path.join(REPO, "data", "lexicon", "brief_forms.tsv")
+    path = os.path.join(read, "bk_1_read.json")
+    d = json.load(open(path, encoding="utf-8"))
+    d["n_candidates"] = 4
+    assert "pair_penalty" not in gtrows.score(rows, pages, read, "bk", main, extra_lexicons=[brief])
+    d["pair_penalty"] = 8.0                                # as readcrops writes it when the option is used
+    json.dump(d, open(path, "w", encoding="utf-8"))
+    res = gtrows.score(rows, pages, read, "bk", main, extra_lexicons=[brief])
+    assert res["pair_penalty"] == 8.0 and res["words"] == 2
+    # another page of the same book read without the option (readcrops skips pages that are already read)
+    d2 = dict(d, leaf=2)
+    del d2["pair_penalty"]
+    json.dump(d2, open(os.path.join(read, "bk_2_read.json"), "w", encoding="utf-8"))
+    with pytest.raises(SystemExit, match="different pair penalties"):
+        gtrows.score(rows, pages, read, "bk", main, extra_lexicons=[brief])
+
+
+def test_gtrows_command_line_takes_the_new_options(tmp_path, monkeypatch, capsys):
+    pytest.importorskip("torch")
+    from chinukpipa.text import gtrows
+    rows, pages, read, main = _gt_scoring_fixture(tmp_path)
+    brief = os.path.join(REPO, "data", "lexicon", "brief_forms.tsv")
+    out = tmp_path / "score.json"
+    monkeypatch.setattr(sys, "argv", ["gtrows", "score", rows, pages, read, "--book", "bk", "--lexicon", main,
+                                      "--extra-lexicon", brief, "--st-labels", "--out", str(out)])
+    gtrows.main()
+    res = json.loads(out.read_text(encoding="utf-8"))
+    assert res["words"] == 5 and res["counts"]["top1"] == 3 and res["st_labels"]["unscored"] == 2
+    assert json.loads(capsys.readouterr().out)["words"] == 5
+    monkeypatch.setattr(sys, "argv", ["gtrows", "score", rows, pages, read, "--book", "bk", "--lexicon", main,
+                                      "--out", str(out)])
+    gtrows.main()
+    assert "st_labels" not in json.loads(out.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------------------- scoring: --merge-rule
+
+
+MERGE_HEADER = ["unit_id", "unit_kind", "main_box", "box_ids", "roman_tokens"]
+MERGE_ROWS = [["1", "match", "1.1", "1.1", "A B"],
+              ["2", "split", "1.2", "1.2+1.3", "K A M"],
+              ["3", "merge", "1.4", "1.4", "S A"], ["3", "merge", "1.4", "1.4", "T A"],                  # one box, two words
+              ["4", "merge+split", "2.1", "2.1+2.2", "P A"], ["4", "merge+split", "2.1", "2.1+2.2", "K A"],
+              ["4", "merge+split", "2.1", "2.1+2.2", "M A"],                                        # two boxes, three words
+              ["5", "merge", "3.1", "3.1", "L A"], ["5", "merge", "3.1", "3.1", "N A"],            # read wrong
+              ["6", "match", "3.2", "3.2", "D"]]                                                    # lost to a wrong join
+
+
+def _merge_alignment(tmp_path, header=MERGE_HEADER, rows=MERGE_ROWS):
+    path = tmp_path / "alignment.tsv"
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        wr = csv.writer(f, delimiter="\t")
+        wr.writerow(header)
+        wr.writerows([[r[MERGE_HEADER.index(h)] for h in header] for r in rows])
+    return str(path)
+
+
+def test_score_alignment_merge_rule_on_a_stage_c_file(tmp_path):
+    from chinukpipa.text import score_alignment as sa
+    al = sa.load_alignment(_merge_alignment(tmp_path))
+    merged = {"joins": 1, "words": [
+        _word([("A B", 4.0)], "A B", None, boxes=["1.1"]),
+        _word([("K A M", 4.0)], "K A M", None, boxes=["1.2", "1.3"]),
+        _word([("S A _ T A", 3.0), ("S A", 9.0)], "S A", ("S A _ T A", 3.5), boxes=["1.4"]),
+        _word([("P A", 5.0), ("P A _ K A _ M A", 6.0)], "P A", ("P A _ K A _ M A", 2.0), boxes=["2.1", "2.2"]),
+        _word([("X", 1.0)], "X", None, boxes=["3.1", "3.2"])]}
+    strict = sa.score(al, merged)
+    assert strict["top1"] == "2/10 = 20.0%" and strict["right_by_unit_kind"] == {"match": 1, "split": 1}
+    assert strict["single_words_lost_to_wrong_joins"] == 1
+    assert sa.score(al, merged, merge_rule=False) == strict
+
+    r = sa.score(al, merged, margins=(0, 1e9), merge_rule=True)
+    # unit 3 (one box, first choice S A _ T A): its two words are right; unit 4 (first choice P A): wrong, although
+    # its second choice and its free_best are right; unit 5 has no output word of its own (its box was joined to the
+    # next one), unit 6 is lost to that join
+    assert r["top1"] == "4/10 = 40.0%"
+    assert r["top5"] == "7/10 = 70.0%"                # the two single words, unit 3 (2) and unit 4 (3: second choice)
+    assert r["free_best"] == "5/10 = 50.0%"           # unit 3 (2) and unit 4 (3)
+    assert r["right_by_unit_kind"] == {"match": 1, "split": 1, "merge": 2, "merge+split": 0}
+    assert r["single_words_lost_to_wrong_joins"] == 1 and r["joins"] == 1
+    # hybrid: free_best where its loss plus the margin is lower than the first choice's. Unit 4 (2.0 vs 5.0) is right
+    # with the free reading at margin 0 and wrong with the first choice (margin 1e9); unit 3 is right either way
+    assert r["hybrid"] == {"0": "7/10 = 70.0%", "1000000000.0": "4/10 = 40.0%"}
+
+
+def test_score_alignment_merge_rule_counts_each_word_of_a_covered_unit(tmp_path):
+    from chinukpipa.text import score_alignment as sa
+    al = sa.load_alignment(_merge_alignment(tmp_path))
+    merged = {"joins": 0, "words": [
+        _word([("S A _ T A", 3.0)], "S A _ T A", ("S A _ T A", 3.0), boxes=["1.4"]),
+        _word([("P A _ K A _ M A", 3.0)], "P A _ K A _ M A", ("P A _ K A _ M A", 3.0), boxes=["2.1", "2.2"]),
+        _word([("L A _ N A", 3.0)], "L A _ N A", ("L A _ N A", 3.0), boxes=["3.1"]),
+        _word([("D", 3.0)], "D", ("D", 3.0), boxes=["3.2"])]}
+    # strict: no unit with two words counts; the match unit D does
+    assert sa.score(al, merged)["top1"] == "1/10 = 10.0%"
+    r = sa.score(al, merged, merge_rule=True)
+    assert r["top1"] == "8/10 = 80.0%"                 # 2 + 3 + 2 words of the three units, + D
+    assert r["top5"] == "8/10 = 80.0%" and r["free_best"] == "8/10 = 80.0%"
+    assert r["right_by_unit_kind"] == {"match": 1, "merge": 4, "merge+split": 3}
+    assert all(v == "8/10 = 80.0%" for v in r["hybrid"].values())
+
+
+def test_score_alignment_merge_rule_requires_the_exact_boxes_and_the_exact_joined_tokens(tmp_path):
+    from chinukpipa.text import score_alignment as sa
+    al = sa.load_alignment(_merge_alignment(tmp_path))
+    for tokens, boxes in (("S A T A", ["1.4"]),                 # no word-space between the words
+                          ("T A _ S A", ["1.4"]),               # the words in the wrong order
+                          ("S A _ T A", ["1.4", "1.5"]),        # an output word that covers more than the unit
+                          ("S A", ["1.4"])):                    # only one of the two words
+        merged = {"joins": 0, "words": [_word([(tokens, 1.0)], tokens, (tokens, 1.0), boxes=boxes)]}
+        assert sa.score(al, merged, merge_rule=True)["top1"] == "0/10 = 0.0%", (tokens, boxes)
+    ok = {"joins": 0, "words": [_word([("S A _ T A", 1.0)], "", None, boxes=["1.4"])]}
+    assert sa.score(al, ok, merge_rule=True)["top1"] == "2/10 = 20.0%"
+    # the unit's rows need not carry a unit_id: they are found by their boxes
+    al2 = sa.load_alignment(_merge_alignment(tmp_path, header=["unit_kind", "main_box", "box_ids", "roman_tokens"]))
+    assert sa.score(al2, ok, merge_rule=True)["top1"] == "2/10 = 20.0%"
+
+
+def test_score_alignment_merge_rule_on_a_stage_b_file(tmp_path):
+    from chinukpipa.text import score_alignment as sa
+    al = sa.load_alignment(_merge_alignment(tmp_path))
+    read = {"words": [
+        _word([("A B", 4.0)], "A B", None, line=1, index=1),
+        _word([("S A _ T A", 3.0)], "S A _ T A", None, line=1, index=4),     # the box of unit 3 reads as two words
+        _word([("P A _ K A _ M A", 3.0)], "P A _ K A _ M A", None, line=2, index=1)]}   # one box of unit 4: no
+    assert not sa.is_merged(read)
+    strict = sa.score(al, read)
+    assert strict["top1"] == "1/10 = 10.0%" and strict["free"] == "1/10 = 10.0%"
+    r = sa.score(al, read, merge_rule=True)
+    assert r["top1"] == "3/10 = 30.0%" and r["free"] == "3/10 = 30.0%"       # + the two words of the one-box unit
+
+
+def test_score_alignment_merge_rule_command_line(tmp_path, capsys, monkeypatch):
+    from chinukpipa.text import score_alignment as sa
+    al = _merge_alignment(tmp_path)
+    rd = tmp_path / "p_merged.json"
+    rd.write_text(json.dumps({"joins": 0, "words": [
+        _word([("S A _ T A", 1.0)], "", None, boxes=["1.4"])]}), encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["score_alignment", al, str(rd)])
+    sa.main()
+    assert '"top1": "0/10 = 0.0%"' in capsys.readouterr().out
+    monkeypatch.setattr(sys, "argv", ["score_alignment", al, str(rd), "--merge-rule", "--margins", "0"])
+    sa.main()
+    assert '"top1": "2/10 = 20.0%"' in capsys.readouterr().out
+
+
+def test_score_alignment_without_the_option_is_what_it_was_on_the_archived_creation_readings():
+    """The first running-text test page (results/creation_v0): the strict scores from before --merge-rule."""
+    from chinukpipa.text import score_alignment as sa
+    al = sa.load_alignment(os.path.join(REPO, "results", "creation_v0", "alignment.tsv"))
+    d = json.load(open(os.path.join(REPO, "results", "creation_v0", "readings_final6_stageC.json"), encoding="utf-8"))
+    r = sa.score(al, d)
+    assert (r["top1"], r["top5"], r["free_best"]) == ("153/208 = 73.6%", "157/208 = 75.5%", "150/208 = 72.1%")
+    assert r["right_by_unit_kind"] == {"split": 17, "match": 136}
+    assert r["single_words_lost_to_wrong_joins"] == 5 and r["joins"] == 112
+    assert r["hybrid"] == {"-2": "150/208 = 72.1%", "0": "150/208 = 72.1%", "1": "151/208 = 72.6%",
+                           "2": "152/208 = 73.1%", "3": "154/208 = 74.0%", "4": "155/208 = 74.5%",
+                           "6": "157/208 = 75.5%", "8": "158/208 = 76.0%", "1000000000.0": "153/208 = 73.6%"}
+    # these readings have no two-word first choice, so the option finds nothing more
+    m = sa.score(al, d, merge_rule=True)
+    assert m["top1"] == r["top1"] and m["top5"] == r["top5"] and m["free_best"] == r["free_best"]
+    assert m["right_by_unit_kind"]["match"] == 136 and m["right_by_unit_kind"]["split"] == 17

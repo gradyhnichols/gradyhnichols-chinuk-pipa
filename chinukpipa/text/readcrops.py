@@ -2,6 +2,7 @@
 
     python -m chinukpipa.text.readcrops --pages DIR --models M0 M1 M2 --out-dir DIR [--lexicon TSV] [--books a,b]
         [--leaves 15,16] [--device cuda] [--scale auto|S] [--calib-words 600] [--workers 4] [--selftest]
+        [--extra-lexicon TSV ...] [--pair-penalty NATS]
 
 Input: <book>_<leaf>_words.npz from segcrops.py (masked grey word crops). For each book:
 1. scale calibration, the rule of read_page.calibrate: the scale in SCALE_GRID with the highest mean per-frame
@@ -15,6 +16,18 @@ Input: <book>_<leaf>_words.npz from segcrops.py (masked grey word crops). For ea
    read as if alone (models trained on width-bucketed batches read badly through long padding);
 3. outputs: <book>_<leaf>_read.json per page, <book>_book.json per book. Restartable: pages with a _read.json
    are skipped unless --force. These are machine readings; no person has checked them.
+
+Two options are experimental (v0.4; see the README of this folder, "Two-word decoding and brief forms"); without them
+the output is exactly what earlier versions wrote:
+* --extra-lexicon TSV (repeatable) appends the rows of further word lists to the main one, with the same selection
+  rules (A/B rows, `tokens` column used when filled). data/lexicon/brief_forms.tsv holds one row, the abbreviation
+  S.T.; only S.T. has been tested.
+* --pair-penalty NATS also proposes two-word readings "A _ B" from the models' free readings (chinukpipa.text.twoword),
+  scores them like list words and adds NATS to their loss; the first choice is the lowest score. top5 entries then
+  also carry `kind` ("word" or "pair") and `loss`, `score` is the loss plus the penalty for a pair, and each word
+  has `n_pair_proposals` and `best_word_score`. Stage C (remerge) must be run with the same value.
+Pages that already have a _read.json are skipped whatever options they were read with: use a new --out-dir (or
+--force) when an option changes.
 """
 from __future__ import annotations
 
@@ -26,6 +39,7 @@ import os
 import random
 import sys
 import time
+from collections.abc import Sequence
 from multiprocessing import Pool
 
 import numpy as np
@@ -33,7 +47,7 @@ from PIL import Image
 
 from chinukpipa.htr.normalize import normalize, stretch_contrast, stroke_width
 
-from . import DEFAULT_LEXICON
+from . import DEFAULT_LEXICON, twoword
 
 # PyTorch and the rest of chinukpipa.htr are imported inside Ensemble, not here: this module is also imported by
 # the CPU worker processes and by tools that only read the .npz files, which should not have to load PyTorch.
@@ -80,23 +94,29 @@ def prep_task(task):
 class Ensemble:
     """Several recognizers read as one: batched log-probabilities, free reading and word-list scoring."""
 
-    def __init__(self, model_paths: list[str], lexicon: str, device: str):
+    def __init__(self, model_paths: list[str], lexicon: str, device: str, extra_lexicons: Sequence[str] = ()):
         import torch
         from chinukpipa.htr.data import vocab
         from chinukpipa.htr.model import load_model
         self.v = vocab()
         dev = torch.device(device)
         self._set_models([load_model(p, len(self.v), dev) for p in model_paths], dev)
-        self._set_candidates(lexicon)
+        self._set_candidates(lexicon, extra_lexicons)
 
     @classmethod
-    def from_models(cls, models, device: str = "cpu") -> Ensemble:
-        """An ensemble of models that are already built, with no word list: logps() and confidence() work, the
-        word-list methods do not. For tests and for code that has its own models."""
+    def from_models(cls, models, device: str = "cpu", lexicon: str | None = None,
+                    extra_lexicons: Sequence[str] = ()) -> Ensemble:
+        """An ensemble of models that are already built. With no word list (the default) logps() and confidence()
+        work, the word-list methods do not; with `lexicon` (and `extra_lexicons`) the word list is set as in
+        __init__. For tests and for code that has its own models."""
         import torch
         dev = torch.device(device)
         ens = cls.__new__(cls)
         ens._set_models([m.to(dev).eval() for m in models], dev)
+        if lexicon is not None:
+            from chinukpipa.htr.data import vocab
+            ens.v = vocab()
+            ens._set_candidates(lexicon, extra_lexicons)
         return ens
 
     def _set_models(self, models, dev) -> None:
@@ -107,31 +127,35 @@ class Ensemble:
         self.models = models
         self.C = models[0].out.out_features      # number of classes, the CTC blank included
 
-    def _set_candidates(self, lexicon: str) -> None:
+    def _set_candidates(self, lexicon: str, extra: Sequence[str] = ()) -> None:
         """Word list: the A/B headwords of the lexicon as token strings (same selection as read_page.Reader). A row of
-        a lexicon with a `tokens` column may give its tokens directly; otherwise the spelling rules compute them."""
+        a lexicon with a `tokens` column may give its tokens directly; otherwise the spelling rules compute them. The
+        rows of the `extra` word lists (same columns, same selection) come after those of the main one."""
         torch = self.torch
         from chinukpipa.translit import latin_to_tokens, load_tokens
         idx = {t: i + 1 for i, t in enumerate(self.v)}
         heads: dict[str, list[str]] = {}
         vs = set(self.v)
-        with open(lexicon, encoding="utf-8") as f:
-            header = f.readline().rstrip("\n").split("\t")
-            hi, ci = header.index("headword"), header.index("best_conf")
-            ti = header.index("tokens") if "tokens" in header else None   # optional: tokens given directly
-            for line in f:
-                c = line.rstrip("\n").split("\t")
-                if c[ci] not in ("A", "B"):
-                    continue
-                try:
-                    toks = c[ti].split() if ti is not None and ti < len(c) and c[ti].strip() \
-                        else latin_to_tokens(c[hi])
-                except ValueError:
-                    continue
-                if toks and all(t in vs for t in toks):
-                    heads.setdefault(" ".join(toks), []).append(c[hi])
+        for path in [lexicon, *extra]:
+            with open(path, encoding="utf-8") as f:
+                header = f.readline().rstrip("\n").split("\t")
+                hi, ci = header.index("headword"), header.index("best_conf")
+                ti = header.index("tokens") if "tokens" in header else None   # optional: tokens given directly
+                for line in f:
+                    c = line.rstrip("\n").split("\t")
+                    if c[ci] not in ("A", "B"):
+                        continue
+                    try:
+                        toks = c[ti].split() if ti is not None and ti < len(c) and c[ti].strip() \
+                            else latin_to_tokens(c[hi])
+                    except ValueError:
+                        continue
+                    if toks and all(t in vs for t in toks):
+                        heads.setdefault(" ".join(toks), []).append(c[hi])
         self.keys, self.heads = list(heads), heads
         tg = [[idx[t] for t in k.split()] for k in self.keys]
+        self.token_class, self.cand_classes = idx, tg       # token -> class index; each candidate as class indices
+        self._pair_index = None                              # built on first use (see pair_index)
         self.N = len(tg)
         self.tflat = torch.tensor([x for t in tg for x in t], dtype=torch.long, device=self.dev)
         self.tlen = torch.tensor([len(t) for t in tg], dtype=torch.long, device=self.dev)
@@ -208,8 +232,33 @@ class Ensemble:
         tot /= len(outs)
         return torch.where(torch.isfinite(tot), tot, torch.full_like(tot, float("inf")))
 
-    def read_batch(self, arrs, k: int = 5):
+    @property
+    def pair_index(self) -> twoword.DeletionIndex:
+        """Deletion index over the word list's candidates (built on first use), for the two-word proposals."""
+        if self._pair_index is None:
+            self._pair_index = twoword.DeletionIndex([key.split() for key in self.keys])
+        return self._pair_index
+
+    def read_batch(self, arrs, k: int = 5, pair_penalty: float | None = None):
+        """Read a batch of word images: one row each, with the free reading, its confidence, the k best word-list
+        readings (`top5`) and `free_best`.
+
+        With the default `pair_penalty=None` only list words are scored, as in every earlier version, and the rows
+        have exactly the fields they have always had.
+
+        With `pair_penalty` set (nats; 8.0 is the value chosen on the 1924 exercises) two-word readings are proposed
+        as well: pairs "A _ B" of list words, made from the models' free readings (chinukpipa.text.twoword). A pair
+        is scored like a list word, by the mean over the models of the CTC loss, taking the better of the targets
+        A _ B and A B; its effective score is that loss plus `pair_penalty`. `top5` is then the k lowest effective
+        scores of the list words and the pairs together. Each entry has `kind` ("word" or "pair"), `loss` (the raw
+        loss) and `score` (the effective score: the loss for a word); a pair's `headword` is "A + B" (the first
+        headword of each part) and its `tokens` are always "A _ B". `p_rel` is the softmax of the negative effective
+        scores over all list words and all proposals. The ranking uses the scores rounded to 3 decimals, as written
+        (see _merged_top for ties). The row also has `n_pair_proposals` and `best_word_score` (the best list word's
+        score, i.e. what `top5[0]["score"]` is without the option; stage C decides its joins on it)."""
         torch = self.torch
+        if pair_penalty is not None and not math.isfinite(pair_penalty):
+            raise ValueError(f"pair_penalty must be a finite number of nats, not {pair_penalty!r}")
         with torch.no_grad():
             outs, T = self.logps(arrs)
             conf, conf_nb = self.confidence(outs, T)
@@ -238,6 +287,12 @@ class Ensemble:
                                                         blank=0, reduction="none") for lp in outs) / len(outs)
                 j = int(loss.argmin())
                 fbest.append((seqs[j], float(loss[j])))
+            pairs = None
+            if pair_penalty is not None:
+                pairs = [self._pair_losses(outs, int(T[i]), i, frees[i]) for i in range(len(arrs))]
+                logz = torch.stack([torch.logsumexp(torch.cat([neg[i], torch.tensor(
+                    [-(x + pair_penalty) for _, _, x in pairs[i]], dtype=neg.dtype, device=self.dev)]), 0)
+                    for i in range(len(arrs))])
             vals, order, logz = vals.cpu().tolist(), order.cpu().tolist(), logz.cpu().tolist()
         rows = []
         for i in range(len(arrs)):
@@ -249,15 +304,89 @@ class Ensemble:
                 top.append({"headword": self.heads[key][0], "also": self.heads[key][1:4], "tokens": key,
                             "score": round(s, 3) if ok else None,
                             "p_rel": round(math.exp(-s - logz[i]), 4) if ok and math.isfinite(logz[i]) else 0.0})
-            rows.append({"free_tokens": " ".join(f0), "free_roman": self.to_roman(f0),
-                         "free_models_agree": all(fr == frees[i][0] for fr in frees[i]),
-                         "confidence": round(conf[i], 4), "confidence_nonblank": round(conf_nb[i], 4),
-                         "frames": int(T[i]), "top5": top,
-                         "free_best": None if fbest[i] is None else {
-                             "tokens": " ".join(self.v[j - 1] for j in fbest[i][0]),
-                             "roman": self.to_roman([self.v[j - 1] for j in fbest[i][0]]),
-                             "score": round(fbest[i][1], 3)}})
+            if pairs is not None:
+                top = self._merged_top(vals[i], order[i], pairs[i], pair_penalty, logz[i], k)
+            row = {"free_tokens": " ".join(f0), "free_roman": self.to_roman(f0),
+                   "free_models_agree": all(fr == frees[i][0] for fr in frees[i]),
+                   "confidence": round(conf[i], 4), "confidence_nonblank": round(conf_nb[i], 4),
+                   "frames": int(T[i]), "top5": top,
+                   "free_best": None if fbest[i] is None else {
+                       "tokens": " ".join(self.v[j - 1] for j in fbest[i][0]),
+                       "roman": self.to_roman([self.v[j - 1] for j in fbest[i][0]]),
+                       "score": round(fbest[i][1], 3)}}
+            if pairs is not None:
+                row["n_pair_proposals"] = len(pairs[i])
+                # the best list word's score, which is top5[0]["score"] without the option: stage C decides its
+                # joins on it, so that two-word readings do not change which boxes are joined
+                row["best_word_score"] = round(vals[i][0], 3) if vals[i] and math.isfinite(vals[i][0]) else None
+            rows.append(row)
         return rows
+
+    def _mean_ctc(self, outs, i: int, Ti: int, seqs: list[list[int]], chunk: int = 1024):
+        """Mean over the models of the CTC loss of every sequence of `seqs` (class indices) for word `i`, which has
+        `Ti` frames: a tensor of len(seqs) losses."""
+        torch = self.torch
+        parts = []
+        for s in range(0, len(seqs), chunk):
+            sub = seqs[s:s + chunk]
+            n = len(sub)
+            tg = torch.tensor([x for q in sub for x in q], dtype=torch.long, device=self.dev)
+            tl = torch.tensor([len(q) for q in sub], dtype=torch.long, device=self.dev)
+            il = torch.full((n,), Ti, dtype=torch.long, device=self.dev)
+            parts.append(sum(torch.nn.functional.ctc_loss(lp[:Ti, i:i + 1].expand(Ti, n, lp.shape[-1]), tg, il, tl,
+                                                          blank=0, reduction="none") for lp in outs) / len(outs))
+        return torch.cat(parts)
+
+    def _pair_losses(self, outs, Ti: int, i: int, frees_i) -> list[tuple[int, int, float]]:
+        """The two-word proposals for word `i` and their raw losses: [(position of A, position of B, loss)] in the
+        order of twoword.propose_pairs. The loss of a proposal is the ensemble's mean CTC loss of the better of the
+        targets A _ B and A B (infinite when neither fits the image)."""
+        torch = self.torch
+        props = twoword.propose_pairs([[self.v[j - 1] for j in fr] for fr in frees_i], self.pair_index)
+        if not props:
+            return []
+        space = self.token_class[twoword.WORD_SPACE]
+        seqs = []
+        for ia, ib, _ in props:
+            a, b = self.cand_classes[ia], self.cand_classes[ib]
+            seqs += [a + [space] + b, a + b]
+        loss = self._mean_ctc(outs, i, Ti, seqs).view(-1, 2).min(1).values
+        loss = torch.where(torch.isfinite(loss), loss, torch.full_like(loss, float("inf"))).tolist()
+        return [(ia, ib, x) for (ia, ib, _), x in zip(props, loss)]
+
+    def _merged_top(self, vals, order, pairs, penalty: float, logz: float, k: int) -> list[dict]:
+        """The k best readings of one word, list words and pairs together, as `top5` entries (see read_batch).
+        `vals`, `order`: the best list words' losses and positions; `pairs`: [(position of A, position of B, loss)].
+
+        The ranking uses the losses rounded to 3 decimals, as they are written to the files (and as they were when
+        the penalty was chosen), so the first choice is the one the written scores show. On equal effective scores
+        the list word comes first; a pair's effective score is the floating-point sum of its rounded loss and the
+        penalty, which can fall a hair below a list word with the same written score (computed as in the
+        experiments).
+        `p_rel` is computed from the unrounded losses, as without pairs."""
+        def r3(x: float) -> float:
+            return round(x, 3) if math.isfinite(x) else x
+
+        raw_word = dict(zip(order, vals))
+        raw_pair = {(ia, ib): x for ia, ib, x in pairs}
+        singles = [(r3(v), j) for v, j in zip(vals, order)]
+        top = []
+        for kind, ja, jb, loss, score in twoword.merge_ranked(singles, [(ia, ib, r3(x)) for ia, ib, x in pairs],
+                                                              penalty, k):
+            ok = math.isfinite(score)
+            raw = raw_word[ja] if kind == "word" else raw_pair[(ja, jb)] + penalty
+            key = self.keys[ja]
+            if kind == "word":
+                entry = {"headword": self.heads[key][0], "also": self.heads[key][1:4], "tokens": key}
+            else:
+                key_b = self.keys[jb]
+                entry = {"headword": f"{self.heads[key][0]} + {self.heads[key_b][0]}", "also": [],
+                         "tokens": f"{key} {twoword.WORD_SPACE} {key_b}"}
+            entry.update({"score": round(score, 3) if ok else None,
+                          "p_rel": round(math.exp(-raw - logz), 4) if ok and math.isfinite(logz) else 0.0,
+                          "kind": kind, "loss": round(loss, 3) if ok else None})
+            top.append(entry)
+        return top
 
 
 def batches_by_width(arrs, max_batch: int, max_pixels: int):
@@ -288,6 +417,11 @@ def main():
     ap.add_argument("--pages", required=True)
     ap.add_argument("--models", nargs="+", required=True)
     ap.add_argument("--lexicon", default=DEFAULT_LEXICON, help="word list TSV (default: %(default)s)")
+    ap.add_argument("--extra-lexicon", action="append", metavar="TSV",
+                    help="append the rows of this word list TSV to the main one (repeatable; experimental, v0.4)")
+    ap.add_argument("--pair-penalty", type=float, metavar="NATS",
+                    help="also propose two-word readings 'A _ B' and add NATS to their loss (experimental, v0.4; "
+                         "default: off). Use the same value in remerge")
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--books", default="")
     ap.add_argument("--leaves", default="", help="only these leaves (comma list) of the selected books")
@@ -305,7 +439,9 @@ def main():
         torch.set_num_threads(a.threads)
     if a.device == "cuda" and not torch.cuda.is_available():
         sys.exit("CUDA not available")
-    ens = Ensemble(a.models, a.lexicon, a.device)
+    if a.pair_penalty is not None and not math.isfinite(a.pair_penalty):
+        sys.exit("--pair-penalty must be a finite number")
+    ens = Ensemble(a.models, a.lexicon, a.device, a.extra_lexicon or [])
     os.makedirs(a.out_dir, exist_ok=True)
     books: dict[str, list[tuple[int, str]]] = {}
     for p in glob.glob(os.path.join(a.pages, "*_words.npz")):
@@ -313,7 +449,10 @@ def main():
         books.setdefault(b, []).append((leaf, p))
     want = set(filter(None, a.books.split(",")))
     leaves = {int(x) for x in a.leaves.split(",") if x}
-    print(json.dumps({"candidates": ens.N, "books": {b: len(v) for b, v in sorted(books.items())}}), flush=True)
+    start = {"candidates": ens.N, "books": {b: len(v) for b, v in sorted(books.items())}}
+    if a.pair_penalty is not None:
+        start["pair_penalty"] = a.pair_penalty
+    print(json.dumps(start), flush=True)
     pool = Pool(a.workers)
     for book in sorted(books):
         if want and book not in want:
@@ -382,14 +521,19 @@ def main():
                 print(json.dumps({"selftest_words": k, "max_logp_diff_vs_alone": dmax}), flush=True)
                 a.selftest = False
             for ix in batches_by_width(arrs, a.batch, a.batch * 320):
-                for i, r in zip(ix, ens.read_batch([arrs[i] for i in ix])):
+                for i, r in zip(ix, ens.read_batch([arrs[i] for i in ix], pair_penalty=a.pair_penalty)):
                     rows[i] = r
             words = []
             for i, r in enumerate(rows):
                 w = {"line": int(line[i]), "index": int(index[i]), "bbox": [int(v) for v in boxes[i]]}
                 w.update(r)
                 words.append(w)
-            out = {"item": book, "leaf": leaf, "scale": scale, "models": a.models, "n_candidates": ens.N,
+            used = {}           # what the options add to the file; with none of them the file is what it always was
+            if a.extra_lexicon:
+                used["extra_lexicons"] = [os.path.basename(p) for p in a.extra_lexicon]
+            if a.pair_penalty is not None:
+                used["pair_penalty"] = a.pair_penalty
+            out = {"item": book, "leaf": leaf, "scale": scale, "models": a.models, "n_candidates": ens.N, **used,
                    "reading": "machine reading (CRNN ensemble), not checked by a person", "words": words}
             tmp = outp[leaf] + ".tmp"
             with open(tmp, "w", encoding="utf-8") as fh:

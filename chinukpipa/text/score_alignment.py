@@ -1,6 +1,7 @@
 """Score machine readings of a page against an alignment of its Roman text to its word boxes.
 
     python -m chinukpipa.text.score_alignment ALIGNMENT_TSV READ_OR_MERGED_JSON [READ_OR_MERGED_JSON ...]
+        [--margins 0,2,4] [--merge-rule]
 
 The alignment has one row per Roman word of the page (columns used: `unit_kind`, `main_box`, `box_ids`,
 `roman_tokens`). A unit is the set of word boxes that carries one or more Roman words: `match` (one box, one
@@ -21,6 +22,14 @@ Readings compared: the word list's first choice (`top1`), any of its five (`top5
 (`free`, stage B only), `free_best` (of the models' free readings, the one with the lowest ensemble loss), and a
 hybrid: `free_best` where its loss plus a margin is below the loss of the list's first choice, otherwise the list's
 first choice. The hybrid is shown for each margin in --margins.
+
+--merge-rule (experimental, v0.4) also scores the units that hold several Roman words (`merge`: one box, `merge+split`:
+several boxes), which the strict rule never counts as right. The k Roman words of such a unit (its rows with the same
+`box_ids`, in the file's order) are right if one output word covers exactly the unit's boxes and the reading's tokens
+equal the k words' `roman_tokens` joined with " _ " (the word-space token), the way a two-word reading is written;
+each of the k words then counts right in every measure (`top1`, `top5`, `free`, `free_best`, `hybrid`). For a stage-B
+file only a one-box unit can be covered by an output word. `match` and `split` units are scored exactly as before, and
+so is everything else when the option is not given.
 """
 from __future__ import annotations
 
@@ -40,6 +49,30 @@ def percent(v: int, n: int) -> str:
     return f"{v}/{n} = {100 * v / n:.1f}%"
 
 
+MERGE_KINDS = ("merge", "merge+split")    # unit kinds that hold several Roman words
+
+
+def scored_items(al: list[dict], merge_rule: bool = False) -> list[tuple[dict, int, str]]:
+    """What to score: (alignment row, number of Roman words it stands for, tokens to match). Without `merge_rule`
+    that is every row, one word, its own `roman_tokens`. With it, the rows of one multi-word unit (same `box_ids`,
+    kind `merge` or `merge+split`) become one item: its first row, k words, the k words' tokens joined with " _ "."""
+    if not merge_rule:
+        return [(r, 1, r["roman_tokens"]) for r in al]
+    items: list = []
+    units: dict[str, list] = {}
+    for r in al:
+        if r["unit_kind"] not in MERGE_KINDS:
+            items.append((r, 1, r["roman_tokens"]))
+        elif r["box_ids"] not in units:
+            units[r["box_ids"]] = item = [r, 1, r["roman_tokens"]]
+            items.append(item)
+        else:
+            item = units[r["box_ids"]]
+            item[1] += 1
+            item[2] += " _ " + r["roman_tokens"]
+    return [tuple(item) for item in items]
+
+
 def hybrid_right(w: dict, ref: str, margin: float) -> bool:
     """Is the hybrid reading of word `w` right? Free reading (free_best) if it fits the image better than the
     list's first choice by more than `margin`, or if the list has no scored answer; else the list's first choice."""
@@ -50,35 +83,37 @@ def hybrid_right(w: dict, ref: str, margin: float) -> bool:
     return bool(t1) and t1["tokens"] == ref
 
 
-def score_read(al: list[dict], d: dict, margins=MARGINS) -> dict:
-    """Strict score of a stage-B file: the word must have a box of its own (unit_kind `match`)."""
+def score_read(al: list[dict], d: dict, margins=MARGINS, merge_rule: bool = False) -> dict:
+    """Strict score of a stage-B file: the word must have a box of its own (unit_kind `match`); with `merge_rule`
+    also a unit of kind `merge` (one box, several words) whose box reads as the words joined by " _ "."""
     n = len(al)
     words = {(w["line"], w["index"]): w for w in d["words"]}
     res = {"top1": 0, "top5": 0, "free": 0, "free_best": 0}
     hyb = {m: 0 for m in margins}
-    for r in al:
-        if r["unit_kind"] != "match" or not r["main_box"].replace(".", "").isdigit():
+    kinds = ("match", "merge") if merge_rule else ("match",)
+    for r, k, ref in scored_items(al, merge_rule):
+        if r["unit_kind"] not in kinds or not r["main_box"].replace(".", "").isdigit():
             continue
         ln, ix = (int(x) for x in r["main_box"].split("."))
         w = words.get((ln, ix))
         if w is None:          # box not classed as a word by the segmenter: no reading
             continue
-        ref = r["roman_tokens"]
         t1 = w["top5"][0] if w["top5"] else None
-        res["top1"] += bool(t1) and t1["tokens"] == ref
-        res["top5"] += any(t["tokens"] == ref for t in w["top5"])
-        res["free"] += w["free_tokens"] == ref
+        res["top1"] += k * (bool(t1) and t1["tokens"] == ref)
+        res["top5"] += k * any(t["tokens"] == ref for t in w["top5"])
+        res["free"] += k * (w["free_tokens"] == ref)
         fb = w.get("free_best")
-        res["free_best"] += bool(fb) and fb["tokens"] == ref
+        res["free_best"] += k * (bool(fb) and fb["tokens"] == ref)
         for m in hyb:
-            hyb[m] += hybrid_right(w, ref, m)
+            hyb[m] += k * hybrid_right(w, ref, m)
     out = {k: percent(v, n) for k, v in res.items()}
     out["hybrid"] = {str(m): percent(v, n) for m, v in hyb.items()}
     return out
 
 
-def score_merged(al: list[dict], d: dict, margins=MARGINS) -> dict:
-    """Strict score of a stage-C file: one output word must cover exactly the boxes of the Roman word's unit."""
+def score_merged(al: list[dict], d: dict, margins=MARGINS, merge_rule: bool = False) -> dict:
+    """Strict score of a stage-C file: one output word must cover exactly the boxes of the Roman word's unit. A box
+    that holds two words is never right, unless `merge_rule` says it is when it reads as the words joined by " _ "."""
     n = len(al)
     by_boxes = {frozenset(w["boxes"]): w for w in d["words"]}
     owner = {b: frozenset(w["boxes"]) for w in d["words"] for b in w["boxes"]}
@@ -86,22 +121,22 @@ def score_merged(al: list[dict], d: dict, margins=MARGINS) -> dict:
     hyb = {m: 0 for m in margins}
     kinds: dict[str, int] = {}
     wrong_join = 0
-    for r in al:
+    scorable = ("match", "split") + (MERGE_KINDS if merge_rule else ())
+    for r, k, ref in scored_items(al, merge_rule):
         w = by_boxes.get(frozenset(r["box_ids"].split("+")))
         if r["unit_kind"] == "match" and w is None and r["main_box"] in owner:
             wrong_join += 1
-        if w is None or r["unit_kind"] not in ("match", "split"):   # a box that holds two words is never right
+        if w is None or r["unit_kind"] not in scorable:   # a box that holds two words is never right
             continue
-        ref = r["roman_tokens"]
         t1 = w["top5"][0] if w["top5"] else None
         ok = bool(t1) and t1["tokens"] == ref
-        res["top1"] += ok
-        kinds[r["unit_kind"]] = kinds.get(r["unit_kind"], 0) + ok
-        res["top5"] += any(t["tokens"] == ref for t in w["top5"])
+        res["top1"] += k * ok
+        kinds[r["unit_kind"]] = kinds.get(r["unit_kind"], 0) + k * ok
+        res["top5"] += k * any(t["tokens"] == ref for t in w["top5"])
         fb = w.get("free_best")
-        res["free_best"] += bool(fb) and fb["tokens"] == ref
+        res["free_best"] += k * (bool(fb) and fb["tokens"] == ref)
         for m in hyb:
-            hyb[m] += hybrid_right(w, ref, m)
+            hyb[m] += k * hybrid_right(w, ref, m)
     out = {k: percent(v, n) for k, v in res.items()}
     out["right_by_unit_kind"] = kinds
     out["single_words_lost_to_wrong_joins"] = wrong_join
@@ -115,8 +150,8 @@ def is_merged(d: dict) -> bool:
     return "joins" in d or any("boxes" in w for w in d["words"])
 
 
-def score(al: list[dict], d: dict, margins=MARGINS) -> dict:
-    return (score_merged if is_merged(d) else score_read)(al, d, margins)
+def score(al: list[dict], d: dict, margins=MARGINS, merge_rule: bool = False) -> dict:
+    return (score_merged if is_merged(d) else score_read)(al, d, margins, merge_rule)
 
 
 def parse_margins(spec: str) -> tuple:
@@ -130,6 +165,10 @@ def main():
     ap.add_argument("readings", nargs="+", help="<stem>_read.json (stage B) or <stem>_merged.json (stage C) files")
     ap.add_argument("--margins", type=parse_margins, default=MARGINS,
                     help="comma list of margins for the hybrid reading (default: %s)" % ",".join(map(str, MARGINS)))
+    ap.add_argument("--merge-rule", action="store_true",
+                    help="also count the units that hold several Roman words (merge, merge+split) as right when one "
+                         "output word covers exactly their boxes and reads as the words joined by ' _ ' "
+                         "(experimental, v0.4)")
     a = ap.parse_args()
     al = load_alignment(a.alignment)
     if not al:
@@ -137,7 +176,7 @@ def main():
     for path in a.readings:
         with open(path, encoding="utf-8") as f:
             d = json.load(f)
-        print(path, json.dumps(score(al, d, a.margins), indent=1))
+        print(path, json.dumps(score(al, d, a.margins, a.merge_rule), indent=1))
 
 
 if __name__ == "__main__":

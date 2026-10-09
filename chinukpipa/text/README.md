@@ -101,7 +101,9 @@ python -m chinukpipa.text.score_alignment ALIGNMENT.tsv out/read/ITEM_15_read.js
 compares readings with an alignment of the page's Roman text to its word boxes (columns `unit_kind`, `main_box`,
 `box_ids`, `roman_tokens`), if one exists for the page, with a strict rule: a Roman word counts as read right only if
 it has a word box of its own (or, for a merged file, one output word covers exactly its boxes) and the tokens are
-equal. See the module docstring.
+equal. See the module docstring. The options `--pair-penalty`, `--extra-lexicon` (stages B and C), `--st-labels`
+(`gtrows score`) and `--merge-rule` (`score_alignment`) are experimental and described under "Two-word decoding and
+brief forms" below.
 
 ## What the outputs contain
 
@@ -113,7 +115,7 @@ Names use `<stem>` = `<item>_<leaf>`; in stages B and C the item is called the b
 | `<stem>_overlay.png` | A | The page with word boxes, line numbers and set-aside furniture drawn on it, for checking the segmentation by eye. |
 | `<stem>_words.npz` | A | `flat` (all crops as one uint8 array), `shapes` (height, width of each), `boxes` (x0, y0, x1, y1), `line` and `index` (the word's line number and position in the line; the key of a box is "line.index"). |
 | `<book>_calibration.json` | B | The scale table and the chosen scale. |
-| `<stem>_read.json` | B | `item`, `leaf`, `scale`, `models`, `n_candidates`, a `reading` note and `words`: for each word box `line`, `index`, `bbox`, `free_tokens`, `free_roman`, `free_models_agree`, `confidence` and `confidence_nonblank` (mean per-frame maximum class probability, over all frames and over non-blank frames), `frames`, `top5` (each with `headword`, `also`, `tokens`, `score`, `p_rel`) and `free_best` (`tokens`, `roman`, `score`). |
+| `<stem>_read.json` | B | `item`, `leaf`, `scale`, `models`, `n_candidates`, a `reading` note and `words`: for each word box `line`, `index`, `bbox`, `free_tokens`, `free_roman`, `free_models_agree`, `confidence` and `confidence_nonblank` (mean per-frame maximum class probability, over all frames and over non-blank frames), `frames`, `top5` (each with `headword`, `also`, `tokens`, `score`, `p_rel`) and `free_best` (`tokens`, `roman`, `score`). With the experimental `--pair-penalty` there is more: see below. |
 | `<book>_book.json` | B | A summary over the book's pages read so far: how often the models agree, how often the free reading equals the list's first choice, quantiles of `p_rel` and `confidence`, the most frequent first choices. |
 | `<stem>_merged.json` | C | Like `_read.json`, with the words after joining: each has `boxes` (the box keys it covers, e.g. `["5.2", "5.3"]`), the union `bbox`, and the same reading fields. Also `merge_rule`, `gap_max_px` and `joins`. |
 
@@ -125,7 +127,8 @@ sheets (crop, free reading, top three candidates) next to the segmentation files
 - Every reading is a machine reading. No person has checked them, and the stage B and C files carry a note saying
   so. A reading that agrees with a word-list entry is not thereby correct.
 - Segmentation errors are the main loss. A word cut in two or two words in one box cannot be read right by a
-  recognizer that reads one box at a time, whatever the model does; stage C repairs only some splits and can join
+  recognizer that reads one box at a time, whatever the model does (except, experimentally, two words in one box with
+  `--pair-penalty`; see below); stage C repairs only some splits and can join
   words that belong apart. Marks such as braces or numerals can be boxed as words, and words can be missed. The
   segmenter handles the layouts it was written for (columns, rules, dotted frames, stanza separators, page numbers,
   headings in the hymn-book layout); other layouts may be cut wrongly. Look at the overlay of each page.
@@ -138,6 +141,100 @@ sheets (crop, free reading, top three candidates) next to the segmentation files
 - The recognizer was trained on Chinook Jargon words only. Pages in other languages (the Salish languages that also
   appear in Le Jeune's books) are outside what it was trained for; as in the rest of this repository, transcriptions
   of Salish-language texts are not published.
+
+## Two-word decoding and brief forms (v0.4, experimental)
+
+Two additions to the word-list reading, both off unless asked for. Without the options below, `readcrops`, `remerge`,
+`gtrows score` and `score_alignment` do what they did before and write the same files. They address two kinds of
+miss seen in the tests below: an outline that holds two words (64 of the 823 scored rows of the 1924 exercises are
+two words on one outline, 52 written with a space and 12 hyphenated; on the Creation page five boxes hold two words
+each, and one more pair of words is cut across two boxes), and the abbreviation S.T. (*Sahale Taye*, "God"), which
+the word lists do not have.
+
+**Two-word decoding**, in plain words. The word-list reading can only return one list word per image. With
+`--pair-penalty`, two-word readings "A _ B" (A and B words of the list, `_` the word-space token) compete with it:
+
+1. Each model's free reading of the image is taken as it is, with its `_` tokens dropped.
+2. Every place where it can be cut in two gives a left part and a right part. Each part is looked up in the word
+   list: a part of one or two tokens has to equal a list word's tokens, a part of three or four may differ from one
+   by one token (an insertion, a deletion or a substitution), a part of five or more by two. The lookup is a table of
+   the list's token strings with up to two tokens deleted (the idea of the SymSpell spelling corrector), followed by
+   a real edit-distance check of every hit.
+3. Each left match and right match together are a proposal "A _ B". At most 400 proposals are kept per image: those
+   with the fewest token differences first.
+4. A proposal is scored like a list word: the mean over the models of the CTC loss (in nats) of its tokens, as
+   `A _ B` or as `A B`, whichever is lower.
+5. A list word's *effective score* is its loss; a pair's is its loss plus the penalty. The first choice is the
+   lowest effective score, so a pair is chosen only if it fits the image better than the best list word by more than
+   the penalty.
+
+The proposals and their ranking are in `twoword.py` (no PyTorch); the scoring is in `readcrops.Ensemble.read_batch`.
+
+```bash
+python -m chinukpipa.text.readcrops --pages out/pages --models runs/a/model.pt runs/b/model.pt runs/c/model.pt \
+    --out-dir out/read --device cuda --pair-penalty 8
+python -m chinukpipa.text.remerge --pages out/pages --read out/read --out-dir out/merged \
+    --models runs/a/model.pt runs/b/model.pt runs/c/model.pt --pair-penalty 8
+```
+
+- `--pair-penalty NATS` exists in `readcrops` and `remerge` (not in `read_page`). Without it the result is the word-list
+  reading described above. `remerge` refuses stage-B files read with another value. Pages that already have a
+  `_read.json` are skipped by `readcrops` whatever options they were read with, so use a new `--out-dir` (or `--force`)
+  when an option changes; `gtrows score` refuses readings made with different penalties.
+- Stage C decides its joins as it does without the option: it compares the best list word's score of the joined
+  image with the sum of the pieces' (`best_word_score`), so two-word readings do not change which boxes are joined;
+  each unit's reading then includes them. This is the path that was tested on the Creation page (joins on list-word
+  scores, then two-word decoding of the units). The `merge_rule` note in the `_merged.json` file says so.
+- In `top5`, each entry also has `kind` (`"word"` or `"pair"`) and `loss` (the raw loss); `score` is the effective
+  score. A pair's `headword` is "A + B" (the first headword of each part) and its `tokens` are `A _ B`. `p_rel` is
+  the softmax of the negative effective scores over all list words and all proposals, so it is not comparable with a
+  run without the option. The ranking uses the scores as written (3 decimals), as in the experiments: when a list
+  word and a pair show the same score, the list word usually comes first, but the floating-point sum of a pair's loss
+  and the penalty can fall a hair below it and put the pair first. Each word has `n_pair_proposals` and `best_word_score` (the best list word's score), and the `_read.json` and
+  `_merged.json` files record `pair_penalty` (and `extra_lexicons`).
+- A pair is a machine reading like any other: it says that the outline looks like those two words, not that it is
+  right.
+
+**Where the penalty 8 comes from.** The 1924 exercises (`data/gt/rudiments1924_text_annotations.jsonl`) were split
+by page: pages 25–31 of the scan (printed pages 21–27) to choose the penalty, pages 32–37 (rows exist on 32, 35, 36
+and 37) to test it. A short list of values between 0 and 15 was tried on the first group, and 8 gave the most first
+choices right (counting the rows that `--st-labels` labels). It was then tested on the second group and on the Creation page. The Creation page had been used to
+check several earlier changes, so it is no longer an untouched test. The penalty was tuned on one book; another
+book may want another value.
+
+**Brief forms.** `--extra-lexicon TSV` (repeatable; in `readcrops`, `remerge` and `gtrows score`) appends the rows of
+another word list to the main one, with the same rules (A/B rows; the `tokens` column, if filled, gives the tokens).
+`data/lexicon/brief_forms.tsv` has one row, the abbreviation S.T. with the tokens `S T`; its source is the
+entry `ST` of `data/signs/brief_forms.yaml` (Le Jeune's note in the 1898 *Rudiments*, p. 13). Only S.T. has been
+tested. The other brief forms in that file are not in the TSV, and each one would need its own test. `gtrows score`
+needs the same `--extra-lexicon` as the reading, and stops if the number of candidates differs from the reading's.
+
+**Two scoring options** (defaults unchanged):
+- `gtrows score --st-labels` also scores the rows that have no rule tokens, when their Roman spelling gives
+  tokens: "S.T." or "S.T" is `S T`, any other word goes through the spelling rules, several words are joined with
+  ` _ `, and a row containing "·" stays unscored. The result reports the rows with and without label tokens
+  separately. These labels are made when scoring, from the AI-read Roman spelling; no person has checked them, they are
+  not written to the ground-truth files and are not published as labels.
+- `score_alignment --merge-rule` also scores the units that hold k Roman words (`merge`: one box; `merge+split`:
+  several boxes): such a unit is right if
+  one output word covers exactly that unit's boxes and its first-choice tokens equal the k words' tokens joined by
+  ` _ `, and then each of the k words counts as right. Match and split units are scored as before. A first choice
+  can only equal such a token string if it contains a word-space token: a two-word reading, or a phrase that is itself
+  in the word list (a headword with a space or a hyphen gets a word-space token from the spelling rules), so the rule
+  matters mostly together with `--pair-penalty`.
+
+**Limits.**
+- A pair is only proposed when at least one model's free reading comes close enough to both words (step 2), and
+  only from words of the list. An error beyond that in either half, or a word that is not in the list, means no
+  proposal.
+- More work per image: up to 400 more candidates, each scored with and without the word space.
+- The Roman spellings behind the `--st-labels` labels are AI readings of the printed book, and the token strings come
+  from spelling rules that are hypotheses (see `docs/rule_notes.md`).
+- `read_page` has neither option.
+
+TODO (numbers): the counts of first choices right (the exercises' rows without and with `--st-labels`; the Creation
+page with `--merge-rule`) are to be added here once they have been reproduced with this code, together with the
+models, word lists and exact command lines. Until then this section gives no results.
 
 ## Results
 

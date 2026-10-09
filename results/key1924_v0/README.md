@@ -29,9 +29,9 @@ reading is the first model's.
 **Reading these numbers.**
 - Most errors are words that are not in the word list under the spelling Le Jeune used here: within the list,
   92–96% are read right.
-- The 823 outlines (69 rows are two-word phrases) are 261 distinct token strings; 624 of the 823 outlines (125 of
-  the 261 strings) share a token string with the 1892 and 1898 training words, so the first row is "a book not
-  seen in training" but mostly words that were. `lexicon_merged.tsv` itself contains headwords parsed from a 1924
+- The 823 outlines (64 of them are two words on one outline: 52 written with a space, 12 hyphenated) are 261
+  distinct token strings; 624 of the 823 outlines (125 of the 261 strings) share a token string with the 1892 and
+  1898 training words, so the first row is "a book not seen in training" but mostly words that were. `lexicon_merged.tsv` itself contains headwords parsed from a 1924
   edition of the *Rudiments* (see its sources), so even the first word list is not fully independent of this book.
 - The two rows differ in batch size as well as in training data.
 - The 35 outlines containing the abbreviation S.T. are not scored here (no rule tokens); on the Creation page they

@@ -113,7 +113,7 @@ redistributed here; the annotations are CC BY 4.0.
 
 ## rudiments1924_text_annotations.jsonl (running text, v0.4, October 2026)
 
-**What it is.** 880 outlines (words, and 69 two-word phrases written as one outline) of narrative text from the exercises and their key in the same 1924 *Rudiments*
+**What it is.** 880 outlines (words, and some phrases written as one outline) of narrative text from the exercises and their key in the same 1924 *Rudiments*
 (`Ayer_PM843_L45_1924`): a Creation narrative, the days and months, the first people, the body, the house, fishing
 and hunting, and religious text. The book prints this text one word per line: the Roman word, its shorthand
 outline and, on indices 25–32, an English gloss. Each row is one outline with the Roman spelling printed beside it,
@@ -125,9 +125,10 @@ line within the column; `printed_page` = printed page number).
 | 25, 26, 27, 28, 29, 30, 31, 32 | 70, 75, 40, 75, 76, 56, 58, 59 |
 | 35, 36, 37 | 129, 164, 78 |
 
-By language: 860 Chinook Jargon rows, 19 English words printed inside the Chinook text and 1 French name.
+By language: 860 Chinook Jargon rows, 19 English rows (words printed inside the Chinook text) and 1 French name.
 `tokens_rule` is set for 823 Chinook rows; it is `null` for 35 rows containing the abbreviation S.T. (its outline is
-a brief form, not spelled sign by sign) and 2 rows with a raised dot. `gloss_en` is filled on 501 of the 509 rows of indices 25–32 (the others: no English printed beside
+a brief form, not spelled sign by sign) and 2 rows with a raised dot. 64 of the 823 are two words on one outline
+(52 written with a space, 12 hyphenated); their `tokens_rule` has the word-space token `_` between the words. `gloss_en` is filled on 501 of the 509 rows of indices 25–32 (the others: no English printed beside
 the word, a gloss printed for a whole phrase, a compound broken over two lines, and on index 31 two glosses printing
 slurs, which the reader left blank; the Roman words are kept as printed). Left out: lists that are not running text
 (indices 23–24, 33–34, 38–40 and a French list at the top of 35), lines where the Roman words and outlines are not
