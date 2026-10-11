@@ -295,6 +295,7 @@ def test_gtrows_pack_and_score(tmp_path):
     """gtrows packs crops in reading order and scores readings keyed by page and position."""
     import json
 
+    pytest.importorskip("torch")
     import numpy as np
     from PIL import Image
 

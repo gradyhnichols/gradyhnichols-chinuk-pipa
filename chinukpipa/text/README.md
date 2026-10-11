@@ -18,11 +18,12 @@ labelled and left out. Text lines are found per column, and the dark pieces of e
 right into words. A gap starts a new word if it is wider than a threshold taken from the valley between the two
 modes of the page's own gap sizes (pen lifts inside words, spaces between words; there are fallbacks for pages
 without two clear modes). Since v0.4 a valley with fewer than a quarter of the page's gaps above it is rejected and
-Otsu's threshold on the same gaps is used instead (the quarter was set by hand from the spread of that share over
-the pages). This happened on 48 of the 478 pages read so far; on those looked at, the valley had fallen between the
+Otsu's threshold on the same gaps is used instead (the quarter was chosen by the project from the spread of that share over
+the pages). This happened on 48 of the 478 pages read so far; on those inspected by an AI agent, the valley had fallen between the
 pen lifts and a few very wide gaps (between columns, around a picture), and whole lines had become one word box. An
 AI check of 10 of them, blind to which version was new, judged the new boxes better on 9 (one tie); some dense or
-faint pages are still cut badly. Small marks (dots, vowel circles)
+faint pages are still cut badly. The Creation test page (`chinookbiblehist00duri`, leaf 15) is not one of the 48: its boxes are
+the same with either version, so the Creation numbers below hold for both. Small marks (dots, vowel circles)
 join the nearest word; punctuation and runs of Roman letters get their own labels and are not read. The other
 thresholds are fixed multiples of quantities measured on the page (the stroke width, the line spacing and the
 height of a typical word piece); the multipliers were set by hand while developing on pages of these books. On a
